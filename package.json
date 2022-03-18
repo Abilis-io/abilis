@@ -1,0 +1,20 @@
+{
+  "name": "abilis",
+  "version": "1.0.0",
+  "description": "CSS and JS front-end open source library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skyleen77/abilis.git"
+  },
+  "keywords": ["css", "js", "library"],
+  "author": "Elliot Sutton a.k.a Skyleen77",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Skyleen77/abilis/issues"
+  },
+  "homepage": "https://github.com/Skyleen77/abilis#readme"
+}
