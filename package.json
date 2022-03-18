@@ -4,17 +4,29 @@
   "description": "CSS and JS front-end open source library",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint '**/*.js'",
+    "lint:fix": "prettier --write $PWD/'src/**/*.js'"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Skyleen77/abilis.git"
   },
-  "keywords": ["css", "js", "library"],
+  "keywords": [
+    "css",
+    "js",
+    "library"
+  ],
   "author": "Elliot Sutton a.k.a Skyleen77",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Skyleen77/abilis/issues"
   },
-  "homepage": "https://github.com/Skyleen77/abilis#readme"
+  "homepage": "https://github.com/Skyleen77/abilis#readme",
+  "devDependencies": {
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "prettier-eslint": "^13.0.0",
+    "prettier-eslint-cli": "^5.0.1"
+  }
 }
