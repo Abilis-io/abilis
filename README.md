@@ -1,2 +1,2 @@
 # abilis
-CSS and JS front-end open source librairy
+CSS and JS front-end open source library
