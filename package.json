@@ -4,7 +4,7 @@
   "description": "CSS and JS front-end open source library",
   "main": "index.js",
   "scripts": {
-    "prebuild": "rimraf dist",
+    "prebuild": "rimraf dist/js",
     "build": "rollup -c",
     "lint": "eslint '**/*.js'",
     "lint:fix": "prettier --write $PWD/'src/**/*.js' --single-quote"
@@ -50,5 +50,8 @@
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-terser": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=8"
   }
 }

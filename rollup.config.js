@@ -4,26 +4,29 @@ import { terser } from 'rollup-plugin-terser';
 
 const prod = !process.env.ROLLUP_WATCH;
 
+const dist = 'dist/js';
+const bundle = 'abilis';
+
 export default {
   input: 'src/index.js',
   output: [
     {
-      file: 'dist/abilis.cjs.js',
+      file: `${dist}/${bundle}.cjs.js`,
       format: 'cjs',
     },
     {
-      file: 'dist/abilis.cjs.min.js',
+      file: `${dist}/${bundle}.cjs.min.js`,
       format: 'cjs',
       plugins: [
         prod && terser(),
       ],
     },
     {
-      file: 'dist/abilis.esm.js',
+      file: `${dist}/${bundle}.esm.js`,
       format: 'esm',
     },
     {
-      file: 'dist/abilis.esm.min.js',
+      file: `${dist}/${bundle}.esm.min.js`,
       format: 'esm',
       plugins: [
         prod && terser(),
@@ -31,12 +34,12 @@ export default {
     },
     {
       name: 'Abilis',
-      file: 'dist/abilis.umd.js',
+      file: `${dist}/${bundle}.umd.js`,
       format: 'umd',
     },
     {
       name: 'Abilis',
-      file: 'dist/abilis.umd.min.js',
+      file: `${dist}/${bundle}.umd.min.js`,
       format: 'umd',
       plugins: [
         prod && terser(),
