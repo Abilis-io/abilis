@@ -1,0 +1,95 @@
+// By CodingLab
+
+.toast {
+  background-color: $toast-bg;
+  box-shadow: $toast-box-shadow;
+  border-radius: $toast-border-radius;
+  padding: $toast-padding;
+  position: fixed;
+  top: $toast-top;
+  right: $toast-right;
+  max-width: $toast-max-width;
+  border-left: $toast-border-left-width solid $toast-border-left-color;
+  z-index: 4000;
+  overflow: hidden;
+  transform: translateX(calc(100% + $toast-right));
+  transition: $toast-transition;
+
+  &.active {
+    transform: translateX(0%);
+  }
+
+  .toast-content {
+    display: flex;
+    align-items: center;
+
+    .check {
+      @include flexCenter;
+      height: $toast-check-size;
+      width: $toast-check-size;
+      background-color: $toast-check-bg;
+      color: $toast-check-color;
+      border-radius: 50%;
+    }
+
+    .toast-message {
+      display: flex;
+      flex-direction: column;
+      margin: $toast-message-margin;
+    }
+  }
+
+  .close {
+    position: absolute;
+    top: $toast-close-top;
+    right: $toast-close-right;
+  }
+
+  .toast-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: $toast-progress-height;
+    width: 100%;
+
+    &.active::before {
+      animation: progressToast $toast-progress-animation-duration linear forwards;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background-color: $toast-progress-bg;
+    }
+  }
+}
+
+@keyframes progressToast {
+  100% {
+    right: 100%;
+  }
+}
+
+@each $cname, $color1, $color2 in $colors {
+    .toast {
+      &.#{$cname} {
+        background-color: $color2;
+        border-left-color: $color1;
+
+        .check {
+          background-color: $color1;
+          color: $color2;
+        }
+
+        .toast-progress {
+          &::before {
+            background-color: $color1;
+          }
+        }
+      }
+    }
+}

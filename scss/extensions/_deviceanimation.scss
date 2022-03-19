@@ -1,0 +1,201 @@
+// By Zoë Bijl
+// Codepen : https://codepen.io/Moiety/pen/qBjRYJ
+
+.device-animation[role="progressbar"][aria-busy="true"] {
+  position: relative;
+  width: $device-animation-size;
+  height: $device-animation-size;
+
+  > div,
+  &::before,
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: $device-animation-duration cubic-bezier(.55, .3, .24, .99) infinite;
+  }
+
+  &::before,
+  &::after {
+    display: block;
+    content: '';
+  }
+
+  > div,
+  &::before {
+    transform: translate(-50%, -50%);
+  }
+
+  // DEVICE
+  > div {
+    z-index: 10;
+    animation-name: device;
+    width: $device-animation-device-desktop-width;
+    height: $device-animation-device-desktop-height;
+    border-radius: $device-animation-device-border-radius;
+    background-color: $device-animation-device-bg;
+  }
+
+  // SCREEN
+  &::before {
+    z-index: 11;
+    animation-name: screen;
+    width: $device-animation-screen-desktop-width;
+    height: $device-animation-screen-desktop-height;
+    border-radius: $device-animation-screen-border-radius;
+    background-color: $device-animation-screen-bg;
+  }
+
+  // DETAIL
+  &::after {
+    z-index: 12;
+    animation-name: detail;
+    width: $device-animation-detail-desktop-width;
+    height: $device-animation-detail-desktop-height;
+    transform: $device-animation-detail-desktop-transform;
+    border-radius: $device-animation-detail-border-radius;
+    background-color: $device-animation-detail-bg;
+  }
+
+  &.colored {
+    > div {
+      background-color: $device-animation-colored-device-bg;
+    }
+    &::before {
+      background-color: $device-animation-colored-screen-bg;
+    }
+    &::after {
+      background-color: $device-animation-colored-detail-bg;
+    }
+  }
+}
+
+@keyframes device {
+  3%, 97% {
+    // DESKTOP
+    width: $device-animation-device-desktop-width;
+    height: $device-animation-device-desktop-height;
+  } 30%, 36% {
+    // TABLETTE
+    width: $device-animation-device-tablette-width;
+    height: $device-animation-device-tablette-height;
+  } 63%, 69% {
+    // MOBILE
+    width: $device-animation-device-mobile-width;
+    height: $device-animation-device-mobile-height;
+  }
+}
+
+@keyframes screen {
+  3%, 97% {
+    // DESKTOP
+    width: $device-animation-screen-desktop-width;
+    height: $device-animation-screen-desktop-height;
+  } 30%, 36% {
+    // TABLETTE
+    width: $device-animation-screen-tablette-width;
+    height: $device-animation-screen-tablette-height;
+  } 63%, 69% {
+    // MOBILE
+    width: $device-animation-screen-mobile-width;
+    height: $device-animation-screen-mobile-height;
+  }
+}
+
+@keyframes detail {
+  3%, 97% {
+    // DESKTOP
+    width: $device-animation-detail-desktop-width;
+    height: $device-animation-detail-desktop-height;
+    transform: $device-animation-detail-desktop-transform;
+  } 30%, 36% {
+    // TABLETTE
+    width: $device-animation-detail-tablette-width;
+    height: $device-animation-detail-tablette-height;
+    transform: $device-animation-detail-tablette-transform;
+    border-radius: $device-animation-detail-tablette-border-radius;
+  } 63%, 69% {
+    // MOBILE
+    width: $device-animation-detail-mobile-width;
+    height: $device-animation-detail-mobile-height;
+    transform: $device-animation-detail-mobile-transform;
+    border-radius: $device-animation-detail-mobile-border-radius;
+  }
+}
+
+@media screen and (max-width: $breakpoints-value-xs) {
+  .device-animation[role="progressbar"][aria-busy="true"] {
+    width: $device-animation-responsive-size;
+    height: $device-animation-responsive-size;
+
+    // DEVICE
+    > div {
+      width: $device-animation-responsive-device-desktop-width;
+      height: $device-animation-responsive-device-desktop-height;
+    }
+
+    // SCREEN
+    &::before {
+      width: $device-animation-responsive-screen-desktop-width;
+      height: $device-animation-responsive-screen-desktop-height;
+    }
+
+    // DETAIL
+    &::after {
+      width: $device-animation-responsive-detail-desktop-width;
+      height: $device-animation-responsive-detail-desktop-height;
+      transform: $device-animation-responsive-detail-desktop-transform;
+    }
+  }
+
+  @keyframes device {
+    3%, 97% {
+      // DESKTOP
+      width: $device-animation-responsive-device-desktop-width;
+      height: $device-animation-responsive-device-desktop-height;
+    } 30%, 36% {
+      // TABLETTE
+      width: $device-animation-responsive-device-tablette-width;
+      height: $device-animation-responsive-device-tablette-height;
+    } 63%, 69% {
+      // MOBILE
+      width: $device-animation-responsive-device-mobile-width;
+      height: $device-animation-responsive-device-mobile-height;
+    }
+  }
+  
+  @keyframes screen {
+    3%, 97% {
+      // DESKTOP
+      width: $device-animation-responsive-screen-desktop-width;
+      height: $device-animation-responsive-screen-desktop-height;
+    } 30%, 36% {
+      // TABLETTE
+      width: $device-animation-responsive-screen-tablette-width;
+      height: $device-animation-responsive-screen-tablette-height;
+    } 63%, 69% {
+      // MOBILE
+      width: $device-animation-responsive-screen-mobile-width;
+      height: $device-animation-responsive-screen-mobile-height;
+    }
+  }
+  
+  @keyframes detail {
+    3%, 97% {
+      // DESKTOP
+      width: $device-animation-responsive-detail-desktop-width;
+      height: $device-animation-responsive-detail-desktop-height;
+      transform: $device-animation-responsive-detail-desktop-transform;
+    } 30%, 36% {
+      // TABLETTE
+      width: $device-animation-responsive-detail-tablette-width;
+      height: $device-animation-responsive-detail-tablette-height;
+      transform: $device-animation-responsive-detail-tablette-transform;
+    } 63%, 69% {
+      // MOBILE
+      width: $device-animation-responsive-detail-mobile-width;
+      height: $device-animation-responsive-detail-mobile-height;
+      transform: $device-animation-responsive-detail-mobile-transform;
+    }
+  }
+}

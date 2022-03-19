@@ -1,0 +1,32 @@
+// TAB
+$tab-title-color:                       $color-gray-6 !default;
+$tab-color-active:                      $color-primary !default;
+$tab-title-padding:                     0.6rem 1.5rem !default;
+$tab-border-width:                      1px !default;
+$tab-border-color:                      $color-gray-3 !default;
+$tab-margin:                            1rem !default;
+$tab-min-width:                         125px !default;
+$tab-border-radius:                     $border-radius !default;
+
+    // NAV
+    $tab-nav-padding-top:               5px !default;
+    $tab-nav-padding:                   1rem !default;
+    $tab-nav-active-color:              $color-gray-9 !default;
+    // NAV
+
+    // BREAKPOINT
+    $tab-breakpoint:                    $breakpoints-xs !default;
+    $tab-breakpoint-min-width:          75px !default;
+    $tab-breakpoint-title-padding:      0.35rem !default;
+    // BREAKPOINT
+
+    // BOXED
+    $tab-title-boxed-bg:                $color-white !default;
+    $tab-title-boxed-border-color:      $color-gray-3 !default;
+    // BOXED
+
+    // BUTTONS
+    $tab-title-buttons-bg:              $color-primary !default;
+    $tab-title-buttons-color:           $color-white !default;
+    // BUTTONS
+// TAB

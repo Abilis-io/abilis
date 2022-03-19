@@ -1,0 +1,112 @@
+.panel {
+    border-radius: $panel-border-radius;
+    border: $panel-border-width solid $panel-border-color;
+    font-size: $panel-border-font-size;
+
+    .panel-header {
+        background-color: $panel-header-bg;
+        border-radius: calc($panel-border-radius - 1px) calc($panel-border-radius - 1px) 0 0;
+        font-size: $panel-header-font-size;
+        font-weight: $panel-header-font-weight;
+        line-height: $panel-header-line-height;
+        padding: $panel-header-padding;
+    }
+
+    a.panel-item,
+    label.panel-item {
+        cursor: pointer;
+    }
+    
+    .panel-item {
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+        color: $panel-item-color;
+        padding: $panel-item-padding;
+
+        &>.control {
+            flex-grow: 1;
+            flex-shrink: 1;
+            width: 100%;
+        }
+
+        &.active {
+            border-left-color: $panel-item-color-active;
+            color: $panel-item-color-active;
+            
+            .panel-icon {
+                color: $panel-item-color-active;
+            }
+        }
+
+        &:last-child {
+            border-bottom-left-radius: $panel-border-radius;
+            border-bottom-right-radius: $panel-border-radius;
+        }
+    }
+
+    .panel-icon {
+        display: inline-block;
+        font-size: $panel-icon-font-size;
+        height: $panel-icon-size;
+        line-height: $panel-icon-size;
+        text-align: center;
+        vertical-align: top;
+        width: $panel-icon-size;
+        margin-right: $panel-icon-margin-right;
+    }
+
+    .panel-tab {
+        align-items: flex-end;
+        display: flex;
+        font-size: $panel-tab-font-size;
+        justify-content: center;
+
+        a {
+            border-bottom: $panel-border-width solid $panel-border-color;
+            margin-bottom: -1px;
+            padding: $panel-tab-padding;
+
+            &.active {
+                border-bottom-color: $panel-tab-color;
+                color: $panel-tab-color;
+            }
+        }
+    }
+
+    .panel-item:not(:last-child),
+    .panel-tab:not(:last-child) {
+        border-bottom: $panel-border-width solid $panel-border-color;
+    }
+
+    @each $cname, $color1, $color2 in $colors {
+        &.#{$cname} {
+            .panel-header {
+                background-color: $color1;
+                color: $color2;
+            }
+
+            .panel-item {
+                &.active {
+                    border-left-color: $color1;
+                    color: $color1;
+
+                    .panel-icon {
+                        color: $color1;
+                    }
+                }
+            }
+
+            .panel-tab {
+                a {
+                    color: $color1;
+
+                    &.active {
+                        color: $color-gray-9;
+                    }
+                }
+            }
+        }
+    }
+
+}

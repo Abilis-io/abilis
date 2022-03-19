@@ -1,0 +1,28 @@
+$position:
+    absolute,
+    fixed,
+    relative,
+    static,
+    sticky,
+    inherit,
+    initial,
+    unset
+    !default;
+
+$positions:
+    fixed   top,
+    fixed   bottom,
+    fixed   right,
+    fixed   left,
+    sticky  top,
+    sticky  bottom,
+    sticky  right,
+    sticky  left
+    !default;
+
+$positions-breakpoint:
+    'xs' calc($breakpoints-value-xs - 1px),
+    'sm' calc($breakpoints-value-sm - 1px),
+    'md' calc($breakpoints-value-md - 1px),
+    'lg' calc($breakpoints-value-lg - 1px)
+    !default;

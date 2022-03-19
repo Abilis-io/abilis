@@ -1,0 +1,14 @@
+.block {
+    padding-top: $block-padding;
+    padding-bottom: $block-padding;
+
+    @media #{$breakpoints-sm} {
+        padding-top: $block-padding-sm;
+        padding-bottom: $block-padding-sm;
+    }
+
+    @media #{$breakpoints-xs} {
+        padding-top: $block-padding-xs;
+        padding-bottom: $block-padding-xs;
+    }
+}

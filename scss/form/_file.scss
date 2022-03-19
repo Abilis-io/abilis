@@ -1,0 +1,163 @@
+// FILE
+.file {
+    align-items: stretch;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    .file-label,
+    .file-container {
+        align-items: stretch;
+        display: flex;
+        cursor: pointer;
+        justify-content: flex-start;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .file-input {
+        height: $file-width;
+        left: 0;
+        opacity: 0;
+        outline: 0;
+        position: absolute;
+        top: 0;
+        width: $file-width;
+    }
+
+    .file-control,
+    .file-name {
+        -webkit-appearance: none;
+        align-items: center;
+        border: $file-border-width solid $file-border-color;
+        box-shadow: none;
+        display: inline-flex;
+        justify-content: flex-start;
+        line-height: $file-line-height;
+        padding-bottom: $btn-padding-vertical;
+        padding-top: $btn-padding-vertical;
+        padding-left: $file-padding;
+        padding-right: $file-padding;
+        border-radius: $file-border-radius;
+        white-space: nowrap;
+        position: relative;
+        vertical-align: top;
+        background-color: $file-background-color;
+        color: $file-color;
+    }
+
+    .file-icon {
+        align-items: center;
+        display: flex;
+        height: $file-icon-size;
+        justify-content: center;
+        margin-right: $file-icon-margin-right;
+        width: $file-icon-size;
+    }
+
+    .file-name {
+        border-color: $file-name-border-color;
+        display: inline-flex;
+        min-width: 0;
+        background-color: transparent;
+        border-style: solid;
+        border-width: $file-border-width $file-border-width $file-border-width 0;
+        max-width: $file-name-max-width;
+
+        span {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+
+    &.small {
+        font-size: $input-small-font-size;
+
+        .file-name {
+            max-width: $file-name-max-width-small;
+        }
+    }
+
+    &.big {
+        font-size: $input-big-font-size;
+        
+        .file-name {
+            max-width: $file-name-max-width-big;
+        }
+    }
+
+    &.boxed {
+        .file-container {
+            flex-direction: column;
+        }
+
+        .file-control {
+            flex-direction: column;
+            height: auto;
+            padding: $file-control-padding;
+        }
+
+        &.name {
+            .file-name {
+                border-radius: 0 0 $file-border-radius $file-border-radius;
+                border-width: 0 $file-border-width $file-border-width;
+            }
+            .file-control {
+                border-radius: $file-border-radius $file-border-radius 0 0;
+            }
+        }
+            
+    }
+
+    &.full {
+        .file-container {
+            width: $file-width;
+        }
+
+        .file-name {
+            flex-grow: 1;
+            max-width: none;
+        }
+    }
+
+    &.right {
+        .file-name {
+            border-radius: $file-border-radius 0 0 $file-border-radius !important;
+            border-width: $file-border-width 0 $file-border-width $file-border-width;
+            order: -1;
+        }
+
+        .file-control {
+            border-radius: 0 $file-border-radius $file-border-radius 0 !important;
+        }
+    }
+
+    &:not(.boxed).name .file-control {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+
+        @media screen and (max-width: calc($breakpoints-value-xs - 1px)) {
+            max-width: $file-control-max-width;
+        }
+    }
+
+    &.name .file-name {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+    }
+}
+
+@each $cname, $color1, $color2 in $colors {
+    .file .file-control.#{$cname} {
+        border-color: $color1;
+        background-color: rgba($color1, $file-background-color-opacity);
+        color: $color2;
+    }
+}
+// FILE

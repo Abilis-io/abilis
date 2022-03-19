@@ -1,0 +1,49 @@
+$list-padding-inline-start:                 0.35rem !default;
+$list-ul-padding-left:                      30px !default;
+
+// LIST STYLE 1
+$list-style-1-padding:                      .25rem 0 .25rem 3.25rem !default;
+$list-style-1-ul-padding:                   .75rem 0 0 1.5rem !default;
+$list-style-1-li-margin-bottom:             .375rem !default;
+$list-style-1-li-min-height:                2rem !default;
+$list-style-1-li-padding-top:               .5rem !default;
+$list-style-1-small-opacity:                .3 !default;
+
+$list-style-1-before-after-opacity:         0.35 !default;
+$list-style-1-before-after-border-width:    1px !default;
+
+$list-style-1-before-left:                  -2.75rem !default;
+$list-style-1-before-top:                   4px !default;
+$list-style-1-before-height:                calc(2rem - 1px) !default;
+$list-style-1-before-width:                 calc(2rem - 1px) !default;
+$list-style-1-before-border-radius:         50% !default;
+
+$list-style-1-after-left:                   -1.75rem !default;
+$list-style-1-after-top:                    calc(2rem + 11px) !default;
+$list-style-1-after-height:                 calc(100% - 2.5rem) !default;
+// LIST STYLE 1
+
+// LIST STYLE 2
+$list-style-2-width:                        350px !default;
+$list-style-2-padding:                      30px !default;
+$list-style-2-border-radius:                4px !default;
+
+$list-style-2-li-padding:                   10px 0 10px 0 !default;
+$list-style-2-li-border-width:              10px !default;
+$list-style-2-li-padding-right:             4px !default;
+// LIST STYLE 2
+
+// LIST STYLE 3
+$list-style-2-max-width:                    500px !default;
+$list-style-2-margin-left:                  20px !default;
+
+$list-style-2-li-line-height:               32px !default;
+$list-style-2-li-padding-margin-left:       20px !default;
+$list-style-2-li-padding-bottom:            30px !default;
+
+$list-style-2-p-line-height:                20px !default;
+$list-style-2-p-color:                      $color-gray-6 !default;
+
+$list-style-2-before-margin-left:           -70px !default;
+$list-style-2-before-color:                 $color-gray-3 !default;
+// LIST STYLE 3

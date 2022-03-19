@@ -1,0 +1,46 @@
+[hidden],
+.hidden {
+    display: none !important;
+}
+  
+@each $hname, $hid in $hidden {
+    @media (min-width: $hid) {
+        .hidden-#{$hname} {
+            display: none !important;
+        }
+    }
+}
+
+@each $vname, $vis in $visible {
+    @media (max-width: $vis) {
+        .visible-#{$vname} {
+            display: none !important;
+        }
+    }
+}
+  
+.invisible {
+    visibility: hidden !important;
+}
+
+.visible {
+    visibility: visible !important;
+}
+
+@each $display in $displays {
+    .d-#{$display} {
+        display: $display !important;
+    }
+}
+
+@each $oname, $opacity in $opacitys {
+    .#{$oname} {
+        opacity: $opacity !important;
+    }
+}
+
+@each $overflow in $overflows {
+    .overflow-#{$overflow} {
+        overflow: $overflow !important;
+    }
+}

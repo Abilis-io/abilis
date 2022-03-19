@@ -1,0 +1,42 @@
+.container,
+.container-full {
+    overflow-x: hidden;
+    padding-top: $container-padding;
+    padding-bottom: $container-padding;
+
+    @media #{$breakpoints-sm} {
+        padding-top: $container-padding-sm;
+        padding-bottom: $container-padding-sm;
+    }
+
+    @media #{$breakpoints-xs} {
+        padding-top: $container-padding-xs;
+        padding-bottom: $container-padding-xs;
+    }
+}
+
+.container {
+    width: $container-width;
+    max-width: $container-max-width;
+    margin: 0 auto;
+
+    @media #{$breakpoints-sm} {
+        width: $container-width-sm;
+    }
+
+    @media #{$breakpoints-xs} {
+        width: $container-width-xs;
+    }
+}
+
+.container-full {
+    width: 100% !important;
+}
+
+.container-full-height {
+    width: 100vh !important;
+}
+
+.container-center {
+    @include flexCenter;
+}

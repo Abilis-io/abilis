@@ -1,0 +1,254 @@
+// By Zoë Bijl
+// Codepen : https://codepen.io/Moiety/pen/NWOxrr
+
+.container-page {
+  height: 500px;
+}
+
+.page-presentation {
+  position: relative;
+  width: nth($page-window-width, 1);
+  height: nth($page-window-height, 1);
+  background-color: $page-window-background;
+  animation: window forwards $page-animation-duration infinite;
+  overflow: hidden;
+  border-radius: 15px;
+  
+  > * {
+    position: absolute;
+  }
+}
+
+.page-presentation .header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: nth($page-header-height, 1);
+  border-top: nth($page-header-border, 1) solid $page-window-top;
+  background-color: $page-window-bar;
+  animation: header forwards $page-animation-duration infinite;
+}
+
+.page-presentation .article {
+  top: 30px;
+  left: 50%;
+  width: nth($page-content-width, 1);
+  height: nth($page-content-height, 1);
+  box-shadow: 0 2px 4px rgba(100,100,100,.1);
+  background-color: $page-window-content;
+  transform: translateX(-50%);
+  animation: article forwards $page-animation-duration infinite;
+  
+  // medium
+  &::after {
+    position: absolute;
+    top: 100%;
+    margin-top: 15px;
+    width: 100%;
+    height: 100px;
+    background-color: $page-window-content;
+    box-shadow: 0 2px 4px rgba(100,100,100,.1);
+    content: '';
+  }
+}
+
+.page-presentation .button {
+  position: absolute;
+  right: 10px;
+  top: (nth($page-window-height, 1) - 20px * 1.5);
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 100%;
+  box-shadow: inset 0 0 1px rgba(0,0,0,.4), 0 2px 3px rgba(0,0,0,.2);
+  -webkit-appearance: none;
+  background-color: $page-button-color;
+  animation: button forwards $page-animation-duration infinite;
+}
+
+@keyframes window {
+  0%, 15%, 90% {
+    width: nth($page-window-width, 1);
+    height: nth($page-window-height, 1);
+  }
+  
+  30%, 45% {
+    width: nth($page-window-width, 2);
+    height: nth($page-window-height, 2);
+  }
+  
+  60%, 75% {
+    width: nth($page-window-width, 3);
+    height: nth($page-window-height, 3);
+  }
+}
+
+@keyframes header {
+  0%, 15%, 90% {
+    width: 100%;
+    height: nth($page-header-height, 1);
+    border-top-width: nth($page-header-border, 1);
+  }
+  
+  30%, 45% {
+    height: nth($page-header-height, 2);
+    border-top-width: nth($page-header-border, 2);
+  }
+  
+  60%, 75% {
+    height: nth($page-header-height, 3);
+    border-top-width: nth($page-header-border, 3);
+  }
+}
+
+@keyframes article {
+  0%, 15%, 90% {
+    top: $page-window-bar;
+    width: nth($page-content-width, 1);
+    height: nth($page-content-height, 1);
+  }
+  
+  30%, 45% {
+    top: 35px;
+    width: nth($page-content-width, 2);
+    height: nth($page-content-height, 2);
+  }
+  
+  60%, 75% {
+    top: 35px;
+    width: nth($page-content-width, 3);
+    height: nth($page-content-height, 3);
+  }
+}
+
+@keyframes button {
+  0%, 15%, 90% {
+    right: 10px;
+    top: (nth($page-window-height, 1) - 20px * 1.5);
+    width: nth($page-button-size, 1);
+    height: nth($page-button-size, 1);
+  }
+  
+  30%, 45% {
+    right: 20px;
+    top: (nth($page-header-height, 2) - 26px * .5);
+    width: nth($page-button-size, 2);
+    height: nth($page-button-size, 2);
+  }
+  
+  60%, 75% {
+    right: 25px;
+    top: (nth($page-header-height, 3) - 26px * .5);
+    width: nth($page-button-size, 3);
+    height: nth($page-button-size, 3);
+  }
+}
+
+@media screen and (max-width: $breakpoints-value-xs) {
+
+  .page-presentation {
+    width: nth($page-window-width-small, 1);
+    height: nth($page-window-height-small, 1);
+  }
+  
+  .page-presentation .header {
+    height: nth($page-header-height-small, 1);
+    border-top: nth($page-header-border-small, 1) solid $page-window-top;
+  }
+  
+  .page-presentation .article {
+    top: 25px;
+    width: nth($page-content-width-small, 1);
+    height: nth($page-content-height-small, 1);
+  }
+  
+  .page-presentation .button {
+    width: 16px;
+    height: 16px;
+    top: (nth($page-window-height-small, 1) - 15px * 1.5);
+  }
+  
+  @keyframes window {
+    0%, 15%, 90% {
+      width: nth($page-window-width-small, 1);
+      height: nth($page-window-height-small, 1);
+    }
+    
+    30%, 45% {
+      width: nth($page-window-width-small, 2);
+      height: nth($page-window-height-small, 2);
+    }
+    
+    60%, 75% {
+      width: nth($page-window-width-small, 3);
+      height: nth($page-window-height-small, 3);
+    }
+  }
+  
+  @keyframes header {
+    0%, 15%, 90% {
+      width: 100%;
+      height: nth($page-header-height-small, 1);
+      border-top-width: nth($page-header-border-small, 1);
+    }
+    
+    30%, 45% {
+      height: nth($page-header-height-small, 2);
+      border-top-width: nth($page-header-border-small, 2);
+    }
+    
+    60%, 75% {
+      height: nth($page-header-height-small, 3);
+      border-top-width: nth($page-header-border-small, 3);
+    }
+  }
+  
+  @keyframes article {
+    0%, 15%, 90% {
+      width: nth($page-content-width-small, 1);
+      height: nth($page-content-height-small, 1);
+    }
+    
+    30%, 45% {
+      top: 25px;
+      width: nth($page-content-width-small, 2);
+      height: nth($page-content-height-small, 2);
+    }
+    
+    60%, 75% {
+      top: 30px;
+      width: nth($page-content-width-small, 3);
+      height: nth($page-content-height-small, 3);
+    }
+  }
+  
+  @keyframes button {
+    0%, 15%, 90% {
+      right: 10px;
+      top: (nth($page-window-height-small, 1) - 15px * 1.5);
+      width: nth($page-button-size-small, 1);
+      height: nth($page-button-size-small, 1);
+    }
+    
+    30%, 45% {
+      right: 4px;
+      top: (nth($page-header-height-small, 2) - 16px * .5);
+      width: nth($page-button-size-small, 2);
+      height: nth($page-button-size-small, 2);
+    }
+    
+    60%, 75% {
+      right: 11px;
+      top: (nth($page-header-height-small, 3) - 16px * .5);
+      width: nth($page-button-size-small, 3);
+      height: nth($page-button-size-small, 3);
+    }
+  }
+
+  .container-page {
+    height: 300px;
+  }
+
+}

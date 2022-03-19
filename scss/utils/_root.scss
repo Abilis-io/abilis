@@ -1,0 +1,21 @@
+:root {
+  
+  // COLORS
+  @each $cname, $color in $colors {
+    --#{$prefix}#{$cname}: #{$color};
+  }
+  // COLORS
+
+  // FONTS
+  --#{$prefix}font-family: #{inspect($font-family-base)};
+  --#{$prefix}font-weight: #{$font-weight-base};
+  --#{$prefix}font-size: #{$font-size-base};
+  // FONTS
+
+  // BODY
+  --#{$prefix}body-line-height: #{$line-height-base};
+  --#{$prefix}body-color: #{$body-color};
+  --#{$prefix}body-bg: #{$body-bg};
+  // BODY
+    
+}

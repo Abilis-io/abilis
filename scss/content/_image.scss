@@ -1,0 +1,19 @@
+.img-resp,
+.img-thumb {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-thumb {
+    padding: $img-thumb-padding;
+    box-shadow: $box-shadow;
+    border-radius: $img-thumb-radius;
+}
+
+.img-cover {
+    object-fit: cover;
+}
+
+.img-contain {
+    object-fit: contain;
+}

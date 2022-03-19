@@ -1,0 +1,73 @@
+$align-items:
+    center,
+    baseline,
+    flex-start,
+    flex-end,
+    stretch,
+    inherit,
+    initial,
+    unset
+    !default;
+
+$align-content:
+    center,
+    baseline,
+    flex-start,
+    flex-end,
+    space-around,
+    space-between,
+    space-evenly,
+    start,
+    end,
+    stretch,
+    unset
+    !default;
+
+$align-self:
+    auto,
+    flex-start,
+    flex-end,
+    center,
+    baseline,
+    stretch,
+    unset
+    !default;
+
+$flex-grow: 0, 1, 2, 3, 4, 5 !default;
+
+$justify-content:
+    center,
+    baseline,
+    flex-start,
+    flex-end,
+    start,
+    end,
+    right,
+    left,
+    space-around,
+    space-between,
+    space-evenly,
+    stretch,
+    inherit,
+    initial,
+    unset
+    !default;
+
+$flex-direction:
+    row,
+    row-reverse,
+    column,
+    column-reverse,
+    inherit,
+    initial,
+    unset
+    !default;
+
+$flex-wrap:
+    nowrap,
+    wrap,
+    wrap-reverse,
+    inherit,
+    initial,
+    unset
+    !default;

@@ -1,0 +1,154 @@
+ul, ol {
+    padding-left: $list-ul-padding-left;
+}
+
+li {
+    padding-inline-start: $list-padding-inline-start;
+  
+    &.pin::marker {
+        content: "📌";
+    }
+    &.check-1::marker {
+        content: "✅";
+    }
+    &.close-1::marker {
+        content: "❎";
+    }
+    &.check-2::marker {
+        content: "✔";
+    }
+    &.close-2::marker {
+        content: "❌";
+    }
+    &.good::marker {
+        content: "👍";
+    }
+    &.fire::marker {
+      content: "🔥";
+    }
+    &.ghost::marker {
+      content: "👻";
+    }
+    &.idea::marker {
+      content: "💡";
+    }
+    &.star::marker {
+      content: "⭐";
+    }
+    &.circle-black::marker {
+      content: "⚫";
+    }
+    &.circle-white::marker {
+      content: "⚪";
+    }
+    &.square-black::marker {
+        content: "◾";
+    }
+    &.square-white::marker {
+        content: "◽";
+    }
+    &.exclamation::marker {
+        content: "❗";
+    }
+    &.interrogation::marker {
+        content: "❓";
+    }
+    &.exclamation-white::marker {
+        content: "❕";
+    }
+    &.interrogation-white::marker {
+        content: "❔";
+    }
+}
+
+.list-style-1 {
+    counter-reset: li;
+	padding: $list-style-1-padding;
+
+	small {
+        opacity: $list-style-1-small-opacity;
+    }
+
+	ol, ul {
+        padding: $list-style-1-ul-padding;
+    }
+    
+	li {
+        margin-bottom: $list-style-1-li-margin-bottom;
+    }
+
+	> li {
+        position: relative;
+		counter-increment: li;
+		min-height: $list-style-1-li-min-height;
+		padding-top: $list-style-1-li-padding-top;
+		list-style: none;
+
+		&::before, &::after {
+            position: absolute;
+			display: flex;
+			opacity: $list-style-1-before-after-opacity;
+        }
+			
+
+		&::before {
+            content: counter(li);
+			left: $list-style-1-before-left;
+			top: $list-style-1-before-top;
+			height: $list-style-1-before-height;
+			width: $list-style-1-before-width;
+			align-items: center;
+			justify-content: center;
+			border-radius: $list-style-1-before-border-radius;
+			border: $list-style-1-before-after-border-width solid currentcolor;
+        }
+
+		&::after {
+            content: '';
+			left: $list-style-1-after-left;
+			top: $list-style-1-after-top;
+			height: $list-style-1-after-height;
+			border-left: $list-style-1-before-after-border-width solid currentcolor;
+        }
+    }	
+}
+
+ol.list-style-2 {
+    counter-reset: item;
+    list-style-type: none;
+    max-width: $list-style-2-max-width;
+    text-align: justify;
+    margin-left: $list-style-2-margin-left;
+    
+    li { 
+        display: block;
+        line-height: $list-style-2-li-line-height;
+        position: relative;
+        text-indent: 0 !important;
+        padding-left: $list-style-2-li-padding-margin-left !important;
+        list-style-position: outside;
+        margin-left: $list-style-2-li-padding-margin-left;
+        list-style-type: number;
+        text-indent: 0 !important;
+        padding-left: $list-style-2-li-padding-margin-left !important;
+        list-style-position: outside;
+        margin-left: $list-style-2-li-padding-margin-left;
+        padding-bottom: $list-style-2-li-padding-bottom;
+
+        p{
+            line-height: $list-style-2-p-line-height;
+            color: $list-style-2-p-color;
+        }
+
+        &:before { 
+            content: counter(item)"."; 
+            counter-increment: item; 
+        }
+
+        &:before{
+            position: absolute;
+            margin-left: $list-style-2-before-margin-left;
+            color: $list-style-2-before-color;
+        }
+    }
+}

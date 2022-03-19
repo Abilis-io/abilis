@@ -1,0 +1,62 @@
+.box-container {
+    padding: $box-post-padding;
+
+    .button {
+        display: flex;
+    }
+}
+
+.box {
+    background-color: $box-bg;
+    border-radius: $box-border-radius;
+    box-shadow: $box-box-shadow;
+    display: block;
+    margin: $box-margin;
+
+    .box-body {
+        align-items: flex-start;
+        display: flex;
+        text-align: inherit;
+        padding: $box-post-padding;
+    }
+    
+    .box-left {
+        margin-right: $box-post-padding;
+    }
+
+    .box-right {
+        margin-left: $box-post-padding;
+    }
+    
+    .box-left, .post-right {
+        flex-basis: auto;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    
+    .box-content {
+        flex-basis: auto;
+        flex-grow: 1;
+        flex-shrink: 1;
+        text-align: inherit;
+    }
+    
+    .box-header {
+        border-bottom: $box-post-header-footer-border;
+        padding: $box-post-header-footer-padding;
+        border-top-left-radius: $box-border-radius;
+        border-top-right-radius: $box-border-radius;
+    }
+    
+    .box-footer {
+        border-top: $box-post-header-footer-border;
+        padding: $box-post-header-footer-padding;
+        border-bottom-left-radius: $box-border-radius;
+        border-bottom-right-radius: $box-border-radius;
+    }
+    
+    .box-profile-pic {
+        height: $box-profile-pic;
+        width: $box-profile-pic;
+    }
+}

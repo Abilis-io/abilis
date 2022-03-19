@@ -1,0 +1,101 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: $card-bg;
+    background-clip: border-box;
+    border: $card-border-width solid $card-border-color;
+    border-radius: $card-border-radius;
+    transition: $card-transition;
+
+    &.card-shadow {
+        border: unset;
+        box-shadow: $card-shadow;
+    }
+
+    &.hovered-shadow:hover {
+        border-color: transparent;
+        box-shadow: $card-shadow;
+    }
+
+    &.hovered:hover {
+        border: $card-active-border-width solid $card-active-border-color;
+
+        &.card-shadow {
+            border: unset;
+            box-shadow: $card-active-shadow;
+        }
+    }
+
+    .card-header {
+        line-height: $card-header-line-height;
+        padding: $card-header-footer-padding;
+        margin-bottom: 0;
+        background-color: $card-header-bg;
+        border-bottom: $card-header-border-width solid $card-header-border-color;
+        border-radius: calc($card-border-radius - 1px) calc($card-border-radius - 1px) 0 0;
+    }
+
+    .card-footer {
+        line-height: $card-header-line-height;
+        padding: $card-header-footer-padding;
+        background-color: $card-header-bg;
+        border-top: $card-header-border-width solid $card-header-border-color;
+        border-radius: 0 0 calc($card-border-radius - 1px) calc($card-border-radius - 1px);   
+    }
+
+    .card-body {
+        flex: 1 1 auto;
+        padding: $card-body-padding;
+    }
+
+    .card-img {
+        border-radius: calc($card-border-radius - 1px);
+    }
+
+    .card-img-top {
+        border-top-left-radius: calc($card-border-radius - 1px);
+        border-top-right-radius: calc($card-border-radius - 1px);
+    }
+
+    .card-img-bottom {
+        border-bottom-right-radius: calc($card-border-radius - 1px);
+        border-bottom-left-radius: calc($card-border-radius - 1px);
+    }
+
+    .card-img-right {
+        border-top-right-radius: calc($card-border-radius - 1px);
+        border-bottom-right-radius: calc($card-border-radius - 1px);
+    }
+
+    .card-img-left {
+        border-top-left-radius: calc($card-border-radius - 1px);
+        border-bottom-left-radius: calc($card-border-radius - 1px);
+    }
+
+    .card-img, .card-img-bottom, .card-img-top {
+        width: 100%;
+    }
+
+    .card-img-body {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: $card-body-padding;
+        border-radius: calc($card-border-radius - 1px);
+    }
+}
+
+@each $cname, $color1, $color2 in $colors {
+    .card.#{$cname} {
+        .card-header, .card-footer {
+            background-color: $color1;
+            border-color: $color1;
+            color: $color2;
+        }
+    }
+}

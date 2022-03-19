@@ -1,0 +1,28 @@
+// FILE
+$file-width:                                                            $input-width !default;
+$file-border-width:                                                     $input-border-width !default;
+$file-border-color:                                                     $input-border-color !default;
+$file-line-height:                                                      1.5 !default;
+$file-padding:                                                          1rem !default;
+$file-border-radius:                                                    $border-radius !default;
+$file-background-color:                                                 $color-gray-1 !default;
+$file-background-color-opacity:                                         70% !default;
+$file-color:                                                            $color-gray-9 !default;
+
+    // ICON
+    $file-icon-size:                                                    1rem !default;
+    $file-icon-margin-right:                                            0.5rem !default;
+    // ICON
+
+    // NAME
+    $file-name-border-color:                                            $input-border-color !default;
+    $file-name-max-width-small:                                         13rem !default;
+    $file-name-max-width:                                               16rem !default;
+    $file-name-max-width-big:                                           20rem !default;
+    // NAME
+
+    // CONTROL
+    $file-control-padding:                                              1rem 3rem !default;
+    $file-control-max-width:                                            3.1rem !default;
+    // CONTROL
+// FILE

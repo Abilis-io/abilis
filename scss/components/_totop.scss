@@ -1,0 +1,41 @@
+#to-top {
+    display: inline-block;
+    background-color: $totop-background-color;
+    width: $totop-size;
+    height: $totop-size;
+    text-align: center;
+    border-radius: $totop-border-radius;
+    position: fixed;
+    bottom: $totop-margin;
+    right: $totop-margin;
+    transition: $totop-transition;
+    opacity: 0;
+    visibility: hidden;
+    z-index: $totop-zindex;
+}
+#to-top::after {
+    content: "";
+    background-image: url(svg-encode($totop-icon));
+    flex-shrink: 0;
+    width: 25px;
+    height: 17.5px;
+    top: 15px;
+    left: 10px;
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+#to-top:hover {
+    cursor: pointer;
+    opacity: $totop-hover-opacity;
+    transform: translateY($totop-hover-tranform-translate);
+}
+#to-top:active {
+    opacity: $totop-active-opacity;
+}
+#to-top.show {
+    opacity: $totop-opacity;
+    visibility: visible;
+}

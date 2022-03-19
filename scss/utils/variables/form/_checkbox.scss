@@ -1,0 +1,22 @@
+// CHECKBOX
+$checkbox-size:                         1.1rem !default;
+$checkbox-margin-top:                   0.1em !default;
+$checkbox-border-width:                 1px !default;
+$checkbox-border-color:                 $color-primary !default;
+$checkbox-border-radius:                5px !default;
+$checkbox-checked-background-color:     $color-primary !default;
+$checkbox-box-shadow:                   $input-box-shadow !default;
+$checkbox-box-shadow-color:             $color-primary !default;
+$checkbox-box-shadow-opacity:           $input-box-shadow-opacity !default;
+$checkbox-disabled-border-color:        $color-gray-6 !default;
+$checkbox-disabled-color:               $color-gray-5 !default;
+// CHECKBOX
+
+// RADIO
+$radio-margin-left:                     0.5rem !default;
+$radio-checked-background-color:        $checkbox-checked-background-color !default;
+$radio-border-width:                    3px !default;
+$radio-border-radius:                   50% !default;
+$radio-outline-width:                   1px !default;
+$radio-checked-border-color:            $color-white !default;
+// RADIO

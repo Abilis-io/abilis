@@ -1,0 +1,75 @@
+// COLORS
+
+    // COLORS GRAY
+    $color-white:                   #fff !default;
+    $color-gray-1:                  #F6F6F6 !default;
+    $color-gray-2:                  #eaeaea !default;
+    $color-gray-3:                  #dee2e6 !default;
+    $color-gray-4:                  #ced4da !default;
+    $color-gray-5:                  #adb5bd !default;
+    $color-gray-6:                  #6c757d !default;
+    $color-gray-7:                  #495057 !default;
+    $color-gray-8:                  #343a40 !default;
+    $color-gray-9:                  #202428 !default;
+    $color-black:                   #000 !default;
+    // COLORS GRAY
+
+    // COLORS COLORED
+    $color-primary:                 #3DCBFA !default;
+    $color-primary-2:               #2ca6f8 !default;
+    $color-primary-3:               #1B81F5 !default;
+    $color-secondary:               #166ACA !default;
+    $color-tertiary:                #410AFF !default;
+    $color-info:                    #03d1b2 !default;
+    $color-success:                 #49c674 !default;
+    $color-warning:                 #fedd57 !default;
+    $color-danger:                  #ff3860 !default;
+    // COLORS COLORED
+    
+    // COLORS COLORED LIGHT
+    $color-primary-light:           #EBFAFE !default;
+    $color-primary-2-light:         #D7EEFE !default;
+    $color-primary-3-light:         #C4DFFD !default;
+    $color-secondary-light:         #C8DDF9 !default;
+    $color-tertiary-light:          #EFEBFF !default;
+    $color-info-light:              #EBFFFC !default;
+    $color-success-light:           #EFFAF3 !default;
+    $color-warning-light:           #FFFBEB !default;
+    $color-danger-light:            #FFEBEF !default;
+    // COLORS COLORED LIGHT
+
+    // COLORS LIST
+    $colors:
+                                    "white"            $color-white             $color-black,
+                                    "gray-1"           $color-gray-1            $color-black,
+                                    "gray-2"           $color-gray-2            $color-black,
+                                    "gray-3"           $color-gray-3            $color-black,
+                                    "gray-4"           $color-gray-4            $color-black,
+                                    "gray-5"           $color-gray-5            $color-white,
+                                    "gray-6"           $color-gray-6            $color-white,
+                                    "gray-7"           $color-gray-7            $color-white,
+                                    "gray-8"           $color-gray-8            $color-white,
+                                    "gray-9"           $color-gray-9            $color-white,
+                                    "black"            $color-black             $color-white,
+                                    "primary"          $color-primary           $color-white,
+                                    "primary-2"        $color-primary-2         $color-white,
+                                    "primary-3"        $color-primary-3         $color-white,
+                                    "secondary"        $color-secondary         $color-white,
+                                    "tertiary"         $color-tertiary          $color-white,
+                                    "info"             $color-info              $color-white,
+                                    "success"          $color-success           $color-white,
+                                    "warning"          $color-warning           $color-white,
+                                    "danger"           $color-danger            $color-white,
+                                    "primary-light"    $color-primary-light     $color-primary,
+                                    "primary-2-light"  $color-primary-2-light   $color-primary-2,
+                                    "primary-3-light"  $color-primary-3-light   $color-primary-3,
+                                    "secondary-light"  $color-secondary-light   $color-secondary,
+                                    "tertiary-light"   $color-tertiary-light    $color-tertiary,
+                                    "info-light"       $color-info-light        $color-info,
+                                    "success-light"    $color-success-light     $color-success,
+                                    "warning-light"    $color-warning-light     $color-warning,
+                                    "danger-light"     $color-danger-light      $color-danger,
+                                    !default;
+    // COLORS LIST
+
+// COLORS

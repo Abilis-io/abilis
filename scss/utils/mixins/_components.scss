@@ -1,0 +1,52 @@
+@mixin btnStyle($color1, $color2) {
+  background-color: $color1 !important;
+  border-color: $color1 !important;
+  color: $color2 !important;
+}
+
+@mixin btnOutlineStyle($color) {
+  border-color: $color !important;
+  color: $color !important;
+}
+
+@mixin btnOutlineHover($bg, $color) {
+  background-color: $bg !important;
+  color: $color !important;
+}
+
+@mixin btnSize($p1, $p2, $f, $br) {
+  padding: $p1 $p2;
+  font-size: $f;
+  border-radius: $br;
+}
+
+@mixin radiusRight($br) {
+  border-top-right-radius: $br;
+  border-bottom-right-radius: $br;
+}
+
+@mixin radiusLeft($br) {
+  border-top-left-radius: $br;
+  border-bottom-left-radius: $br;
+}
+
+@mixin radiusBottom($br) {
+  border-bottom-left-radius: $br;
+  border-bottom-right-radius: $br;
+}
+
+@mixin radiusTop($br) {
+  border-top-left-radius: $br;
+  border-top-right-radius: $br;
+}
+
+@mixin tagSize($font-size, $height, $padding) {
+  font-size: $font-size !important;
+  height: $height;
+  padding-right: $padding !important;
+  padding-left: $padding !important;
+}
+
+@mixin arrowIcon($color) {
+  background-image: url(svg-encode("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'><path d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='#{$color}' stroke='#{$color}' stroke-miterlimit='10' fill-rule='evenodd'/></svg>"));
+}

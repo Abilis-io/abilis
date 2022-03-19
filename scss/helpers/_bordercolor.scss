@@ -1,0 +1,49 @@
+@each $bname, $border-color in $colors {
+    .bc-#{$bname} {
+        border-color: $border-color !important;
+    }
+    .bc-t-#{$bname} {
+        border-top-color: $border-color !important;
+    }
+    .bc-b-#{$bname} {
+        border-bottom-color: $border-color !important;
+    }
+    .bc-r-#{$bname} {
+        border-right-color: $border-color !important;
+    }
+    .bc-l-#{$bname} {
+        border-left-color: $border-color !important;
+    }
+}
+
+.bc-none {
+    border-color: none !important;
+}
+.bc-t-none {
+    border-top-color: none !important;
+}
+.bc-b-none {
+    border-bottom-color: none !important;
+}
+.bc-r-none {
+    border-right-color: none !important;
+}
+.bc-l-none {
+    border-left-color: none !important;
+}
+
+.bc-unset {
+    border-color: unset !important;
+}
+.bc-t-unset {
+    border-top-color: unset !important;
+}
+.bc-b-unset {
+    border-bottom-color: unset !important;
+}
+.bc-r-unset {
+    border-right-color: unset !important;
+}
+.bc-l-unset {
+    border-left-color: unset !important;
+}

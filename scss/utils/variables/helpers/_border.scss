@@ -1,0 +1,70 @@
+// BORDER RADIUS
+$border-radius-small:       6px !default;
+$border-radius:             8px !default;
+$border-radius-big:         10px !default;
+$border-radius-round:       9999px !default;
+
+$radius:
+                            "0"     0px,
+                            "1"     1px,
+                            "2"     2px,
+                            "3"     3px,
+                            "4"     4px,
+                            "5"     5px,
+                            "6"     6px,
+                            "7"     7px,
+                            "8"     8px,
+                            "9"     9px,
+                            "10"    10px,
+                            "15"    15px,
+                            "20"    20px,
+                            "25"    25px,
+                            "30"    30px,
+                            "35"    35px,
+                            "40"    40px,
+                            "50"    50px,
+                            "60"    60px,
+                            "70"    70px,
+                            "80"    80px,
+                            "90"    90px,
+                            "100"   100px,
+                            "none"  none,
+                            "unset" unset
+                            !default;
+// BORDER RADIUS
+
+// BORDER WIDTH
+$border-width:              1px !default;
+$border-widths:
+                            "1"     1px,
+                            "2"     2px,
+                            "3"     3px,
+                            "4"     4px,
+                            "5"     5px,
+                            "6"     6px,
+                            "7"     7px,
+                            "8"     8px,
+                            "9"     9px,
+                            "10"    10px,
+                            "none"  none,
+                            "unset" unset
+                            !default;
+$border-color:              $color-gray-3 !default;
+// BORDER WIDTH
+
+// BORDER STYLE
+$border-styles:             dashed,
+                            dotted,
+                            double,
+                            groove,
+                            hidden,
+                            inherit,
+                            initial,
+                            inset,
+                            none,
+                            outset,
+                            ridge,
+                            solid,
+                            unset
+                            !default;
+// BORDER STYLE

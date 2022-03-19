@@ -1,0 +1,44 @@
+// FONT SIZE
+$font-size-xxl:             clamp(2.8rem, -0.875rem + 8.333333vw, 3.2rem) !default;
+$font-size-xl:              clamp(2.5rem, -0.875rem + 8.333333vw, 2.8rem) !default;
+$font-size-l:               clamp(2.2rem, -0.875rem + 8.333333vw, 2.5rem) !default;
+$font-size-md:              clamp(1.8rem, -0.875rem + 8.333333vw, 2.2rem) !default;
+$font-size-sm:              clamp(1.5rem, -0.875rem + 8.333333vw, 1.8rem) !default;
+$font-size-s:               clamp(1.2rem, -0.875rem + 8.333333vw, 1.5rem) !default;
+$font-size-xs:              clamp(0.9rem, -0.875rem + 8.333333vw, 1.1rem) !default;
+$font-size-xxs:             clamp(0.87rem, -0.875rem + 8.333333vw, 0.95rem) !default;
+$font-size-xxxs:            clamp(0.7rem, -0.875rem + 8.333333vw, 0.85rem) !default;
+// FONT SIZE
+
+// FONT SIZES
+$font-sizes:
+                            'xl' $font-size-s,
+                            'md' $font-size-xs,
+                            'sm' $font-size-xxs,
+                            'xs' $font-size-xxxs
+                            !default;
+// FONT SIZES
+
+// LINE HEIGHT
+$line-height-base:          1.5 !default;
+// LINE HEIGHT
+
+// FONT
+    // FONT SIZE
+    $font-size-base:        $font-size-xs !default;
+    // FONT SIZE
+
+    // FONT WEIGHT
+    $font-weight:           100, 200, 300, 400, 500, 600, 700, 800, 900 !default;
+    $font-weight-base:      400 !default;
+    // FONT WEIGHT
+
+    // FONT FAMILY
+    $font-family-base:      'Nunito', sans-serif !default;
+    // FONT FAMILY
+// FONT
+
+// TEXT
+$text-muted-color:          $color-gray-5 !default;
+$text-muted-opacity:        0.6 !default;
+// TEXT

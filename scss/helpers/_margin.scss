@@ -1,0 +1,27 @@
+/* margin */
+@each $margin, $size in $margins {
+    .m-#{$margin} {
+        margin: $size !important;
+    }
+    .mx-#{$margin} {
+        margin-right: $size !important;
+        margin-left: $size !important;
+    }
+    .my-#{$margin} {
+        margin-top: $size !important;
+        margin-bottom: $size !important;
+    }
+    .mr-#{$margin} {
+        margin-right: $size !important;
+    }
+    .ml-#{$margin} {
+        margin-left: $size !important;
+    }
+    .mt-#{$margin} {
+        margin-top: $size !important;
+    }
+    .mb-#{$margin} {
+        margin-bottom: $size !important;
+    }
+}
+/* margin */

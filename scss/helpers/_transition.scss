@@ -1,0 +1,23 @@
+@each $tname, $transition-duration in $transitions-duration {
+    .transition-#{$tname} {
+        transition: $transition-duration !important;
+    }
+    .transition-duration-#{$tname} {
+        transition-duration: $transition-duration !important;
+    }
+    .transition-delay-#{$tname} {
+        transition-delay: $transition-duration !important;
+    }
+}
+
+@each $transition-property in $transitions-property {
+    .transition-#{$transition-property} {
+        transition-property: $transition-property !important;
+    }
+}
+
+@each $transition-timing in $transitions-timing {
+    .transition-#{$transition-timing} {
+        transition-timing-function: $transition-timing !important;
+    }
+}

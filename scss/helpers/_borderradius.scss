@@ -1,0 +1,27 @@
+/* border-radius */
+@each $rname, $val in $radius {
+    .br-#{$rname} {
+        border-radius: $val !important;
+    }
+    .br-tl-#{$rname} {
+        border-top-left-radius: $val !important;
+    }
+    .br-tr-#{$rname} {
+        border-top-right-radius: $val !important;
+    }
+    .br-bl-#{$rname} {
+        border-bottom-left-radius: $val !important;
+    }
+    .br-br-#{$rname} {
+        border-bottom-right-radius: $val !important;
+    }
+}
+
+.round {
+    border-radius: $border-radius-round !important;
+}
+
+.angle {
+    border-radius: 0 !important;
+}
+/* border-radius */

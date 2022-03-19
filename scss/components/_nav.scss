@@ -1,0 +1,28 @@
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    
+    li {
+        padding-inline-start: 0;
+    }
+
+    .nav-link {
+        display: block;
+        padding: $nav-link-padding;
+        color: $nav-link-color;
+        text-decoration: none;
+
+        &.active {
+            font-weight: bold;
+        }
+
+        &.disabled {
+            color: $color-disabled;
+            pointer-events: none;
+            cursor: default;
+        }
+    }
+}

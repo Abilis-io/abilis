@@ -1,0 +1,17 @@
+.label {
+    color: $label-color;
+    display: block;
+    font-weight: $label-font-weight;
+
+    &:not(:last-child) {
+        margin-bottom: $label-margin-bottom;
+    }
+
+    &.small {
+        font-size: $label-font-size-small;
+    }
+
+    &.big {
+        font-size: $label-font-size-big;
+    }
+}

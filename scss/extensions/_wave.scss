@@ -1,0 +1,21 @@
+.background-wave {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+}
+
+@each $wname, $wave in $waves-1 {
+    .background-wave-1-#{$wname} {
+        @extend .background-wave;
+    
+        @if $wave-1-gradient != null {
+            background-image: $wave-1-gradient, $wave;
+        } @else {
+            background-image: $wave;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+// TEXTAREA
+.textarea {
+    @extend .input;
+
+    display: block;
+    max-width: $input-width;
+    resize: vertical;
+
+    &[rows] {
+        height: initial;
+    }
+
+    &:not([rows]) {
+        max-height: $textarea-max-height;
+        min-height: $textarea-min-height;
+    
+        &.small {
+            max-height: $textarea-max-height-small;
+            min-height: $textarea-min-height-small;
+        }
+    
+        &.big {
+            max-height: $textarea-max-height-big;
+            min-height: $textarea-min-height-big;
+        }
+    }
+
+    &.big {
+        @include inputSize ($input-big-font-size, $input-height-big, $btn-big-padding-vertical);
+    }
+    
+    &.small {
+        @include inputSize ($input-small-font-size, $input-height-small, $btn-small-padding-vertical);
+    }
+}
+// TEXTAREA

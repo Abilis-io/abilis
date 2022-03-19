@@ -1,0 +1,24 @@
+// PREFIX
+$prefix: ab-;
+// PREFIX
+
+// TRANSITION
+$transition: all 0.2s linear !default;
+// TRANSITION
+
+@import 'color.scss';
+@import 'animation.scss';
+@import 'breakpoint.scss';
+@import 'body.scss';
+@import 'border.scss';
+@import 'container.scss';
+@import 'block.scss';
+@import 'visibility.scss';
+@import 'flex.scss';
+@import 'margin.scss';
+@import 'size.scss';
+@import 'shadow.scss';
+@import 'position.scss';
+@import 'float.scss';
+@import 'transition.scss';
+@import 'others.scss';

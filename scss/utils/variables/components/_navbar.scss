@@ -1,0 +1,101 @@
+// BREAKPOINT
+$navbar-breakpoint:                                         $breakpoints-value-md !default;
+// BREAKPOINT
+
+// TRANSITION
+$navbar-transition:                                         all .8s ease-in-out !default;
+// TRANSITION
+
+// STICKY TRANSPARENT
+$navbar-min-height:                                         70px !default;
+$navbar-transparent-sticky-padding:                         20px !default;
+$navbar-transparent-sticky-transition:                      0.4s !default;
+// STICKY TRANSPARENT
+
+// BRAND
+$navbar-brand-padding:                                      1rem !default;
+// BRAND
+
+// ITEM
+$navbar-item-padding:                                       0.5rem 0.75rem !default;
+$navbar-item-line-height:                                   $line-height-base !default;
+$navbar-item-btn-margin-right:                              0.5rem !default;
+// ITEM
+
+// LOGO
+$navbar-item-logo-max-height:                               2.5rem !default;
+$navbar-logo-font-weight:                                   800 !default;
+$navbar-logo-font-size:                                     $font-size-s !default;
+// LOGO
+
+// DROPDOWN
+$navbar-dropdown-transition:                                $navbar-transition !default;
+
+$navbar-dropdown-icon-color:                                $nav-link-color !default;
+$navbar-dropdown-icon-transform:                            $drop-btn-after-transform !default;
+$navbar-dropdown-icon-right:                                1rem !default;
+$navbar-dropdown-font-size:                                 $font-size-base;
+
+$navbar-dropdown-item-padding:                               1.5rem !default;
+
+$navbar-dropdown-divider-height:                            $drop-divider-height !default;
+$navbar-dropdown-divider-margin:                            $drop-divider-margin !default;
+// DROPDOWN
+
+// TOGGLE BTN
+$navbar-toggle-width:                                       22px !default;
+$navbar-toggle-height:                                      16px !default;
+$navbar-toggle-margin:                                      10px !default;
+$navbar-toggle-right:                                       1rem !default;
+
+$navbar-toggle-span-height:                                 2.8px !default;
+$navbar-toggle-span-color:                                  $color-gray-9 !default;
+$navbar-toggle-border-radius:                               $border-radius !default;
+$navbar-toggle-child-1-top:                                 0px !default;
+$navbar-toggle-child-2-top:                                 7px !default;
+$navbar-toggle-child-3-top:                                 14px !default;
+
+$navbar-toggle-1-span-child-2-left:                         -60px !default;
+
+$navbar-toggle-2-span-child-1-left:                         1.5px !default;
+$navbar-toggle-2-span-child-1-top:                          4px !default;
+$navbar-toggle-2-span-child-2-left:                         calc(50% - $navbar-toggle-2-span-child-1-left) !default;
+$navbar-toggle-2-span-child-2-top:                          $navbar-toggle-2-span-child-1-top !default;
+$navbar-toggle-2-span-child-3-left:                         -50% !default;
+$navbar-toggle-2-span-child-4-left:                         100% !default;
+$navbar-toggle-2-span-child-5-left:                         $navbar-toggle-2-span-child-1-left !default;
+$navbar-toggle-2-span-child-5-top:                          11.5px !default;
+$navbar-toggle-2-span-child-6-left:                         calc(50% - $navbar-toggle-2-span-child-5-left) !default;
+$navbar-toggle-2-span-child-6-top:                          $navbar-toggle-2-span-child-5-top !default;
+
+$navbar-toggle-4-span-child-1-left:                         8px !default;
+$navbar-toggle-4-span-child-1-top:                          -0.5px !default;
+$navbar-toggle-4-span-child-3-left:                         $navbar-toggle-4-span-child-1-left !default;
+$navbar-toggle-4-span-child-3-top:                          15px !default;
+// TOGGLE BTN
+
+// MOBILE
+$navbar-mobile-menu-padding:                                20px !default;
+$navbar-mobile-menu-transition:                             $navbar-transition !default;
+$navbar-mobile-menu-max-height:                             1400px !default;
+$navbar-mobile-menu-dropdown-padding:                       15px !default;
+$navbar-mobile-menu-dropdown-max-height:                    $navbar-mobile-menu-max-height !default;
+$navbar-mobile-menu-item-padding-vertical:                  1.5rem !default;
+$navbar-mobile-menu-item-padding-horizontal:                0.75rem !default;
+// MOBILE
+
+// DESKTOP
+$navbar-desktop-dropdown-bg:                                $color-white !default;
+$navbar-desktop-dropdown-max-height:                        1400px !default;
+$navbar-desktop-dropdown-box-shadow:                        $box-shadow !default;
+$navbar-desktop-dropdown-padding:                           0.5rem !default;
+$navbar-desktop-dropdown-1-border-top:                      2px solid $color-gray-1 !default;
+$navbar-desktop-dropdown-1-top:                             100% !default;
+$navbar-desktop-dropdown-2-top:                             125% !default;
+
+$navbar-desktop-dropdown-item-padding:                      0.375rem 1rem !default;
+$navbar-desktop-dropdown-item-padding-right:                3rem !default;
+$navbar-desktop-dropdown-item-color:                        $color-gray-9 !default;
+
+$navbar-desktop-end-padding-right:                          1rem !default;
+// DESKTOP

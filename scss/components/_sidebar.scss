@@ -1,0 +1,194 @@
+.sidebar {
+    font-size: $sidebar-font-size;
+    padding: $sidebar-padding;
+    width: $sidebar-width;
+    overflow-y: auto;
+
+    .close {
+        position: absolute;
+        right: $sidebar-close-right;
+    }
+    
+    &.small {
+        width: $sidebar-small-width;
+        padding: $sidebar-small-padding;
+
+        .sidebar-items {
+            padding-left: $sidebar-small-padding-left;
+        }
+    }
+    &.big {
+        width: $sidebar-big-width;
+        padding: $sidebar-big-padding;
+
+        .sidebar-items {
+            padding-left: $sidebar-big-padding-left;
+        }
+    }
+
+    &.sidebar-menu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+    }
+
+    &.above-navbar {
+        z-index: $sidebar-above-z-index;
+    }
+
+    &.below-navbar {
+        padding-top: $sidebar-padding-top;
+    }
+
+    &.always {
+        display: block !important;
+    }
+
+    &.right {
+        right: 0;
+    }
+
+    .sidebar-title {
+        color: $sidebar-title-color;
+        font-size: $sidebar-title-font-size;
+        letter-spacing: $sidebar-title-letter-spacing;
+        text-transform: uppercase;
+        margin-bottom: $sidebar-title-margin-bottom;
+    }
+    
+    .sidebar-items {
+        line-height: $sidebar-items-line-height;
+        list-style: none;
+        padding-left: $sidebar-items-padding-left;
+
+        .sidebar-drop {
+            .sidebar-drop-title {
+                display: flex;
+                justify-content: space-between;
+
+                &::after {
+                    content: "";
+                    @include arrowIcon($color-black);
+                    width: $sidebar-drop-after-width;
+                    height: $sidebar-drop-after-height;
+                    align-self: center;
+                    background-repeat: no-repeat;
+                    background-size: $sidebar-drop-after-width;
+                    transform: $drop-btn-after-transform !important;
+                    transition: $navbar-dropdown-transition;
+                }
+
+                &.active {
+                    background-color: $sidebar-drop-active-bg;
+                    color: $sidebar-drop-active-color;
+
+                    &::after {
+                        @include arrowIcon($sidebar-drop-active-color);
+                        transform: rotate(0deg) !important;
+                    }
+
+                    @each $cname, $color1, $color2 in $colors {
+                        &.#{$cname} {
+                            background-color: $color1;
+                            color: $color2;
+
+                            &::after {
+                                @include arrowIcon($color2);
+                            }
+                        }
+                    }
+                
+                }
+            }
+
+            .sidebar-drop-body {
+                &.active {
+                    max-height: $sidebar-drop-active-body-max-height;
+                    overflow: auto;
+                    margin: $sidebar-drop-active-body-margin;
+                }
+            }
+
+            .sidebar-drop-body {
+                max-height: 0;
+                overflow: hidden;
+                margin: 0 $sidebar-drop-active-body-margin;
+                transition: all $drop-transition-duration;
+            }
+
+        }
+
+        li ul {
+            border-left: $sidebar-drop-active-body-border-left-width solid $sidebar-drop-active-body-border-left-color;
+            margin: $sidebar-drop-active-body-margin;
+            padding-left: $sidebar-drop-active-body-margin;
+            list-style: none;
+        }
+    
+        a {
+            border-radius: $sidebar-drop-link-border-radius;
+            color: $sidebar-drop-link-color;
+            display: block;
+            padding: $sidebar-drop-link-padding-vertical $sidebar-drop-active-body-margin;
+            margin-top: $sidebar-drop-link-margin;
+            margin-bottom: $sidebar-drop-link-margin;
+    
+            &.active {
+                background-color: $sidebar-drop-link-active-bg;
+                color: $sidebar-drop-link-active-color;
+
+                @each $cname, $color1, $color2 in $colors {
+                    &.#{$cname} {
+                        background-color: $color1;
+                        color: $color2;
+                    }
+                }
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: $sidebar-drop-link-not-last-margin-bottom;
+        }
+
+        &:last-child {
+            margin-bottom: calc($sidebar-drop-link-not-last-margin-bottom / 2);
+        }
+    }
+
+    &.mobile-menu {
+        transform: translateX(-100%);
+        transition: $sidebar-mobile-menu-transition;
+
+        &.right {
+            transform: translateX(100%);
+        }
+    }
+}
+
+@media screen and (min-width: $sidebar-mobile-menu-breakpoint) {
+    .sidebar {
+        &.mobile-menu {
+            display: none !important;
+        }
+    }
+}
+
+@media screen and (max-width: calc($sidebar-mobile-menu-breakpoint - 1px)) {
+    .sidebar {
+        display: none;
+
+        &.mobile-menu {
+            display: block !important;
+
+            &.open {
+                transform: translateX(0px);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: calc($sidebar-full-breakpoint - 1px)) {
+    .sidebar {
+        width: 100%;
+    }
+}

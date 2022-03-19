@@ -1,0 +1,89 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table-container {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+    overflow-y: hidden;
+    max-width: 100%;
+}
+
+.table {
+    background-color: $table-background-color;
+    color: $table-color;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    thead, tfoot, tbody {
+        background-color: transparent;
+    }
+
+    thead, tfoot {
+        td, th {
+            border-width: 0 0 $table-border-width * 2;
+        }
+    }
+
+    td, th {
+        color: $table-color;
+    }
+
+    td, th {
+        border: $table-border-width solid $table-border-color;
+        border-width: 0 0 $table-border-width;
+        padding: $table-padding;
+        vertical-align: top;
+    }
+
+    td:not([align]), th:not([align]) {
+        text-align: inherit;
+    }
+
+    &.full {
+        width: 100%;
+    }
+
+    &.bordered tr:last-child td,
+    &.bordered tr:last-child th {
+        border-bottom-width: $table-border-width;
+    }
+
+    &.bordered td,
+    &.bordered th {
+        border-width: $table-border-width;
+    }
+
+    &.striped tbody tr:not(.is-selected):nth-child(even) {
+        background-color: $table-background-color-striped;
+    }
+
+    &.striped-vertical tbody td:nth-of-type(odd) {
+        background-color: $table-background-color-striped;
+    }
+
+    &.narrow td,
+    &.narrow th {
+        padding: $table-narrow;
+    }
+
+    &.hoverable tbody tr:not(.selected):hover {
+        background-color: $table-background-color-striped;
+    }
+
+    @each $cname, $color1, $color2 in $colors {
+        tr.selected-#{$cname} {
+            background-color: $color1 !important;
+            
+            th, td, p, a, small, b, u {
+                color: $color2;
+            }
+
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}

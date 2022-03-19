@@ -1,0 +1,32 @@
+.disabled {
+    pointer-events: none !important;
+    color: $color-disabled;
+}
+
+.clickable {
+    cursor: pointer !important
+}
+
+.unselectale {
+    user-select: none !important;
+}
+
+.no-shadow {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+.center-flex {
+    @include flexCenter;
+}
+
+.center-absolute {
+    position: absolute;
+    @include centerTranslate;
+}
+
+.invisibile-scrollbar::-webkit-scrollbar {
+    display: none;
+}

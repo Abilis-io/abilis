@@ -1,0 +1,33 @@
+// TOAST
+$toast-bg:                                $color-white !default;
+$toast-box-shadow:                        0 5px 10px rgba(0, 0, 0, 0.1) !default;
+$toast-border-radius:                     $border-radius !default;
+$toast-padding:                           20px 35px 20px 25px !default;
+$toast-top:                               25px !default;
+$toast-right:                             30px !default;
+$toast-max-width:                         600px !default;
+$toast-border-left-width:                 5px !default;
+$toast-border-left-color:                 $color-primary !default;
+$toast-transition:                        all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35) !default;
+
+  // CHECK
+  $toast-check-size:                      35px !default;
+  $toast-check-bg:                        $toast-border-left-color !default;
+  $toast-check-color:                     $toast-bg !default;
+  // CHECK
+
+  // MESSAGE
+  $toast-message-margin:                  0 20px !default;
+  // MESSAGE
+
+  // CLOSE
+  $toast-close-top:                       10px !default;
+  $toast-close-right:                     15px !default;
+  // CLOSE
+
+  // PROGRESS
+  $toast-progress-height:                 3px !default;
+  $toast-progress-bg:                     $toast-border-left-color !default;
+  $toast-progress-animation-duration:     5s !default;
+  // PROGRESS
+// TOAST

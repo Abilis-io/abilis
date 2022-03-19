@@ -1,0 +1,37 @@
+.skeleton {
+  opacity: $skeleton-opacity;
+  animation: skeleton-loading $skeleton-animation-duration linear infinite alternate;
+}
+
+.skeleton-button {
+  width: $skeleton-button-width;
+  height: $skeleton-button-height;
+  margin-bottom: $skeleton-margin-bottom;
+  border-radius: $skeleton-button-border-radius;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.skeleton-text {
+  width: 100%;
+  height: $skeleton-text-height;
+  margin-bottom: $skeleton-margin-bottom;
+  border-radius: $skeleton-text-border-radius;
+
+  &:last-child {
+    margin-bottom: 0;
+    width: $skeleton-text-last-child-width;
+  }
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(0, 0%, 80%);
+  }
+
+  100% {
+    background-color: hsl(0, 0%, 95%);
+  }
+}

@@ -1,0 +1,21 @@
+@each $position, $side in $positions {
+    .pos-#{$position}-#{$side} {
+        position: $position !important;
+        #{$side}: 0 !important;
+    }
+
+    @each $bname, $breakpoint in $positions-breakpoint {
+        @media screen and (max-width: $breakpoint) {
+            .#{$position}-#{$side}-#{$bname} {
+                position: $position !important;
+                #{$side}: 0 !important;
+            }
+        }
+    }
+}
+
+@each $pos in $position {
+    .pos-#{$pos} {
+        position: $pos !important;
+    }
+}

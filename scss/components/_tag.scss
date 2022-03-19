@@ -1,0 +1,103 @@
+.tags {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    &:last-child {
+        margin-bottom: -#{$tag-margin};
+    }
+
+    &.group .tag {
+        margin-right: 0;
+
+        &:not(:last-child) {
+            margin-right: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        &:not(:first-child) {
+            margin-left: 0;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        &.close {
+            max-height: unset;
+        }
+    }
+
+    .tag {
+        margin-bottom: $tag-margin;
+    }
+    
+    &.normal .tag {
+        font-size: $tag-font-size-normal;
+        height: $tag-height-normal;
+        padding-right: $tag-padding-normal !important;
+        padding-left: $tag-padding-normal !important;
+    }
+
+    &.medium .tag {
+        font-size: $tag-font-size-medium;
+        height: $tag-height-medium;
+        padding-right: $tag-padding-medium !important;
+        padding-left: $tag-padding-medium !important;
+    }
+
+    &.big .tag {
+        font-size: $tag-font-size-big;
+        height: $tag-height-big;
+        padding-right: $tag-padding-big !important;
+        padding-left: $tag-padding-big !important;
+    }
+
+    .tag:not(:last-child) {
+        margin-right: $tag-margin;
+    }
+}
+
+.tag:not(body) {
+    align-items: center;
+    background-color: $tag-background-color;
+    border-radius: $border-radius-small;
+    color: $tag-color;
+    display: inline-flex;
+    font-size: $tag-font-size-normal;
+    justify-content: center;
+    line-height: 1.5;
+    height: $tag-height-normal;
+    padding-right: $tag-padding-normal !important;
+    padding-left: $tag-padding-normal !important;
+    white-space: nowrap;
+
+    &.normal {
+        @include tagSize($tag-font-size-normal, $tag-height-normal, $tag-padding-normal);
+    }
+
+    &.medium {
+        @include tagSize($tag-font-size-medium, $tag-height-medium, $tag-padding-medium);
+    }
+
+    &.big {
+        @include tagSize($tag-font-size-big, $tag-height-big, $tag-padding-big);
+    }
+
+    .close {
+        margin-left: $tag-close-margin;
+        margin-right: -#{$tag-close-margin};
+    }
+}
+
+@each $cname, $color1, $color2 in $colors {
+    .tag:not(body).#{$cname} {
+        background-color: $color1 !important;
+        color: $color2;
+
+        &.close::after,
+        &.close::before {
+            background-color: $color2 !important;
+        }
+    }
+}

@@ -1,0 +1,103 @@
+.close {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: $close-bg-color;
+    border: none;
+    border-radius: $close-radius;
+    cursor: pointer;
+    pointer-events: auto;
+    display: inline-block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 0;
+    height: $close-size;
+    max-height: $close-size;
+    max-width: $close-size;
+    min-height: $close-size;
+    min-width: $close-size;
+    outline: 0;
+    position: relative;
+    vertical-align: top;
+    width: $close-size;
+    transition: $close-transition;
+
+    @each $cname, $color1, $color2 in $colors {
+        &.close-#{$cname} {
+            background-color: $color1;
+
+            &::after,
+            &::before {
+                background-color: $color2;
+            }
+        }   
+    }
+
+    &.small {
+        height: $close-size-small;
+        max-height: $close-size-small;
+        max-width: $close-size-small;
+        min-height: $close-size-small;
+        min-width: $close-size-small;
+        width: $close-size-small;
+    }
+
+    &.big {
+        height: $close-size-big;
+        max-height: $close-size-big;
+        max-width: $close-size-big;
+        min-height: $close-size-big;
+        min-width: $close-size-big;
+        width: $close-size-big;
+    }
+
+    &.close-simple {
+        background-color: transparent;
+
+        &::before {
+            width: 100%;
+        }
+        &::after {
+            height: 100%;
+        }
+
+        @each $cname, $color1, $color2 in $colors {
+            &.close-#{$cname} {
+                &::after,
+                &::before {
+                    background-color: $color1;
+                }
+            }   
+        }
+    }
+
+    &:hover {
+        opacity: $close-hover-opacity;
+    }
+
+    &::after,
+    &::before {
+        content: "";
+        display: block;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        transform-origin: center center;
+        background-color: $color-white;
+    }
+
+    &::before {
+        height: $close-before-after-size;
+        width: 50%;
+    }
+
+    &::after {
+        height: 50%;
+        width: $close-before-after-size;
+    }
+}

@@ -1,0 +1,24 @@
+.color {
+    width: $color-input-width;
+    margin-left: $color-input-margin-left;
+    height: auto;
+    padding: 0;
+    background: transparent;
+    border: transparent;
+
+    &:not(:disabled):not([readonly]) {
+        cursor: pointer;
+    }
+      
+    &::-moz-color-swatch {
+        height: $color-input-height;
+        border-radius: $color-input-border-radius;
+        border: transparent;
+    }
+    
+    &::-webkit-color-swatch {
+        height: $color-input-height;
+        border-radius: $color-input-border-radius;
+        border: transparent;
+    }
+}

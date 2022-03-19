@@ -1,0 +1,313 @@
+// FIELD
+.field {
+    margin-left: $field-margin;
+    margin-right: $field-margin;
+
+    .field-label {
+        margin-bottom: $field-label-margin-bottom;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: $field-margin-bottom;
+    }
+
+    
+    // FIELD HORIZONTAL
+    &.horizontal {
+        .field {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+    }
+    // FIELD HORIZONTAL
+
+    // FIELD GROUP
+    &.group {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    
+        &>.control {
+            flex-shrink: 0;
+        }
+    
+        &>.control:not(:last-child) {
+            margin-bottom: 0;
+            margin-right: $field-group-margin;
+        }
+    
+        // FIELD GROUP MULTILINE
+        &.multiline {
+            flex-wrap: wrap;
+        
+            &:last-child {
+                margin-bottom: -#{$field-group-margin};
+            }
+    
+            &>.control:last-child,
+            &>.control:not(:last-child) {
+                margin-bottom: $field-group-margin;
+            }
+        }
+        // FIELD GROUP MULTILINE
+
+        // FIELD GROUP HORIZONTAL
+        &.horizontal {
+
+            flex-direction: row;
+
+            &.group-button {
+                flex-wrap: wrap;
+    
+                .control:not(:last-child) {
+                    margin-right: $field-group-horizontal-control-margin;
+                    margin-bottom: $field-group-horizontal-control-margin;
+                }
+            }
+    
+            .control {
+                &.right,
+                &.left,
+                &.middle {
+                    margin-right: 0 !important;
+    
+                    &.control-input {
+                        flex: auto;
+                    }
+    
+                    &.control-button {
+                        .button {
+                            height: $field-group-horizontal-control-height;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+    
+                    &.control-text {
+                        p {
+                            background-color: $field-group-horizontal-control-text-background-color;
+                            border: $field-group-horizontal-control-border-width solid $field-group-horizontal-control-border-color;
+                            padding: $btn-padding-vertical $btn-padding-hotizontal;
+                            height: $field-group-horizontal-control-height;
+                            font-size: $field-group-horizontal-control-text-size;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding-top: 0;
+                            padding-bottom: 0;
+    
+                            &.small {
+                                font-size: $field-group-horizontal-control-text-size-small;
+                            }
+    
+                            &.big {
+                                font-size: $field-group-horizontal-control-text-size-big;
+                            }
+                        }
+                    }
+                }
+    
+                &.middle {
+                    flex: auto;
+                }
+    
+                &.left {
+                    .input, .select select {
+                        border-top-right-radius: 0 !important;
+                        border-bottom-right-radius: 0 !important;
+                        border-right-width: 0 !important;
+                    }
+    
+                    .select {
+                        border-right: $field-group-horizontal-control-border-width solid $field-group-horizontal-control-border-color;
+                    }
+            
+                    .button {
+                        border-top-right-radius: 0 !important;
+                        border-bottom-right-radius: 0 !important;
+                    }
+    
+                    &.control-text {
+                        p {
+                            border-top-left-radius: $btn-radius !important;
+                            border-bottom-left-radius: $btn-radius !important;
+                        }
+                    }
+                }
+    
+                &.right {
+                    .input, .select select {
+                        border-top-left-radius: 0 !important;
+                        border-bottom-left-radius: 0 !important;
+                        border-left-width: 0 !important;
+                    }
+    
+                    .select {
+                        border-left: $field-group-horizontal-control-border-width solid $field-group-horizontal-control-border-color;
+                    }
+            
+                    .button {
+                        border-top-left-radius: 0 !important;
+                        border-bottom-left-radius: 0 !important;
+                    }
+    
+                    &.control-text {
+                        p {
+                            border-top-right-radius: $btn-radius !important;
+                            border-bottom-right-radius: $btn-radius !important;
+                        }
+                    }
+                }
+    
+                &.middle {
+                    .input, .select select {
+                        border-top-right-radius: 0 !important;
+                        border-bottom-right-radius: 0 !important;
+                        border-right-width: 0 !important;
+                        border-top-left-radius: 0 !important;
+                        border-bottom-left-radius: 0 !important;
+                        border-left-width: 0 !important;
+                    }
+            
+                    .button {
+                        border-top-right-radius: 0 !important;
+                        border-bottom-right-radius: 0 !important;
+                        border-top-left-radius: 0 !important;
+                        border-bottom-left-radius: 0 !important;
+                    }
+                }
+            }
+        }
+        // FIELD GROUP HORIZONTAL
+    }
+    // FIELD GROUP
+}
+
+// CONTROL
+.control {
+    box-sizing: border-box;
+    clear: both;
+    position: relative;
+    text-align: inherit;
+
+    &.control-input {
+        flex-grow: 1;
+    }
+
+    &.loading::after {
+        position: absolute!important;
+        right: $field-right-left;
+        top: $field-right-left;
+        z-index: 4;
+    }
+
+    &.icons-left,
+    &.icons-right {
+        .icon {
+            color: $color-gray-3;
+            height: 100%;
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            z-index: 4;
+        }
+    }
+
+    &.icons-right {
+        .icon.right {
+            right: $control-icon-padding;
+        }
+        .input,
+        .select select {
+            padding-right: $control-icon-padding * $control-icon-multiple;
+
+            &.small {
+                padding-right: $control-icon-padding * $control-icon-small-multiple;
+            }
+
+            &.big {
+                padding-right: $control-icon-padding * $control-icon-big-multiple;
+            }
+        }
+    }
+
+    &.icons-left {
+        .icon.left {
+            left: $control-icon-padding;
+        }
+    
+        .input,
+        .select select {
+            padding-left: $control-icon-padding * $control-icon-multiple;
+
+            &.small {
+                padding-left: $control-icon-padding * $control-icon-small-multiple;
+
+                &.loading::after {
+                    font-size: $font-size-xxs;
+                }
+            }
+
+            &.big {
+                padding-left: $control-icon-padding * $control-icon-big-multiple;
+
+                &.loading::after {
+                    font-size: $font-size-s;
+                }
+            }
+        }
+    }
+
+}
+// CONTROL
+
+
+@media screen and (min-width: $breakpoints-value-xs) {
+    .field-label {
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 0;
+        margin-right: $field-label-margin-right;
+        text-align: right;
+    }
+
+    .field-body {
+        display: flex;
+        flex-basis: 0;
+        flex-grow: 5;
+        flex-shrink: 1;
+
+        &>.field:not(:last-child) {
+            margin-right: $field-body-margin-right;
+        }
+
+        &>.field:not(.narrow) {
+            flex-grow: 1;
+        }
+
+        &>.field {
+            flex-shrink: 1;
+        }
+
+        .field {
+            margin-bottom: 0;
+        }
+    }
+
+    .field.horizontal {
+        display: flex;
+    }
+}
+
+@each $cname, $color1, $color2 in $colors {
+    .control {
+        &.icons-left,
+        &.icons-right {
+            .icon.#{$cname} {
+                color: $color1;
+            }
+        }
+    }
+}
+// FIELD

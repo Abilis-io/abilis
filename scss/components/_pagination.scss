@@ -1,0 +1,178 @@
+.pagination, .pagination-items {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.pagination {
+    font-size: $pagination-font-size;
+    margin: -#{$pagination-margin};
+
+    &.small {
+        font-size: $pagination-small-font-size;
+
+        .pagination-ellipsis, .pagination-item, .pagination-next, .pagination-previous {
+            height: $pagination-small-size;
+        }
+
+        .pagination-item, .pagination-next, .pagination-previous {
+            min-width: $pagination-small-size;
+        }
+    }
+
+    &.big {
+        font-size: $pagination-big-font-size;
+
+        .pagination-ellipsis, .pagination-item, .pagination-next, .pagination-previous {
+            height: $pagination-big-size;
+        }
+
+        .pagination-item, .pagination-next, .pagination-previous {
+            min-width: $pagination-big-size;
+        }
+    }
+
+    ul, li {
+        padding: 0;
+    }
+
+    &.rounded {
+        .pagination-item, .pagination-next, .pagination-previous {
+            border-radius: $border-radius-round;
+        }
+    }
+
+    .pagination-next, .pagination-previous {
+        padding-left: $pagination-padding-vertical;
+        padding-right: $pagination-padding-vertical;
+        white-space: nowrap;
+    }
+    
+    .pagination-ellipsis, .pagination-item, .pagination-next, .pagination-previous {
+        justify-content: center;
+        margin: $pagination-margin;
+        padding-left: $pagination-padding-horizontal;
+        padding-right: $pagination-padding-horizontal;
+        text-align: center;
+    }
+    
+    .pagination-ellipsis, .pagination-item, .pagination-next, .pagination-previous {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        align-items: center;
+        border: $pagination-border-width solid transparent;
+        border-radius: $pagination-border-radius;
+        box-shadow: none;
+        display: inline-flex;
+        height: $pagination-size;
+        justify-content: flex-start;
+        padding-bottom: calc($pagination-padding-horizontal - $pagination-border-width);
+        padding-left: calc($pagination-padding-vertical - $pagination-border-width);
+        padding-right: calc($pagination-padding-vertical - $pagination-border-width);
+        padding-top: calc($pagination-padding-horizontal - $pagination-border-width);
+        position: relative;
+        vertical-align: top;
+        user-select: none;
+    }
+    
+    .pagination-items {
+        flex-wrap: wrap;
+
+        &.center {
+            justify-content: center;
+            order: 2;
+        }
+
+        &.right {
+            justify-content: flex-end;
+            order: 3;
+        }
+    
+        li {
+            list-style: none;
+        }
+    }
+    
+    .pagination-ellipsis {
+        color: $pagination-ellipsis-color;
+        pointer-events: none;
+    }
+
+    .pagination-item, .pagination-next, .pagination-previous {
+        border-color: $pagination-border-color;
+        min-width: $pagination-size;
+        color: $pagination-color;
+        display: flex;
+        justify-content: center;
+
+        &:hover {
+            border-color: $pagination-border-color-hover;
+        }
+    
+        &.active {
+            border-color: $pagination-active-bg !important;
+            background-color: $pagination-active-bg;
+            color: $pagination-active-color;
+        }
+    }
+}
+
+
+@media screen and (min-width: $breakpoints-value-xs) {
+    .pagination {
+        justify-content: space-between;
+        margin-bottom: 0;
+        margin-top: 0;
+
+        .pagination-previous {
+            order: 2;
+        }
+    
+        .pagination-ellipsis, .pagination-item, .pagination-next, .pagination-previous {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+    
+        .pagination-next {
+            order: 3;
+        }
+    
+        .pagination-items {
+            flex-grow: 1;
+            flex-shrink: 1;
+            justify-content: flex-start;
+            order: 1;
+        }
+    }
+}
+
+@media screen and (max-width: calc($breakpoints-value-xs - 1px)) {
+    .pagination {
+        flex-wrap: wrap;
+
+        .pagination-next, .pagination-previous {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        .pagination-list li {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+    }
+}
+
+@each $cname, $color1, $color2 in $colors {
+    .pagination {
+        &.#{$cname} {
+            .pagination-item, .pagination-next, .pagination-previous {
+                &.active {
+                    border-color: $color1 !important;
+                    background-color: $color1;
+                    color: $color2;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+// GENERAL
+$content-general-margin-sm:             1rem !default;
+$content-general-margin-md:             2rem !default;
+$content-padding:                       1.25rem 1.5rem !default;
+// GENERAL
+
+// TITLE
+$content-color-title:                   $color-gray-8 !default;
+$content-title-font-weight:             $title-font-weight !default;
+$content-title-line-height:             $title-line-height !default;
+$content-title-margin-bottom:           $content-general-margin-sm !default;
+$content-title-margin-top:              $content-general-margin-md !default;
+// TITLE
+
+// BLOCKQUOTE
+$content-blockquote-padding:            $blockquote-padding !default;
+$content-blockquote-border-width:       $blockquote-border-width !default;
+$content-blockquote-border-left-width:  $blockquote-border-left-width !default;
+$content-blockquote-border-left-color:  $blockquote-border-left-color !default;
+$content-blockquote-border-radius:      $blockquote-border-radius !default;
+$content-blockquote-background-color:   $blockquote-background-color !default;
+$content-blockquote-margin:             $blockquote-margin !default;
+// BLOCKQUOTE
+
+// PRE
+$content-pre-padding:                   $content-padding !default;
+$content-pre-background-color:          $color-gray-1 !default;
+$content-pre-color:                     $color-gray-7 !default;
+$content-pre-font-size:                 $font-size-xxs !default;
+$content-pre-border-radius:             $border-radius !default;
+// PRE

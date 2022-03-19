@@ -1,0 +1,27 @@
+$page-animation-duration:           7s !default;
+
+$page-window-top:                   $color-primary-2 !default;
+$page-window-bar:                   $color-primary-3 !default;
+$page-window-content:               $color-gray-2 !default;
+$page-window-background:            $color-gray-3 !default;
+$page-button-color:                 $color-info !default;
+
+// NORMAL
+$page-window-width:                 140px, 400px, 560px !default;
+$page-window-height:                250px, 300px, 370px !default;
+$page-content-width:                140px, 270px, 400px !default;
+$page-content-height:               220px, 220px, 225px !default;
+$page-header-height:                30px, 90px, 105px !default;
+$page-header-border:                7px, 12px, 14px !default;
+$page-button-size:                  20px, 26px, 26px !default;
+// NORMAL
+
+// SMALL
+$page-window-width-small:           80px, 200px, 270px !default;
+$page-window-height-small:          150px, 150px, 200px !default;
+$page-content-width-small:          120px, 150px, 190px !default;
+$page-content-height-small:         220px, 220px, 225px !default;
+$page-header-height-small:          25px, 40px, 50px !default;
+$page-header-border-small:          7px, 12px, 14px !default;
+$page-button-size-small:            15px, 16px, 16px !default;
+// SMALL

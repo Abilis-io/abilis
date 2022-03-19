@@ -1,0 +1,41 @@
+$btn-border-width:  1px !default;
+$btn-transition:  $transition !default;
+
+// FONT
+$btn-font-size:     $font-size-xs !default;
+$btn-font-weight:   400 !default;
+// FONT
+
+// RADIUS
+$btn-small-radius:  $border-radius-small !default;
+$btn-big-radius:    $border-radius-big !default;
+$btn-radius:        $border-radius !default;
+// RADIUS
+
+// SIZE
+
+    // PADDING VERTICAL
+    $btn-small-padding-vertical:        0.25rem !default;
+    $btn-padding-vertical:              0.36rem !default;
+    $btn-big-padding-vertical:          0.5rem !default;
+    // PADDING VERTICAL
+
+    // PADDING HORIZONTAL
+    $btn-small-padding-hotizontal:      0.5rem !default;
+    $btn-padding-hotizontal:            0.75rem !default;
+    $btn-big-padding-hotizontal:        1rem !default;
+    // PADDING HORIZONTAL
+
+    $btn:
+                                        "big"   $btn-big-padding-vertical       $btn-big-padding-hotizontal       $font-size-s     $btn-big-radius,
+                                        null    $btn-padding-vertical           $btn-padding-hotizontal           $font-size-xs    $btn-radius,
+                                        "small" $btn-small-padding-vertical     $btn-small-padding-hotizontal     $font-size-xxs   $btn-small-radius 
+                                        !default;
+
+    $btn-padding:                       $btn-padding-vertical $btn-padding-hotizontal !default;
+// SIZE
+
+// BTN TYPE
+$btn-type-background-color:             $color-gray-3 !default;
+$btn-type-border-color:                 $color-gray-4 !default;
+// BTN TYPE

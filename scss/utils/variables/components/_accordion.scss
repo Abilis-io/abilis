@@ -1,0 +1,23 @@
+$accordion-font-size:                               $font-size-xs !default;
+$accordion-padding:                                 15px !default;
+$accordion-border-color:                            $color-gray-3 !default;
+$accordion-border-width:                            1px !default;
+$accordion-border-radius:                           $border-radius !default;
+$accordion-background-color:                        $color-white !default;
+
+$accordion-content-transition:                      height 0.4s ease-in-out !default;
+
+$accordion-toggle-background-color:                 $accordion-background-color !default;
+$accordion-toggle-background-color-active:          $color-gray-1 !default;
+$accordion-toggle-transition:                       all 0.2s ease-in-out !default;
+$accordion-toggle-transition-last:                  all 0.6s ease-in-out !default;
+
+$accordion-icon-width:                              1.25rem !default;
+$accordion-icon-height:                             0.75rem !default;
+$accordion-icon-color:                              $color-gray-9 !default;
+$accordion-icon-active-color:                       $color-primary !default;
+$accordion-icon-transition:                         transform .2s ease-in-out !default;
+$accordion-icon-transform:                          rotate(-180deg) !default;
+
+$accordion-button-icon:                             "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'><path d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='#{$accordion-icon-color}' stroke='#{$accordion-icon-color}' stroke-miterlimit='10' fill-rule='evenodd'/></svg>" !default;
+$accordion-button-active-icon:                      "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'><path d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='#{$accordion-icon-active-color}' stroke='#{$accordion-icon-active-color}' stroke-miterlimit='10' fill-rule='evenodd'/></svg>" !default;

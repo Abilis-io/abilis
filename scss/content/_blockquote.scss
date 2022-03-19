@@ -1,0 +1,19 @@
+.blockquote {
+    background-color: $blockquote-background-color;
+    border: $blockquote-border-width solid $blockquote-border-left-color;
+    border-left: $blockquote-border-left-width solid $blockquote-border-left-color;
+    padding: $blockquote-padding;
+    border-radius: $blockquote-border-radius;
+    margin: $blockquote-margin;
+}
+
+@each $cname, $color1, $color2 in $colors {
+    .blockquote-#{$cname} {
+        background-color: transparent;
+        border: $blockquote-border-width solid $blockquote-border-left-color;
+        border-left: $blockquote-border-left-width solid $color1;
+        padding: $blockquote-padding;
+        border-radius: $blockquote-border-radius;
+        margin: $blockquote-margin;
+    }
+}

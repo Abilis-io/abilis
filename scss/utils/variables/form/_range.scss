@@ -1,0 +1,31 @@
+// RANGE
+$range-height:                                                          1.5rem !default;
+$range-width:                                                           100% !default;
+
+$range-track-color:                                                    $color-gray-2 !default;
+$range-track-height:                                                   0.5rem !default;
+$range-track-border-radius:                                            $border-radius-round !default;
+
+$range-thumb-border-width:                                             1px !default;
+$range-thumb-size:                                                     1.15rem !default;
+$range-thumb-border-color:                                             $color-white !default;
+$range-thumb-border-radius:                                            $border-radius-round !default;
+$range-thumb-color:                                                    $color-primary !default;
+$range-thumb-margin-top:                                               -0.37rem !default;
+$range-thumb-disabled-color:                                           $color-gray-4 !default;
+
+$range-box-shadow:                                                     $input-box-shadow !default;
+$range-box-shadow-opacity:                                             $input-box-shadow-opacity !default;
+
+    // SMALL
+    $range-track-height-small:                                         0.4rem !default;
+    $range-thumb-size-small:                                           1rem !default;
+    $range-thumb-margin-top-small:                                     -0.33rem !default;
+    // SMALL
+
+    // BIG
+    $range-track-height-big:                                           0.6rem !default;
+    $range-thumb-size-big:                                             1.3rem !default;
+    $range-thumb-margin-top-big:                                       -0.37rem !default;
+    // BIG
+// RANGE

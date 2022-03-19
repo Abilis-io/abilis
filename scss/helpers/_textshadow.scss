@@ -1,0 +1,9 @@
+@each $sname, $shadow in $text-shadows {
+    .text-shadow-#{$sname} {
+        text-shadow: $shadow !important;
+    }
+}
+
+.text-shadow-0 {
+    text-shadow: none !important;
+}

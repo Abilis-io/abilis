@@ -1,0 +1,137 @@
+.modal, .modal-overlay {
+    background-color: $modal-overlay-bg;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.modal {
+    align-items: center;
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    z-index: 10000000;
+    transition: visibility $modal-transition-duration;
+
+    .modal-close {
+        &.close {
+            position: absolute;
+            top: $modal-margin;
+            right: $modal-margin;
+        }
+    }
+
+    .modal-overlay {
+        opacity: 0;
+        transition: opacity $modal-transition-duration $modal-transition-delay $modal-transition-timing;
+    }
+
+    &.active {
+        visibility: visible;
+        
+        .modal-overlay, .modal-container {
+            opacity: 1;
+        }
+
+        .modal-overlay {
+            transition: opacity $modal-transition-duration $modal-transition-timing;
+        }
+
+        .modal-container {
+            transition: opacity $modal-transition-duration $modal-transition-delay $modal-transition-timing;
+        }
+    }
+
+    .modal-container, .modal-content {
+        margin: 0 $modal-margin;
+        position: relative;
+        width: $modal-container-width;
+    }
+
+    .modal-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: calc(100vh - calc($modal-content-margin-vertical * 2));
+
+        img {
+            height: $modal-content-img-height;
+        }
+    }
+
+    .modal-container {
+        display: flex;
+        flex-direction: column;
+        max-height: calc(100vh - calc($modal-margin * 2));
+        overflow: hidden;
+        opacity: 0;
+        transition: opacity $modal-transition-duration $modal-transition-timing;
+
+        .modal-footer, .modal-header {
+            align-items: center;
+            background-color: $modal-header-footer-bg;
+            display: flex;
+            flex-shrink: 0;
+            justify-content: flex-start;
+            padding: $modal-header-footer-padding;
+            position: relative;
+        }
+
+        .modal-header {
+            border-bottom: $modal-header-footer-border;
+            border-top-left-radius: $modal-header-footer-border-radius;
+            border-top-right-radius: $modal-header-footer-border-radius;
+
+            .modal-title {
+                color: $modal-header-title-color;
+                flex-grow: 1;
+                flex-shrink: 0;
+                font-size: $modal-header-title-size;
+                line-height: 1;
+            }
+        }
+
+        .modal-body {
+            -webkit-overflow-scrolling: touch;
+            background-color: $modal-body-bg;
+            flex-grow: 1;
+            flex-shrink: 1;
+            overflow: auto;
+            padding: $modal-body-padding;
+        }
+
+        .modal-footer {
+            border-bottom-left-radius: $modal-header-footer-border-radius;
+            border-bottom-right-radius: $modal-header-footer-border-radius;
+            border-top: $modal-header-footer-border;
+
+            .button:not(:last-child) {
+                margin-right: $modal-btn-margin-right;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoints-value-xs) {
+    .modal {
+        .modal-container, .modal-content {
+            margin: 0 auto;
+            max-height: calc(100vh - calc($modal-margin * 2));
+            max-width: $modal-container-max-width;
+        }
+    }
+}
+
+@each $cname, $color1, $color2 in $colors {
+    .modal.#{$cname} {
+        .modal-footer, .modal-header {
+            background-color: $color1;
+            color: $color2;
+        }
+    }
+}

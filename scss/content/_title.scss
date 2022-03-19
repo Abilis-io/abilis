@@ -1,0 +1,25 @@
+@each $title, $size in $titles {
+    .#{$title} {
+        font-size: $size;
+    }
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    line-height: $title-line-height;
+    font-weight: $title-font-weight;
+    margin: $title-margin;
+}
+
+@each $cname, $color1, $color2 in $colors {
+    .title-#{$cname} {
+        text-align: center;
+
+        a {
+            color: $color1;
+
+            &:hover, &:focus, &:active {
+                text-decoration: underline;
+            }
+        }
+    }
+}

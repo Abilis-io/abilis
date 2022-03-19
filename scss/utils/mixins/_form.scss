@@ -1,0 +1,62 @@
+@mixin inputFocused ($active-border-color, $box-shadow, $box-shadow-opacity) {
+  outline: 0;
+  border-color: $active-border-color;
+  box-shadow: $box-shadow rgba($active-border-color, $box-shadow-opacity) ;
+}
+
+@mixin input ($hover-border-color, $active-border-color, $box-shadow, $box-shadow-opacity) {
+  &.hovered {
+      border-color: $hover-border-color;
+  }
+
+  &.focused {
+      @include inputFocused ($active-border-color, $box-shadow, $box-shadow-opacity);
+  }
+
+  &[readonly] {
+      box-shadow: none;
+  }
+}
+
+@mixin inputSize ($font-size, $height, $padding-vertical) {
+  font-size: $font-size;
+  height: $height;
+  padding-top: $padding-vertical;
+  padding-bottom: $padding-vertical;
+}
+
+@mixin rangeThumbActive ($color, $border-width, $border-color, $box-shadow, $box-shadow-opacity) {
+  background-color: $color;
+  border: $border-width solid $border-color;
+  box-shadow: $box-shadow rgba($color, $box-shadow-opacity);
+}
+
+@mixin rangeThumb ($size, $margin-top, $color, $radius) {
+  width: $size;
+  height: $size;
+  margin-top: $margin-top;
+  background-color: $color;
+  border-radius: $radius;
+  appearance: none;
+}
+
+@mixin rangeThumbSize ($size, $margin-top) {
+  width: $size !important;
+  height: $size !important;
+  margin-top: $margin-top !important;
+}
+
+@mixin rangeTrack ($height, $color, $radius) {
+  width: $height;
+  height: $height;
+  color: transparent;
+  cursor: pointer;
+  background-color: $color;
+  border-color: transparent;
+  border-radius: $radius;
+}
+
+@mixin rangeTrackSize ($height) {
+  width: $height !important;
+  height: $height !important;
+}

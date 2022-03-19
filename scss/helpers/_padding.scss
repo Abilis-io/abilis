@@ -1,0 +1,27 @@
+/* padding */
+@each $padding, $size in $margins {
+    .p-#{$padding} {
+        padding: $size !important;
+    }
+    .px-#{$padding} {
+        padding-right: $size !important;
+        padding-left: $size !important;
+    }
+    .py-#{$padding} {
+        padding-top: $size !important;
+        padding-bottom: $size !important;
+    }
+    .pr-#{$padding} {
+        padding-right: $size !important;
+    }
+    .pl-#{$padding} {
+        padding-left: $size !important;
+    }
+    .pt-#{$padding} {
+        padding-top: $size !important;
+    }
+    .pb-#{$padding} {
+        padding-bottom: $size !important;
+    }
+}
+/* padding */

@@ -1,0 +1,45 @@
+@each $item in $align-items {
+    .align-items-#{$item} {
+        align-items: $item !important;
+        display: flex !important;
+    }   
+}
+
+@each $item in $align-content {
+    .align-content-#{$item} {
+        align-content: $item !important;
+    }   
+}
+
+@each $item in $align-self {
+    .align-self-#{$item} {
+        align-self: $item !important;
+    }   
+}
+
+@each $item in $justify-content {
+    .justify-content-#{$item} {
+        justify-content: $item !important;
+    }
+}
+
+@each $item in $flex-grow {
+    .flex-grow-#{$item} {
+        flex-grow: $item !important;
+    }
+    .flex-shrink-#{$item} {
+        flex-shrink: $item !important;
+    }
+}
+
+@each $item in $flex-direction {
+    .flex-direction-#{$item} {
+        flex-direction: $item !important;
+    }
+}
+
+@each $item in $flex-wrap {
+    .flex-wrap-#{$item} {
+        flex-wrap: $item !important;
+    }
+}

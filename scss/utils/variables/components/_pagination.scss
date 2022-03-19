@@ -1,0 +1,31 @@
+// PAGINATION
+$pagination-font-size:                      $font-size-base !default;
+$pagination-color:                          $color-gray-9 !default;
+$pagination-size:                           3rem !default;
+$pagination-margin:                         0.25rem !default;
+$pagination-padding-vertical:               0.75rem !default;
+$pagination-padding-horizontal:             0.5rem !default;
+$pagination-border-width:                   1px !default;
+$pagination-border-color:                   $color-gray-3 !default;
+$pagination-border-color-hover:             $color-gray-5 !default;
+$pagination-border-radius:                  $border-radius !default;
+
+    // ELLIPSIS
+    $pagination-ellipsis-color:                 $color-gray-5 !default;
+    // ELLIPSIS
+
+    // ACTIVE
+    $pagination-active-bg:                      $color-primary !default;
+    $pagination-active-color:                   $color-white !default;
+    // ACTIVE
+
+    // SMALL
+    $pagination-small-font-size:            $font-size-xxs !default;
+    $pagination-small-size:                 2.5rem !default;
+    // SMALL
+
+    // BIG
+    $pagination-big-font-size:              $font-size-s !default;
+    $pagination-big-size:                   3.9rem !default;
+    // BIG
+// PAGINATION

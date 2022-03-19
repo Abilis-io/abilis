@@ -1,0 +1,66 @@
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -#{$grid-gap};
+    margin-right: -#{$grid-gap};
+    margin-top: -#{$grid-gap};
+
+    &:not(:last-child) {
+        margin-bottom: calc(1.5rem - $grid-gap);
+    }
+
+    > * {
+        padding: $grid-gap;
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .column {
+        flex: 1 0 0%;
+    }
+
+    @for $i from 1 through $max-cols {
+        .column-#{$i} {
+            flex: 0 0 auto;
+            width: $i * calc(100% / $max-cols);
+        }
+    }
+
+    @each $name, $value in $grid-breakpoints {
+        @media #{$value} {
+            @for $i from 1 through $max-cols {
+                .column-#{$name}-#{$i} {
+                    flex: 0 0 auto;
+                    width: $i * calc(100% / $max-cols);
+                }
+            }
+        }
+    }
+
+    @each $num, $size in $gutter {
+        &.gutter-#{$num} {
+            &:not(:last-child) {
+                margin-bottom: calc(1.5rem - $size);
+            }
+
+            > * {
+                padding: $size;
+            }
+        }
+        
+        @each $name, $value in $grid-breakpoints {
+            @media #{$value} {
+                &.gutter-#{$name}-#{$num} {
+                    &:not(:last-child) {
+                        margin-bottom: calc(1.5rem - $size);
+                    }
+
+                    > * {
+                        padding: $size;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.text-center {
+    text-align: center !important;
+}
+
+.text-start {
+    text-align: start !important;
+}
+
+.text-end {
+    text-align: end !important;
+}
+
+.text-bold {
+    font-weight: bold !important;
+}
+
+.text-italic {
+    font-style: italic !important;
+}
+
+.text-muted {
+    color: $text-muted-color !important;
+}
+
+.text-underline {
+    text-decoration: underline !important ;
+}
+
+.text-overline {
+    text-decoration: overline !important;
+}
+
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@each $weight in $font-weight {
+    .font-weight-#{$weight} {
+        font-weight: $weight !important;
+
+        p, b, u, div, h1, h2, h3, h4, h5, h6 {
+            font-weight: $weight !important;
+        }
+    }
+}
+
+@each $sname, $size in $font-sizes {
+    .font-#{$sname} {
+        font-size: $size !important;
+
+        p, b, u, div, h1, h2, h3, h4, h5, h6 {
+            font-size: $size !important;
+        }
+    }
+}
+
+@each $cname, $color in $colors {
+    .text-#{$cname} {
+        color: $color !important;
+
+        p, b, u, div, h1, h2, h3, h4, h5, h6 {
+            color: $color !important;
+        }
+    }
+}

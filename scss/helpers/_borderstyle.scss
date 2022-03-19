@@ -1,0 +1,17 @@
+@each $style in $border-styles {
+    .bs-#{$style} {
+        border-style: $style !important;
+    }
+    .bs-t-#{$style} {
+        border-top-style: $style !important;
+    }
+    .bs-b-#{$style} {
+        border-bottom-style: $style !important;
+    }
+    .bs-r-#{$style} {
+        border-right-style: $style !important;
+    }
+    .bs-l-#{$style} {
+        border-left-style: $style !important;
+    }
+}

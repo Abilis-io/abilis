@@ -1,0 +1,285 @@
+.tabs {
+
+    .tab-item {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+
+    .tab-title {
+        cursor: pointer;
+        color: $tab-title-color;
+
+        &:hover {
+            @include opacityHover;
+        }
+
+        &.active {
+            color: $tab-color-active;
+        }
+    }
+
+    &.vertical,
+    &.horizontal {
+        &.styled {
+            .tab {
+                display: flex;
+                justify-content: flex-start;
+
+                .tab-title {
+                    align-items: center;
+                    opacity: 1;
+                    color: $tab-title-color;
+                    display: flex;
+                    justify-content: center;
+                    padding: $tab-title-padding;
+                    vertical-align: top;
+
+                    &.active {
+                        color: $tab-color-active;
+                    }
+                }
+            }
+
+            &.boxed {
+                .tab-title {
+                    border: $tab-border-width solid transparent;
+                }
+                .tab-title.active {
+                    background-color: $tab-title-boxed-bg;
+                    border-color: $tab-title-boxed-border-color;
+                }
+            }
+
+            &.buttons {
+                .tab-title {
+                    border: $tab-border-width solid $tab-border-color;
+                    position: relative;
+
+                    &.active {
+                        background-color: $tab-title-buttons-bg;
+                        border-color: $tab-title-buttons-bg;
+                        color: $tab-title-buttons-color;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    &.vertical {
+        display: flex;
+        flex-direction: row;
+
+        .tab-content {
+            flex-grow: 1;
+
+            .tab-item {
+                height: 100%;
+            }
+        }
+
+        .tab {
+            display: flex;
+            flex-direction: column;
+            margin-right: $tab-margin;
+            min-width: $tab-min-width;
+
+            .tab-title {
+                &:not(:last-child) {
+                    margin-bottom: $tab-margin;
+                }
+            }
+        }
+
+        @media #{$tab-breakpoint} {
+            .tab {
+                min-width: $tab-breakpoint-min-width;
+
+                .tab-title {
+                    padding-right: $tab-breakpoint-title-padding !important;
+                    padding-left: $tab-breakpoint-title-padding !important;
+                }
+            }
+        }
+
+        &.right {
+            flex-direction: row-reverse;
+
+            .tab {
+                margin-right: 0;
+                margin-left: $tab-margin;
+            }
+        }
+
+        &.styled {
+            .tab {
+                border-right: $tab-border-width solid $tab-border-color;
+
+                .tab-title {
+                    border-right: $tab-border-width solid $tab-border-color;
+                    margin-right: -#{$tab-border-width};
+
+                    &.active {
+                        border-right-color: $color-primary;
+                    }
+                }
+            }
+
+            &.boxed {
+                .tab-title {
+                    border-radius: $tab-border-radius 0 0 $tab-border-radius;
+                }
+                .tab-title.active {
+                    border-right-color: transparent !important;
+                }
+            }
+
+            &.buttons {
+                .tab {
+                    border-right: none;
+
+                    .tab-title {
+                        margin-right: 0;
+
+                        &:first-child {
+                            border-top-left-radius: $tab-border-radius;
+                            border-top-right-radius: $tab-border-radius;
+                        }
+                        &:last-child {
+                            border-bottom-left-radius: $tab-border-radius;
+                            border-bottom-right-radius: $tab-border-radius;
+                        }
+                        &:not(:last-child) {
+                            margin-bottom: -#{$tab-border-width};
+                        }
+                    }
+                }
+
+                &.round {
+                    .tab-title {
+                        &:first-child {
+                            border-top-left-radius: $border-radius-round;
+                            border-top-right-radius: $border-radius-round;
+                        }
+                        &:last-child {
+                            border-bottom-left-radius: $border-radius-round;
+                            border-bottom-right-radius: $border-radius-round;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.horizontal {
+        display: flex;
+        flex-direction: column;
+
+        &.tabs-nav {
+            border: $tab-border-width solid $tab-border-color;
+            border-radius: $tab-border-radius;
+
+            .tab {
+                margin-bottom: 0;
+                background-color: $tab-border-color;
+                padding-top: $tab-nav-padding-top;
+
+                .tab-title {
+                    &.active {
+                        color: $tab-nav-active-color;
+                        border-bottom-color: $tab-color-active;
+                    }
+                }
+            }
+
+            .tab-content {
+                padding: $tab-nav-padding;
+            }
+        }
+
+        .tab {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: $tab-margin;
+    
+            .tab-title {
+                &:not(:last-child) {
+                    margin-right: $tab-margin;
+                }
+            }
+        }
+
+        &.styled {
+            .tab {
+                align-items: center;
+                border-bottom: $tab-border-width solid $tab-border-color;
+                flex-grow: 1;
+                flex-shrink: 0;
+
+                .tab-title {
+                    border-bottom: $tab-border-width solid $tab-border-color;
+                    margin-bottom: -#{$tab-border-width};
+
+                    &.active {
+                        border-bottom-color: $tab-color-active;
+                    }
+                }
+            }
+
+            &.boxed {
+                .tab-title {
+                    border-radius: $tab-border-radius $tab-border-radius 0 0;
+                }
+                .tab-title.active {
+                    border-bottom-color: transparent !important;
+                }
+            }
+
+            &.buttons {
+                .tab {
+                    border-bottom: none;
+
+                    .tab-title {
+                        margin-bottom: 0;
+
+                        &:first-child {
+                            border-top-left-radius: $tab-border-radius;
+                            border-bottom-left-radius: $tab-border-radius;
+                        }
+                        &:last-child {
+                            border-top-right-radius: $tab-border-radius;
+                            border-bottom-right-radius: $tab-border-radius;
+                        }
+                        &:not(:last-child) {
+                            margin-right: -#{$tab-border-width};
+                        }
+                    }
+                }
+
+                &.round {
+                    .tab-title {
+                        &:first-child {
+                            border-top-left-radius: $border-radius-round;
+                            border-bottom-left-radius: $border-radius-round;
+                        }
+                        &:last-child {
+                            border-top-right-radius: $border-radius-round;
+                            border-bottom-right-radius: $border-radius-round;
+                        }
+                    }
+                }
+            }
+
+            &.full {
+                .tab-title {
+                    flex-grow: 1;
+                    flex-shrink: 0;
+                }
+            }
+        }
+    }
+
+}

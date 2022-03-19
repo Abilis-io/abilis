@@ -1,0 +1,111 @@
+.accordion {
+    .accordion-item {
+        background-color: $accordion-background-color;
+        border: $accordion-border-width solid $accordion-border-color;
+
+        &:last-of-type {
+            &.active {
+                .accordion-toggle {
+                    @include borderRadiusBottom(0);
+                    transition: $accordion-toggle-transition;
+                }
+            }
+        }
+
+        &.active {
+            .accordion-toggle {
+                background-color: $accordion-toggle-background-color-active;
+        
+                &::after {
+                    background-image: url(svg-encode($accordion-button-active-icon));
+                    transform: $accordion-icon-transform;
+                }
+            }
+        }
+
+        .accordion-toggle {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: $accordion-padding;
+            font-size: $accordion-font-size;
+            text-align: left;
+            background-color: $accordion-toggle-background-color;
+            border: 0;
+            border-radius: 0;
+            overflow-anchor: none;
+            transition: $accordion-toggle-transition;
+            cursor: pointer;
+        
+            // Accordion icon
+            &::after {
+                content: "";
+                align-self: center;
+                width: $accordion-icon-width;
+                height: $accordion-icon-height;
+                background-image: url(svg-encode($accordion-button-icon));
+                background-repeat: no-repeat;
+                background-size: $accordion-icon-width;
+                transition: $accordion-icon-transition;
+            }
+      
+            &:hover {
+                z-index: 2;
+            }
+        
+            &:focus {
+                z-index: 3;
+                border-color: $accordion-border-color;
+                outline: 0;
+            }
+        }
+
+        .accordion-content {
+            overflow: hidden;
+            height: 0;
+            transition: $accordion-content-transition;
+
+            .accordion-body {
+                padding: $accordion-padding;
+            }
+        }
+
+        &:first-of-type {
+            @include borderRadiusTop($accordion-border-radius);
+    
+            .accordion-toggle {
+                @include borderRadiusTop($accordion-border-radius);
+            }
+        }
+    
+        &:not(:first-of-type) {
+            border-top: 0;
+        }
+    
+        &:last-of-type {
+            @include borderRadiusBottom($accordion-border-radius);
+    
+            .accordion-content {
+                @include borderRadiusBottom($accordion-border-radius);
+            }
+
+            .accordion-toggle {
+                @include borderRadiusBottom($accordion-border-radius);
+                transition: $accordion-toggle-transition-last;
+            }
+
+        }
+
+    }
+
+    &.borderless {
+        .accordion-item {
+            border: unset;
+        }
+        .accordion-item:not(:last-child) {
+            border-bottom: $accordion-border-width solid $accordion-border-color;
+        }
+    }
+}

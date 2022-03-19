@@ -1,0 +1,29 @@
+// CARD
+$card-bg:                         $color-white !default;
+$card-transition:                 0.3s !default;
+$card-shadow:                     $box-shadow !default;
+
+  // BORDER
+  $card-border-width:               1px !default;
+  $card-border-color:               $color-gray-3 !default;
+  $card-border-radius:              $border-radius !default;
+  // BORDER
+
+  // ACTIVE
+  $card-active-shadow:              $box-shadow-big !default;
+  $card-active-border-width:        $card-border-width !default;
+  $card-active-border-color:        $color-gray-5 !default;
+  // ACTIVE
+
+  // HEADER
+  $card-header-footer-padding:      0.75rem 1rem !default;
+  $card-header-line-height:         1.25 !default;
+  $card-header-bg:                  $card-border-color !default;
+  $card-header-border-width:        $card-border-width !default;
+  $card-header-border-color:        $card-border-color !default;
+  // HEADER
+
+  // BODY
+  $card-body-padding:               1rem !default;
+  // BODY
+// CARD

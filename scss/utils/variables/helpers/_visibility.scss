@@ -1,0 +1,95 @@
+// DISPLAY
+$displays:
+                none,
+                contents,
+                block,
+                flex,
+                grid,
+                table,
+                inline,
+                inline-block,
+                inline-flex,
+                inline-table,
+                inline-grid,
+                inherit,
+                initial,
+                unset !default;
+// DISPLAY
+
+// HIDDEN
+$hidden:
+                'xs' $breakpoints-value-xs,
+                'sm' $breakpoints-value-sm,
+                'md' $breakpoints-value-md,
+                'lg' $breakpoints-value-lg
+                !default;
+// HIDDEN
+
+// VISIBLE
+$visible:
+                'xs' calc($breakpoints-value-xs - 1px),
+                'sm' calc($breakpoints-value-sm - 1px),
+                'md' calc($breakpoints-value-md - 1px),
+                'lg' calc($breakpoints-value-lg - 1px)
+                !default;
+// VISIBLE
+
+// OPACITY
+$opacity-1:     1;
+$opacity-95:    0.95;
+$opacity-9:     0.9;
+$opacity-85:    0.85;
+$opacity-8:     0.8;
+$opacity-75:    0.75;
+$opacity-7:     0.7;
+$opacity-65:    0.65;
+$opacity-6:     0.6;
+$opacity-55:    0.55;
+$opacity-5:     0.5;
+$opacity-45:    0.45;
+$opacity-4:     0.4;
+$opacity-35:    0.35;
+$opacity-3:     0.3;
+$opacity-25:    0.25;
+$opacity-2:     0.2;
+$opacity-15:    0.15;
+$opacity-1:     0.1;
+$opacity-05:    0.05;
+$opacity-0:     0;
+
+$opacitys: 
+                'opacity-0'     $opacity-0,
+                'opacity-05'    $opacity-05,
+                'opacity-1'     $opacity-1,
+                'opacity-15'    $opacity-15,
+                'opacity-2'     $opacity-2,
+                'opacity-25'    $opacity-25,
+                'opacity-3'     $opacity-3,
+                'opacity-35'    $opacity-35,
+                'opacity-4'     $opacity-4,
+                'opacity-45'    $opacity-45,
+                'opacity-5'     $opacity-5,
+                'opacity-55'    $opacity-55,
+                'opacity-6'     $opacity-6,
+                'opacity-65'    $opacity-65,
+                'opacity-7'     $opacity-7,
+                'opacity-75'    $opacity-75,
+                'opacity-8'     $opacity-8,
+                'opacity-85'    $opacity-85,
+                'opacity-9'     $opacity-9,
+                'opacity-95'    $opacity-95,
+                'opacity-1'     $opacity-1
+                !default;
+// OPACITY
+
+// OVERFLOW
+$overflows:
+                auto,
+                hidden,
+                scroll,
+                visible,
+                inherit,
+                initial,
+                unset
+                !default;
+// OVERFLOW

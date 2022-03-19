@@ -1,0 +1,759 @@
+// LOADER
+.button.loading::after,
+.control.loading::after,
+.select.loading::after,
+.spinner-loader {
+  animation: spinAround $spinner-loader-animation-duration infinite linear;
+  border: $spinner-loader-form-width solid $spinner-loader-color;
+  border-radius: $spinner-loader-border-radius;
+  border-right-color: transparent !important;
+  border-top-color: transparent !important;
+  content: "";
+  display: block;
+  height: $spinner-loader-form-size;
+  position: relative;
+  width: $spinner-loader-form-size;
+}
+
+.spinner-loader {
+  height: $spinner-loader-size;
+  width: $spinner-loader-size;
+  border-width: $spinner-loader-width;
+
+  &.small {
+    height: $spinner-loader-small-size;
+    width: $spinner-loader-small-size;
+    border-width: $spinner-loader-small-width;
+  }
+
+  &.big {
+    height: $spinner-loader-big-size;
+    width: $spinner-loader-big-size;
+    border-width: $spinner-loader-big-width;
+  }
+}
+
+@keyframes spinAround {
+  from {
+      transform:rotate(0)
+  }
+  to {
+      transform:rotate(359deg)
+  }
+}
+// LOADER
+
+
+// By Roman
+// Codepen : https://codepen.io/Lolopicker/pen/YzYPJGJ
+
+// LOADER CIRCLE
+.spinner-loader-circle {
+  position: relative;
+  width: $spinner-loader-circle-size;
+  height: $spinner-loader-circle-size;
+  
+  .spinner-circle {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: rotate(225deg);
+    animation: loader-rotate-animation $spinner-loader-circle-animation-duration infinite;
+    
+    &:nth-child(2) {
+      animation-delay: 220ms;
+    }
+    &:nth-child(3) {
+      animation-delay: 440ms;
+    }
+    &:nth-child(4) {
+      animation-delay: 660ms;
+    }
+    &:nth-child(5) {
+      animation-delay: 880ms;
+    }
+    
+    &:after {
+      content: "";
+      position: absolute;
+      width: $spinner-loader-circle-width;
+      height: $spinner-loader-circle-width;
+      border-radius: 50%;
+      background: $spinner-loader-bg;
+    }
+  }
+  
+  &.small {
+    width: $spinner-loader-circle-small-size;
+    height: $spinner-loader-circle-small-size;
+    
+    .spinner-circle:after {
+      width: $spinner-loader-circle-small-width;
+      height: $spinner-loader-circle-small-width;
+    }
+  }
+
+  &.big {
+    width: $spinner-loader-circle-big-size;
+    height: $spinner-loader-circle-big-size;
+    
+    .spinner-circle:after {
+      width: $spinner-loader-circle-big-width;
+      height: $spinner-loader-circle-big-width;
+    }
+  }
+}
+  
+@keyframes loader-rotate-animation {
+  0% {
+    opacity: 0;
+    transform: rotate(225deg);
+    animation-timing-function: ease-out;
+  }
+  7% {
+    opacity: 1;
+    transform: rotate(345deg);
+    animation-timing-function: linear;
+  }
+  30% {
+    opacity: 1;
+    transform: rotate(455deg);
+    animation-timing-function: ease-out;
+  }
+  39% {
+    opacity: 1;
+    transform: rotate(690deg);
+    animation-timing-function: linear;
+  }
+  70% {
+    opacity: 1;
+    transform: rotate(815deg);
+    animation-timing-function: ease-out;
+  }
+  75% {
+    opacity: 1;
+    transform: rotate(945deg);
+  }
+  76% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+// LOADER CIRCLE
+
+
+// By Salman Shaikh
+// Codepen : https://codepen.io/salmannotkhan/pen/WNdNrQW
+
+// ELLIPSIS
+.spinner-ellipsis {
+  display: flex;
+  align-items: flex-end;
+  gap: calc($spinner-ellipsis-size / 4);
+  height: calc($spinner-ellipsis-size * 1.75);
+  width: max-content;
+
+  &:before,
+  &:after {
+    content: "";
+  }
+
+  & > div,
+  &:before,
+  &:after {
+    height: $spinner-ellipsis-size;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: $spinner-ellipsis-bg;
+    animation: bounce $spinner-ellipsis-duraton ease-in-out infinite alternate;
+  }
+
+  &:after {
+    animation-delay: calc($spinner-ellipsis-duraton / 2);
+  }
+
+  > div {
+    animation-delay: calc($spinner-ellipsis-duraton / 4);
+  }
+
+  &.small {
+    gap: calc($spinner-ellipsis-small-size / 4);
+    height: calc($spinner-ellipsis-small-size * 1.75);
+
+    & > div,
+    &:before,
+    &:after {
+      height: $spinner-ellipsis-small-size;
+    }
+  }
+
+  &.big {
+    gap: calc($spinner-ellipsis-big-size / 4);
+    height: calc($spinner-ellipsis-big-size * 1.75);
+
+    & > div,
+    &:before,
+    &:after {
+      height: $spinner-ellipsis-big-size;
+    }
+  }
+}
+
+@keyframes bounce {
+  from {
+      transform: translateY(0%);
+  }
+  to {
+      transform: translateY(-75%);
+  }
+}
+// ELLIPSIS
+
+// STYLE CIRCLE
+.spinner-style-circle {
+  position: relative;
+  width: $spinner-circle-size;
+  height: $spinner-circle-size;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.colored {
+    .spinner-circle {
+      &.circle-1 {
+        background-color: $color-primary;
+      }
+  
+      &.circle-2 {
+        background-color: $color-secondary;
+      }
+  
+      &.circle-3 {
+        background-color: $color-tertiary;
+      }
+  
+      &.circle-4 {
+        background-color: $color-info;
+      }
+    }
+  }
+
+  .spinner-circle {
+    position: absolute;
+    width: $spinner-circle-loader-size;
+    height: $spinner-circle-loader-size;
+    border-radius: 50%;
+
+    &.circle-1,
+    &.circle-2,
+    &.circle-3,
+    &.circle-4 {
+      background-color: $spinner-circle-loader-color;
+    }
+
+    &.circle-1 {
+      z-index: 4;
+      animation: moveCircle1 $spinner-circle-duration infinite ease;
+    }
+
+    &.circle-2 {
+      z-index: 3;
+      animation: moveCircle2 $spinner-circle-duration infinite ease;
+    }
+
+    &.circle-3 {
+      z-index: 2;
+      animation: moveCircle3 $spinner-circle-duration infinite ease;
+    }
+
+    &.circle-4 {
+      z-index: 1;
+      animation: moveCircle4 $spinner-circle-duration infinite ease;
+    }
+  }
+}
+
+@keyframes moveCircle1 {
+  from {
+    transform: rotate(0deg);
+    transform-origin: -#{$spinner-circle-loader-size} -#{$spinner-circle-loader-size};
+    transform-style: preserve-3D;
+  }
+
+  to {
+    transform: rotate(-360deg);
+    transform-origin: -#{$spinner-circle-loader-size} -#{$spinner-circle-loader-size};
+    transform-style: preserve-3D;
+  }
+}
+
+@keyframes moveCircle2 {
+  from {
+    transform: rotate(0deg);
+    transform-origin: calc($spinner-circle-loader-size * 2) -#{$spinner-circle-loader-size};
+    transform-style: preserve-3D;
+  }
+
+  to {
+    transform: rotate(-360deg);
+    transform-origin: calc($spinner-circle-loader-size * 2) -#{$spinner-circle-loader-size};
+    transform-style: preserve-3D;
+  }
+}
+
+@keyframes moveCircle3 {
+  from {
+    transform: rotate(0deg);
+    transform-origin: -#{$spinner-circle-loader-size} calc($spinner-circle-loader-size * 2);
+    transform-style: preserve-3D;
+  }
+
+  to {
+    transform: rotate(-360deg);
+    transform-origin: -#{$spinner-circle-loader-size} calc($spinner-circle-loader-size * 2);
+    transform-style: preserve-3D;
+  }
+}
+
+@keyframes moveCircle4 {
+  from {
+    transform: rotate(0deg);
+    transform-origin: calc($spinner-circle-loader-size * 2) calc($spinner-circle-loader-size * 2);
+    transform-style: preserve-3D;
+  }
+
+  to {
+    transform: rotate(-360deg);
+    transform-origin: calc($spinner-circle-loader-size * 2) calc($spinner-circle-loader-size * 2);
+    transform-style: preserve-3D;
+  }
+}
+// STYLE CIRCLE
+
+
+// By Event Horizon
+// Codepen : https://codepen.io/Event_Horizon/pen/ExwxGNb
+
+// FLIP
+.spinner-flip{
+  position: relative;
+  display: block;
+  width: $spinner-flip-size;
+  height: $spinner-flip-size;
+  background: $spinner-flip-color;  
+  animation: flip $spinner-flip-animation-duration linear infinite;
+
+  &.small {
+    height: $spinner-flip-small-size;
+    width: $spinner-flip-small-size;
+  }
+
+  &.big {
+    height: $spinner-flip-big-size;
+    width: $spinner-flip-big-size;
+  }
+}
+
+@keyframes flip{
+  50%{
+    transform:perspective(100px) rotateX(180deg) rotateY(0deg);
+  }
+  100%{
+    transform:perspective(100px) rotateX(180deg) rotateY(180deg);    
+  }
+}
+// FLIP
+
+// PULSE
+.spinner-pulse {
+  position: relative;
+  display: block;
+  width: $spinner-pulse-size;
+  height: $spinner-pulse-size;
+
+  &.small {
+    width: $spinner-pulse-small-size;
+    height: $spinner-pulse-small-size;
+
+    &:before,
+    &:after{
+      width: $spinner-pulse-small-size;
+      height: $spinner-pulse-small-size;
+    }
+  }
+
+  &.big {
+    width: $spinner-pulse-big-size;
+    height: $spinner-pulse-big-size;
+
+    &:before,
+    &:after{
+      width: $spinner-pulse-big-size;
+      height: $spinner-pulse-big-size;
+    }
+  }
+
+  &:before,
+  &:after{
+    position:absolute;
+    content: "";
+    inset: 0;
+    display: block;
+    border-radius: 50%;
+    width: $spinner-pulse-size;
+    height: $spinner-pulse-size;
+    transform: scale(0%);
+    opacity: 1;
+    animation: grow $spinner-pulse-animation-duration infinite;
+  }
+
+  &:before{
+    background: rgba($spinner-pulse-color, 75%);
+    animation-delay: 0.25s;
+  }
+
+  &:after{
+    background: rgba($spinner-pulse-color, 40%);
+    animation-delay: 0.5s;
+  }
+}
+
+@keyframes grow {
+  to {
+    transform: scale(100%);
+    opacity: 0;
+  }
+}
+// PULSE
+
+// CIRCLE BORDER
+.spinner-circle-border {
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  width: $spinner-circle-border-size;
+  height: $spinner-circle-border-size;
+  border: $spinner-circle-border-width solid $spinner-circle-border-color;
+  animation: neon $spinner-circle-border-animation-duration infinite linear;  
+
+  &.small {
+    width: $spinner-circle-border-small-size;
+    height: $spinner-circle-border-small-size;
+    border-width: $spinner-circle-border-small-width;
+  }
+
+  &.big {
+    width: $spinner-circle-border-big-size;
+    height: $spinner-circle-border-big-size;
+    border-width: $spinner-circle-border-big-width;
+  }
+}
+
+@keyframes neon {
+  0% {
+    border-color: rgba($spinner-circle-border-color, 10%);
+    border-top-color: $spinner-circle-border-color;
+  }
+  25% {
+    border-color: rgba($spinner-circle-border-color, 10%);
+    border-right-color: $spinner-circle-border-color;
+  }
+  50% {
+    border-color: rgba($spinner-circle-border-color, 10%);
+    border-bottom-color: $spinner-circle-border-color;
+  }
+  75% {
+    border-color: rgba($spinner-circle-border-color, 10%);
+    border-left-color: $spinner-circle-border-color;
+  }
+  100% {
+    border-color: rgba($spinner-circle-border-color, 10%);
+    border-top-color: $spinner-circle-border-color;
+  }
+}
+// CIRCLE BORDER
+
+
+// By Alaa Sufi
+// Codepen : https://codepen.io/alaa-sufi/pen/MWbYdeb
+
+// ELLIPSIS SCALE
+.spinner-ellipsis-scale {
+  display: flex;
+
+  &.small {
+    .spinner-circle {
+      width: $spinner-ellipsis-scale-small-size;
+      height: $spinner-ellipsis-scale-small-size;
+    }
+  }
+
+  &.big {
+    .spinner-circle {
+      width: $spinner-ellipsis-scale-big-size;
+      height: $spinner-ellipsis-scale-big-size;
+    }
+  }
+
+  .spinner-circle {
+    width: $spinner-ellipsis-scale-size;
+    height: $spinner-ellipsis-scale-size;
+    background-color: $spinner-ellipsis-scale-bg;
+    border-radius: 50%;
+    margin: $spinner-ellipsis-scale-margin;
+    animation: scale $spinner-ellipsis-scale-duration linear 0s infinite alternate;
+    &.one {
+      animation-delay: $spinner-ellipsis-scale-one-delay;
+    }
+    &.two {
+      animation-delay: $spinner-ellipsis-scale-two-delay;
+    }
+    &.three {
+      animation-delay: $spinner-ellipsis-scale-three-delay;
+    }
+  }
+}
+
+@keyframes scale{
+  from {
+    transform:scale(0.2);
+  }
+  to {
+    transform:scale(1);
+  }
+}
+// ELLIPSIS SCALE
+
+// ELLIPSIS BAR
+.spinner-ellipsis-bar {
+  position: relative;
+  width: $spinner-ellipsis-bar-width;
+  height: $spinner-ellipsis-bar-height;
+
+  &.small {
+    width: $spinner-ellipsis-bar-small-width;
+    height: $spinner-ellipsis-bar-small-height;
+
+    .spinner-circle {
+      width: calc($spinner-ellipsis-bar-small-height / 2);
+      height: calc($spinner-ellipsis-bar-small-height / 2);
+
+      &.one{
+        left: $spinner-ellipsis-bar-small-one-left;
+      }
+      &.two{
+        left: $spinner-ellipsis-bar-small-two-left;
+      }
+      &.three{
+        left: $spinner-ellipsis-bar-small-three-left;
+      }
+    }
+  }
+
+  &.big {
+    width: $spinner-ellipsis-bar-big-width;
+    height: $spinner-ellipsis-bar-big-height;
+
+    .spinner-circle {
+      width: calc($spinner-ellipsis-bar-big-height / 2);
+      height: calc($spinner-ellipsis-bar-big-height / 2);
+
+      &.one{
+        left: $spinner-ellipsis-bar-big-one-left;
+      }
+      &.two{
+        left: $spinner-ellipsis-bar-big-two-left;
+      }
+      &.three{
+        left: $spinner-ellipsis-bar-big-three-left;
+      }
+    }
+  }
+
+  .spinner-circle {
+    position: absolute;
+    width: calc($spinner-ellipsis-bar-height / 2);
+    height: calc($spinner-ellipsis-bar-height / 2);
+    background-color: $color-gray-9;
+    border-radius: $spinner-ellipsis-bar-border-radius;
+    transform: translateY(-50%);
+    animation: grow-up-down $spinner-ellipsis-bar-animation-duration linear 0s infinite ;
+    &.one{
+      animation-delay:0s;
+      top: 50%;
+      left: $spinner-ellipsis-bar-one-left;
+    }
+    &.two{
+      animation-delay:0.5s;
+      top: 50%;
+      left: $spinner-ellipsis-bar-two-left;
+    }
+    &.three{
+      animation-delay:1s;
+      top: 50%;
+      left: $spinner-ellipsis-bar-three-left;
+    }
+  }
+}
+
+@keyframes grow-up-down {
+  0% {
+    height: $spinner-ellipsis-bar-height;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  50% {
+    height: calc($spinner-ellipsis-bar-height / 2);
+    top: 50;
+  }
+  100% {
+    height: $spinner-ellipsis-bar-height;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes grow-up-down-small {
+  0% {
+    height: $spinner-ellipsis-bar-small-height;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  50% {
+    height: calc($spinner-ellipsis-bar-small-height / 2);
+    top: 50;
+  }
+  100% {
+    height: $spinner-ellipsis-bar-small-height;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes grow-up-down-big {
+  0% {
+    height: $spinner-ellipsis-bar-big-height;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  50% {
+    height: calc($spinner-ellipsis-bar-big-height / 2);
+    top: 50;
+  }
+  100% {
+    height: $spinner-ellipsis-bar-big-height;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+// ELLIPSIS BAR
+
+// COLORED
+@each $cname, $color in $colors {
+  .spinner-loader {
+    &.#{$cname} {
+      border-color: $color;
+    }
+  }
+
+  .spinner-loader-circle {
+    &.#{$cname} {
+      .spinner-circle {
+        &::after {
+          background: $color;
+        }
+      }
+    }
+  }
+
+  .spinner-ellipsis {
+    &.#{$cname} {
+      & > div,
+      &:before,
+      &:after {
+        background-color: $color;
+      }
+    }
+  }
+
+  .spinner-style-circle {
+    &.#{$cname} {
+      .spinner-circle {
+        &.circle-1,
+        &.circle-2,
+        &.circle-3,
+        &.circle-4 {
+          background-color: $color;
+        }
+      }
+    }
+  }
+
+  .spinner-flip {
+    &.#{$cname} {
+      background: $color;
+    }
+  }
+
+  .spinner-pulse {
+    &.#{$cname} {
+      &:before{
+        background: rgba($color, 75%);
+      }
+      &:after{
+        background: rgba($color, 40%);
+      }
+    }
+  }
+
+  .spinner-circle-border {
+    &.#{$cname} {
+      border-color: $color;
+      animation: neon-#{$cname} $spinner-circle-border-animation-duration infinite linear;  
+    }
+  }
+  @keyframes neon-#{$cname} {
+    0% {
+      border-color: rgba($color, 10%);
+      border-top-color: $color;
+    }
+    25% {
+      border-color: rgba($color, 10%);
+      border-right-color: $color;
+    }
+    50% {
+      border-color: rgba($color, 10%);
+      border-bottom-color: $color;
+    }
+    75% {
+      border-color: rgba($color, 10%);
+      border-left-color: $color;
+    }
+    100% {
+      border-color: rgba($color, 10%);
+      border-top-color: $color;
+    }
+  }
+
+  .spinner-ellipsis-scale {
+    &.#{$cname} {
+      .spinner-circle {
+        background-color: $color;
+      }
+    }
+  }
+
+  .spinner-ellipsis-bar {
+    &.#{$cname} {
+      .spinner-circle {
+        background-color: $color;
+      }
+    }
+  }
+}
+// COLORED

@@ -1,0 +1,32 @@
+// PANEL
+$panel-border-width:                        1px !default;
+$panel-border-color:                        $color-gray-3 !default;
+$panel-border-radius:                       $border-radius !default;
+$panel-border-font-size:                    $font-size-base !default;
+
+    // PANEL HEADER
+    $panel-header-bg:                           $panel-border-color !default;
+    $panel-header-font-size:                    $font-size-s !default;
+    $panel-header-font-weight:                  600 !default;
+    $panel-header-line-height:                  1.25 !default;
+    $panel-header-padding:                      0.75rem 1rem !default;
+    // PANEL HEADER
+
+    // PANEL ITEM
+    $panel-item-padding:                        0.5rem 0.75rem !default;
+    $panel-item-color:                          $color-gray-9 !default;
+    $panel-item-color-active:                   $color-primary !default;
+    // PANEL ITEM
+
+    // PANEL ICON
+    $panel-icon-size:                           1rem !default;
+    $panel-icon-font-size:                      $font-size-xxs !default;
+    $panel-icon-margin-right:                   0.75rem !default;
+    // PANEL ICON
+
+    // PANEL TAB
+    $panel-tab-font-size:                       $font-size-xxs !default;
+    $panel-tab-padding:                         0.5rem !default;
+    $panel-tab-color:                           $panel-item-color !default;
+    // PANEL TAB
+// PANEL

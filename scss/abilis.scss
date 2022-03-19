@@ -1,4 +1,15 @@
-.background {
-  background-color: red;
-  color: blue;
-}
+// GENERAL
+@import "utils/variables.scss";
+@import "utils/functions.scss";
+@import "utils/mixins.scss";
+@import "utils/reset.scss";
+// GENERAL
+
+// STYLE
+@import "helpers/all.scss";
+@import "content/all.scss";
+@import "grid/all.scss";
+@import "components/all.scss";
+@import "form/all.scss";
+@import "extensions/all.scss";
+// STYLE

@@ -1,0 +1,20 @@
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: $icon-size;
+    width: $icon-size;
+    font-size: $icon-size;
+
+    &.small {
+        height: $icon-size-small;
+        width: $icon-size-small;
+        font-size: $icon-size-small;
+    }
+
+    &.big {
+        height: $icon-size-big;
+        width: $icon-size-big;
+        font-size: $icon-size-big;
+    }
+}

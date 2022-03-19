@@ -1,0 +1,96 @@
+.content {
+    h1, h2, h3, h4, h5, h6 {
+        color: $content-color-title;
+        font-weight: $content-title-font-weight;
+        line-height: $content-title-line-height;
+    }
+
+    @each $title, $size in $titles {
+        #{$title} {
+            font-size: $size;
+            margin-bottom: $content-title-margin-bottom;
+
+            @if #{$title} != 'h1' {
+                &:not(:first-child) {
+                    margin-top: $content-title-margin-top;
+                }
+            }
+        }
+    }
+
+    blockquote:not(:last-child),
+    dl:not(:last-child),
+    ol:not(:last-child),
+    p:not(:last-child),
+    pre:not(:last-child),
+    table:not(:last-child),
+    ul:not(:last-child) {
+        margin-bottom: $content-general-margin-sm;
+    }
+
+    ul {
+        list-style: disc outside;
+        margin-left: $content-general-margin-md;
+        margin-top: $content-general-margin-sm;
+    }
+
+    ol {
+        list-style-position: outside;
+        margin-left: $content-general-margin-md;
+        margin-top: $content-general-margin-sm;
+
+        &:not([type]) {
+            list-style-type: decimal;
+        }
+    }
+
+    dd {
+        margin-left: $content-general-margin-md;
+    }
+
+    blockquote {
+        background-color: $content-blockquote-background-color;
+        border: $content-blockquote-border-width solid $content-blockquote-border-left-color;
+        border-left: $content-blockquote-border-left-width solid $content-blockquote-border-left-color;
+        padding: $content-blockquote-padding;
+        border-radius: $content-blockquote-border-radius;
+        margin: $content-blockquote-margin;
+    }
+
+    code, pre {
+        -moz-osx-font-smoothing: auto;
+        -webkit-font-smoothing: auto;
+        font-family: monospace;
+    }
+
+    pre {
+        -webkit-overflow-scrolling: touch;
+        overflow-x: auto;
+        padding: $content-pre-padding;
+        white-space: pre;
+        word-wrap: normal;
+        background-color: $content-pre-background-color;
+        color: $content-pre-color;
+        font-size: $content-pre-font-size;
+        border-radius: $content-pre-border-radius;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    figure {
+        margin-left: $content-general-margin-md;
+        margin-right: $content-general-margin-md;
+        text-align: center;
+
+        &:not(:last-child) {
+            margin-bottom: $content-general-margin-md;
+        }
+
+        &:not(:first-child) {
+            margin-top: $content-general-margin-md;
+        }
+    }
+
+}

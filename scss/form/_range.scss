@@ -1,0 +1,125 @@
+// RANGE
+.range {
+    width: $range-width;
+    height: $range-height;
+    padding: 0;
+    background-color: transparent;
+    appearance: none;
+
+    &.small {
+        &::-webkit-slider-thumb {
+            @include rangeThumbSize ($range-thumb-size-small, $range-thumb-margin-top-small);
+        }
+    
+        &::-webkit-slider-runnable-track {
+            @include rangeTrackSize ($range-track-height-small);
+        }
+    
+        &::-moz-range-thumb {
+            @include rangeThumbSize ($range-thumb-size-small, $range-thumb-margin-top-small);
+        }
+    
+        &::-moz-range-track {
+            @include rangeTrackSize ($range-track-height-small);
+        }
+    }
+
+    &.big {
+        &::-webkit-slider-thumb {
+            @include rangeThumbSize ($range-thumb-size-big, $range-thumb-margin-top-big);
+        }
+    
+        &::-webkit-slider-runnable-track {
+            @include rangeTrackSize ($range-track-height-big);
+        }
+    
+        &::-moz-range-thumb {
+            @include rangeThumbSize ($range-thumb-size-big, $range-thumb-margin-top-big);
+        }
+    
+        &::-moz-range-track {
+            @include rangeTrackSize ($range-track-height-big);
+        }
+    }
+
+    &:focus {
+        outline: 0;
+
+        &::-webkit-slider-thumb {
+            @include rangeThumbActive ($range-thumb-color, $range-thumb-border-width, $range-thumb-border-color, $range-box-shadow, $range-box-shadow-opacity);
+        }
+        &::-moz-range-thumb {
+            @include rangeThumbActive ($range-thumb-color, $range-thumb-border-width, $range-thumb-border-color, $range-box-shadow, $range-box-shadow-opacity);
+        }
+    }
+
+    &::-moz-focus-outer {
+        border: 0;
+    }
+
+    &::-webkit-slider-thumb {
+        @include rangeThumb ($range-thumb-size, $range-thumb-margin-top, $range-thumb-color, $range-thumb-border-radius);
+
+        &:active {
+            @include rangeThumbActive ($range-thumb-color, $range-thumb-border-width, $range-thumb-border-color, $range-box-shadow, $range-box-shadow-opacity);
+        }
+    }
+
+    &::-webkit-slider-runnable-track {
+        @include rangeTrack ($range-track-height, $range-track-color, $range-track-border-radius);
+    }
+
+    &::-moz-range-thumb {
+        @include rangeThumb ($range-thumb-size, $range-thumb-margin-top, $range-thumb-color, $range-thumb-border-radius);        
+
+        &:active {
+            @include rangeThumbActive ($range-thumb-color, $range-thumb-border-width, $range-thumb-border-color, $range-box-shadow, $range-box-shadow-opacity);
+        }
+    }
+
+    &::-moz-range-track {
+        @include rangeTrack ($range-track-height, $range-track-color, $range-track-border-radius);
+    }
+
+    &:disabled {
+        pointer-events: none;
+
+        &::-webkit-slider-thumb {
+            background-color: $range-thumb-disabled-color;
+        }
+
+        &::-moz-range-thumb {
+            background-color: $range-thumb-disabled-color;
+        }
+    }
+}
+
+@each $cname, $color in $colors {
+    .range.#{$cname} {
+        &:focus {
+            &::-webkit-slider-thumb {
+                @include rangeThumbActive ($color, $range-thumb-border-width, $color, $range-box-shadow, $range-box-shadow-opacity);
+            }
+            &::-moz-range-thumb {
+                @include rangeThumbActive ($color, $range-thumb-border-width, $color, $range-box-shadow, $range-box-shadow-opacity);
+            }
+        }
+    
+        &::-webkit-slider-thumb {
+            @include rangeThumb ($range-thumb-size, $range-thumb-margin-top, $color, $range-thumb-border-radius);
+    
+            &:active {
+                @include rangeThumbActive ($color, $range-thumb-border-width, $color, $range-box-shadow, $range-box-shadow-opacity);
+            }
+        }
+    
+        &::-moz-range-thumb {
+            @include rangeThumb ($range-thumb-size, $range-thumb-margin-top, $color, $range-thumb-border-radius);        
+    
+            &:active {
+                @include rangeThumbActive ($color, $range-thumb-border-width, $color, $range-box-shadow, $range-box-shadow-opacity);
+            }
+        }
+    }
+}
+// RANGE

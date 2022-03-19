@@ -1,0 +1,132 @@
+// DEVICE ANIMATION
+$device-animation-size:                                                   300px !default;
+$device-animation-duration:                                               4s !default;
+
+$device-animation-device-border-radius:                                   8px !default;
+$device-animation-screen-border-radius:                                   5px !default;
+$device-animation-detail-border-radius:                                   8px !default;
+
+$device-animation-device-bg:                                              $color-gray-8 !default;
+$device-animation-screen-bg:                                              $color-gray-6 !default;
+$device-animation-detail-bg:                                              $color-gray-5 !default;
+
+$device-animation-colored-device-bg:                                      #1e3f57 !default;
+$device-animation-colored-screen-bg:                                      #3c617d !default;
+$device-animation-colored-detail-bg:                                      #6bb2cd !default;
+  
+  // DESKTOP
+    // ALL SCREEN
+    $device-animation-device-desktop-width:                               260px !default;
+    $device-animation-device-desktop-height:                              180px !default;
+    // ALL SCREEN
+
+    // SCREEN
+    $device-animation-screen-desktop-width:                               245px !default;
+    $device-animation-screen-desktop-height:                              165px !default;
+    // SCREEN
+
+    // DETAIL
+    $device-animation-detail-desktop-width:                               60px !default;
+    $device-animation-detail-desktop-height:                              10px !default;
+    $device-animation-detail-desktop-transform:                           translate(-28px,97px) !default;
+    // DETAIL
+  // DESKTOP
+
+  // TABLETTE
+    // ALL SCREEN
+    $device-animation-device-tablette-width:                              140px !default;
+    $device-animation-device-tablette-height:                             180px !default;
+    // ALL SCREEN
+
+    // SCREEN
+    $device-animation-screen-tablette-width:                              125px !default;
+    $device-animation-screen-tablette-height:                             155px !default;
+    // SCREEN
+
+    // DETAIL
+    $device-animation-detail-tablette-width:                              8px !default;
+    $device-animation-detail-tablette-height:                             $device-animation-detail-tablette-width !default;
+    $device-animation-detail-tablette-border-radius:                      $device-animation-detail-tablette-width !default;
+    $device-animation-detail-tablette-transform:                          translate(-5px,79px) !default;
+    // DETAIL
+  // TABLETTE
+
+  // MOBILE
+    // ALL SCREEN
+    $device-animation-device-mobile-width:                                75px !default;
+    $device-animation-device-mobile-height:                               140px !default;
+    // ALL SCREEN
+
+    // SCREEN
+    $device-animation-screen-mobile-width:                                65px !default;
+    $device-animation-screen-mobile-height:                               122px !default;
+    // SCREEN
+
+    // DETAIL
+    $device-animation-detail-mobile-width:                                19px !default;
+    $device-animation-detail-mobile-height:                               4px !default;
+    $device-animation-detail-mobile-border-radius:                        10px !default;
+    $device-animation-detail-mobile-transform:                            translate(-9.5px,-67.3px) !default;
+    // DETAIL
+  // MOBILE
+
+
+
+  // RESPONSIVE
+  $device-animation-responsive-size:                                       200px !default;
+
+    // DESKTOP
+      // ALL SCREEN
+      $device-animation-responsive-device-desktop-width:                   160px !default;
+      $device-animation-responsive-device-desktop-height:                  100px !default;
+      // ALL SCREEN
+
+      // SCREEN
+      $device-animation-responsive-screen-desktop-width:                   150px !default;
+      $device-animation-responsive-screen-desktop-height:                  90px !default;
+      // SCREEN
+
+      // DETAIL
+      $device-animation-responsive-detail-desktop-width:                   40px !default;
+      $device-animation-responsive-detail-desktop-height:                  7px !default;
+      $device-animation-responsive-detail-desktop-transform:               translate(-20px,54px) !default;
+      // DETAIL
+    // DESKTOP
+
+    // TABLETTE
+      // ALL SCREEN
+      $device-animation-responsive-device-tablette-width:                  90px !default;
+      $device-animation-responsive-device-tablette-height:                 120px !default;
+      // ALL SCREEN
+
+      // SCREEN
+      $device-animation-responsive-screen-tablette-width:                  80px !default;
+      $device-animation-responsive-screen-tablette-height:                 100px !default;
+      // SCREEN
+
+      // DETAIL
+      $device-animation-responsive-detail-tablette-width:                  6.5px !default;
+      $device-animation-responsive-detail-tablette-height:                 $device-animation-responsive-detail-tablette-width !default;
+      $device-animation-responsive-detail-tablette-transform:              translate(-5px,51px) !default;
+      // DETAIL
+    // TABLETTE
+
+    // MOBILE
+      // ALL SCREEN
+      $device-animation-responsive-device-mobile-width:                    55px !default;
+      $device-animation-responsive-device-mobile-height:                   100px !default;
+      // ALL SCREEN
+
+      // SCREEN
+      $device-animation-responsive-screen-mobile-width:                    47px !default;
+      $device-animation-responsive-screen-mobile-height:                   83px !default;
+      // SCREEN
+
+      // DETAIL
+      $device-animation-responsive-detail-mobile-width:                    14px !default;
+      $device-animation-responsive-detail-mobile-height:                   3px !default;
+      $device-animation-responsive-detail-mobile-transform:                translate(-8px,-47px) !default;
+      // DETAIL
+    // MOBILE
+  // RESPONSIVE
+// DEVICE ANIMATION

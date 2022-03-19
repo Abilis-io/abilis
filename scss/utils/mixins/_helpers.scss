@@ -1,0 +1,45 @@
+@mixin opacityHover {
+  opacity: $opacity-85;
+  transition: $transition;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin centerTranslate {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin borderRadiusBottom ($radius) {
+  border-bottom-left-radius: $radius;
+  border-bottom-right-radius: $radius;
+}
+
+@mixin borderRadiusTop ($radius) {
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+}
+
+@mixin responsive($br) {
+  @if (map-has-key($breakpoints, $br)) {
+    $value: map-get($breakpoints, $br);
+    @media #{$value} {
+      @content;
+    }
+} @else if (map-has-key($extra-breakpoints, $br)) {
+    $value: map-get($extra-breakpoints, $br);
+    @media #{$value} {
+      @content;
+    }
+  }
+}

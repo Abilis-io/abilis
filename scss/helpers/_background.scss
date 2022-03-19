@@ -1,0 +1,14 @@
+@each $cname, $color1, $color2 in $colors {
+    .bg-#{$cname} {
+        background-color: $color1 !important;
+        color: $color2;
+
+        a:not(.button) {
+            color: $color2;
+        }
+    }
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}

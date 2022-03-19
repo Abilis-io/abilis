@@ -1,0 +1,35 @@
+@each $bname, $border in $border-widths {
+    @if $border == none or $border == unset {
+        .b-#{$bname} {
+            border: $border !important;
+        }
+        .b-l-#{$bname} {
+            border-left: $border !important;
+        }
+        .b-r-#{$bname} {
+            border-right: $border !important;
+        }
+        .b-t-#{$bname} {
+            border-top: $border !important;
+        }
+        .b-b-#{$bname} {
+            border-bottom: $border !important;
+        }
+    } @else {
+        .b-#{$bname} {
+            border: $border solid $color-gray-3 !important;
+        }
+        .b-l-#{$bname} {
+            border-left: $border solid $color-gray-3 !important;
+        }
+        .b-r-#{$bname} {
+            border-right: $border solid $color-gray-3 !important;
+        }
+        .b-t-#{$bname} {
+            border-top: $border solid $color-gray-3 !important;
+        }
+        .b-b-#{$bname} {
+            border-bottom: $border solid $color-gray-3 !important;
+        }
+    }
+}

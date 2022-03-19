@@ -1,0 +1,11 @@
+.feedback {
+    display: block;
+    font-size: $feedback-font-size;
+    margin-top: $feedback-margin-top;
+}
+
+@each $cname, $color in $colors {
+    .feedback.#{$cname} {
+        color: $color;
+    }
+}

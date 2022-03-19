@@ -2,7 +2,11 @@
   "name": "abilis",
   "version": "1.0.0",
   "description": "CSS and JS front-end open source library",
-  "main": "index.js",
+  "main": "dist/js/abilis.umd.js",
+  "module": "dist/js/abilis.esm.js",
+  "sass": "scss/abilis.scss",
+  "style": "dist/css/abilis.css",
+  "sideEffects": false,
   "scripts": {
     "prebuild": "rimraf dist/js",
     "build": "rollup -c",
@@ -49,7 +53,8 @@
     "rimraf": "^3.0.2",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-terser": "^7.0.2"
+    "rollup-plugin-terser": "^7.0.2",
+    "sass": "^1.49.9"
   },
   "engines": {
     "node": ">=8"

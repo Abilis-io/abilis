@@ -1,0 +1,17 @@
+@each $wname, $width in $border-widths {
+    .bw-#{$wname} {
+        border-width: $width !important;
+    }
+    .bw-t-#{$wname} {
+        border-top-width: $width !important;
+    }
+    .bw-b-#{$wname} {
+        border-bottom-width: $width !important;
+    }
+    .bw-r-#{$wname} {
+        border-right-width: $width !important;
+    }
+    .bw-l-#{$wname} {
+        border-left-width: $width !important;
+    }
+}

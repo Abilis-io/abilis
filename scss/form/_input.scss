@@ -1,0 +1,85 @@
+// GLOBAL INPUT
+.input {
+    max-width: $input-width;
+    width: $input-width;
+    background-color: $input-background-color;
+    border-radius: $input-border-radius;
+    color: $input-color;
+    -webkit-appearance: none;
+    align-items: center;
+    border: $input-border-width solid $input-border-color;
+    display: inline-flex;
+    height: $input-height;
+    justify-content: flex-start;
+    line-height: $input-line-height;
+    padding-bottom: $btn-padding-vertical;
+    padding-left: $input-padding-right-left;
+    padding-right: $input-padding-right-left;
+    padding-top: $btn-padding-vertical;
+    position: relative;
+    vertical-align: top;
+    font-family: $font-family-base;
+    font-size: $input-font-size;
+
+    &[disabled] {
+        background-color: $input-disabled-background-color;
+        border-color: $input-disabled-border-color;
+        box-shadow: none;
+        color: $input-disabled-color;
+        cursor: not-allowed;
+    }
+
+    &:hover {
+        border-color: $input-hover-border-color;
+    }
+    
+    &:active, &:focus {
+        @include inputFocused ($input-active-border-color, $input-box-shadow, $input-box-shadow-opacity);
+    }
+
+    @each $cname, $color in $colors {
+        &.#{$cname},
+        &.#{$cname}:hover,
+        &.#{$cname}.hovered {
+            border-color: $color;
+        }
+    }
+
+    &.big {
+        @include inputSize ($input-big-font-size, $input-height-big, $btn-big-padding-vertical);
+    }
+
+    &.small {
+        @include inputSize ($input-small-font-size, $input-height-small, $btn-small-padding-vertical);
+    }
+}
+// GLOBAL INPUT
+
+// INPUT / TEXTAREA
+.input, .textarea {
+    @include input ($input-hover-border-color, $input-active-border-color, $input-box-shadow, $input-box-shadow-opacity);
+}
+// INPUT / TEXTAREA
+
+
+
+// GLOBAL INPUT / SELECT / TEXTAREA COLORED
+@each $cname, $color1, $color2 in $colors {
+    .input.#{$cname}:active, .input.#{$cname}:focus,
+    .select.#{$cname} select:active, .select.#{$cname} select:focus,
+    .textarea.#{$cname}:active, .textarea.#{$cname}:focus {
+        border-color: $color1;
+        box-shadow: $input-box-shadow rgba($color1, $input-box-shadow-opacity);
+    }
+
+    .input.is-#{$cname},
+    .select.is-#{$cname} select,
+    .textarea.is-#{$cname},
+    .input.#{$cname}.focused,
+    .select.#{$cname}.focused select,
+    .textarea.#{$cname}.focused {
+        border-color: $color1;
+        box-shadow: $input-box-shadow rgba($color1, $input-box-shadow-opacity);
+    }
+}
+// GLOBAL INPUT / SELECT / TEXTAREA COLORED

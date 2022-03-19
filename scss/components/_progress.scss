@@ -1,0 +1,33 @@
+.progress {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    border-radius: $progress-border-radius;
+    display: block;
+    height: $progress-height;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+
+    &.small {
+        height: 0.6rem;
+    }
+
+    &.big {
+        height: 1rem;
+    }
+
+    &::-webkit-progress-bar {
+        background-color: $progress-bar-color;
+    }
+
+    &::-webkit-progress-value {
+        background-color: $progress-value-color;
+    }
+}
+
+@each $cname, $color1 in $colors {
+    .progress.#{$cname}::-webkit-progress-value {
+        background-color: $color1;
+    }
+}

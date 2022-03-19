@@ -1,0 +1,15 @@
+@each $sname, $shadow in $shadows {
+    .box-shadow-#{$sname} {
+        box-shadow: #{$shadow} !important;
+    }
+}
+
+@each $sname, $shadow in $light-shadows {
+    .box-shadow-light-#{$sname} {
+        box-shadow: #{$shadow} !important;
+    }
+}
+
+.box-shadow-0 {
+    box-shadow: none !important;
+}

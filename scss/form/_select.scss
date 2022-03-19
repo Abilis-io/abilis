@@ -1,0 +1,104 @@
+// SELECT
+.select {
+    display: inline-block;
+    max-width: $input-width;
+    width: $input-width;
+    position: relative;
+    vertical-align: top;
+
+    select {
+        @extend .input;
+
+        cursor: pointer;
+        display: block;
+        outline: 0;
+
+        &:not([multiple]) {
+            padding-right: $select-padding-right;
+        }
+
+        &[multiple] {
+            height: auto;
+            padding: 0;
+        
+            option {
+                padding: $select-option-padding;
+            }
+        }
+    }
+
+    &.hovered select {
+        border-color: $input-hover-border-color;
+    }
+
+    &.focused select {
+        @include inputFocused ($input-active-border-color, $input-box-shadow, $input-box-shadow-opacity);
+    }
+
+    &.loading::after {
+        margin-top: 0;
+        position: absolute;
+        right: $form-loading-right-left;
+        top: $form-loading-right-left;
+        transform: none;
+    }
+
+    &:not(.multiple):not(.loading)::after {
+        border: $select-arrow-down-width solid transparent;
+        border-radius: 2px;
+        border-right: 0;
+        border-top: 0;
+        content: " ";
+        display: block;
+        height: $select-arrow-down-size;
+        margin-top: $select-arrow-down-margin-top;
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        transform: rotate(-45deg);
+        transform-origin: center;
+        width: $select-arrow-down-size;
+        border-color: $select-arrow-down-color;
+        right: $select-arrow-down-right;
+        z-index: 4;
+    }
+
+    &.big {
+        &:not(.multiple):not(.loading)::after {
+            height: $select-arrow-down-size-small;
+            width: $select-arrow-down-size-small;
+            border-width: $select-arrow-down-width-small;
+            right: $select-arrow-down-right-small;
+        }
+
+        &:not(.multiple):not(.loading)::after {
+            height: $select-arrow-down-size-big;
+            width: $select-arrow-down-size-big;
+            border-width: $select-arrow-down-width-big;
+            right: $select-arrow-down-right-big;
+        }
+
+        select {
+            @include inputSize ($input-big-font-size, $input-height-big, $btn-big-padding-vertical);
+            padding-right: $select-padding-right-big !important;
+        }
+    }
+
+    &.small select {
+        @include inputSize ($input-small-font-size, $input-height-small, $btn-small-padding-vertical);
+        padding-right: $select-padding-right-small !important;
+    }
+}
+
+@each $cname, $color1, $color2 in $colors {
+    .select.#{$cname}:not(.multiple):not(.loading) select,
+    .select.#{$cname}:not(.multiple):not(.loading)::after {
+        border-color: $color1;
+    }
+
+    .select.#{$cname}:not(.multiple):not(.loading).focused select {
+        border-color: $color1;
+        box-shadow: $input-box-shadow rgba($color1, $input-box-shadow-opacity);
+    }
+}
+// SELECT
