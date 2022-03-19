@@ -34,12 +34,12 @@ export default {
     },
     {
       name: 'Abilis',
-      file: `${dist}/${bundle}.umd.js`,
+      file: `${dist}/${bundle}.js`,
       format: 'umd',
     },
     {
       name: 'Abilis',
-      file: `${dist}/${bundle}.umd.min.js`,
+      file: `${dist}/${bundle}.min.js`,
       format: 'umd',
       plugins: [
         prod && terser(),

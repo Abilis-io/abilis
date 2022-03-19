@@ -12652,7 +12652,7 @@ table {
   }
 }
 
-body > div.loader {
+body.loading > div.loader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12673,12 +12673,10 @@ body > div.loader {
   overflow: hidden;
   pointer-events: none;
 }
-
-body:not(.loaded) > div.loader {
+body.loading:not(.loaded) > div.loader {
   opacity: 1;
 }
-
-body:not(.loaded) {
+body.loading:not(.loaded) {
   overflow: hidden;
 }
 

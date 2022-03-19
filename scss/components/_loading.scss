@@ -1,4 +1,5 @@
-body > div.loader {
+body.loading {
+  > div.loader {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,27 +12,29 @@ body > div.loader {
     transition: opacity $loader-transition-duration ease;
     overflow: hidden;
     pointer-events: none;
-}
+  }
 
-body:not(.loaded) > div.loader {
+  &:not(.loaded) > div.loader {
     opacity: 1;
-}
+  }
 
-body:not(.loaded) {
+  &:not(.loaded) {
     overflow: hidden;
+  }
 }
 
 body.loaded > div.loader {
-    animation: hideLoader $loader-transition-duration linear $loader-transition-duration forwards;
+  animation: hideLoader $loader-transition-duration linear
+    $loader-transition-duration forwards;
 }
 
 @keyframes hideLoader {
-    0% {
-        width: 100%;
-        height: 100%;
-    }
-    100% {
-        width: 0;
-        height: 0;
-    }
+  0% {
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    width: 0;
+    height: 0;
+  }
 }
