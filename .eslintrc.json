@@ -9,6 +9,7 @@
     "parserOptions": {
         "ecmaVersion": "latest"
     },
+    "ignorePatterns": ["dist/*.js", "node_modules"],
     "rules": {
         "no-console": 0
     }
