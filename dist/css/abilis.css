@@ -12832,6 +12832,10 @@ body.loaded > div.loader {
   color: #fff;
 }
 
+.button-outline-type.white {
+  border-color: #fff;
+}
+
 .button-white {
   background-color: #fff !important;
   border-color: #fff !important;
@@ -12855,6 +12859,10 @@ body.loaded > div.loader {
 .button-type.gray-1,
 .button-outline-type.gray-1 {
   color: #F6F6F6;
+}
+
+.button-outline-type.gray-1 {
+  border-color: #F6F6F6;
 }
 
 .button-gray-1 {
@@ -12882,6 +12890,10 @@ body.loaded > div.loader {
   color: #eaeaea;
 }
 
+.button-outline-type.gray-2 {
+  border-color: #eaeaea;
+}
+
 .button-gray-2 {
   background-color: #eaeaea !important;
   border-color: #eaeaea !important;
@@ -12905,6 +12917,10 @@ body.loaded > div.loader {
 .button-type.gray-3,
 .button-outline-type.gray-3 {
   color: #dee2e6;
+}
+
+.button-outline-type.gray-3 {
+  border-color: #dee2e6;
 }
 
 .button-gray-3 {
@@ -12932,6 +12948,10 @@ body.loaded > div.loader {
   color: #ced4da;
 }
 
+.button-outline-type.gray-4 {
+  border-color: #ced4da;
+}
+
 .button-gray-4 {
   background-color: #ced4da !important;
   border-color: #ced4da !important;
@@ -12955,6 +12975,10 @@ body.loaded > div.loader {
 .button-type.gray-5,
 .button-outline-type.gray-5 {
   color: #adb5bd;
+}
+
+.button-outline-type.gray-5 {
+  border-color: #adb5bd;
 }
 
 .button-gray-5 {
@@ -12982,6 +13006,10 @@ body.loaded > div.loader {
   color: #6c757d;
 }
 
+.button-outline-type.gray-6 {
+  border-color: #6c757d;
+}
+
 .button-gray-6 {
   background-color: #6c757d !important;
   border-color: #6c757d !important;
@@ -13005,6 +13033,10 @@ body.loaded > div.loader {
 .button-type.gray-7,
 .button-outline-type.gray-7 {
   color: #495057;
+}
+
+.button-outline-type.gray-7 {
+  border-color: #495057;
 }
 
 .button-gray-7 {
@@ -13032,6 +13064,10 @@ body.loaded > div.loader {
   color: #343a40;
 }
 
+.button-outline-type.gray-8 {
+  border-color: #343a40;
+}
+
 .button-gray-8 {
   background-color: #343a40 !important;
   border-color: #343a40 !important;
@@ -13055,6 +13091,10 @@ body.loaded > div.loader {
 .button-type.gray-9,
 .button-outline-type.gray-9 {
   color: #202428;
+}
+
+.button-outline-type.gray-9 {
+  border-color: #202428;
 }
 
 .button-gray-9 {
@@ -13082,6 +13122,10 @@ body.loaded > div.loader {
   color: #000;
 }
 
+.button-outline-type.black {
+  border-color: #000;
+}
+
 .button-black {
   background-color: #000 !important;
   border-color: #000 !important;
@@ -13105,6 +13149,10 @@ body.loaded > div.loader {
 .button-type.primary,
 .button-outline-type.primary {
   color: #3DCBFA;
+}
+
+.button-outline-type.primary {
+  border-color: #3DCBFA;
 }
 
 .button-primary {
@@ -13132,6 +13180,10 @@ body.loaded > div.loader {
   color: #2ca6f8;
 }
 
+.button-outline-type.primary-2 {
+  border-color: #2ca6f8;
+}
+
 .button-primary-2 {
   background-color: #2ca6f8 !important;
   border-color: #2ca6f8 !important;
@@ -13155,6 +13207,10 @@ body.loaded > div.loader {
 .button-type.primary-3,
 .button-outline-type.primary-3 {
   color: #1B81F5;
+}
+
+.button-outline-type.primary-3 {
+  border-color: #1B81F5;
 }
 
 .button-primary-3 {
@@ -13182,6 +13238,10 @@ body.loaded > div.loader {
   color: #166ACA;
 }
 
+.button-outline-type.secondary {
+  border-color: #166ACA;
+}
+
 .button-secondary {
   background-color: #166ACA !important;
   border-color: #166ACA !important;
@@ -13205,6 +13265,10 @@ body.loaded > div.loader {
 .button-type.tertiary,
 .button-outline-type.tertiary {
   color: #410AFF;
+}
+
+.button-outline-type.tertiary {
+  border-color: #410AFF;
 }
 
 .button-tertiary {
@@ -13232,6 +13296,10 @@ body.loaded > div.loader {
   color: #03d1b2;
 }
 
+.button-outline-type.info {
+  border-color: #03d1b2;
+}
+
 .button-info {
   background-color: #03d1b2 !important;
   border-color: #03d1b2 !important;
@@ -13255,6 +13323,10 @@ body.loaded > div.loader {
 .button-type.success,
 .button-outline-type.success {
   color: #49c674;
+}
+
+.button-outline-type.success {
+  border-color: #49c674;
 }
 
 .button-success {
@@ -13282,6 +13354,10 @@ body.loaded > div.loader {
   color: #fedd57;
 }
 
+.button-outline-type.warning {
+  border-color: #fedd57;
+}
+
 .button-warning {
   background-color: #fedd57 !important;
   border-color: #fedd57 !important;
@@ -13305,6 +13381,10 @@ body.loaded > div.loader {
 .button-type.danger,
 .button-outline-type.danger {
   color: #ff3860;
+}
+
+.button-outline-type.danger {
+  border-color: #ff3860;
 }
 
 .button-danger {
@@ -13332,6 +13412,10 @@ body.loaded > div.loader {
   color: #EBFAFE;
 }
 
+.button-outline-type.primary-light {
+  border-color: #EBFAFE;
+}
+
 .button-primary-light {
   background-color: #EBFAFE !important;
   border-color: #EBFAFE !important;
@@ -13355,6 +13439,10 @@ body.loaded > div.loader {
 .button-type.primary-2-light,
 .button-outline-type.primary-2-light {
   color: #D7EEFE;
+}
+
+.button-outline-type.primary-2-light {
+  border-color: #D7EEFE;
 }
 
 .button-primary-2-light {
@@ -13382,6 +13470,10 @@ body.loaded > div.loader {
   color: #C4DFFD;
 }
 
+.button-outline-type.primary-3-light {
+  border-color: #C4DFFD;
+}
+
 .button-primary-3-light {
   background-color: #C4DFFD !important;
   border-color: #C4DFFD !important;
@@ -13405,6 +13497,10 @@ body.loaded > div.loader {
 .button-type.secondary-light,
 .button-outline-type.secondary-light {
   color: #C8DDF9;
+}
+
+.button-outline-type.secondary-light {
+  border-color: #C8DDF9;
 }
 
 .button-secondary-light {
@@ -13432,6 +13528,10 @@ body.loaded > div.loader {
   color: #EFEBFF;
 }
 
+.button-outline-type.tertiary-light {
+  border-color: #EFEBFF;
+}
+
 .button-tertiary-light {
   background-color: #EFEBFF !important;
   border-color: #EFEBFF !important;
@@ -13455,6 +13555,10 @@ body.loaded > div.loader {
 .button-type.info-light,
 .button-outline-type.info-light {
   color: #EBFFFC;
+}
+
+.button-outline-type.info-light {
+  border-color: #EBFFFC;
 }
 
 .button-info-light {
@@ -13482,6 +13586,10 @@ body.loaded > div.loader {
   color: #EFFAF3;
 }
 
+.button-outline-type.success-light {
+  border-color: #EFFAF3;
+}
+
 .button-success-light {
   background-color: #EFFAF3 !important;
   border-color: #EFFAF3 !important;
@@ -13507,6 +13615,10 @@ body.loaded > div.loader {
   color: #FFFBEB;
 }
 
+.button-outline-type.warning-light {
+  border-color: #FFFBEB;
+}
+
 .button-warning-light {
   background-color: #FFFBEB !important;
   border-color: #FFFBEB !important;
@@ -13530,6 +13642,10 @@ body.loaded > div.loader {
 .button-type.danger-light,
 .button-outline-type.danger-light {
   color: #FFEBEF;
+}
+
+.button-outline-type.danger-light {
+  border-color: #FFEBEF;
 }
 
 .button-danger-light {
@@ -13849,6 +13965,8 @@ body.loaded > div.loader {
   margin-bottom: 0;
   background-color: #dee2e6;
   padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .tabs.horizontal.tabs-nav .tab .tab-title.active {
   color: #202428;
