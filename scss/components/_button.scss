@@ -1,145 +1,157 @@
 .button {
-    display: inline-block;
-    font-weight: $btn-font-weight;
-    line-height: 1.5;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    cursor: pointer;
-    user-select: none;
-    background-color: transparent;
-    border: $btn-border-width solid transparent;
-    padding: $btn-padding;
-    font-size: $btn-font-size;
-    border-radius: $btn-radius;
-    transition: $btn-transition;
+  display: inline-block;
+  font-weight: $btn-font-weight;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: $btn-border-width solid transparent;
+  padding: $btn-padding;
+  font-size: $btn-font-size;
+  border-radius: $btn-radius;
+  transition: $btn-transition;
 
-    &.full {
-        width: 100%;
-    }
+  &.full {
+    width: 100%;
+  }
 }
 
 /* button-size */
 @each $bname, $p1, $p2, $f, $br in $btn {
-    @if $bname != null {
-        .button.#{$bname} {
-            @include btnSize($p1, $p2, $f, $br);
-        }
+  @if $bname != null {
+    .button.#{$bname} {
+      @include btnSize($p1, $p2, $f, $br);
     }
+  }
 }
 /* button-size */
 
 /* button-type */
 .button-type {
-    background-color: $btn-type-background-color;
+  background-color: $btn-type-background-color;
 
-    &.active,
-    &:hover,
-    &:focus,
-    &:active {
-        @include opacityHover;
-    }
+  &.active,
+  &:hover,
+  &:focus,
+  &:active {
+    @include opacityHover;
+  }
 }
 
 .button-outline-type {
-    border: $btn-border-width solid $btn-type-border-color;
+  border: $btn-border-width solid $btn-type-border-color;
 
-    &:hover, &:focus, &:active, &.active {
-        border-color: $color-primary;
-        color: $color-primary;
-    }
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    border-color: $color-primary;
+    color: $color-primary;
+  }
 }
 /* button-type */
 
 /* button-color */
 @each $cname, $color1, $color2 in $colors {
-    .button-type,
-    .button-outline-type {
-        &.#{$cname} {
-            color: $color1;
-        }
+  .button-type,
+  .button-outline-type {
+    &.#{$cname} {
+      color: $color1;
     }
+  }
 
-    .button-#{$cname} {
-        @include btnStyle($color1, $color2);
-
-        &.active,
-        &:hover,
-        &:focus,
-        &:active {
-            @include opacityHover;
-        }
+  .button-outline-type {
+    &.#{$cname} {
+      border-color: $color1;
     }
-    
-    .button-outline-#{$cname} {
-        @include btnOutlineStyle($color1);
+  }
 
-        &:hover, &:focus, &:active, &.active {
-            @include btnOutlineHover($color1, $color2);
-        }
+  .button-#{$cname} {
+    @include btnStyle($color1, $color2);
+
+    &.active,
+    &:hover,
+    &:focus,
+    &:active {
+      @include opacityHover;
     }
+  }
+
+  .button-outline-#{$cname} {
+    @include btnOutlineStyle($color1);
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      @include btnOutlineHover($color1, $color2);
+    }
+  }
 }
 /* button-color */
 
 /* button-group */
 .button-group,
 .button-group-vertical {
-    position: relative;
-    display: inline-flex;
-    vertical-align: middle;
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
 
-    > .button {
-        border-radius: 0;
-    }
+  > .button {
+    border-radius: 0;
+  }
 }
 
 .button-group-vertical {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 
-    > .button {
-        width: 100%;
+  > .button {
+    width: 100%;
 
-        &:not(:first-child) {
-            margin-top: -1px;
-        }
+    &:not(:first-child) {
+      margin-top: -1px;
     }
+  }
 }
 
 .button-group > .button:not(:first-child) {
-    margin-left: -1px;
+  margin-left: -1px;
 }
 
 @each $bname, $p1, $p2, $f, $br in $btn {
-    @if $bname == null {
-        .button-group > .button:first-child {
-            @include radiusLeft($br);
-        }
-        .button-group-vertical > .button:first-child {
-            @include radiusTop($br);
-        }
+  @if $bname == null {
+    .button-group > .button:first-child {
+      @include radiusLeft($br);
+    }
+    .button-group-vertical > .button:first-child {
+      @include radiusTop($br);
+    }
 
-        .button-group > .button:last-child {
-            @include radiusRight($br);
-        }
-        .button-group-vertical > .button:last-child {
-            @include radiusBottom($br);
-        }
-    } @else {
-        .button-group > .button-#{$bname}:first-child {
-            @include radiusLeft($br);
-        }
-        .button-group-vertical > .button-#{$bname}:first-child {
-            @include radiusTop($br);
-        }
-        
-        .button-group > .button-#{$bname}:last-child {
-            @include radiusRight($br);
-        }
-        .button-group-vertical > .button-#{$bname}:last-child {
-            @include radiusBottom($br);
-        }
-    }   
+    .button-group > .button:last-child {
+      @include radiusRight($br);
+    }
+    .button-group-vertical > .button:last-child {
+      @include radiusBottom($br);
+    }
+  } @else {
+    .button-group > .button-#{$bname}:first-child {
+      @include radiusLeft($br);
+    }
+    .button-group-vertical > .button-#{$bname}:first-child {
+      @include radiusTop($br);
+    }
+
+    .button-group > .button-#{$bname}:last-child {
+      @include radiusRight($br);
+    }
+    .button-group-vertical > .button-#{$bname}:last-child {
+      @include radiusBottom($br);
+    }
+  }
 }
 /* button-group */
