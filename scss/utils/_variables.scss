@@ -1,8 +1,8 @@
-@import 'variables/helpers/all.scss';
-@import 'variables/content/all.scss';
-@import 'variables/components/all.scss';
-@import 'variables/grid/all.scss';
-@import 'variables/form/all.scss';
-@import 'variables/extensions/all.scss';
+@import "variables/helpers/helpers.scss";
+@import "variables/content/content.scss";
+@import "variables/components/components.scss";
+@import "variables/grid/grid.scss";
+@import "variables/form/form.scss";
+@import "variables/extensions/extensions.scss";
 
-@import 'root.scss';
+@import "root.scss";
