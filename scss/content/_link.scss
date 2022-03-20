@@ -1,114 +1,117 @@
 a {
-    color: $link-color;
-    text-decoration: none;
-    cursor: pointer;
-    
-    &:hover {
-        @include opacityHover;
-    }
+  color: $link-color;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    @include opacityHover;
+  }
 }
 
 .link {
-    cursor: pointer;
-    transition: $transition;
+  cursor: pointer;
+  transition: $transition;
 
-    &:hover, &:focus, &:active {
-        @include opacityHover;
-        text-decoration: underline;
-        transition: $transition;
-    }
+  &:hover,
+  &:focus,
+  &:active {
+    @include opacityHover;
+    text-decoration: underline;
+    transition: $transition;
+  }
 }
 
 .link-style-1 {
-    display: inline;
-    position: relative;
+  display: inline;
+  position: relative;
 
-    &::after {
-        @include linkAfter;
-        width: 100%;
-        height: $link-underline-height;
-        background: $link-color;
-        transform: scale(0);
-        transition: transform 0.3s ease-in-out;
-    }
+  &::after {
+    @include linkAfter;
+    width: 100%;
+    height: $link-underline-height;
+    background: $link-color;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+  }
 
-    &:hover::after {
-        transform: scale(1);
-    }
+  &:hover::after {
+    transform: scale(1);
+  }
 }
 
 .link-style-2 {
-    display: inline;
-    position: relative;
+  display: inline;
+  position: relative;
 
-    &::after {
-        @include linkAfter;
-        width: 0%;
-        height: $link-underline-height;
-        background: $link-color;
-        transition: width 0.3s ease-in-out;
-    }
+  &::after {
+    @include linkAfter;
+    width: 0%;
+    height: $link-underline-height;
+    background: $link-color;
+    transition: width 0.3s ease-in-out;
+  }
 
-    &:hover::after {
-        width: 100%;
-    }
+  &:hover::after {
+    width: 100%;
+  }
 }
 
 .link-style-3 {
-    display: inline;
-    position: relative;
+  display: inline;
+  position: relative;
 
-    &::after {
-        @include linkAfter;
-        width: 100%;
-        height: $link-underline-height;
-        -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
-        transition: -webkit-transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
-        -o-transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
-        transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
-        transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1), -webkit-transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
-        -webkit-transform: scale3d(0, 1, 1);
-        transform: scale3d(0, 1, 1);
-        -webkit-transform-origin: 100% 50%;
-        -ms-transform-origin: 100% 50%;
-        transform-origin: 100% 50%;
-        background: $link-color;
-    }
+  &::after {
+    @include linkAfter;
+    width: 100%;
+    height: $link-underline-height;
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+    transition: -webkit-transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+    -o-transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+    transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+    transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1),
+      -webkit-transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+    -webkit-transform: scale3d(0, 1, 1);
+    transform: scale3d(0, 1, 1);
+    -webkit-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    background: $link-color;
+  }
 
-    &:hover::after {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-        -webkit-transform-origin: 0 50%;
-        -ms-transform-origin: 0 50%;
-        transform-origin: 0 50%;
-    }
+  &:hover::after {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    -webkit-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+  }
 }
 
 @each $cname, $color in $colors {
-    a.link-#{$cname} {
+  a.link-#{$cname} {
+    color: $color;
+  }
+
+  .link-#{$cname} {
+    &.link-style-1,
+    &.link-style-2,
+    &.link-style-3 {
+      &::after {
+        background: $color;
+      }
+    }
+
+    a {
+      color: $color;
+
+      &:not(.button) {
         color: $color;
+      }
+
+      &::before,
+      &::after {
+        color: $color;
+      }
     }
-
-    .link-#{$cname} {
-        &.link-style-1,
-        &.link-style-2,
-        &.link-style-3 {
-            &::after {
-                background: $color;
-            }
-        }
-
-        a {
-            color: $color;
-
-            &:not(.button) {
-                color: $color;
-            }
-
-            &::before,
-            &::after {
-                color: $color;
-            }
-        }
-    }
+  }
 }
