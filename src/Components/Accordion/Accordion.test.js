@@ -2,13 +2,16 @@ import { getByTestId } from '@testing-library/dom';
 
 import AccordionRender from './AccordionRender';
 
+beforeEach(() => {
+  document.body.innerHTML = AccordionRender.render();
+});
+
 afterEach(() => {
   document.body.innerHTML = '';
 });
 
 describe('Accordion Integration Test', () => {
   it('should be toggle the active class', () => {
-    document.body.innerHTML = AccordionRender.render();
     require('./Accordion');
     const accordionSingleBtn1 = getByTestId(document.body, 'btnAccordionSingle1');
     const accordionSingleItem1 = getByTestId(document.body, 'accordionSingleItem1');
