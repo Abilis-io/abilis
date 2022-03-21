@@ -17,11 +17,14 @@ class Modal {
     const modalTriggers = document.querySelectorAll('.modal-trigger');
 
     modalTriggers.forEach((trigger) => {
-      const modalContainer = document.querySelector(trigger.dataset.modalTrigger);
+      const modalContainer = document.querySelector(
+        trigger.dataset.modalTrigger
+      );
 
       if (modalContainer) {
         const modalClose = modalContainer.querySelectorAll('.close');
-        const modalCloseTrigger = modalContainer.querySelectorAll('.modal-trigger');
+        const modalCloseTrigger =
+          modalContainer.querySelectorAll('.modal-trigger');
 
         trigger.addEventListener('click', () => {
           modalContainer.classList.toggle('active');

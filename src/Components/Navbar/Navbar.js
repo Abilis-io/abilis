@@ -34,7 +34,9 @@ class Navbar {
     navToggle.forEach((nav) => {
       // MOBILE
       const toggleMenu = document.querySelector(nav.dataset.toggleMenu);
-      const navDropdown = document.querySelectorAll('.navbar-menu .navbar-item.dropdown');
+      const navDropdown = document.querySelectorAll(
+        '.navbar-menu .navbar-item.dropdown'
+      );
 
       nav.addEventListener('click', () => {
         if (nav.classList.contains('open')) {
@@ -42,9 +44,19 @@ class Navbar {
           toggleMenu.classList.remove('open');
           navDropdown.forEach((navDrop) => {
             if (navDrop.classList.contains('click')) {
-              this.navDropClick('close', navDrop, '.navbar-dropdown-clicked', '.navbar-link');
+              this.navDropClick(
+                'close',
+                navDrop,
+                '.navbar-dropdown-clicked',
+                '.navbar-link'
+              );
             } else {
-              this.navDropClick('close', navDrop, '.navbar-dropdown', '.navbar-link');
+              this.navDropClick(
+                'close',
+                navDrop,
+                '.navbar-dropdown',
+                '.navbar-link'
+              );
             }
           });
         } else {
@@ -68,9 +80,19 @@ class Navbar {
       navDropdown.forEach((navDrop) => {
         navDrop.querySelector('.navbar-link').addEventListener('click', () => {
           if (navDrop.classList.contains('click')) {
-            this.navDropClick('open', navDrop, '.navbar-dropdown-clicked', '.navbar-link');
+            this.navDropClick(
+              'open',
+              navDrop,
+              '.navbar-dropdown-clicked',
+              '.navbar-link'
+            );
           } else {
-            this.navDropClick('open', navDrop, '.navbar-dropdown', '.navbar-link');
+            this.navDropClick(
+              'open',
+              navDrop,
+              '.navbar-dropdown',
+              '.navbar-link'
+            );
           }
         });
       });
@@ -80,8 +102,12 @@ class Navbar {
 
   navbarSticky(navbar) {
     if (navbar) {
-      const datasClassBefore = navbar.querySelectorAll('[data-sticky-class-before]');
-      const datasClassAfter = navbar.querySelectorAll('[data-sticky-class-after]');
+      const datasClassBefore = navbar.querySelectorAll(
+        '[data-sticky-class-before]'
+      );
+      const datasClassAfter = navbar.querySelectorAll(
+        '[data-sticky-class-after]'
+      );
 
       const stickyClassAction = (item, data, type) => {
         const classToAdd = data.split(' ');
@@ -91,8 +117,28 @@ class Navbar {
       };
 
       const stickyClassActionCondition = (classType, action) => {
-        (classType === 'before' ? navbar.dataset.stickyClassBefore : navbar.dataset.stickyClassAfter) ? stickyClassAction(navbar, (classType === 'before' ? navbar.dataset.stickyClassBefore : navbar.dataset.stickyClassAfter), action) : '';
-        datasClassBefore.forEach((e) => stickyClassAction(e, (classType === 'before' ? e.dataset.stickyClassBefore : e.dataset.stickyClassAfter), action));
+        (
+          classType === 'before'
+            ? navbar.dataset.stickyClassBefore
+            : navbar.dataset.stickyClassAfter
+        )
+          ? stickyClassAction(
+              navbar,
+              classType === 'before'
+                ? navbar.dataset.stickyClassBefore
+                : navbar.dataset.stickyClassAfter,
+              action
+            )
+          : '';
+        datasClassBefore.forEach((e) =>
+          stickyClassAction(
+            e,
+            classType === 'before'
+              ? e.dataset.stickyClassBefore
+              : e.dataset.stickyClassAfter,
+            action
+          )
+        );
       };
 
       const classToStickyAction = (type) => {
@@ -114,18 +160,28 @@ class Navbar {
         navbar.classList.add(stickyType);
 
         const stickyClassToggle = (e, type) => {
-          const el = type === 'before' ? e.dataset.stickyClassBefore : e.dataset.stickyClassAfter;
+          const el =
+            type === 'before'
+              ? e.dataset.stickyClassBefore
+              : e.dataset.stickyClassAfter;
           el.split(' ').forEach((val) => {
-            e.classList.toggle(val, (type === 'before' ? window.scrollY <= 0 : window.scrollY > 0));
+            e.classList.toggle(
+              val,
+              type === 'before' ? window.scrollY <= 0 : window.scrollY > 0
+            );
           });
         };
 
         const stickyPerso = () => {
           navbar.classList.toggle('sticky-active', window.scrollY > 0);
 
-          navbar.dataset.stickyClassBefore ? stickyClassToggle(navbar, 'before') : '';
+          navbar.dataset.stickyClassBefore
+            ? stickyClassToggle(navbar, 'before')
+            : '';
           datasClassBefore.forEach((e) => stickyClassToggle(e, 'before'));
-          navbar.dataset.stickyClassAfter ? stickyClassToggle(navbar, 'after') : '';
+          navbar.dataset.stickyClassAfter
+            ? stickyClassToggle(navbar, 'after')
+            : '';
           datasClassAfter.forEach((e) => stickyClassToggle(e, 'after'));
         };
 

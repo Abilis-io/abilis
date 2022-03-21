@@ -1,4 +1,4 @@
-import Close from './Close';
+import Close from '../Close/Close';
 
 class Alert {
   constructor() {

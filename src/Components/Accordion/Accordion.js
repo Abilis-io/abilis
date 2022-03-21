@@ -1,11 +1,13 @@
 class Accordion {
-  constructor() {
+  constructor(acc, type) {
+    this.acc = acc;
+    this.type = type;
+
     this.run();
   }
 
-  // eslint-disable-next-line class-methods-use-this
-  build(acc, type) {
-    acc.forEach((accord) => {
+  render() {
+    this.acc.forEach((accord) => {
       const items = accord.querySelectorAll('.accordion-item');
 
       items.forEach((item) => {
@@ -18,10 +20,14 @@ class Accordion {
         }
 
         btn.addEventListener('click', () => {
-          if (type === 'single') {
+          if (this.type === 'single') {
             items.forEach((itemActive) => {
-              if (itemActive.classList.contains('active') && itemActive !== item) {
-                const contentActive = itemActive.querySelector('.accordion-content');
+              if (
+                itemActive.classList.contains('active') &&
+                itemActive !== item
+              ) {
+                const contentActive =
+                  itemActive.querySelector('.accordion-content');
                 contentActive.style.height = '0px';
                 itemActive.classList.remove('active');
               }
@@ -39,20 +45,14 @@ class Accordion {
     });
   }
 
-  render() {
-    const accordionSingleClass = document.querySelectorAll('.accordion.single');
-    this.build(accordionSingleClass, 'single');
-
-    const accordionMultipleClass = document.querySelectorAll('.accordion.multiple');
-    this.build(accordionMultipleClass, 'multiple');
-  }
-
   run() {
     this.render();
   }
 }
 
-// eslint-disable-next-line no-unused-vars
-const accordion = new Accordion();
+const accordionSingleClass = document.querySelectorAll('.accordion.single');
+const accordionMultipleClass = document.querySelectorAll('.accordion.multiple');
+const accordionSingle = new Accordion(accordionSingleClass, 'single');
+const accordionMultiple = new Accordion(accordionMultipleClass, 'multiple');
 
 export default Accordion;

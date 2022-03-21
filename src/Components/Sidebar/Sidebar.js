@@ -38,14 +38,18 @@ class Sidebar {
           const theHref = document.querySelector(item.dataset.href);
           if (theHref) {
             const element = theHref.getBoundingClientRect();
-            if (element.bottom <= (window.innerHeight + 100)) {
+            if (element.bottom <= window.innerHeight + 100) {
               current = item;
             }
           }
         });
 
         sideItems.forEach((item) => {
-          if (current && item === current && !item.classList.contains('.active')) {
+          if (
+            current &&
+            item === current &&
+            !item.classList.contains('.active')
+          ) {
             item.classList.add('active');
 
             const sidebarDrop = item.parentNode.parentNode.parentNode;
