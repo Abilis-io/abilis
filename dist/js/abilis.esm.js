@@ -72,9 +72,15 @@ var Accordion = /*#__PURE__*/function () {
           var btn = item.querySelector('.accordion-toggle');
           var content = item.querySelector('.accordion-content');
           var scrollHeight = content.scrollHeight;
+          window.addEventListener('resize', function () {
+            scrollHeight = content.scrollHeight;
+          });
 
           if (item.classList.contains('active')) {
             content.style.height = "".concat(scrollHeight, "px");
+            window.addEventListener('resize', function () {
+              content.style.height = "".concat(scrollHeight, "px");
+            });
           }
 
           btn.addEventListener('click', function () {
