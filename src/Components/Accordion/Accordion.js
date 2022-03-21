@@ -13,10 +13,11 @@ class Accordion {
       items.forEach((item) => {
         const btn = item.querySelector('.accordion-toggle');
         const content = item.querySelector('.accordion-content');
-        let scrollHeight = content.scrollHeight;
+        const body = item.querySelector('.accordion-body');
+        let scrollHeight = body.scrollHeight;
 
         window.addEventListener('resize', () => {
-          scrollHeight = content.scrollHeight;
+          scrollHeight = body.scrollHeight;
         });
 
         if (item.classList.contains('active')) {

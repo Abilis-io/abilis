@@ -77,9 +77,10 @@
           items.forEach(function (item) {
             var btn = item.querySelector('.accordion-toggle');
             var content = item.querySelector('.accordion-content');
-            var scrollHeight = content.scrollHeight;
+            var body = item.querySelector('.accordion-body');
+            var scrollHeight = body.scrollHeight;
             window.addEventListener('resize', function () {
-              scrollHeight = content.scrollHeight;
+              scrollHeight = body.scrollHeight;
             });
 
             if (item.classList.contains('active')) {
