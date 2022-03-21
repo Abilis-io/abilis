@@ -13993,23 +13993,31 @@ body.loaded > div.loader {
   justify-content: flex-start;
 }
 
-.navbar, .navbar-end, .navbar-menu, .navbar-start, .navbar-middle {
+.navbar,
+.navbar-end,
+.navbar-menu,
+.navbar-start,
+.navbar-middle {
   align-items: stretch;
   display: flex;
 }
-.navbar .field, .navbar-end .field, .navbar-menu .field, .navbar-start .field, .navbar-middle .field {
+.navbar .field,
+.navbar-end .field,
+.navbar-menu .field,
+.navbar-start .field,
+.navbar-middle .field {
   align-items: center;
   display: flex;
 }
 
-.navbar-transparent-sticky {
+.navbar-sticky-fast {
   position: fixed;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
   transition: 0.4s;
 }
-.navbar-transparent-sticky.sticky-active {
+.navbar-sticky-fast.sticky-active {
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -14023,12 +14031,14 @@ body.loaded > div.loader {
   padding-left: 1rem;
 }
 
-.navbar-item, .navbar-link {
+.navbar-item,
+.navbar-link {
   display: flex;
   align-items: center;
 }
 
-.navbar-link, a.navbar-item {
+.navbar-link,
+a.navbar-item {
   cursor: pointer;
 }
 
@@ -14057,7 +14067,10 @@ body.loaded > div.loader {
   font-size: clamp(1.2rem, -0.875rem + 8.333333vw, 1.5rem);
 }
 
-.navbar-toggle-1, .navbar-toggle-2, .navbar-toggle-3, .navbar-toggle-4 {
+.navbar-toggle-1,
+.navbar-toggle-2,
+.navbar-toggle-3,
+.navbar-toggle-4 {
   display: flex;
   justify-content: end;
   align-items: center;
@@ -14077,7 +14090,9 @@ body.loaded > div.loader {
   cursor: pointer;
 }
 
-.navbar-toggle-1 span, .navbar-toggle-3 span, .navbar-toggle-4 span {
+.navbar-toggle-1 span,
+.navbar-toggle-3 span,
+.navbar-toggle-4 span {
   display: block;
   position: absolute;
   height: 2.8px;
@@ -14298,7 +14313,10 @@ body.loaded > div.loader {
 }
 
 @media screen and (max-width: 991px) {
-  .navbar-menu, .navbar-end, .navbar-start, .navbar-middle {
+  .navbar-menu,
+.navbar-end,
+.navbar-start,
+.navbar-middle {
     flex-direction: column;
   }
 
@@ -14328,7 +14346,8 @@ body.loaded > div.loader {
   .navbar-menu .mobile-center {
     margin: 0 auto;
   }
-  .navbar-menu .navbar-item, .navbar-menu .navbar-link {
+  .navbar-menu .navbar-item,
+.navbar-menu .navbar-link {
     cursor: pointer;
     align-items: flex-start;
   }
@@ -14374,7 +14393,10 @@ body.loaded > div.loader {
   }
 }
 @media screen and (min-width: 992px) {
-  .navbar-toggle-1, .navbar-toggle-2, .navbar-toggle-3, .navbar-toggle-4 {
+  .navbar-toggle-1,
+.navbar-toggle-2,
+.navbar-toggle-3,
+.navbar-toggle-4 {
     display: none;
   }
 
@@ -14462,7 +14484,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-white .navbar-toggle-1 span, .navbar.link-white .navbar-toggle-2 span, .navbar.link-white .navbar-toggle-3 span, .navbar.link-white .navbar-toggle-4 span {
+.navbar.link-white .navbar-toggle-1 span,
+.navbar.link-white .navbar-toggle-2 span,
+.navbar.link-white .navbar-toggle-3 span,
+.navbar.link-white .navbar-toggle-4 span {
   background-color: #fff !important;
 }
 .navbar.link-white .navbar-item.dropdown .navbar-link::after {
@@ -14474,7 +14499,10 @@ body.loaded > div.loader {
     background-color: #fff;
   }
 
-  .navbar.bg-white .navbar-toggle-1 span, .navbar.bg-white .navbar-toggle-2 span, .navbar.bg-white .navbar-toggle-3 span, .navbar.bg-white .navbar-toggle-4 span {
+  .navbar.bg-white .navbar-toggle-1 span,
+.navbar.bg-white .navbar-toggle-2 span,
+.navbar.bg-white .navbar-toggle-3 span,
+.navbar.bg-white .navbar-toggle-4 span {
     background-color: #000 !important;
   }
   .navbar.bg-white .navbar-menu {
@@ -14485,7 +14513,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-gray-1 .navbar-toggle-1 span, .navbar.link-gray-1 .navbar-toggle-2 span, .navbar.link-gray-1 .navbar-toggle-3 span, .navbar.link-gray-1 .navbar-toggle-4 span {
+.navbar.link-gray-1 .navbar-toggle-1 span,
+.navbar.link-gray-1 .navbar-toggle-2 span,
+.navbar.link-gray-1 .navbar-toggle-3 span,
+.navbar.link-gray-1 .navbar-toggle-4 span {
   background-color: #F6F6F6 !important;
 }
 .navbar.link-gray-1 .navbar-item.dropdown .navbar-link::after {
@@ -14497,7 +14528,10 @@ body.loaded > div.loader {
     background-color: #F6F6F6;
   }
 
-  .navbar.bg-gray-1 .navbar-toggle-1 span, .navbar.bg-gray-1 .navbar-toggle-2 span, .navbar.bg-gray-1 .navbar-toggle-3 span, .navbar.bg-gray-1 .navbar-toggle-4 span {
+  .navbar.bg-gray-1 .navbar-toggle-1 span,
+.navbar.bg-gray-1 .navbar-toggle-2 span,
+.navbar.bg-gray-1 .navbar-toggle-3 span,
+.navbar.bg-gray-1 .navbar-toggle-4 span {
     background-color: #000 !important;
   }
   .navbar.bg-gray-1 .navbar-menu {
@@ -14508,7 +14542,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-gray-2 .navbar-toggle-1 span, .navbar.link-gray-2 .navbar-toggle-2 span, .navbar.link-gray-2 .navbar-toggle-3 span, .navbar.link-gray-2 .navbar-toggle-4 span {
+.navbar.link-gray-2 .navbar-toggle-1 span,
+.navbar.link-gray-2 .navbar-toggle-2 span,
+.navbar.link-gray-2 .navbar-toggle-3 span,
+.navbar.link-gray-2 .navbar-toggle-4 span {
   background-color: #eaeaea !important;
 }
 .navbar.link-gray-2 .navbar-item.dropdown .navbar-link::after {
@@ -14520,7 +14557,10 @@ body.loaded > div.loader {
     background-color: #eaeaea;
   }
 
-  .navbar.bg-gray-2 .navbar-toggle-1 span, .navbar.bg-gray-2 .navbar-toggle-2 span, .navbar.bg-gray-2 .navbar-toggle-3 span, .navbar.bg-gray-2 .navbar-toggle-4 span {
+  .navbar.bg-gray-2 .navbar-toggle-1 span,
+.navbar.bg-gray-2 .navbar-toggle-2 span,
+.navbar.bg-gray-2 .navbar-toggle-3 span,
+.navbar.bg-gray-2 .navbar-toggle-4 span {
     background-color: #000 !important;
   }
   .navbar.bg-gray-2 .navbar-menu {
@@ -14531,7 +14571,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-gray-3 .navbar-toggle-1 span, .navbar.link-gray-3 .navbar-toggle-2 span, .navbar.link-gray-3 .navbar-toggle-3 span, .navbar.link-gray-3 .navbar-toggle-4 span {
+.navbar.link-gray-3 .navbar-toggle-1 span,
+.navbar.link-gray-3 .navbar-toggle-2 span,
+.navbar.link-gray-3 .navbar-toggle-3 span,
+.navbar.link-gray-3 .navbar-toggle-4 span {
   background-color: #dee2e6 !important;
 }
 .navbar.link-gray-3 .navbar-item.dropdown .navbar-link::after {
@@ -14543,7 +14586,10 @@ body.loaded > div.loader {
     background-color: #dee2e6;
   }
 
-  .navbar.bg-gray-3 .navbar-toggle-1 span, .navbar.bg-gray-3 .navbar-toggle-2 span, .navbar.bg-gray-3 .navbar-toggle-3 span, .navbar.bg-gray-3 .navbar-toggle-4 span {
+  .navbar.bg-gray-3 .navbar-toggle-1 span,
+.navbar.bg-gray-3 .navbar-toggle-2 span,
+.navbar.bg-gray-3 .navbar-toggle-3 span,
+.navbar.bg-gray-3 .navbar-toggle-4 span {
     background-color: #000 !important;
   }
   .navbar.bg-gray-3 .navbar-menu {
@@ -14554,7 +14600,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-gray-4 .navbar-toggle-1 span, .navbar.link-gray-4 .navbar-toggle-2 span, .navbar.link-gray-4 .navbar-toggle-3 span, .navbar.link-gray-4 .navbar-toggle-4 span {
+.navbar.link-gray-4 .navbar-toggle-1 span,
+.navbar.link-gray-4 .navbar-toggle-2 span,
+.navbar.link-gray-4 .navbar-toggle-3 span,
+.navbar.link-gray-4 .navbar-toggle-4 span {
   background-color: #ced4da !important;
 }
 .navbar.link-gray-4 .navbar-item.dropdown .navbar-link::after {
@@ -14566,7 +14615,10 @@ body.loaded > div.loader {
     background-color: #ced4da;
   }
 
-  .navbar.bg-gray-4 .navbar-toggle-1 span, .navbar.bg-gray-4 .navbar-toggle-2 span, .navbar.bg-gray-4 .navbar-toggle-3 span, .navbar.bg-gray-4 .navbar-toggle-4 span {
+  .navbar.bg-gray-4 .navbar-toggle-1 span,
+.navbar.bg-gray-4 .navbar-toggle-2 span,
+.navbar.bg-gray-4 .navbar-toggle-3 span,
+.navbar.bg-gray-4 .navbar-toggle-4 span {
     background-color: #000 !important;
   }
   .navbar.bg-gray-4 .navbar-menu {
@@ -14577,7 +14629,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-gray-5 .navbar-toggle-1 span, .navbar.link-gray-5 .navbar-toggle-2 span, .navbar.link-gray-5 .navbar-toggle-3 span, .navbar.link-gray-5 .navbar-toggle-4 span {
+.navbar.link-gray-5 .navbar-toggle-1 span,
+.navbar.link-gray-5 .navbar-toggle-2 span,
+.navbar.link-gray-5 .navbar-toggle-3 span,
+.navbar.link-gray-5 .navbar-toggle-4 span {
   background-color: #adb5bd !important;
 }
 .navbar.link-gray-5 .navbar-item.dropdown .navbar-link::after {
@@ -14589,7 +14644,10 @@ body.loaded > div.loader {
     background-color: #adb5bd;
   }
 
-  .navbar.bg-gray-5 .navbar-toggle-1 span, .navbar.bg-gray-5 .navbar-toggle-2 span, .navbar.bg-gray-5 .navbar-toggle-3 span, .navbar.bg-gray-5 .navbar-toggle-4 span {
+  .navbar.bg-gray-5 .navbar-toggle-1 span,
+.navbar.bg-gray-5 .navbar-toggle-2 span,
+.navbar.bg-gray-5 .navbar-toggle-3 span,
+.navbar.bg-gray-5 .navbar-toggle-4 span {
     background-color: #fff !important;
   }
   .navbar.bg-gray-5 .navbar-menu {
@@ -14600,7 +14658,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-gray-6 .navbar-toggle-1 span, .navbar.link-gray-6 .navbar-toggle-2 span, .navbar.link-gray-6 .navbar-toggle-3 span, .navbar.link-gray-6 .navbar-toggle-4 span {
+.navbar.link-gray-6 .navbar-toggle-1 span,
+.navbar.link-gray-6 .navbar-toggle-2 span,
+.navbar.link-gray-6 .navbar-toggle-3 span,
+.navbar.link-gray-6 .navbar-toggle-4 span {
   background-color: #6c757d !important;
 }
 .navbar.link-gray-6 .navbar-item.dropdown .navbar-link::after {
@@ -14612,7 +14673,10 @@ body.loaded > div.loader {
     background-color: #6c757d;
   }
 
-  .navbar.bg-gray-6 .navbar-toggle-1 span, .navbar.bg-gray-6 .navbar-toggle-2 span, .navbar.bg-gray-6 .navbar-toggle-3 span, .navbar.bg-gray-6 .navbar-toggle-4 span {
+  .navbar.bg-gray-6 .navbar-toggle-1 span,
+.navbar.bg-gray-6 .navbar-toggle-2 span,
+.navbar.bg-gray-6 .navbar-toggle-3 span,
+.navbar.bg-gray-6 .navbar-toggle-4 span {
     background-color: #fff !important;
   }
   .navbar.bg-gray-6 .navbar-menu {
@@ -14623,7 +14687,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-gray-7 .navbar-toggle-1 span, .navbar.link-gray-7 .navbar-toggle-2 span, .navbar.link-gray-7 .navbar-toggle-3 span, .navbar.link-gray-7 .navbar-toggle-4 span {
+.navbar.link-gray-7 .navbar-toggle-1 span,
+.navbar.link-gray-7 .navbar-toggle-2 span,
+.navbar.link-gray-7 .navbar-toggle-3 span,
+.navbar.link-gray-7 .navbar-toggle-4 span {
   background-color: #495057 !important;
 }
 .navbar.link-gray-7 .navbar-item.dropdown .navbar-link::after {
@@ -14635,7 +14702,10 @@ body.loaded > div.loader {
     background-color: #495057;
   }
 
-  .navbar.bg-gray-7 .navbar-toggle-1 span, .navbar.bg-gray-7 .navbar-toggle-2 span, .navbar.bg-gray-7 .navbar-toggle-3 span, .navbar.bg-gray-7 .navbar-toggle-4 span {
+  .navbar.bg-gray-7 .navbar-toggle-1 span,
+.navbar.bg-gray-7 .navbar-toggle-2 span,
+.navbar.bg-gray-7 .navbar-toggle-3 span,
+.navbar.bg-gray-7 .navbar-toggle-4 span {
     background-color: #fff !important;
   }
   .navbar.bg-gray-7 .navbar-menu {
@@ -14646,7 +14716,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-gray-8 .navbar-toggle-1 span, .navbar.link-gray-8 .navbar-toggle-2 span, .navbar.link-gray-8 .navbar-toggle-3 span, .navbar.link-gray-8 .navbar-toggle-4 span {
+.navbar.link-gray-8 .navbar-toggle-1 span,
+.navbar.link-gray-8 .navbar-toggle-2 span,
+.navbar.link-gray-8 .navbar-toggle-3 span,
+.navbar.link-gray-8 .navbar-toggle-4 span {
   background-color: #343a40 !important;
 }
 .navbar.link-gray-8 .navbar-item.dropdown .navbar-link::after {
@@ -14658,7 +14731,10 @@ body.loaded > div.loader {
     background-color: #343a40;
   }
 
-  .navbar.bg-gray-8 .navbar-toggle-1 span, .navbar.bg-gray-8 .navbar-toggle-2 span, .navbar.bg-gray-8 .navbar-toggle-3 span, .navbar.bg-gray-8 .navbar-toggle-4 span {
+  .navbar.bg-gray-8 .navbar-toggle-1 span,
+.navbar.bg-gray-8 .navbar-toggle-2 span,
+.navbar.bg-gray-8 .navbar-toggle-3 span,
+.navbar.bg-gray-8 .navbar-toggle-4 span {
     background-color: #fff !important;
   }
   .navbar.bg-gray-8 .navbar-menu {
@@ -14669,7 +14745,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-gray-9 .navbar-toggle-1 span, .navbar.link-gray-9 .navbar-toggle-2 span, .navbar.link-gray-9 .navbar-toggle-3 span, .navbar.link-gray-9 .navbar-toggle-4 span {
+.navbar.link-gray-9 .navbar-toggle-1 span,
+.navbar.link-gray-9 .navbar-toggle-2 span,
+.navbar.link-gray-9 .navbar-toggle-3 span,
+.navbar.link-gray-9 .navbar-toggle-4 span {
   background-color: #202428 !important;
 }
 .navbar.link-gray-9 .navbar-item.dropdown .navbar-link::after {
@@ -14681,7 +14760,10 @@ body.loaded > div.loader {
     background-color: #202428;
   }
 
-  .navbar.bg-gray-9 .navbar-toggle-1 span, .navbar.bg-gray-9 .navbar-toggle-2 span, .navbar.bg-gray-9 .navbar-toggle-3 span, .navbar.bg-gray-9 .navbar-toggle-4 span {
+  .navbar.bg-gray-9 .navbar-toggle-1 span,
+.navbar.bg-gray-9 .navbar-toggle-2 span,
+.navbar.bg-gray-9 .navbar-toggle-3 span,
+.navbar.bg-gray-9 .navbar-toggle-4 span {
     background-color: #fff !important;
   }
   .navbar.bg-gray-9 .navbar-menu {
@@ -14692,7 +14774,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-black .navbar-toggle-1 span, .navbar.link-black .navbar-toggle-2 span, .navbar.link-black .navbar-toggle-3 span, .navbar.link-black .navbar-toggle-4 span {
+.navbar.link-black .navbar-toggle-1 span,
+.navbar.link-black .navbar-toggle-2 span,
+.navbar.link-black .navbar-toggle-3 span,
+.navbar.link-black .navbar-toggle-4 span {
   background-color: #000 !important;
 }
 .navbar.link-black .navbar-item.dropdown .navbar-link::after {
@@ -14704,7 +14789,10 @@ body.loaded > div.loader {
     background-color: #000;
   }
 
-  .navbar.bg-black .navbar-toggle-1 span, .navbar.bg-black .navbar-toggle-2 span, .navbar.bg-black .navbar-toggle-3 span, .navbar.bg-black .navbar-toggle-4 span {
+  .navbar.bg-black .navbar-toggle-1 span,
+.navbar.bg-black .navbar-toggle-2 span,
+.navbar.bg-black .navbar-toggle-3 span,
+.navbar.bg-black .navbar-toggle-4 span {
     background-color: #fff !important;
   }
   .navbar.bg-black .navbar-menu {
@@ -14715,7 +14803,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-primary .navbar-toggle-1 span, .navbar.link-primary .navbar-toggle-2 span, .navbar.link-primary .navbar-toggle-3 span, .navbar.link-primary .navbar-toggle-4 span {
+.navbar.link-primary .navbar-toggle-1 span,
+.navbar.link-primary .navbar-toggle-2 span,
+.navbar.link-primary .navbar-toggle-3 span,
+.navbar.link-primary .navbar-toggle-4 span {
   background-color: #3DCBFA !important;
 }
 .navbar.link-primary .navbar-item.dropdown .navbar-link::after {
@@ -14727,7 +14818,10 @@ body.loaded > div.loader {
     background-color: #3DCBFA;
   }
 
-  .navbar.bg-primary .navbar-toggle-1 span, .navbar.bg-primary .navbar-toggle-2 span, .navbar.bg-primary .navbar-toggle-3 span, .navbar.bg-primary .navbar-toggle-4 span {
+  .navbar.bg-primary .navbar-toggle-1 span,
+.navbar.bg-primary .navbar-toggle-2 span,
+.navbar.bg-primary .navbar-toggle-3 span,
+.navbar.bg-primary .navbar-toggle-4 span {
     background-color: #fff !important;
   }
   .navbar.bg-primary .navbar-menu {
@@ -14738,7 +14832,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-primary-2 .navbar-toggle-1 span, .navbar.link-primary-2 .navbar-toggle-2 span, .navbar.link-primary-2 .navbar-toggle-3 span, .navbar.link-primary-2 .navbar-toggle-4 span {
+.navbar.link-primary-2 .navbar-toggle-1 span,
+.navbar.link-primary-2 .navbar-toggle-2 span,
+.navbar.link-primary-2 .navbar-toggle-3 span,
+.navbar.link-primary-2 .navbar-toggle-4 span {
   background-color: #2ca6f8 !important;
 }
 .navbar.link-primary-2 .navbar-item.dropdown .navbar-link::after {
@@ -14750,7 +14847,10 @@ body.loaded > div.loader {
     background-color: #2ca6f8;
   }
 
-  .navbar.bg-primary-2 .navbar-toggle-1 span, .navbar.bg-primary-2 .navbar-toggle-2 span, .navbar.bg-primary-2 .navbar-toggle-3 span, .navbar.bg-primary-2 .navbar-toggle-4 span {
+  .navbar.bg-primary-2 .navbar-toggle-1 span,
+.navbar.bg-primary-2 .navbar-toggle-2 span,
+.navbar.bg-primary-2 .navbar-toggle-3 span,
+.navbar.bg-primary-2 .navbar-toggle-4 span {
     background-color: #fff !important;
   }
   .navbar.bg-primary-2 .navbar-menu {
@@ -14761,7 +14861,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-primary-3 .navbar-toggle-1 span, .navbar.link-primary-3 .navbar-toggle-2 span, .navbar.link-primary-3 .navbar-toggle-3 span, .navbar.link-primary-3 .navbar-toggle-4 span {
+.navbar.link-primary-3 .navbar-toggle-1 span,
+.navbar.link-primary-3 .navbar-toggle-2 span,
+.navbar.link-primary-3 .navbar-toggle-3 span,
+.navbar.link-primary-3 .navbar-toggle-4 span {
   background-color: #1B81F5 !important;
 }
 .navbar.link-primary-3 .navbar-item.dropdown .navbar-link::after {
@@ -14773,7 +14876,10 @@ body.loaded > div.loader {
     background-color: #1B81F5;
   }
 
-  .navbar.bg-primary-3 .navbar-toggle-1 span, .navbar.bg-primary-3 .navbar-toggle-2 span, .navbar.bg-primary-3 .navbar-toggle-3 span, .navbar.bg-primary-3 .navbar-toggle-4 span {
+  .navbar.bg-primary-3 .navbar-toggle-1 span,
+.navbar.bg-primary-3 .navbar-toggle-2 span,
+.navbar.bg-primary-3 .navbar-toggle-3 span,
+.navbar.bg-primary-3 .navbar-toggle-4 span {
     background-color: #fff !important;
   }
   .navbar.bg-primary-3 .navbar-menu {
@@ -14784,7 +14890,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-secondary .navbar-toggle-1 span, .navbar.link-secondary .navbar-toggle-2 span, .navbar.link-secondary .navbar-toggle-3 span, .navbar.link-secondary .navbar-toggle-4 span {
+.navbar.link-secondary .navbar-toggle-1 span,
+.navbar.link-secondary .navbar-toggle-2 span,
+.navbar.link-secondary .navbar-toggle-3 span,
+.navbar.link-secondary .navbar-toggle-4 span {
   background-color: #166ACA !important;
 }
 .navbar.link-secondary .navbar-item.dropdown .navbar-link::after {
@@ -14796,7 +14905,10 @@ body.loaded > div.loader {
     background-color: #166ACA;
   }
 
-  .navbar.bg-secondary .navbar-toggle-1 span, .navbar.bg-secondary .navbar-toggle-2 span, .navbar.bg-secondary .navbar-toggle-3 span, .navbar.bg-secondary .navbar-toggle-4 span {
+  .navbar.bg-secondary .navbar-toggle-1 span,
+.navbar.bg-secondary .navbar-toggle-2 span,
+.navbar.bg-secondary .navbar-toggle-3 span,
+.navbar.bg-secondary .navbar-toggle-4 span {
     background-color: #fff !important;
   }
   .navbar.bg-secondary .navbar-menu {
@@ -14807,7 +14919,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-tertiary .navbar-toggle-1 span, .navbar.link-tertiary .navbar-toggle-2 span, .navbar.link-tertiary .navbar-toggle-3 span, .navbar.link-tertiary .navbar-toggle-4 span {
+.navbar.link-tertiary .navbar-toggle-1 span,
+.navbar.link-tertiary .navbar-toggle-2 span,
+.navbar.link-tertiary .navbar-toggle-3 span,
+.navbar.link-tertiary .navbar-toggle-4 span {
   background-color: #410AFF !important;
 }
 .navbar.link-tertiary .navbar-item.dropdown .navbar-link::after {
@@ -14819,7 +14934,10 @@ body.loaded > div.loader {
     background-color: #410AFF;
   }
 
-  .navbar.bg-tertiary .navbar-toggle-1 span, .navbar.bg-tertiary .navbar-toggle-2 span, .navbar.bg-tertiary .navbar-toggle-3 span, .navbar.bg-tertiary .navbar-toggle-4 span {
+  .navbar.bg-tertiary .navbar-toggle-1 span,
+.navbar.bg-tertiary .navbar-toggle-2 span,
+.navbar.bg-tertiary .navbar-toggle-3 span,
+.navbar.bg-tertiary .navbar-toggle-4 span {
     background-color: #fff !important;
   }
   .navbar.bg-tertiary .navbar-menu {
@@ -14830,7 +14948,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-info .navbar-toggle-1 span, .navbar.link-info .navbar-toggle-2 span, .navbar.link-info .navbar-toggle-3 span, .navbar.link-info .navbar-toggle-4 span {
+.navbar.link-info .navbar-toggle-1 span,
+.navbar.link-info .navbar-toggle-2 span,
+.navbar.link-info .navbar-toggle-3 span,
+.navbar.link-info .navbar-toggle-4 span {
   background-color: #03d1b2 !important;
 }
 .navbar.link-info .navbar-item.dropdown .navbar-link::after {
@@ -14842,7 +14963,10 @@ body.loaded > div.loader {
     background-color: #03d1b2;
   }
 
-  .navbar.bg-info .navbar-toggle-1 span, .navbar.bg-info .navbar-toggle-2 span, .navbar.bg-info .navbar-toggle-3 span, .navbar.bg-info .navbar-toggle-4 span {
+  .navbar.bg-info .navbar-toggle-1 span,
+.navbar.bg-info .navbar-toggle-2 span,
+.navbar.bg-info .navbar-toggle-3 span,
+.navbar.bg-info .navbar-toggle-4 span {
     background-color: #fff !important;
   }
   .navbar.bg-info .navbar-menu {
@@ -14853,7 +14977,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-success .navbar-toggle-1 span, .navbar.link-success .navbar-toggle-2 span, .navbar.link-success .navbar-toggle-3 span, .navbar.link-success .navbar-toggle-4 span {
+.navbar.link-success .navbar-toggle-1 span,
+.navbar.link-success .navbar-toggle-2 span,
+.navbar.link-success .navbar-toggle-3 span,
+.navbar.link-success .navbar-toggle-4 span {
   background-color: #49c674 !important;
 }
 .navbar.link-success .navbar-item.dropdown .navbar-link::after {
@@ -14865,7 +14992,10 @@ body.loaded > div.loader {
     background-color: #49c674;
   }
 
-  .navbar.bg-success .navbar-toggle-1 span, .navbar.bg-success .navbar-toggle-2 span, .navbar.bg-success .navbar-toggle-3 span, .navbar.bg-success .navbar-toggle-4 span {
+  .navbar.bg-success .navbar-toggle-1 span,
+.navbar.bg-success .navbar-toggle-2 span,
+.navbar.bg-success .navbar-toggle-3 span,
+.navbar.bg-success .navbar-toggle-4 span {
     background-color: #fff !important;
   }
   .navbar.bg-success .navbar-menu {
@@ -14876,7 +15006,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-warning .navbar-toggle-1 span, .navbar.link-warning .navbar-toggle-2 span, .navbar.link-warning .navbar-toggle-3 span, .navbar.link-warning .navbar-toggle-4 span {
+.navbar.link-warning .navbar-toggle-1 span,
+.navbar.link-warning .navbar-toggle-2 span,
+.navbar.link-warning .navbar-toggle-3 span,
+.navbar.link-warning .navbar-toggle-4 span {
   background-color: #fedd57 !important;
 }
 .navbar.link-warning .navbar-item.dropdown .navbar-link::after {
@@ -14888,7 +15021,10 @@ body.loaded > div.loader {
     background-color: #fedd57;
   }
 
-  .navbar.bg-warning .navbar-toggle-1 span, .navbar.bg-warning .navbar-toggle-2 span, .navbar.bg-warning .navbar-toggle-3 span, .navbar.bg-warning .navbar-toggle-4 span {
+  .navbar.bg-warning .navbar-toggle-1 span,
+.navbar.bg-warning .navbar-toggle-2 span,
+.navbar.bg-warning .navbar-toggle-3 span,
+.navbar.bg-warning .navbar-toggle-4 span {
     background-color: #fff !important;
   }
   .navbar.bg-warning .navbar-menu {
@@ -14899,7 +15035,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-danger .navbar-toggle-1 span, .navbar.link-danger .navbar-toggle-2 span, .navbar.link-danger .navbar-toggle-3 span, .navbar.link-danger .navbar-toggle-4 span {
+.navbar.link-danger .navbar-toggle-1 span,
+.navbar.link-danger .navbar-toggle-2 span,
+.navbar.link-danger .navbar-toggle-3 span,
+.navbar.link-danger .navbar-toggle-4 span {
   background-color: #ff3860 !important;
 }
 .navbar.link-danger .navbar-item.dropdown .navbar-link::after {
@@ -14911,7 +15050,10 @@ body.loaded > div.loader {
     background-color: #ff3860;
   }
 
-  .navbar.bg-danger .navbar-toggle-1 span, .navbar.bg-danger .navbar-toggle-2 span, .navbar.bg-danger .navbar-toggle-3 span, .navbar.bg-danger .navbar-toggle-4 span {
+  .navbar.bg-danger .navbar-toggle-1 span,
+.navbar.bg-danger .navbar-toggle-2 span,
+.navbar.bg-danger .navbar-toggle-3 span,
+.navbar.bg-danger .navbar-toggle-4 span {
     background-color: #fff !important;
   }
   .navbar.bg-danger .navbar-menu {
@@ -14922,7 +15064,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%233DCBFA' stroke='%233DCBFA' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-primary-light .navbar-toggle-1 span, .navbar.link-primary-light .navbar-toggle-2 span, .navbar.link-primary-light .navbar-toggle-3 span, .navbar.link-primary-light .navbar-toggle-4 span {
+.navbar.link-primary-light .navbar-toggle-1 span,
+.navbar.link-primary-light .navbar-toggle-2 span,
+.navbar.link-primary-light .navbar-toggle-3 span,
+.navbar.link-primary-light .navbar-toggle-4 span {
   background-color: #EBFAFE !important;
 }
 .navbar.link-primary-light .navbar-item.dropdown .navbar-link::after {
@@ -14934,7 +15079,10 @@ body.loaded > div.loader {
     background-color: #EBFAFE;
   }
 
-  .navbar.bg-primary-light .navbar-toggle-1 span, .navbar.bg-primary-light .navbar-toggle-2 span, .navbar.bg-primary-light .navbar-toggle-3 span, .navbar.bg-primary-light .navbar-toggle-4 span {
+  .navbar.bg-primary-light .navbar-toggle-1 span,
+.navbar.bg-primary-light .navbar-toggle-2 span,
+.navbar.bg-primary-light .navbar-toggle-3 span,
+.navbar.bg-primary-light .navbar-toggle-4 span {
     background-color: #3DCBFA !important;
   }
   .navbar.bg-primary-light .navbar-menu {
@@ -14945,7 +15093,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%232ca6f8' stroke='%232ca6f8' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-primary-2-light .navbar-toggle-1 span, .navbar.link-primary-2-light .navbar-toggle-2 span, .navbar.link-primary-2-light .navbar-toggle-3 span, .navbar.link-primary-2-light .navbar-toggle-4 span {
+.navbar.link-primary-2-light .navbar-toggle-1 span,
+.navbar.link-primary-2-light .navbar-toggle-2 span,
+.navbar.link-primary-2-light .navbar-toggle-3 span,
+.navbar.link-primary-2-light .navbar-toggle-4 span {
   background-color: #D7EEFE !important;
 }
 .navbar.link-primary-2-light .navbar-item.dropdown .navbar-link::after {
@@ -14957,7 +15108,10 @@ body.loaded > div.loader {
     background-color: #D7EEFE;
   }
 
-  .navbar.bg-primary-2-light .navbar-toggle-1 span, .navbar.bg-primary-2-light .navbar-toggle-2 span, .navbar.bg-primary-2-light .navbar-toggle-3 span, .navbar.bg-primary-2-light .navbar-toggle-4 span {
+  .navbar.bg-primary-2-light .navbar-toggle-1 span,
+.navbar.bg-primary-2-light .navbar-toggle-2 span,
+.navbar.bg-primary-2-light .navbar-toggle-3 span,
+.navbar.bg-primary-2-light .navbar-toggle-4 span {
     background-color: #2ca6f8 !important;
   }
   .navbar.bg-primary-2-light .navbar-menu {
@@ -14968,7 +15122,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%231B81F5' stroke='%231B81F5' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-primary-3-light .navbar-toggle-1 span, .navbar.link-primary-3-light .navbar-toggle-2 span, .navbar.link-primary-3-light .navbar-toggle-3 span, .navbar.link-primary-3-light .navbar-toggle-4 span {
+.navbar.link-primary-3-light .navbar-toggle-1 span,
+.navbar.link-primary-3-light .navbar-toggle-2 span,
+.navbar.link-primary-3-light .navbar-toggle-3 span,
+.navbar.link-primary-3-light .navbar-toggle-4 span {
   background-color: #C4DFFD !important;
 }
 .navbar.link-primary-3-light .navbar-item.dropdown .navbar-link::after {
@@ -14980,7 +15137,10 @@ body.loaded > div.loader {
     background-color: #C4DFFD;
   }
 
-  .navbar.bg-primary-3-light .navbar-toggle-1 span, .navbar.bg-primary-3-light .navbar-toggle-2 span, .navbar.bg-primary-3-light .navbar-toggle-3 span, .navbar.bg-primary-3-light .navbar-toggle-4 span {
+  .navbar.bg-primary-3-light .navbar-toggle-1 span,
+.navbar.bg-primary-3-light .navbar-toggle-2 span,
+.navbar.bg-primary-3-light .navbar-toggle-3 span,
+.navbar.bg-primary-3-light .navbar-toggle-4 span {
     background-color: #1B81F5 !important;
   }
   .navbar.bg-primary-3-light .navbar-menu {
@@ -14991,7 +15151,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23166ACA' stroke='%23166ACA' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-secondary-light .navbar-toggle-1 span, .navbar.link-secondary-light .navbar-toggle-2 span, .navbar.link-secondary-light .navbar-toggle-3 span, .navbar.link-secondary-light .navbar-toggle-4 span {
+.navbar.link-secondary-light .navbar-toggle-1 span,
+.navbar.link-secondary-light .navbar-toggle-2 span,
+.navbar.link-secondary-light .navbar-toggle-3 span,
+.navbar.link-secondary-light .navbar-toggle-4 span {
   background-color: #C8DDF9 !important;
 }
 .navbar.link-secondary-light .navbar-item.dropdown .navbar-link::after {
@@ -15003,7 +15166,10 @@ body.loaded > div.loader {
     background-color: #C8DDF9;
   }
 
-  .navbar.bg-secondary-light .navbar-toggle-1 span, .navbar.bg-secondary-light .navbar-toggle-2 span, .navbar.bg-secondary-light .navbar-toggle-3 span, .navbar.bg-secondary-light .navbar-toggle-4 span {
+  .navbar.bg-secondary-light .navbar-toggle-1 span,
+.navbar.bg-secondary-light .navbar-toggle-2 span,
+.navbar.bg-secondary-light .navbar-toggle-3 span,
+.navbar.bg-secondary-light .navbar-toggle-4 span {
     background-color: #166ACA !important;
   }
   .navbar.bg-secondary-light .navbar-menu {
@@ -15014,7 +15180,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23410AFF' stroke='%23410AFF' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-tertiary-light .navbar-toggle-1 span, .navbar.link-tertiary-light .navbar-toggle-2 span, .navbar.link-tertiary-light .navbar-toggle-3 span, .navbar.link-tertiary-light .navbar-toggle-4 span {
+.navbar.link-tertiary-light .navbar-toggle-1 span,
+.navbar.link-tertiary-light .navbar-toggle-2 span,
+.navbar.link-tertiary-light .navbar-toggle-3 span,
+.navbar.link-tertiary-light .navbar-toggle-4 span {
   background-color: #EFEBFF !important;
 }
 .navbar.link-tertiary-light .navbar-item.dropdown .navbar-link::after {
@@ -15026,7 +15195,10 @@ body.loaded > div.loader {
     background-color: #EFEBFF;
   }
 
-  .navbar.bg-tertiary-light .navbar-toggle-1 span, .navbar.bg-tertiary-light .navbar-toggle-2 span, .navbar.bg-tertiary-light .navbar-toggle-3 span, .navbar.bg-tertiary-light .navbar-toggle-4 span {
+  .navbar.bg-tertiary-light .navbar-toggle-1 span,
+.navbar.bg-tertiary-light .navbar-toggle-2 span,
+.navbar.bg-tertiary-light .navbar-toggle-3 span,
+.navbar.bg-tertiary-light .navbar-toggle-4 span {
     background-color: #410AFF !important;
   }
   .navbar.bg-tertiary-light .navbar-menu {
@@ -15037,7 +15209,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%2303d1b2' stroke='%2303d1b2' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-info-light .navbar-toggle-1 span, .navbar.link-info-light .navbar-toggle-2 span, .navbar.link-info-light .navbar-toggle-3 span, .navbar.link-info-light .navbar-toggle-4 span {
+.navbar.link-info-light .navbar-toggle-1 span,
+.navbar.link-info-light .navbar-toggle-2 span,
+.navbar.link-info-light .navbar-toggle-3 span,
+.navbar.link-info-light .navbar-toggle-4 span {
   background-color: #EBFFFC !important;
 }
 .navbar.link-info-light .navbar-item.dropdown .navbar-link::after {
@@ -15049,7 +15224,10 @@ body.loaded > div.loader {
     background-color: #EBFFFC;
   }
 
-  .navbar.bg-info-light .navbar-toggle-1 span, .navbar.bg-info-light .navbar-toggle-2 span, .navbar.bg-info-light .navbar-toggle-3 span, .navbar.bg-info-light .navbar-toggle-4 span {
+  .navbar.bg-info-light .navbar-toggle-1 span,
+.navbar.bg-info-light .navbar-toggle-2 span,
+.navbar.bg-info-light .navbar-toggle-3 span,
+.navbar.bg-info-light .navbar-toggle-4 span {
     background-color: #03d1b2 !important;
   }
   .navbar.bg-info-light .navbar-menu {
@@ -15060,7 +15238,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%2349c674' stroke='%2349c674' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-success-light .navbar-toggle-1 span, .navbar.link-success-light .navbar-toggle-2 span, .navbar.link-success-light .navbar-toggle-3 span, .navbar.link-success-light .navbar-toggle-4 span {
+.navbar.link-success-light .navbar-toggle-1 span,
+.navbar.link-success-light .navbar-toggle-2 span,
+.navbar.link-success-light .navbar-toggle-3 span,
+.navbar.link-success-light .navbar-toggle-4 span {
   background-color: #EFFAF3 !important;
 }
 .navbar.link-success-light .navbar-item.dropdown .navbar-link::after {
@@ -15072,7 +15253,10 @@ body.loaded > div.loader {
     background-color: #EFFAF3;
   }
 
-  .navbar.bg-success-light .navbar-toggle-1 span, .navbar.bg-success-light .navbar-toggle-2 span, .navbar.bg-success-light .navbar-toggle-3 span, .navbar.bg-success-light .navbar-toggle-4 span {
+  .navbar.bg-success-light .navbar-toggle-1 span,
+.navbar.bg-success-light .navbar-toggle-2 span,
+.navbar.bg-success-light .navbar-toggle-3 span,
+.navbar.bg-success-light .navbar-toggle-4 span {
     background-color: #49c674 !important;
   }
   .navbar.bg-success-light .navbar-menu {
@@ -15083,7 +15267,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fedd57' stroke='%23fedd57' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-warning-light .navbar-toggle-1 span, .navbar.link-warning-light .navbar-toggle-2 span, .navbar.link-warning-light .navbar-toggle-3 span, .navbar.link-warning-light .navbar-toggle-4 span {
+.navbar.link-warning-light .navbar-toggle-1 span,
+.navbar.link-warning-light .navbar-toggle-2 span,
+.navbar.link-warning-light .navbar-toggle-3 span,
+.navbar.link-warning-light .navbar-toggle-4 span {
   background-color: #FFFBEB !important;
 }
 .navbar.link-warning-light .navbar-item.dropdown .navbar-link::after {
@@ -15095,7 +15282,10 @@ body.loaded > div.loader {
     background-color: #FFFBEB;
   }
 
-  .navbar.bg-warning-light .navbar-toggle-1 span, .navbar.bg-warning-light .navbar-toggle-2 span, .navbar.bg-warning-light .navbar-toggle-3 span, .navbar.bg-warning-light .navbar-toggle-4 span {
+  .navbar.bg-warning-light .navbar-toggle-1 span,
+.navbar.bg-warning-light .navbar-toggle-2 span,
+.navbar.bg-warning-light .navbar-toggle-3 span,
+.navbar.bg-warning-light .navbar-toggle-4 span {
     background-color: #fedd57 !important;
   }
   .navbar.bg-warning-light .navbar-menu {
@@ -15106,7 +15296,10 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23ff3860' stroke='%23ff3860' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar.link-danger-light .navbar-toggle-1 span, .navbar.link-danger-light .navbar-toggle-2 span, .navbar.link-danger-light .navbar-toggle-3 span, .navbar.link-danger-light .navbar-toggle-4 span {
+.navbar.link-danger-light .navbar-toggle-1 span,
+.navbar.link-danger-light .navbar-toggle-2 span,
+.navbar.link-danger-light .navbar-toggle-3 span,
+.navbar.link-danger-light .navbar-toggle-4 span {
   background-color: #FFEBEF !important;
 }
 .navbar.link-danger-light .navbar-item.dropdown .navbar-link::after {
@@ -15118,7 +15311,10 @@ body.loaded > div.loader {
     background-color: #FFEBEF;
   }
 
-  .navbar.bg-danger-light .navbar-toggle-1 span, .navbar.bg-danger-light .navbar-toggle-2 span, .navbar.bg-danger-light .navbar-toggle-3 span, .navbar.bg-danger-light .navbar-toggle-4 span {
+  .navbar.bg-danger-light .navbar-toggle-1 span,
+.navbar.bg-danger-light .navbar-toggle-2 span,
+.navbar.bg-danger-light .navbar-toggle-3 span,
+.navbar.bg-danger-light .navbar-toggle-4 span {
     background-color: #ff3860 !important;
   }
   .navbar.bg-danger-light .navbar-menu {
