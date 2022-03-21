@@ -1,5 +1,4 @@
 import { getByTestId } from '@testing-library/dom';
-import '@testing-library/jest-dom';
 
 import AccordionRender from './AccordionRender';
 
