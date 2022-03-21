@@ -53,17 +53,20 @@ new Loader();
 var Loader$1 = Loader;
 
 var Accordion = /*#__PURE__*/function () {
-  function Accordion() {
+  function Accordion(acc, type) {
     _classCallCheck(this, Accordion);
 
+    this.acc = acc;
+    this.type = type;
     this.run();
-  } // eslint-disable-next-line class-methods-use-this
-
+  }
 
   _createClass(Accordion, [{
-    key: "build",
-    value: function build(acc, type) {
-      acc.forEach(function (accord) {
+    key: "render",
+    value: function render() {
+      var _this = this;
+
+      this.acc.forEach(function (accord) {
         var items = accord.querySelectorAll('.accordion-item');
         items.forEach(function (item) {
           var btn = item.querySelector('.accordion-toggle');
@@ -75,7 +78,7 @@ var Accordion = /*#__PURE__*/function () {
           }
 
           btn.addEventListener('click', function () {
-            if (type === 'single') {
+            if (_this.type === 'single') {
               items.forEach(function (itemActive) {
                 if (itemActive.classList.contains('active') && itemActive !== item) {
                   var contentActive = itemActive.querySelector('.accordion-content');
@@ -97,14 +100,6 @@ var Accordion = /*#__PURE__*/function () {
       });
     }
   }, {
-    key: "render",
-    value: function render() {
-      var accordionSingleClass = document.querySelectorAll('.accordion.single');
-      this.build(accordionSingleClass, 'single');
-      var accordionMultipleClass = document.querySelectorAll('.accordion.multiple');
-      this.build(accordionMultipleClass, 'multiple');
-    }
-  }, {
     key: "run",
     value: function run() {
       this.render();
@@ -112,10 +107,12 @@ var Accordion = /*#__PURE__*/function () {
   }]);
 
   return Accordion;
-}(); // eslint-disable-next-line no-unused-vars
+}();
 
-
-new Accordion();
+var accordionSingleClass = document.querySelectorAll('.accordion.single');
+var accordionMultipleClass = document.querySelectorAll('.accordion.multiple');
+new Accordion(accordionSingleClass, 'single');
+new Accordion(accordionMultipleClass, 'multiple');
 var Accordion$1 = Accordion;
 
 var Close = /*#__PURE__*/function () {

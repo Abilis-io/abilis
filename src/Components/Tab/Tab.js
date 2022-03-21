@@ -56,7 +56,9 @@ class Tab {
               if (tactive !== title) {
                 if (tactive.classList.contains('active')) {
                   tactive.classList.remove('active');
-                  e.querySelector(tactive.dataset.target).classList.remove('active');
+                  e.querySelector(tactive.dataset.target).classList.remove(
+                    'active'
+                  );
                 }
 
                 const activeClassVerif = tactive.dataset.active;

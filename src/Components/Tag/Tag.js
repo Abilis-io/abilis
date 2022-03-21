@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable class-methods-use-this */
-import Close from './Close';
+import Close from '../Close/Close';
 
 class Tag {
   constructor() {

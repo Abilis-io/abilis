@@ -29,7 +29,8 @@
     "prebuild": "npm run js:build && npm run sass:build",
     "build": "rollup -c",
     "lint": "eslint '**/*.js'",
-    "lint:fix": "prettier --write $PWD/'src/**/*.js' --single-quote"
+    "lint:fix": "prettier --write $PWD/'src/**/*.js' --single-quote",
+    "test": "jest"
   },
   "husky": {
     "hooks": {
@@ -60,14 +61,20 @@
   "devDependencies": {
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",
+    "@testing-library/dom": "^8.11.3",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/user-event": "^13.5.0",
     "babel-jest": "^27.5.1",
+    "babel-preset-jest": "^27.5.1",
     "eslint": "^8.11.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^26.1.2",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.7",
     "prettier-eslint": "^13.0.0",
     "prettier-eslint-cli": "^5.0.1",
+    "regenerator-runtime": "^0.13.9",
     "rimraf": "^3.0.2",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-node-resolve": "^5.2.0",

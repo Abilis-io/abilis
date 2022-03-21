@@ -16,9 +16,7 @@ class Dropdown {
           menu.classList.toggle('active');
         });
         window.addEventListener('click', (e) => {
-          if (e.path[0] !== drop
-          && e.path[0] !== btn
-          && e.path[0] !== menu) {
+          if (e.path[0] !== drop && e.path[0] !== btn && e.path[0] !== menu) {
             if (menu.classList.contains('active')) {
               menu.classList.remove('active');
             }
