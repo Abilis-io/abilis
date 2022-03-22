@@ -38,9 +38,9 @@
 .navbar-sticky-fast {
   position: fixed;
   width: 100%;
-  padding-top: $navbar-transparent-sticky-padding;
-  padding-bottom: $navbar-transparent-sticky-padding;
-  transition: $navbar-transparent-sticky-transition;
+  padding-top: $navbar-sticky-fast-padding;
+  padding-bottom: $navbar-sticky-fast-padding;
+  transition: $navbar-sticky-fast-transition;
 
   &.sticky-active {
     padding-top: 0;
