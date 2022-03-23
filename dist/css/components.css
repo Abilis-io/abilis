@@ -30,7 +30,7 @@
   --ab-success-light: #EFFAF3;
   --ab-warning-light: #FFFBEB;
   --ab-danger-light: #FFEBEF;
-  --ab-font-family: "Nunito", sans-serif;
+  --ab-font-family: Inter var, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --ab-font-weight: 400;
   --ab-font-size: clamp(0.9rem, -0.875rem + 8.333333vw, 1.1rem);
   --ab-body-line-height: 1.5;
@@ -5250,43 +5250,27 @@ hr {
 }
 
 .box-shadow-1 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10),  0 2px 5px 2px rgba(0,0,0,0.06) !important;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgb(0 0 0 / 5%); !important;
 }
 
 .box-shadow-2 {
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.10),  0 3px 8px 3px rgba(0,0,0,0.1) !important;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px -1px rgb(0 0 0 / 10%) !important;
 }
 
 .box-shadow-3 {
-  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.1), 0 5px 12px 4px rgba(0,0,0,0.15) !important;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -2px rgb(0 0 0 / 10%) !important;
 }
 
 .box-shadow-4 {
-  box-shadow: 0 7px 8px 0 rgba(0, 0, 0, 0.1), 0 7px 18px 6px rgba(0,0,0,0.15) !important;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 10px 15px -3px rgb(0 0 0 / 10%),0 4px 6px -4px rgb(0 0 0 / 10%) !important;
 }
 
 .box-shadow-5 {
-  box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.12),  0 10px 25px 8px rgba(0,0,0,0.15) !important;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 20px 25px -5px rgb(0 0 0 / 10%),0 8px 10px -6px rgb(0 0 0 / 10%) !important;
 }
 
-.box-shadow-light-1 {
-  box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
-}
-
-.box-shadow-light-2 {
-  box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
-}
-
-.box-shadow-light-3 {
-  box-shadow: 0 10px 15px -1px rgba(0, 0, 0, 0.1), 0 6px 8px 0px rgba(0, 0, 0, 0.05) !important;
-}
-
-.box-shadow-light-4 {
-  box-shadow: 0 15px 20px -1px rgba(0, 0, 0, 0.11), 0 8px 10px 0px rgba(0, 0, 0, 0.06) !important;
-}
-
-.box-shadow-light-5 {
-  box-shadow: 0 20px 30px 0px rgba(0, 0, 0, 0.12), 0 10px 10px -2px rgba(0, 0, 0, 0.06) !important;
+.box-shadow-6 {
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgb(0 0 0 / 25%) !important;
 }
 
 .box-shadow-0 {
@@ -5310,6 +5294,10 @@ hr {
 }
 
 .drop-shadow-5 {
+  filter: drop-shadow(0 0.15rem 0.175rem #1a1a1a) !important;
+}
+
+.drop-shadow-6 {
   filter: drop-shadow(0 0.15rem 0.2rem #000000) !important;
 }
 
@@ -9439,7 +9427,7 @@ table {
   padding-top: 0.36rem;
   position: relative;
   vertical-align: top;
-  font-family: "Nunito", sans-serif;
+  font-family: Inter var, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   font-size: clamp(0.9rem, -0.875rem + 8.333333vw, 1.1rem);
 }
 .input[disabled], .select select[disabled], [disabled].textarea {
@@ -13989,7 +13977,6 @@ body.loaded > div.loader {
 .navbar .buttons {
   align-items: center;
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-start;
 }
 
@@ -14030,6 +14017,18 @@ body.loaded > div.loader {
   padding-right: 1rem;
   padding-left: 1rem;
 }
+.navbar-brand .navbar-item {
+  font-weight: 800;
+  font-size: clamp(1.2rem, -0.875rem + 8.333333vw, 1.5rem);
+}
+.navbar-brand .navbar-item img {
+  max-height: 2.5rem;
+  height: auto;
+  max-width: 100%;
+}
+.navbar-brand .navbar-item img:not(:last-child) {
+  margin-right: 10px;
+}
 
 .navbar-item,
 .navbar-link {
@@ -14048,23 +14047,17 @@ a.navbar-item {
 
 .navbar-item {
   line-height: 1.5;
-  padding: 0.5rem 0.75rem;
+  padding: 0.5rem 0.5rem;
   position: relative;
   flex-grow: 0;
   flex-shrink: 0;
 }
-.navbar-item img {
-  max-height: 2.5rem;
-  height: auto;
-  max-width: 100%;
+.navbar-item a {
+  padding: 7px 17px;
+  border-radius: 8px;
 }
 .navbar-item .buttons .button:not(:last-child) {
   margin-right: 0.5rem;
-}
-
-.navbar-logo {
-  font-weight: 800;
-  font-size: clamp(1.2rem, -0.875rem + 8.333333vw, 1.5rem);
 }
 
 .navbar-toggle-1,
@@ -14321,11 +14314,10 @@ a.navbar-item {
   }
 
   .navbar-menu {
-    overflow-y: auto !important;
+    overflow: hidden;
     margin-top: -1px;
     display: flex;
     position: absolute;
-    overflow: hidden;
     background-color: #F6F6F6;
     width: 100%;
     top: 100%;
@@ -14352,15 +14344,13 @@ a.navbar-item {
     align-items: flex-start;
   }
   .navbar-menu .navbar-item {
-    padding: 0.75rem 1.5rem;
+    width: 100%;
   }
-  .navbar-menu .navbar-link {
-    padding: 0 1.5rem;
+  .navbar-menu .navbar-item a:not(.button) {
+    width: 100%;
   }
   .navbar-menu .navbar-item.dropdown {
     flex-direction: column;
-    padding-right: 0;
-    padding-left: 0;
   }
   .navbar-menu .navbar-item.dropdown .navbar-link {
     width: 100%;
@@ -14382,7 +14372,6 @@ a.navbar-item {
   }
   .navbar-menu .navbar-item.dropdown .navbar-dropdown.open,
 .navbar-menu .navbar-item.dropdown.click .navbar-dropdown-clicked.open {
-    margin-top: 1.5rem;
     max-height: 1400px;
     padding: 15px;
     transition: all 0.8s ease-in-out;
@@ -14425,7 +14414,7 @@ a.navbar-item {
     z-index: 20;
     transition: all 0.8s ease-in-out;
   }
-  .navbar-item.dropdown:hover .navbar-dropdown.navbar-dropdown-1,
+  .navbar-item.dropdown.active .navbar-dropdown.navbar-dropdown-1, .navbar-item.dropdown:hover .navbar-dropdown.navbar-dropdown-1,
 .navbar-item.dropdown .navbar-dropdown-clicked.navbar-dropdown-1.active {
     border-top: 2px solid #F6F6F6;
   }
@@ -14447,7 +14436,7 @@ a.navbar-item {
     border-radius: 8px;
     top: 125%;
   }
-  .navbar-item.dropdown:hover .navbar-dropdown,
+  .navbar-item.dropdown.active .navbar-dropdown, .navbar-item.dropdown:hover .navbar-dropdown,
 .navbar-item.dropdown .navbar-dropdown.active,
 .navbar-item.dropdown .navbar-dropdown-clicked.active {
     max-height: 1400px;
@@ -14483,6 +14472,12 @@ a.navbar-item {
 .navbar.bg-white .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
+.navbar.bg-white .navbar-item > a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.navbar.bg-white .navbar-item.active > a {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 
 .navbar.link-white .navbar-toggle-1 span,
 .navbar.link-white .navbar-toggle-2 span,
@@ -14511,6 +14506,12 @@ a.navbar-item {
 }
 .navbar.bg-gray-1 .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.navbar.bg-gray-1 .navbar-item > a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.navbar.bg-gray-1 .navbar-item.active > a {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .navbar.link-gray-1 .navbar-toggle-1 span,
@@ -14541,6 +14542,12 @@ a.navbar-item {
 .navbar.bg-gray-2 .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
+.navbar.bg-gray-2 .navbar-item > a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.navbar.bg-gray-2 .navbar-item.active > a {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 
 .navbar.link-gray-2 .navbar-toggle-1 span,
 .navbar.link-gray-2 .navbar-toggle-2 span,
@@ -14569,6 +14576,12 @@ a.navbar-item {
 }
 .navbar.bg-gray-3 .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.navbar.bg-gray-3 .navbar-item > a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.navbar.bg-gray-3 .navbar-item.active > a {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .navbar.link-gray-3 .navbar-toggle-1 span,
@@ -14599,6 +14612,12 @@ a.navbar-item {
 .navbar.bg-gray-4 .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
+.navbar.bg-gray-4 .navbar-item > a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.navbar.bg-gray-4 .navbar-item.active > a {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 
 .navbar.link-gray-4 .navbar-toggle-1 span,
 .navbar.link-gray-4 .navbar-toggle-2 span,
@@ -14627,6 +14646,12 @@ a.navbar-item {
 }
 .navbar.bg-gray-5 .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.navbar.bg-gray-5 .navbar-item > a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.navbar.bg-gray-5 .navbar-item.active > a {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .navbar.link-gray-5 .navbar-toggle-1 span,
@@ -14657,6 +14682,12 @@ a.navbar-item {
 .navbar.bg-gray-6 .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
+.navbar.bg-gray-6 .navbar-item > a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.navbar.bg-gray-6 .navbar-item.active > a {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
 .navbar.link-gray-6 .navbar-toggle-1 span,
 .navbar.link-gray-6 .navbar-toggle-2 span,
@@ -14685,6 +14716,12 @@ a.navbar-item {
 }
 .navbar.bg-gray-7 .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.navbar.bg-gray-7 .navbar-item > a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.navbar.bg-gray-7 .navbar-item.active > a {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .navbar.link-gray-7 .navbar-toggle-1 span,
@@ -14715,6 +14752,12 @@ a.navbar-item {
 .navbar.bg-gray-8 .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
+.navbar.bg-gray-8 .navbar-item > a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.navbar.bg-gray-8 .navbar-item.active > a {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
 .navbar.link-gray-8 .navbar-toggle-1 span,
 .navbar.link-gray-8 .navbar-toggle-2 span,
@@ -14743,6 +14786,12 @@ a.navbar-item {
 }
 .navbar.bg-gray-9 .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.navbar.bg-gray-9 .navbar-item > a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.navbar.bg-gray-9 .navbar-item.active > a {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .navbar.link-gray-9 .navbar-toggle-1 span,
@@ -14773,6 +14822,12 @@ a.navbar-item {
 .navbar.bg-black .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
+.navbar.bg-black .navbar-item > a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.navbar.bg-black .navbar-item.active > a {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
 .navbar.link-black .navbar-toggle-1 span,
 .navbar.link-black .navbar-toggle-2 span,
@@ -14801,6 +14856,12 @@ a.navbar-item {
 }
 .navbar.bg-primary .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.navbar.bg-primary .navbar-item > a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.navbar.bg-primary .navbar-item.active > a {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .navbar.link-primary .navbar-toggle-1 span,
@@ -14831,6 +14892,12 @@ a.navbar-item {
 .navbar.bg-primary-2 .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
+.navbar.bg-primary-2 .navbar-item > a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.navbar.bg-primary-2 .navbar-item.active > a {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
 .navbar.link-primary-2 .navbar-toggle-1 span,
 .navbar.link-primary-2 .navbar-toggle-2 span,
@@ -14859,6 +14926,12 @@ a.navbar-item {
 }
 .navbar.bg-primary-3 .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.navbar.bg-primary-3 .navbar-item > a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.navbar.bg-primary-3 .navbar-item.active > a {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .navbar.link-primary-3 .navbar-toggle-1 span,
@@ -14889,6 +14962,12 @@ a.navbar-item {
 .navbar.bg-secondary .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
+.navbar.bg-secondary .navbar-item > a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.navbar.bg-secondary .navbar-item.active > a {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
 .navbar.link-secondary .navbar-toggle-1 span,
 .navbar.link-secondary .navbar-toggle-2 span,
@@ -14917,6 +14996,12 @@ a.navbar-item {
 }
 .navbar.bg-tertiary .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.navbar.bg-tertiary .navbar-item > a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.navbar.bg-tertiary .navbar-item.active > a {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .navbar.link-tertiary .navbar-toggle-1 span,
@@ -14947,6 +15032,12 @@ a.navbar-item {
 .navbar.bg-info .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
+.navbar.bg-info .navbar-item > a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.navbar.bg-info .navbar-item.active > a {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
 .navbar.link-info .navbar-toggle-1 span,
 .navbar.link-info .navbar-toggle-2 span,
@@ -14975,6 +15066,12 @@ a.navbar-item {
 }
 .navbar.bg-success .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.navbar.bg-success .navbar-item > a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.navbar.bg-success .navbar-item.active > a {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .navbar.link-success .navbar-toggle-1 span,
@@ -15005,6 +15102,12 @@ a.navbar-item {
 .navbar.bg-warning .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
+.navbar.bg-warning .navbar-item > a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.navbar.bg-warning .navbar-item.active > a {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
 .navbar.link-warning .navbar-toggle-1 span,
 .navbar.link-warning .navbar-toggle-2 span,
@@ -15033,6 +15136,12 @@ a.navbar-item {
 }
 .navbar.bg-danger .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.navbar.bg-danger .navbar-item > a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.navbar.bg-danger .navbar-item.active > a {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .navbar.link-danger .navbar-toggle-1 span,
@@ -15063,6 +15172,12 @@ a.navbar-item {
 .navbar.bg-primary-light .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%233DCBFA' stroke='%233DCBFA' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
+.navbar.bg-primary-light .navbar-item > a:hover {
+  background-color: rgba(61, 203, 250, 0.1);
+}
+.navbar.bg-primary-light .navbar-item.active > a {
+  background-color: rgba(61, 203, 250, 0.1);
+}
 
 .navbar.link-primary-light .navbar-toggle-1 span,
 .navbar.link-primary-light .navbar-toggle-2 span,
@@ -15091,6 +15206,12 @@ a.navbar-item {
 }
 .navbar.bg-primary-2-light .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%232ca6f8' stroke='%232ca6f8' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.navbar.bg-primary-2-light .navbar-item > a:hover {
+  background-color: rgba(44, 166, 248, 0.1);
+}
+.navbar.bg-primary-2-light .navbar-item.active > a {
+  background-color: rgba(44, 166, 248, 0.1);
 }
 
 .navbar.link-primary-2-light .navbar-toggle-1 span,
@@ -15121,6 +15242,12 @@ a.navbar-item {
 .navbar.bg-primary-3-light .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%231B81F5' stroke='%231B81F5' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
+.navbar.bg-primary-3-light .navbar-item > a:hover {
+  background-color: rgba(27, 129, 245, 0.1);
+}
+.navbar.bg-primary-3-light .navbar-item.active > a {
+  background-color: rgba(27, 129, 245, 0.1);
+}
 
 .navbar.link-primary-3-light .navbar-toggle-1 span,
 .navbar.link-primary-3-light .navbar-toggle-2 span,
@@ -15149,6 +15276,12 @@ a.navbar-item {
 }
 .navbar.bg-secondary-light .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23166ACA' stroke='%23166ACA' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.navbar.bg-secondary-light .navbar-item > a:hover {
+  background-color: rgba(22, 106, 202, 0.1);
+}
+.navbar.bg-secondary-light .navbar-item.active > a {
+  background-color: rgba(22, 106, 202, 0.1);
 }
 
 .navbar.link-secondary-light .navbar-toggle-1 span,
@@ -15179,6 +15312,12 @@ a.navbar-item {
 .navbar.bg-tertiary-light .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23410AFF' stroke='%23410AFF' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
+.navbar.bg-tertiary-light .navbar-item > a:hover {
+  background-color: rgba(65, 10, 255, 0.1);
+}
+.navbar.bg-tertiary-light .navbar-item.active > a {
+  background-color: rgba(65, 10, 255, 0.1);
+}
 
 .navbar.link-tertiary-light .navbar-toggle-1 span,
 .navbar.link-tertiary-light .navbar-toggle-2 span,
@@ -15207,6 +15346,12 @@ a.navbar-item {
 }
 .navbar.bg-info-light .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%2303d1b2' stroke='%2303d1b2' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.navbar.bg-info-light .navbar-item > a:hover {
+  background-color: rgba(3, 209, 178, 0.1);
+}
+.navbar.bg-info-light .navbar-item.active > a {
+  background-color: rgba(3, 209, 178, 0.1);
 }
 
 .navbar.link-info-light .navbar-toggle-1 span,
@@ -15237,6 +15382,12 @@ a.navbar-item {
 .navbar.bg-success-light .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%2349c674' stroke='%2349c674' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
+.navbar.bg-success-light .navbar-item > a:hover {
+  background-color: rgba(73, 198, 116, 0.1);
+}
+.navbar.bg-success-light .navbar-item.active > a {
+  background-color: rgba(73, 198, 116, 0.1);
+}
 
 .navbar.link-success-light .navbar-toggle-1 span,
 .navbar.link-success-light .navbar-toggle-2 span,
@@ -15266,6 +15417,12 @@ a.navbar-item {
 .navbar.bg-warning-light .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fedd57' stroke='%23fedd57' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
+.navbar.bg-warning-light .navbar-item > a:hover {
+  background-color: rgba(254, 221, 87, 0.1);
+}
+.navbar.bg-warning-light .navbar-item.active > a {
+  background-color: rgba(254, 221, 87, 0.1);
+}
 
 .navbar.link-warning-light .navbar-toggle-1 span,
 .navbar.link-warning-light .navbar-toggle-2 span,
@@ -15294,6 +15451,12 @@ a.navbar-item {
 }
 .navbar.bg-danger-light .navbar-item.dropdown .navbar-link::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23ff3860' stroke='%23ff3860' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.navbar.bg-danger-light .navbar-item > a:hover {
+  background-color: rgba(255, 56, 96, 0.1);
+}
+.navbar.bg-danger-light .navbar-item.active > a {
+  background-color: rgba(255, 56, 96, 0.1);
 }
 
 .navbar.link-danger-light .navbar-toggle-1 span,

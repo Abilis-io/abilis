@@ -11,6 +11,10 @@ class Dropdown {
       const btn = drop.querySelector(button);
       const menu = drop.querySelector(dropMenu);
 
+      if(drop && drop.classList.contains('active')) {
+        menu.classList.add('active');
+      }
+
       if (btn && menu) {
         btn.addEventListener('click', () => {
           menu.classList.toggle('active');

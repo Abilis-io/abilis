@@ -16,7 +16,6 @@
   .buttons {
     align-items: center;
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
   }
 }
@@ -55,6 +54,21 @@
   min-height: $navbar-min-height;
   padding-right: $navbar-brand-padding;
   padding-left: $navbar-brand-padding;
+
+  .navbar-item {
+    font-weight: $navbar-logo-font-weight;
+    font-size: $navbar-logo-font-size;
+
+    img {
+      max-height: $navbar-item-logo-max-height;
+      height: auto;
+      max-width: 100%;
+      
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
 }
 
 // NAVBAR ITEMS
@@ -80,20 +94,14 @@ a.navbar-item {
   flex-grow: 0;
   flex-shrink: 0;
 
-  img {
-    max-height: $navbar-item-logo-max-height;
-    height: auto;
-    max-width: 100%;
+  a {
+    padding: 7px 17px;
+    border-radius: $border-radius;
   }
 
   .buttons .button:not(:last-child) {
     margin-right: $navbar-item-btn-margin-right;
   }
-}
-
-.navbar-logo {
-  font-weight: $navbar-logo-font-weight;
-  font-size: $navbar-logo-font-size;
 }
 // NAVBAR ITEMS
 
@@ -432,11 +440,10 @@ a.navbar-item {
   }
 
   .navbar-menu {
-    overflow-y: auto !important;
+    overflow: hidden;
     margin-top: -1px;
     display: flex;
     position: absolute;
-    overflow: hidden;
     background-color: $color-gray-1;
     width: 100%;
     top: 100%;
@@ -467,19 +474,16 @@ a.navbar-item {
     }
 
     .navbar-item {
-      padding: $navbar-mobile-menu-item-padding-horizontal
-        $navbar-mobile-menu-item-padding-vertical;
-    }
+      width: 100%;
 
-    .navbar-link {
-      padding: 0 $navbar-mobile-menu-item-padding-vertical;
+      a:not(.button) {
+        width: 100%;
+      }
     }
 
     .navbar-item {
       &.dropdown {
         flex-direction: column;
-        padding-right: 0;
-        padding-left: 0;
 
         .navbar-link {
           width: 100%;
@@ -505,7 +509,6 @@ a.navbar-item {
       width: 100%;
 
       &.open {
-        margin-top: $navbar-mobile-menu-item-padding-vertical;
         max-height: $navbar-mobile-menu-dropdown-max-height;
         padding: $navbar-mobile-menu-dropdown-padding;
         transition: $navbar-dropdown-transition;
@@ -555,6 +558,7 @@ a.navbar-item {
       transition: $navbar-dropdown-transition;
     }
 
+    &.active .navbar-dropdown.navbar-dropdown-1,
     &:hover .navbar-dropdown.navbar-dropdown-1,
     .navbar-dropdown-clicked.navbar-dropdown-1.active {
       border-top: $navbar-desktop-dropdown-1-border-top;
@@ -582,6 +586,7 @@ a.navbar-item {
       top: $navbar-desktop-dropdown-2-top;
     }
 
+    &.active .navbar-dropdown,
     &:hover .navbar-dropdown,
     .navbar-dropdown.active,
     .navbar-dropdown-clicked.active {
@@ -627,6 +632,20 @@ a.navbar-item {
   .navbar.bg-#{$cname} {
     .navbar-item.dropdown .navbar-link::after {
       @include arrowIcon($color2);
+    }
+
+    .navbar-item {
+      > a {
+        &:hover {
+          background-color: rgba($color2, 10%);
+        }
+      }
+
+      &.active {
+        > a {
+          background-color: rgba($color2, 10%);
+        }
+      }
     }
   }
 

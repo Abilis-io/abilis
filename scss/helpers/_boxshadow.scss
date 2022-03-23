@@ -4,12 +4,6 @@
     }
 }
 
-@each $sname, $shadow in $light-shadows {
-    .box-shadow-light-#{$sname} {
-        box-shadow: #{$shadow} !important;
-    }
-}
-
 .box-shadow-0 {
     box-shadow: none !important;
 }

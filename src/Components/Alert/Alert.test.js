@@ -1,6 +1,7 @@
 import { getByTestId } from '@testing-library/dom';
 
 import AlertRender from './AlertRender';
+import Alert from './Alert';
 
 beforeEach(() => {
   document.body.innerHTML = AlertRender.render();
@@ -12,11 +13,11 @@ afterEach(() => {
 
 describe('Alert Integration Test', () => {
   it('should be close the alert', () => {
-    require('./Alert');
+    const alert = new Alert();
     const closeBtn = getByTestId(document.body, 'closeBtn');
 
     closeBtn.click();
-    const alert = document.querySelector('[data-testid="alert"]');
-    expect(alert).toBe(null);
+    const alertItem = document.querySelector('[data-testid="alert"]');
+    expect(alertItem).toBe(null);
   });
 });

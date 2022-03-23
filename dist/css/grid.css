@@ -29,7 +29,7 @@
   --ab-success-light: #EFFAF3;
   --ab-warning-light: #FFFBEB;
   --ab-danger-light: #FFEBEF;
-  --ab-font-family: "Nunito", sans-serif;
+  --ab-font-family: Inter var, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --ab-font-weight: 400;
   --ab-font-size: clamp(0.9rem, -0.875rem + 8.333333vw, 1.1rem);
   --ab-body-line-height: 1.5;

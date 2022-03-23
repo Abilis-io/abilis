@@ -3,20 +3,18 @@ $box-shadow-big:    0 15px 20px -1px rgba(0, 0, 0, 0.11), 0 8px 10px 0px rgba(0,
 $box-shadow:        0 8px 12px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !default;
 $box-shadow-small:  0 6px 10px -5px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !default;
 
-$light-shadows: (
-    '1': '0 6px 10px -5px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
-    '2': '0 8px 12px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
-    '3': '0 10px 15px -1px rgba(0, 0, 0, 0.1), 0 6px 8px 0px rgba(0, 0, 0, 0.05)',
-    '4': '0 15px 20px -1px rgba(0, 0, 0, 0.11), 0 8px 10px 0px rgba(0, 0, 0, 0.06)',
-    '5': '0 20px 30px 0px rgba(0, 0, 0, 0.12), 0 10px 10px -2px rgba(0, 0, 0, 0.06)',
-) !default;
-
 $shadows: (
-    '1': '0 4px 8px 0 rgba(0, 0, 0, 0.10),  0 2px 5px 2px rgba(0,0,0,0.06)',
-    '2': '0 5px 8px 0 rgba(0, 0, 0, 0.10),  0 3px 8px 3px rgba(0,0,0,0.1)',
-    '3': '0 6px 8px 0 rgba(0, 0, 0, 0.1), 0 5px 12px 4px rgba(0,0,0,0.15)',
-    '4': '0 7px 8px 0 rgba(0, 0, 0, 0.1), 0 7px 18px 6px rgba(0,0,0,0.15)',
-    '5': '0 8px 9px 0 rgba(0, 0, 0, 0.12),  0 10px 25px 8px rgba(0,0,0,0.15)',
+    // '1': '0 4px 8px 0 rgba(0, 0, 0, 0.10),  0 2px 5px 2px rgba(0,0,0,0.06)',
+    // '2': '0 5px 8px 0 rgba(0, 0, 0, 0.10),  0 3px 8px 3px rgba(0,0,0,0.1)',
+    // '3': '0 6px 8px 0 rgba(0, 0, 0, 0.1), 0 5px 12px 4px rgba(0,0,0,0.15)',
+    // '4': '0 7px 8px 0 rgba(0, 0, 0, 0.1), 0 7px 18px 6px rgba(0,0,0,0.15)',
+    // '5': '0 8px 9px 0 rgba(0, 0, 0, 0.12),  0 10px 25px 8px rgba(0,0,0,0.15)',
+    '1': '0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgb(0 0 0 / 5%);',
+    '2': '0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px -1px rgb(0 0 0 / 10%)',
+    '3': '0 0 #0000, 0 0 #0000, 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -2px rgb(0 0 0 / 10%)',
+    '4': '0 0 #0000, 0 0 #0000, 0 10px 15px -3px rgb(0 0 0 / 10%),0 4px 6px -4px rgb(0 0 0 / 10%)',
+    '5': '0 0 #0000, 0 0 #0000, 0 20px 25px -5px rgb(0 0 0 / 10%),0 8px 10px -6px rgb(0 0 0 / 10%)',
+    '6': '0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgb(0 0 0 / 25%)',
 ) !default;
 
 $drop-shadows: (
@@ -24,7 +22,8 @@ $drop-shadows: (
     '2': drop-shadow(0 0.15rem 0.125rem #5f5f5f),
     '3': drop-shadow(0 0.15rem 0.15rem #494949),
     '4': drop-shadow(0 0.15rem 0.15rem #292929),
-    '5': drop-shadow(0 0.15rem 0.2rem #000000),
+    '5': drop-shadow(0 0.15rem 0.175rem #1a1a1a),
+    '6': drop-shadow(0 0.15rem 0.2rem #000000),
 ) !default;
 
 $text-shadows: (

@@ -47,10 +47,7 @@
       "git add"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Skyleen77/abilis.git"
-  },
+  "repository": "git+https://github.com/Skyleen77/abilis.git",
   "keywords": [
     "css",
     "js",
