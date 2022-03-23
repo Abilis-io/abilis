@@ -14,29 +14,105 @@
     $color-black:                   #000 !default;
     // COLORS GRAY
 
-    // COLORS COLORED
+    // COLORS ABILIS
     $color-primary:                 #3DCBFA !default;
-    $color-primary-2:               #2ca6f8 !default;
-    $color-primary-3:               #1B81F5 !default;
-    $color-secondary:               #166ACA !default;
-    $color-tertiary:                #410AFF !default;
+    $color-secondary:               #2ca6f8 !default;
+    $color-tertiary:                #1B81F5 !default;
     $color-info:                    #03d1b2 !default;
     $color-success:                 #49c674 !default;
     $color-warning:                 #fedd57 !default;
     $color-danger:                  #ff3860 !default;
-    // COLORS COLORED
-    
-    // COLORS COLORED LIGHT
-    $color-primary-light:           #EBFAFE !default;
-    $color-primary-2-light:         #D7EEFE !default;
-    $color-primary-3-light:         #C4DFFD !default;
-    $color-secondary-light:         #C8DDF9 !default;
-    $color-tertiary-light:          #EFEBFF !default;
-    $color-info-light:              #EBFFFC !default;
-    $color-success-light:           #EFFAF3 !default;
-    $color-warning-light:           #FFFBEB !default;
-    $color-danger-light:            #FFEBEF !default;
-    // COLORS COLORED LIGHT
+
+        // LIGHT
+        $color-primary-light:       #EBFAFE !default;
+        $color-secondary-light:     #D7EEFE !default;
+        $color-tertiary-light:      #C4DFFD !default;
+        $color-info-light:          #EBFFFC !default;
+        $color-success-light:       #EFFAF3 !default;
+        $color-warning-light:       #FFFBEB !default;
+        $color-danger-light:        #FFEBEF !default;
+        // LIGHT
+    // COLORS ABILIS
+
+    // COLORS PALETTE
+        // RED
+        $color-red-0:               #FADBDB !default;
+        $color-red-1:               #F5B7B7 !default;
+        $color-red-2:               #F09393 !default;
+        $color-red-3:               #EB6F6F !default;
+        $color-red-4:               #E74B4B !default;
+        $color-red-5:               #D71D1D !default;
+        $color-red-6:               #A21616 !default;
+        $color-red-7:               #6C0F0F !default;
+        $color-red-8:               #480A0A !default;
+        $color-red-9:               #240505 !default;
+        // RED
+
+        // YELLOW
+        $color-yellow-0:            #FDF9D8 !default;        
+        $color-yellow-1:            #FBF4B1 !default; // 2      
+        $color-yellow-2:            #F9EE8B !default; // 2     
+        $color-yellow-3:            #F7E864 !default; // 2  
+        $color-yellow-4:            #F5E23D !default; // 2     
+        $color-yellow-5:            #E9D30C !default; // 3   
+        $color-yellow-6:            #AE9E09 !default; // 3
+        $color-yellow-7:            #746906 !default; // 3   
+        $color-yellow-8:            #4E4A04 !default; // 2   
+        $color-yellow-9:            #272502 !default; // 2
+        // YELLOW
+        
+        // GREEN
+        $color-green-0:             #D9FCF0 !default;
+        $color-green-1:             #B4F9E1 !default;
+        $color-green-2:             #8EF6D1 !default;
+        $color-green-3:             #68F3C2 !default;
+        $color-green-4:             #42F0B3 !default;
+        $color-green-5:             #12E29A !default;
+        $color-green-6:             #0EAA73 !default;
+        $color-green-7:             #09714D !default;
+        $color-green-8:             #064B33 !default;
+        $color-green-9:             #03261A !default;
+        // GREEN
+        
+        // BLUE
+        $color-blue-0:              #D8E6FE !default;
+        $color-blue-1:              #AFCCFD !default;
+        $color-blue-2:              #88B2FC !default;
+        $color-blue-3:              #6099FB !default;
+        $color-blue-4:              #387FFA !default;
+        $color-blue-5:              #065BEF !default;
+        $color-blue-6:              #0545B3 !default;
+        $color-blue-7:              #032E77 !default;
+        $color-blue-8:              #021E50 !default;
+        $color-blue-9:              #010F28 !default;
+        // BLUE
+
+        // PURPLE
+        $color-purple-0:            #E4D8FE !default;
+        $color-purple-1:            #C8AFFD !default;
+        $color-purple-2:            #AC88FC !default;
+        $color-purple-3:            #9160FB !default;
+        $color-purple-4:            #7538FA !default;
+        $color-purple-5:            #5006EF !default;
+        $color-purple-6:            #3C05B3 !default;
+        $color-purple-7:            #280377 !default;
+        $color-purple-8:            #1B0250 !default;
+        $color-purple-9:            #0D0128 !default;
+        // PURPLE
+
+        // PINK
+        $color-pink-0:              #FADBEA !default;
+        $color-pink-1:              #F5B7D5 !default;
+        $color-pink-2:              #F093C0 !default;
+        $color-pink-3:              #EB6FAB !default;
+        $color-pink-4:              #E74B96 !default;
+        $color-pink-5:              #D71D77 !default;
+        $color-pink-6:              #A21659 !default;
+        $color-pink-7:              #6C0F3C !default;
+        $color-pink-8:              #480A28 !default;
+        $color-pink-9:              #240514 !default;
+        // PINK
+    // COLORS PALETTE
 
     // COLORS LIST
     $colors:
@@ -51,18 +127,82 @@
                                     "gray-8"           $color-gray-8            $color-white,
                                     "gray-9"           $color-gray-9            $color-white,
                                     "black"            $color-black             $color-white,
+
+                                    "red-0"            $color-red-0             $color-black,
+                                    "red-1"            $color-red-1             $color-black,
+                                    "red-2"            $color-red-2             $color-black,
+                                    "red-3"            $color-red-3             $color-white,
+                                    "red-4"            $color-red-4             $color-white,
+                                    "red-5"            $color-red-5             $color-white,
+                                    "red-6"            $color-red-6             $color-white,
+                                    "red-7"            $color-red-7             $color-white,
+                                    "red-8"            $color-red-8             $color-white,
+                                    "red-9"            $color-red-9             $color-white,
+
+                                    "yellow-0"         $color-yellow-0          $color-black,
+                                    "yellow-1"         $color-yellow-1          $color-black,
+                                    "yellow-2"         $color-yellow-2          $color-black,
+                                    "yellow-3"         $color-yellow-3          $color-white,
+                                    "yellow-4"         $color-yellow-4          $color-white,
+                                    "yellow-5"         $color-yellow-5          $color-white,
+                                    "yellow-6"         $color-yellow-6          $color-white,
+                                    "yellow-7"         $color-yellow-7          $color-white,
+                                    "yellow-8"         $color-yellow-8          $color-white,
+                                    "yellow-9"         $color-yellow-9          $color-white,
+
+                                    "green-0"          $color-green-0           $color-black,
+                                    "green-1"          $color-green-1           $color-black,
+                                    "green-2"          $color-green-2           $color-black,
+                                    "green-3"          $color-green-3           $color-white,
+                                    "green-4"          $color-green-4           $color-white,
+                                    "green-5"          $color-green-5           $color-white,
+                                    "green-6"          $color-green-6           $color-white,
+                                    "green-7"          $color-green-7           $color-white,
+                                    "green-8"          $color-green-8           $color-white,
+                                    "green-9"          $color-green-9           $color-white,
+
+                                    "blue-0"           $color-blue-0            $color-black,
+                                    "blue-1"           $color-blue-1            $color-black,
+                                    "blue-2"           $color-blue-2            $color-black,
+                                    "blue-3"           $color-blue-3            $color-white,
+                                    "blue-4"           $color-blue-4            $color-white,
+                                    "blue-5"           $color-blue-5            $color-white,
+                                    "blue-6"           $color-blue-6            $color-white,
+                                    "blue-7"           $color-blue-7            $color-white,
+                                    "blue-8"           $color-blue-8            $color-white,
+                                    "blue-9"           $color-blue-9            $color-white,
+
+                                    "purple-0"         $color-purple-0          $color-black,
+                                    "purple-1"         $color-purple-1          $color-black,
+                                    "purple-2"         $color-purple-2          $color-black,
+                                    "purple-3"         $color-purple-3          $color-white,
+                                    "purple-4"         $color-purple-4          $color-white,
+                                    "purple-5"         $color-purple-5          $color-white,
+                                    "purple-6"         $color-purple-6          $color-white,
+                                    "purple-7"         $color-purple-7          $color-white,
+                                    "purple-8"         $color-purple-8          $color-white,
+                                    "purple-9"         $color-purple-9          $color-white,
+
+                                    "pink-0"           $color-pink-0            $color-black,
+                                    "pink-1"           $color-pink-1            $color-black,
+                                    "pink-2"           $color-pink-2            $color-black,
+                                    "pink-3"           $color-pink-3            $color-white,
+                                    "pink-4"           $color-pink-4            $color-white,
+                                    "pink-5"           $color-pink-5            $color-white,
+                                    "pink-6"           $color-pink-6            $color-white,
+                                    "pink-7"           $color-pink-7            $color-white,
+                                    "pink-8"           $color-pink-8            $color-white,
+                                    "pink-9"           $color-pink-9            $color-white,
+
                                     "primary"          $color-primary           $color-white,
-                                    "primary-2"        $color-primary-2         $color-white,
-                                    "primary-3"        $color-primary-3         $color-white,
                                     "secondary"        $color-secondary         $color-white,
                                     "tertiary"         $color-tertiary          $color-white,
                                     "info"             $color-info              $color-white,
                                     "success"          $color-success           $color-white,
                                     "warning"          $color-warning           $color-white,
                                     "danger"           $color-danger            $color-white,
+                                    
                                     "primary-light"    $color-primary-light     $color-primary,
-                                    "primary-2-light"  $color-primary-2-light   $color-primary-2,
-                                    "primary-3-light"  $color-primary-3-light   $color-primary-3,
                                     "secondary-light"  $color-secondary-light   $color-secondary,
                                     "tertiary-light"   $color-tertiary-light    $color-tertiary,
                                     "info-light"       $color-info-light        $color-info,
