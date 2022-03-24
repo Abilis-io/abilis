@@ -50,3 +50,7 @@
 @mixin arrowIcon($color) {
   background-image: url(svg-encode("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'><path d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='#{$color}' stroke='#{$color}' stroke-miterlimit='10' fill-rule='evenodd'/></svg>"));
 }
+
+@mixin bgSquare() {
+  background-image: url(svg-encode("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(15 23 42 / 0.04)'><path d='M0 .5H31.5V32'/></svg>"));
+}

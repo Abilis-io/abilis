@@ -58,8 +58,8 @@
           position: relative;
 
           &.active {
-            background-color: $tab-title-buttons-bg;
-            border-color: $tab-title-buttons-bg;
+            border-bottom-color: $tab-title-buttons-border;
+            border-color: $tab-title-buttons-border;
             color: $tab-title-buttons-color;
             z-index: 1;
           }
@@ -122,7 +122,7 @@
           margin-right: -#{$tab-border-width};
 
           &.active {
-            border-right-color: $color-primary;
+            border-right-color: $tab-color-active;
           }
         }
       }

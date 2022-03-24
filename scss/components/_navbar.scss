@@ -18,6 +18,21 @@
     display: flex;
     justify-content: flex-start;
   }
+
+  &.navbar-type {
+    background-color: $color-white;
+    border-bottom: 1px solid $color-gray-2;
+
+    .navbar-item {
+      a {
+        color: $color-gray-6;
+      }
+    }
+
+    .navbar-item.dropdown .navbar-link::after {
+      @include arrowIcon($color-gray-6);
+    }
+  }
 }
 
 .navbar,
@@ -441,10 +456,10 @@ a.navbar-item {
 
   .navbar-menu {
     overflow: hidden;
-    margin-top: -1px;
+    margin-top: 0;
     display: flex;
     position: absolute;
-    background-color: $color-gray-1;
+    border-bottom: 1px solid $color-gray-2;
     width: 100%;
     top: 100%;
     max-height: 0;
@@ -556,12 +571,6 @@ a.navbar-item {
       position: absolute;
       z-index: 20;
       transition: $navbar-dropdown-transition;
-    }
-
-    &.active .navbar-dropdown.navbar-dropdown-1,
-    &:hover .navbar-dropdown.navbar-dropdown-1,
-    .navbar-dropdown-clicked.navbar-dropdown-1.active {
-      border-top: $navbar-desktop-dropdown-1-border-top;
     }
 
     .navbar-dropdown.active,

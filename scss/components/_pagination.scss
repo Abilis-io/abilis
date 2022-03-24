@@ -9,6 +9,34 @@
     font-size: $pagination-font-size;
     margin: -#{$pagination-margin};
 
+    &.spaceless {
+        justify-content: center;
+
+        .pagination-items {
+            flex-grow: 0;
+        }
+    }
+
+    .icon-next,
+    .icon-previous {
+        content: "";
+        @include arrowIcon($pagination-color);
+        width: 14px;
+        height: 11px;
+        align-self: center;
+        background-repeat: no-repeat;
+        background-size: 14px;
+        background-position: center;
+    }
+
+    .icon-next {
+        transform: $pagination-icon-next;
+    }
+
+    .icon-previous {
+        transform: $pagination-icon-previous;
+    }
+
     &.small {
         font-size: $pagination-small-font-size;
 
@@ -111,9 +139,8 @@
         }
     
         &.active {
-            border-color: $pagination-active-bg !important;
+            border-color: $pagination-active-border !important;
             background-color: $pagination-active-bg;
-            color: $pagination-active-color;
         }
     }
 }
@@ -156,6 +183,14 @@
             flex-shrink: 1;
         }
 
+        &.spaceless {
+            .pagination-items,
+            .pagination-next,
+            .pagination-previous {
+                flex-grow: 0;
+            }
+        }
+
         .pagination-list li {
             flex-grow: 1;
             flex-shrink: 1;
@@ -163,14 +198,13 @@
     }
 }
 
-@each $cname, $color1, $color2 in $colors {
+@each $cname, $color1 in $colors {
     .pagination {
         &.#{$cname} {
             .pagination-item, .pagination-next, .pagination-previous {
                 &.active {
                     border-color: $color1 !important;
-                    background-color: $color1;
-                    color: $color2;
+                    background-color: rgba($color1, 15%);
                 }
             }
         }

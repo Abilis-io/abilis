@@ -90,7 +90,7 @@
   --ab-font-weight: 400;
   --ab-font-size: clamp(0.9rem, -0.875rem + 8.333333vw, 1.1rem);
   --ab-body-line-height: 1.5;
-  --ab-body-color: #202428;
+  --ab-body-color: #343a40;
   --ab-body-bg: #fff;
 }
 
@@ -1175,6 +1175,18 @@ hr {
 }
 .bg-danger-light a:not(.button) {
   color: #ff3860;
+}
+
+.bg-square {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb%2815 23 42 / 0.04%29'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+  mask-image: linear-gradient(to bottom, transparent, black);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black);
+  background-position: bottom 1px center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
 }
 
 .bg-transparent {
@@ -3884,203 +3896,203 @@ hr {
 
 /* height */
 .b-1 {
-  border: 1px solid #dee2e6 !important;
+  border: 1px solid #eaeaea !important;
 }
 
 .b-l-1 {
-  border-left: 1px solid #dee2e6 !important;
+  border-left: 1px solid #eaeaea !important;
 }
 
 .b-r-1 {
-  border-right: 1px solid #dee2e6 !important;
+  border-right: 1px solid #eaeaea !important;
 }
 
 .b-t-1 {
-  border-top: 1px solid #dee2e6 !important;
+  border-top: 1px solid #eaeaea !important;
 }
 
 .b-b-1 {
-  border-bottom: 1px solid #dee2e6 !important;
+  border-bottom: 1px solid #eaeaea !important;
 }
 
 .b-2 {
-  border: 2px solid #dee2e6 !important;
+  border: 2px solid #eaeaea !important;
 }
 
 .b-l-2 {
-  border-left: 2px solid #dee2e6 !important;
+  border-left: 2px solid #eaeaea !important;
 }
 
 .b-r-2 {
-  border-right: 2px solid #dee2e6 !important;
+  border-right: 2px solid #eaeaea !important;
 }
 
 .b-t-2 {
-  border-top: 2px solid #dee2e6 !important;
+  border-top: 2px solid #eaeaea !important;
 }
 
 .b-b-2 {
-  border-bottom: 2px solid #dee2e6 !important;
+  border-bottom: 2px solid #eaeaea !important;
 }
 
 .b-3 {
-  border: 3px solid #dee2e6 !important;
+  border: 3px solid #eaeaea !important;
 }
 
 .b-l-3 {
-  border-left: 3px solid #dee2e6 !important;
+  border-left: 3px solid #eaeaea !important;
 }
 
 .b-r-3 {
-  border-right: 3px solid #dee2e6 !important;
+  border-right: 3px solid #eaeaea !important;
 }
 
 .b-t-3 {
-  border-top: 3px solid #dee2e6 !important;
+  border-top: 3px solid #eaeaea !important;
 }
 
 .b-b-3 {
-  border-bottom: 3px solid #dee2e6 !important;
+  border-bottom: 3px solid #eaeaea !important;
 }
 
 .b-4 {
-  border: 4px solid #dee2e6 !important;
+  border: 4px solid #eaeaea !important;
 }
 
 .b-l-4 {
-  border-left: 4px solid #dee2e6 !important;
+  border-left: 4px solid #eaeaea !important;
 }
 
 .b-r-4 {
-  border-right: 4px solid #dee2e6 !important;
+  border-right: 4px solid #eaeaea !important;
 }
 
 .b-t-4 {
-  border-top: 4px solid #dee2e6 !important;
+  border-top: 4px solid #eaeaea !important;
 }
 
 .b-b-4 {
-  border-bottom: 4px solid #dee2e6 !important;
+  border-bottom: 4px solid #eaeaea !important;
 }
 
 .b-5 {
-  border: 5px solid #dee2e6 !important;
+  border: 5px solid #eaeaea !important;
 }
 
 .b-l-5 {
-  border-left: 5px solid #dee2e6 !important;
+  border-left: 5px solid #eaeaea !important;
 }
 
 .b-r-5 {
-  border-right: 5px solid #dee2e6 !important;
+  border-right: 5px solid #eaeaea !important;
 }
 
 .b-t-5 {
-  border-top: 5px solid #dee2e6 !important;
+  border-top: 5px solid #eaeaea !important;
 }
 
 .b-b-5 {
-  border-bottom: 5px solid #dee2e6 !important;
+  border-bottom: 5px solid #eaeaea !important;
 }
 
 .b-6 {
-  border: 6px solid #dee2e6 !important;
+  border: 6px solid #eaeaea !important;
 }
 
 .b-l-6 {
-  border-left: 6px solid #dee2e6 !important;
+  border-left: 6px solid #eaeaea !important;
 }
 
 .b-r-6 {
-  border-right: 6px solid #dee2e6 !important;
+  border-right: 6px solid #eaeaea !important;
 }
 
 .b-t-6 {
-  border-top: 6px solid #dee2e6 !important;
+  border-top: 6px solid #eaeaea !important;
 }
 
 .b-b-6 {
-  border-bottom: 6px solid #dee2e6 !important;
+  border-bottom: 6px solid #eaeaea !important;
 }
 
 .b-7 {
-  border: 7px solid #dee2e6 !important;
+  border: 7px solid #eaeaea !important;
 }
 
 .b-l-7 {
-  border-left: 7px solid #dee2e6 !important;
+  border-left: 7px solid #eaeaea !important;
 }
 
 .b-r-7 {
-  border-right: 7px solid #dee2e6 !important;
+  border-right: 7px solid #eaeaea !important;
 }
 
 .b-t-7 {
-  border-top: 7px solid #dee2e6 !important;
+  border-top: 7px solid #eaeaea !important;
 }
 
 .b-b-7 {
-  border-bottom: 7px solid #dee2e6 !important;
+  border-bottom: 7px solid #eaeaea !important;
 }
 
 .b-8 {
-  border: 8px solid #dee2e6 !important;
+  border: 8px solid #eaeaea !important;
 }
 
 .b-l-8 {
-  border-left: 8px solid #dee2e6 !important;
+  border-left: 8px solid #eaeaea !important;
 }
 
 .b-r-8 {
-  border-right: 8px solid #dee2e6 !important;
+  border-right: 8px solid #eaeaea !important;
 }
 
 .b-t-8 {
-  border-top: 8px solid #dee2e6 !important;
+  border-top: 8px solid #eaeaea !important;
 }
 
 .b-b-8 {
-  border-bottom: 8px solid #dee2e6 !important;
+  border-bottom: 8px solid #eaeaea !important;
 }
 
 .b-9 {
-  border: 9px solid #dee2e6 !important;
+  border: 9px solid #eaeaea !important;
 }
 
 .b-l-9 {
-  border-left: 9px solid #dee2e6 !important;
+  border-left: 9px solid #eaeaea !important;
 }
 
 .b-r-9 {
-  border-right: 9px solid #dee2e6 !important;
+  border-right: 9px solid #eaeaea !important;
 }
 
 .b-t-9 {
-  border-top: 9px solid #dee2e6 !important;
+  border-top: 9px solid #eaeaea !important;
 }
 
 .b-b-9 {
-  border-bottom: 9px solid #dee2e6 !important;
+  border-bottom: 9px solid #eaeaea !important;
 }
 
 .b-10 {
-  border: 10px solid #dee2e6 !important;
+  border: 10px solid #eaeaea !important;
 }
 
 .b-l-10 {
-  border-left: 10px solid #dee2e6 !important;
+  border-left: 10px solid #eaeaea !important;
 }
 
 .b-r-10 {
-  border-right: 10px solid #dee2e6 !important;
+  border-right: 10px solid #eaeaea !important;
 }
 
 .b-t-10 {
-  border-top: 10px solid #dee2e6 !important;
+  border-top: 10px solid #eaeaea !important;
 }
 
 .b-b-10 {
-  border-bottom: 10px solid #dee2e6 !important;
+  border-bottom: 10px solid #eaeaea !important;
 }
 
 .b-none {
@@ -8612,91 +8624,133 @@ hr {
 .font-weight-100 {
   font-weight: 100 !important;
 }
-.font-weight-100 p, .font-weight-100 b, .font-weight-100 u, .font-weight-100 div, .font-weight-100 h1, .font-weight-100 h2, .font-weight-100 h3, .font-weight-100 h4, .font-weight-100 h5, .font-weight-100 h6 {
+.font-weight-100 p, .font-weight-100 b, .font-weight-100 u, .font-weight-100 a, .font-weight-100 div, .font-weight-100 h1, .font-weight-100 h2, .font-weight-100 h3, .font-weight-100 h4, .font-weight-100 h5, .font-weight-100 h6 {
   font-weight: 100 !important;
 }
 
 .font-weight-200 {
   font-weight: 200 !important;
 }
-.font-weight-200 p, .font-weight-200 b, .font-weight-200 u, .font-weight-200 div, .font-weight-200 h1, .font-weight-200 h2, .font-weight-200 h3, .font-weight-200 h4, .font-weight-200 h5, .font-weight-200 h6 {
+.font-weight-200 p, .font-weight-200 b, .font-weight-200 u, .font-weight-200 a, .font-weight-200 div, .font-weight-200 h1, .font-weight-200 h2, .font-weight-200 h3, .font-weight-200 h4, .font-weight-200 h5, .font-weight-200 h6 {
   font-weight: 200 !important;
 }
 
 .font-weight-300 {
   font-weight: 300 !important;
 }
-.font-weight-300 p, .font-weight-300 b, .font-weight-300 u, .font-weight-300 div, .font-weight-300 h1, .font-weight-300 h2, .font-weight-300 h3, .font-weight-300 h4, .font-weight-300 h5, .font-weight-300 h6 {
+.font-weight-300 p, .font-weight-300 b, .font-weight-300 u, .font-weight-300 a, .font-weight-300 div, .font-weight-300 h1, .font-weight-300 h2, .font-weight-300 h3, .font-weight-300 h4, .font-weight-300 h5, .font-weight-300 h6 {
   font-weight: 300 !important;
 }
 
 .font-weight-400 {
   font-weight: 400 !important;
 }
-.font-weight-400 p, .font-weight-400 b, .font-weight-400 u, .font-weight-400 div, .font-weight-400 h1, .font-weight-400 h2, .font-weight-400 h3, .font-weight-400 h4, .font-weight-400 h5, .font-weight-400 h6 {
+.font-weight-400 p, .font-weight-400 b, .font-weight-400 u, .font-weight-400 a, .font-weight-400 div, .font-weight-400 h1, .font-weight-400 h2, .font-weight-400 h3, .font-weight-400 h4, .font-weight-400 h5, .font-weight-400 h6 {
   font-weight: 400 !important;
 }
 
 .font-weight-500 {
   font-weight: 500 !important;
 }
-.font-weight-500 p, .font-weight-500 b, .font-weight-500 u, .font-weight-500 div, .font-weight-500 h1, .font-weight-500 h2, .font-weight-500 h3, .font-weight-500 h4, .font-weight-500 h5, .font-weight-500 h6 {
+.font-weight-500 p, .font-weight-500 b, .font-weight-500 u, .font-weight-500 a, .font-weight-500 div, .font-weight-500 h1, .font-weight-500 h2, .font-weight-500 h3, .font-weight-500 h4, .font-weight-500 h5, .font-weight-500 h6 {
   font-weight: 500 !important;
 }
 
 .font-weight-600 {
   font-weight: 600 !important;
 }
-.font-weight-600 p, .font-weight-600 b, .font-weight-600 u, .font-weight-600 div, .font-weight-600 h1, .font-weight-600 h2, .font-weight-600 h3, .font-weight-600 h4, .font-weight-600 h5, .font-weight-600 h6 {
+.font-weight-600 p, .font-weight-600 b, .font-weight-600 u, .font-weight-600 a, .font-weight-600 div, .font-weight-600 h1, .font-weight-600 h2, .font-weight-600 h3, .font-weight-600 h4, .font-weight-600 h5, .font-weight-600 h6 {
   font-weight: 600 !important;
 }
 
 .font-weight-700 {
   font-weight: 700 !important;
 }
-.font-weight-700 p, .font-weight-700 b, .font-weight-700 u, .font-weight-700 div, .font-weight-700 h1, .font-weight-700 h2, .font-weight-700 h3, .font-weight-700 h4, .font-weight-700 h5, .font-weight-700 h6 {
+.font-weight-700 p, .font-weight-700 b, .font-weight-700 u, .font-weight-700 a, .font-weight-700 div, .font-weight-700 h1, .font-weight-700 h2, .font-weight-700 h3, .font-weight-700 h4, .font-weight-700 h5, .font-weight-700 h6 {
   font-weight: 700 !important;
 }
 
 .font-weight-800 {
   font-weight: 800 !important;
 }
-.font-weight-800 p, .font-weight-800 b, .font-weight-800 u, .font-weight-800 div, .font-weight-800 h1, .font-weight-800 h2, .font-weight-800 h3, .font-weight-800 h4, .font-weight-800 h5, .font-weight-800 h6 {
+.font-weight-800 p, .font-weight-800 b, .font-weight-800 u, .font-weight-800 a, .font-weight-800 div, .font-weight-800 h1, .font-weight-800 h2, .font-weight-800 h3, .font-weight-800 h4, .font-weight-800 h5, .font-weight-800 h6 {
   font-weight: 800 !important;
 }
 
 .font-weight-900 {
   font-weight: 900 !important;
 }
-.font-weight-900 p, .font-weight-900 b, .font-weight-900 u, .font-weight-900 div, .font-weight-900 h1, .font-weight-900 h2, .font-weight-900 h3, .font-weight-900 h4, .font-weight-900 h5, .font-weight-900 h6 {
+.font-weight-900 p, .font-weight-900 b, .font-weight-900 u, .font-weight-900 a, .font-weight-900 div, .font-weight-900 h1, .font-weight-900 h2, .font-weight-900 h3, .font-weight-900 h4, .font-weight-900 h5, .font-weight-900 h6 {
   font-weight: 900 !important;
 }
 
-.font-xl {
-  font-size: clamp(1.2rem, -0.875rem + 8.333333vw, 1.5rem) !important;
+.font-xxxl {
+  font-size: clamp(3.2rem, -0.875rem + 8.333333vw, 3.5rem) !important;
 }
-.font-xl p, .font-xl b, .font-xl u, .font-xl div, .font-xl h1, .font-xl h2, .font-xl h3, .font-xl h4, .font-xl h5, .font-xl h6 {
-  font-size: clamp(1.2rem, -0.875rem + 8.333333vw, 1.5rem) !important;
+.font-xxxl p, .font-xxxl b, .font-xxxl u, .font-xxxl a, .font-xxxl div, .font-xxxl h1, .font-xxxl h2, .font-xxxl h3, .font-xxxl h4, .font-xxxl h5, .font-xxxl h6 {
+  font-size: clamp(3.2rem, -0.875rem + 8.333333vw, 3.5rem) !important;
+}
+
+.font-xxl {
+  font-size: clamp(2.8rem, -0.875rem + 8.333333vw, 3.2rem) !important;
+}
+.font-xxl p, .font-xxl b, .font-xxl u, .font-xxl a, .font-xxl div, .font-xxl h1, .font-xxl h2, .font-xxl h3, .font-xxl h4, .font-xxl h5, .font-xxl h6 {
+  font-size: clamp(2.8rem, -0.875rem + 8.333333vw, 3.2rem) !important;
+}
+
+.font-xl {
+  font-size: clamp(2.5rem, -0.875rem + 8.333333vw, 2.8rem) !important;
+}
+.font-xl p, .font-xl b, .font-xl u, .font-xl a, .font-xl div, .font-xl h1, .font-xl h2, .font-xl h3, .font-xl h4, .font-xl h5, .font-xl h6 {
+  font-size: clamp(2.5rem, -0.875rem + 8.333333vw, 2.8rem) !important;
+}
+
+.font-l {
+  font-size: clamp(2.2rem, -0.875rem + 8.333333vw, 2.5rem) !important;
+}
+.font-l p, .font-l b, .font-l u, .font-l a, .font-l div, .font-l h1, .font-l h2, .font-l h3, .font-l h4, .font-l h5, .font-l h6 {
+  font-size: clamp(2.2rem, -0.875rem + 8.333333vw, 2.5rem) !important;
 }
 
 .font-md {
-  font-size: clamp(0.9rem, -0.875rem + 8.333333vw, 1.1rem) !important;
+  font-size: clamp(1.8rem, -0.875rem + 8.333333vw, 2.2rem) !important;
 }
-.font-md p, .font-md b, .font-md u, .font-md div, .font-md h1, .font-md h2, .font-md h3, .font-md h4, .font-md h5, .font-md h6 {
-  font-size: clamp(0.9rem, -0.875rem + 8.333333vw, 1.1rem) !important;
+.font-md p, .font-md b, .font-md u, .font-md a, .font-md div, .font-md h1, .font-md h2, .font-md h3, .font-md h4, .font-md h5, .font-md h6 {
+  font-size: clamp(1.8rem, -0.875rem + 8.333333vw, 2.2rem) !important;
 }
 
 .font-sm {
-  font-size: clamp(0.87rem, -0.875rem + 8.333333vw, 0.95rem) !important;
+  font-size: clamp(1.5rem, -0.875rem + 8.333333vw, 1.8rem) !important;
 }
-.font-sm p, .font-sm b, .font-sm u, .font-sm div, .font-sm h1, .font-sm h2, .font-sm h3, .font-sm h4, .font-sm h5, .font-sm h6 {
-  font-size: clamp(0.87rem, -0.875rem + 8.333333vw, 0.95rem) !important;
+.font-sm p, .font-sm b, .font-sm u, .font-sm a, .font-sm div, .font-sm h1, .font-sm h2, .font-sm h3, .font-sm h4, .font-sm h5, .font-sm h6 {
+  font-size: clamp(1.5rem, -0.875rem + 8.333333vw, 1.8rem) !important;
+}
+
+.font-s {
+  font-size: clamp(1.2rem, -0.875rem + 8.333333vw, 1.5rem) !important;
+}
+.font-s p, .font-s b, .font-s u, .font-s a, .font-s div, .font-s h1, .font-s h2, .font-s h3, .font-s h4, .font-s h5, .font-s h6 {
+  font-size: clamp(1.2rem, -0.875rem + 8.333333vw, 1.5rem) !important;
 }
 
 .font-xs {
+  font-size: clamp(0.9rem, -0.875rem + 8.333333vw, 1.1rem) !important;
+}
+.font-xs p, .font-xs b, .font-xs u, .font-xs a, .font-xs div, .font-xs h1, .font-xs h2, .font-xs h3, .font-xs h4, .font-xs h5, .font-xs h6 {
+  font-size: clamp(0.9rem, -0.875rem + 8.333333vw, 1.1rem) !important;
+}
+
+.font-xxs {
+  font-size: clamp(0.87rem, -0.875rem + 8.333333vw, 0.95rem) !important;
+}
+.font-xxs p, .font-xxs b, .font-xxs u, .font-xxs a, .font-xxs div, .font-xxs h1, .font-xxs h2, .font-xxs h3, .font-xxs h4, .font-xxs h5, .font-xxs h6 {
+  font-size: clamp(0.87rem, -0.875rem + 8.333333vw, 0.95rem) !important;
+}
+
+.font-xxxs {
   font-size: clamp(0.7rem, -0.875rem + 8.333333vw, 0.85rem) !important;
 }
-.font-xs p, .font-xs b, .font-xs u, .font-xs div, .font-xs h1, .font-xs h2, .font-xs h3, .font-xs h4, .font-xs h5, .font-xs h6 {
+.font-xxxs p, .font-xxxs b, .font-xxxs u, .font-xxxs a, .font-xxxs div, .font-xxxs h1, .font-xxxs h2, .font-xxxs h3, .font-xxxs h4, .font-xxxs h5, .font-xxxs h6 {
   font-size: clamp(0.7rem, -0.875rem + 8.333333vw, 0.85rem) !important;
 }
 
@@ -11858,7 +11912,7 @@ ol.list-style-2 li:before {
 
 .img-thumb {
   padding: 0.35rem;
-  box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
 
@@ -16395,11 +16449,12 @@ body.loaded > div.loader {
 }
 
 .button-outline-type {
-  border: 1px solid #ced4da;
+  border: 1px solid #6c757d;
+  color: #6c757d;
 }
 .button-outline-type:hover, .button-outline-type:focus, .button-outline-type:active, .button-outline-type.active {
-  border-color: #3DCBFA;
-  color: #3DCBFA;
+  border-color: #343a40;
+  color: #343a40;
 }
 
 /* button-type */
@@ -18887,7 +18942,7 @@ body.loaded > div.loader {
 .nav .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #3DCBFA;
+  color: #202428;
   text-decoration: none;
 }
 .nav .nav-link.active {
@@ -18914,7 +18969,7 @@ body.loaded > div.loader {
   transition: all 0.2s linear;
 }
 .tabs .tab-title.active {
-  color: #3DCBFA;
+  color: #343a40;
 }
 .tabs.vertical.styled .tab, .tabs.horizontal.styled .tab {
   display: flex;
@@ -18930,23 +18985,23 @@ body.loaded > div.loader {
   vertical-align: top;
 }
 .tabs.vertical.styled .tab .tab-title.active, .tabs.horizontal.styled .tab .tab-title.active {
-  color: #3DCBFA;
+  color: #343a40;
 }
 .tabs.vertical.styled.boxed .tab-title, .tabs.horizontal.styled.boxed .tab-title {
   border: 1px solid transparent;
 }
 .tabs.vertical.styled.boxed .tab-title.active, .tabs.horizontal.styled.boxed .tab-title.active {
   background-color: #fff;
-  border-color: #dee2e6;
+  border-color: #eaeaea;
 }
 .tabs.vertical.styled.buttons .tab-title, .tabs.horizontal.styled.buttons .tab-title {
-  border: 1px solid #dee2e6;
+  border: 1px solid #eaeaea;
   position: relative;
 }
 .tabs.vertical.styled.buttons .tab-title.active, .tabs.horizontal.styled.buttons .tab-title.active {
-  background-color: #3DCBFA;
-  border-color: #3DCBFA;
-  color: #fff;
+  border-bottom-color: #343a40;
+  border-color: #343a40;
+  color: #343a40;
   z-index: 1;
 }
 .tabs.vertical {
@@ -18985,14 +19040,14 @@ body.loaded > div.loader {
   margin-left: 1rem;
 }
 .tabs.vertical.styled .tab {
-  border-right: 1px solid #dee2e6;
+  border-right: 1px solid #eaeaea;
 }
 .tabs.vertical.styled .tab .tab-title {
-  border-right: 1px solid #dee2e6;
+  border-right: 1px solid #eaeaea;
   margin-right: -1px;
 }
 .tabs.vertical.styled .tab .tab-title.active {
-  border-right-color: #3DCBFA;
+  border-right-color: #343a40;
 }
 .tabs.vertical.styled.boxed .tab-title {
   border-radius: 8px 0 0 8px;
@@ -19030,19 +19085,19 @@ body.loaded > div.loader {
   flex-direction: column;
 }
 .tabs.horizontal.tabs-nav {
-  border: 1px solid #dee2e6;
+  border: 1px solid #eaeaea;
   border-radius: 8px;
 }
 .tabs.horizontal.tabs-nav .tab {
   margin-bottom: 0;
-  background-color: #dee2e6;
+  background-color: #eaeaea;
   padding-top: 5px;
   padding-left: 5px;
   padding-right: 5px;
 }
 .tabs.horizontal.tabs-nav .tab .tab-title.active {
-  color: #202428;
-  border-bottom-color: #3DCBFA;
+  color: #343a40;
+  border-bottom-color: #343a40;
 }
 .tabs.horizontal.tabs-nav .tab-content {
   padding: 1rem;
@@ -19057,16 +19112,16 @@ body.loaded > div.loader {
 }
 .tabs.horizontal.styled .tab {
   align-items: center;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #eaeaea;
   flex-grow: 1;
   flex-shrink: 0;
 }
 .tabs.horizontal.styled .tab .tab-title {
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #eaeaea;
   margin-bottom: -1px;
 }
 .tabs.horizontal.styled .tab .tab-title.active {
-  border-bottom-color: #3DCBFA;
+  border-bottom-color: #343a40;
 }
 .tabs.horizontal.styled.boxed .tab-title {
   border-radius: 8px 8px 0 0;
@@ -19122,6 +19177,16 @@ body.loaded > div.loader {
   display: flex;
   justify-content: flex-start;
 }
+.navbar.navbar-type {
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaea;
+}
+.navbar.navbar-type .navbar-item a {
+  color: #6c757d;
+}
+.navbar.navbar-type .navbar-item.dropdown .navbar-link::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%236c757d' stroke='%236c757d' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
 
 .navbar,
 .navbar-end,
@@ -19161,7 +19226,7 @@ body.loaded > div.loader {
   padding-left: 1rem;
 }
 .navbar-brand .navbar-item {
-  font-weight: 800;
+  font-weight: 600;
   font-size: clamp(1.2rem, -0.875rem + 8.333333vw, 1.5rem);
 }
 .navbar-brand .navbar-item img {
@@ -19421,7 +19486,7 @@ a.navbar-item {
 
 .navbar-item.dropdown .navbar-link::after {
   content: "";
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%233DCBFA' stroke='%233DCBFA' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23202428' stroke='%23202428' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
   width: 17px;
   height: 11px;
   align-self: center;
@@ -19458,10 +19523,10 @@ a.navbar-item {
 
   .navbar-menu {
     overflow: hidden;
-    margin-top: -1px;
+    margin-top: 0;
     display: flex;
     position: absolute;
-    background-color: #F6F6F6;
+    border-bottom: 1px solid #eaeaea;
     width: 100%;
     top: 100%;
     max-height: 0;
@@ -19547,7 +19612,7 @@ a.navbar-item {
   .navbar-item.dropdown .navbar-dropdown,
 .navbar-item.dropdown .navbar-dropdown-clicked {
     background-color: #fff;
-    box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
     max-height: 0;
     overflow: hidden;
     font-size: clamp(0.9rem, -0.875rem + 8.333333vw, 1.1rem);
@@ -19556,10 +19621,6 @@ a.navbar-item {
     position: absolute;
     z-index: 20;
     transition: all 0.8s ease-in-out;
-  }
-  .navbar-item.dropdown.active .navbar-dropdown.navbar-dropdown-1, .navbar-item.dropdown:hover .navbar-dropdown.navbar-dropdown-1,
-.navbar-item.dropdown .navbar-dropdown-clicked.navbar-dropdown-1.active {
-    border-top: 2px solid #F6F6F6;
   }
   .navbar-item.dropdown .navbar-dropdown.active,
 .navbar-item.dropdown .navbar-dropdown-clicked.active {
@@ -27951,6 +28012,29 @@ a.navbar-item {
   font-size: clamp(0.9rem, -0.875rem + 8.333333vw, 1.1rem);
   margin: -0.25rem;
 }
+.pagination.spaceless {
+  justify-content: center;
+}
+.pagination.spaceless .pagination-items {
+  flex-grow: 0;
+}
+.pagination .icon-next,
+.pagination .icon-previous {
+  content: "";
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23202428' stroke='%23202428' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+  width: 14px;
+  height: 11px;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size: 14px;
+  background-position: center;
+}
+.pagination .icon-next {
+  transform: rotate(90deg);
+}
+.pagination .icon-previous {
+  transform: rotate(-90deg);
+}
 .pagination.small {
   font-size: clamp(0.87rem, -0.875rem + 8.333333vw, 0.95rem);
 }
@@ -28020,23 +28104,22 @@ a.navbar-item {
   list-style: none;
 }
 .pagination .pagination-ellipsis {
-  color: #adb5bd;
+  color: #6c757d;
   pointer-events: none;
 }
 .pagination .pagination-item, .pagination .pagination-next, .pagination .pagination-previous {
-  border-color: #dee2e6;
+  border-color: #eaeaea;
   min-width: 3rem;
   color: #202428;
   display: flex;
   justify-content: center;
 }
 .pagination .pagination-item:hover, .pagination .pagination-next:hover, .pagination .pagination-previous:hover {
-  border-color: #adb5bd;
+  border-color: #343a40;
 }
 .pagination .pagination-item.active, .pagination .pagination-next.active, .pagination .pagination-previous.active {
   border-color: #3DCBFA !important;
-  background-color: #3DCBFA;
-  color: #fff;
+  background-color: rgba(61, 203, 250, 0.15);
 }
 
 @media screen and (min-width: 576px) {
@@ -28070,6 +28153,11 @@ a.navbar-item {
     flex-grow: 1;
     flex-shrink: 1;
   }
+  .pagination.spaceless .pagination-items,
+.pagination.spaceless .pagination-next,
+.pagination.spaceless .pagination-previous {
+    flex-grow: 0;
+  }
   .pagination .pagination-list li {
     flex-grow: 1;
     flex-shrink: 1;
@@ -28077,512 +28165,427 @@ a.navbar-item {
 }
 .pagination.white .pagination-item.active, .pagination.white .pagination-next.active, .pagination.white .pagination-previous.active {
   border-color: #fff !important;
-  background-color: #fff;
-  color: #000;
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .pagination.gray-1 .pagination-item.active, .pagination.gray-1 .pagination-next.active, .pagination.gray-1 .pagination-previous.active {
   border-color: #F6F6F6 !important;
-  background-color: #F6F6F6;
-  color: #000;
+  background-color: rgba(246, 246, 246, 0.15);
 }
 
 .pagination.gray-2 .pagination-item.active, .pagination.gray-2 .pagination-next.active, .pagination.gray-2 .pagination-previous.active {
   border-color: #eaeaea !important;
-  background-color: #eaeaea;
-  color: #000;
+  background-color: rgba(234, 234, 234, 0.15);
 }
 
 .pagination.gray-3 .pagination-item.active, .pagination.gray-3 .pagination-next.active, .pagination.gray-3 .pagination-previous.active {
   border-color: #dee2e6 !important;
-  background-color: #dee2e6;
-  color: #000;
+  background-color: rgba(222, 226, 230, 0.15);
 }
 
 .pagination.gray-4 .pagination-item.active, .pagination.gray-4 .pagination-next.active, .pagination.gray-4 .pagination-previous.active {
   border-color: #ced4da !important;
-  background-color: #ced4da;
-  color: #000;
+  background-color: rgba(206, 212, 218, 0.15);
 }
 
 .pagination.gray-5 .pagination-item.active, .pagination.gray-5 .pagination-next.active, .pagination.gray-5 .pagination-previous.active {
   border-color: #adb5bd !important;
-  background-color: #adb5bd;
-  color: #fff;
+  background-color: rgba(173, 181, 189, 0.15);
 }
 
 .pagination.gray-6 .pagination-item.active, .pagination.gray-6 .pagination-next.active, .pagination.gray-6 .pagination-previous.active {
   border-color: #6c757d !important;
-  background-color: #6c757d;
-  color: #fff;
+  background-color: rgba(108, 117, 125, 0.15);
 }
 
 .pagination.gray-7 .pagination-item.active, .pagination.gray-7 .pagination-next.active, .pagination.gray-7 .pagination-previous.active {
   border-color: #495057 !important;
-  background-color: #495057;
-  color: #fff;
+  background-color: rgba(73, 80, 87, 0.15);
 }
 
 .pagination.gray-8 .pagination-item.active, .pagination.gray-8 .pagination-next.active, .pagination.gray-8 .pagination-previous.active {
   border-color: #343a40 !important;
-  background-color: #343a40;
-  color: #fff;
+  background-color: rgba(52, 58, 64, 0.15);
 }
 
 .pagination.gray-9 .pagination-item.active, .pagination.gray-9 .pagination-next.active, .pagination.gray-9 .pagination-previous.active {
   border-color: #202428 !important;
-  background-color: #202428;
-  color: #fff;
+  background-color: rgba(32, 36, 40, 0.15);
 }
 
 .pagination.black .pagination-item.active, .pagination.black .pagination-next.active, .pagination.black .pagination-previous.active {
   border-color: #000 !important;
-  background-color: #000;
-  color: #fff;
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 .pagination.red-0 .pagination-item.active, .pagination.red-0 .pagination-next.active, .pagination.red-0 .pagination-previous.active {
   border-color: #FADBDB !important;
-  background-color: #FADBDB;
-  color: #000;
+  background-color: rgba(250, 219, 219, 0.15);
 }
 
 .pagination.red-1 .pagination-item.active, .pagination.red-1 .pagination-next.active, .pagination.red-1 .pagination-previous.active {
   border-color: #F5B7B7 !important;
-  background-color: #F5B7B7;
-  color: #000;
+  background-color: rgba(245, 183, 183, 0.15);
 }
 
 .pagination.red-2 .pagination-item.active, .pagination.red-2 .pagination-next.active, .pagination.red-2 .pagination-previous.active {
   border-color: #F09393 !important;
-  background-color: #F09393;
-  color: #000;
+  background-color: rgba(240, 147, 147, 0.15);
 }
 
 .pagination.red-3 .pagination-item.active, .pagination.red-3 .pagination-next.active, .pagination.red-3 .pagination-previous.active {
   border-color: #EB6F6F !important;
-  background-color: #EB6F6F;
-  color: #fff;
+  background-color: rgba(235, 111, 111, 0.15);
 }
 
 .pagination.red-4 .pagination-item.active, .pagination.red-4 .pagination-next.active, .pagination.red-4 .pagination-previous.active {
   border-color: #E74B4B !important;
-  background-color: #E74B4B;
-  color: #fff;
+  background-color: rgba(231, 75, 75, 0.15);
 }
 
 .pagination.red-5 .pagination-item.active, .pagination.red-5 .pagination-next.active, .pagination.red-5 .pagination-previous.active {
   border-color: #D71D1D !important;
-  background-color: #D71D1D;
-  color: #fff;
+  background-color: rgba(215, 29, 29, 0.15);
 }
 
 .pagination.red-6 .pagination-item.active, .pagination.red-6 .pagination-next.active, .pagination.red-6 .pagination-previous.active {
   border-color: #A21616 !important;
-  background-color: #A21616;
-  color: #fff;
+  background-color: rgba(162, 22, 22, 0.15);
 }
 
 .pagination.red-7 .pagination-item.active, .pagination.red-7 .pagination-next.active, .pagination.red-7 .pagination-previous.active {
   border-color: #6C0F0F !important;
-  background-color: #6C0F0F;
-  color: #fff;
+  background-color: rgba(108, 15, 15, 0.15);
 }
 
 .pagination.red-8 .pagination-item.active, .pagination.red-8 .pagination-next.active, .pagination.red-8 .pagination-previous.active {
   border-color: #480A0A !important;
-  background-color: #480A0A;
-  color: #fff;
+  background-color: rgba(72, 10, 10, 0.15);
 }
 
 .pagination.red-9 .pagination-item.active, .pagination.red-9 .pagination-next.active, .pagination.red-9 .pagination-previous.active {
   border-color: #240505 !important;
-  background-color: #240505;
-  color: #fff;
+  background-color: rgba(36, 5, 5, 0.15);
 }
 
 .pagination.yellow-0 .pagination-item.active, .pagination.yellow-0 .pagination-next.active, .pagination.yellow-0 .pagination-previous.active {
   border-color: #FDF9D8 !important;
-  background-color: #FDF9D8;
-  color: #000;
+  background-color: rgba(253, 249, 216, 0.15);
 }
 
 .pagination.yellow-1 .pagination-item.active, .pagination.yellow-1 .pagination-next.active, .pagination.yellow-1 .pagination-previous.active {
   border-color: #FBF4B1 !important;
-  background-color: #FBF4B1;
-  color: #000;
+  background-color: rgba(251, 244, 177, 0.15);
 }
 
 .pagination.yellow-2 .pagination-item.active, .pagination.yellow-2 .pagination-next.active, .pagination.yellow-2 .pagination-previous.active {
   border-color: #F9EE8B !important;
-  background-color: #F9EE8B;
-  color: #000;
+  background-color: rgba(249, 238, 139, 0.15);
 }
 
 .pagination.yellow-3 .pagination-item.active, .pagination.yellow-3 .pagination-next.active, .pagination.yellow-3 .pagination-previous.active {
   border-color: #F7E864 !important;
-  background-color: #F7E864;
-  color: #fff;
+  background-color: rgba(247, 232, 100, 0.15);
 }
 
 .pagination.yellow-4 .pagination-item.active, .pagination.yellow-4 .pagination-next.active, .pagination.yellow-4 .pagination-previous.active {
   border-color: #F5E23D !important;
-  background-color: #F5E23D;
-  color: #fff;
+  background-color: rgba(245, 226, 61, 0.15);
 }
 
 .pagination.yellow-5 .pagination-item.active, .pagination.yellow-5 .pagination-next.active, .pagination.yellow-5 .pagination-previous.active {
   border-color: #E9D30C !important;
-  background-color: #E9D30C;
-  color: #fff;
+  background-color: rgba(233, 211, 12, 0.15);
 }
 
 .pagination.yellow-6 .pagination-item.active, .pagination.yellow-6 .pagination-next.active, .pagination.yellow-6 .pagination-previous.active {
   border-color: #AE9E09 !important;
-  background-color: #AE9E09;
-  color: #fff;
+  background-color: rgba(174, 158, 9, 0.15);
 }
 
 .pagination.yellow-7 .pagination-item.active, .pagination.yellow-7 .pagination-next.active, .pagination.yellow-7 .pagination-previous.active {
   border-color: #746906 !important;
-  background-color: #746906;
-  color: #fff;
+  background-color: rgba(116, 105, 6, 0.15);
 }
 
 .pagination.yellow-8 .pagination-item.active, .pagination.yellow-8 .pagination-next.active, .pagination.yellow-8 .pagination-previous.active {
   border-color: #4E4A04 !important;
-  background-color: #4E4A04;
-  color: #fff;
+  background-color: rgba(78, 74, 4, 0.15);
 }
 
 .pagination.yellow-9 .pagination-item.active, .pagination.yellow-9 .pagination-next.active, .pagination.yellow-9 .pagination-previous.active {
   border-color: #272502 !important;
-  background-color: #272502;
-  color: #fff;
+  background-color: rgba(39, 37, 2, 0.15);
 }
 
 .pagination.green-0 .pagination-item.active, .pagination.green-0 .pagination-next.active, .pagination.green-0 .pagination-previous.active {
   border-color: #D9FCF0 !important;
-  background-color: #D9FCF0;
-  color: #000;
+  background-color: rgba(217, 252, 240, 0.15);
 }
 
 .pagination.green-1 .pagination-item.active, .pagination.green-1 .pagination-next.active, .pagination.green-1 .pagination-previous.active {
   border-color: #B4F9E1 !important;
-  background-color: #B4F9E1;
-  color: #000;
+  background-color: rgba(180, 249, 225, 0.15);
 }
 
 .pagination.green-2 .pagination-item.active, .pagination.green-2 .pagination-next.active, .pagination.green-2 .pagination-previous.active {
   border-color: #8EF6D1 !important;
-  background-color: #8EF6D1;
-  color: #000;
+  background-color: rgba(142, 246, 209, 0.15);
 }
 
 .pagination.green-3 .pagination-item.active, .pagination.green-3 .pagination-next.active, .pagination.green-3 .pagination-previous.active {
   border-color: #68F3C2 !important;
-  background-color: #68F3C2;
-  color: #fff;
+  background-color: rgba(104, 243, 194, 0.15);
 }
 
 .pagination.green-4 .pagination-item.active, .pagination.green-4 .pagination-next.active, .pagination.green-4 .pagination-previous.active {
   border-color: #42F0B3 !important;
-  background-color: #42F0B3;
-  color: #fff;
+  background-color: rgba(66, 240, 179, 0.15);
 }
 
 .pagination.green-5 .pagination-item.active, .pagination.green-5 .pagination-next.active, .pagination.green-5 .pagination-previous.active {
   border-color: #12E29A !important;
-  background-color: #12E29A;
-  color: #fff;
+  background-color: rgba(18, 226, 154, 0.15);
 }
 
 .pagination.green-6 .pagination-item.active, .pagination.green-6 .pagination-next.active, .pagination.green-6 .pagination-previous.active {
   border-color: #0EAA73 !important;
-  background-color: #0EAA73;
-  color: #fff;
+  background-color: rgba(14, 170, 115, 0.15);
 }
 
 .pagination.green-7 .pagination-item.active, .pagination.green-7 .pagination-next.active, .pagination.green-7 .pagination-previous.active {
   border-color: #09714D !important;
-  background-color: #09714D;
-  color: #fff;
+  background-color: rgba(9, 113, 77, 0.15);
 }
 
 .pagination.green-8 .pagination-item.active, .pagination.green-8 .pagination-next.active, .pagination.green-8 .pagination-previous.active {
   border-color: #064B33 !important;
-  background-color: #064B33;
-  color: #fff;
+  background-color: rgba(6, 75, 51, 0.15);
 }
 
 .pagination.green-9 .pagination-item.active, .pagination.green-9 .pagination-next.active, .pagination.green-9 .pagination-previous.active {
   border-color: #03261A !important;
-  background-color: #03261A;
-  color: #fff;
+  background-color: rgba(3, 38, 26, 0.15);
 }
 
 .pagination.blue-0 .pagination-item.active, .pagination.blue-0 .pagination-next.active, .pagination.blue-0 .pagination-previous.active {
   border-color: #D8E6FE !important;
-  background-color: #D8E6FE;
-  color: #000;
+  background-color: rgba(216, 230, 254, 0.15);
 }
 
 .pagination.blue-1 .pagination-item.active, .pagination.blue-1 .pagination-next.active, .pagination.blue-1 .pagination-previous.active {
   border-color: #AFCCFD !important;
-  background-color: #AFCCFD;
-  color: #000;
+  background-color: rgba(175, 204, 253, 0.15);
 }
 
 .pagination.blue-2 .pagination-item.active, .pagination.blue-2 .pagination-next.active, .pagination.blue-2 .pagination-previous.active {
   border-color: #88B2FC !important;
-  background-color: #88B2FC;
-  color: #000;
+  background-color: rgba(136, 178, 252, 0.15);
 }
 
 .pagination.blue-3 .pagination-item.active, .pagination.blue-3 .pagination-next.active, .pagination.blue-3 .pagination-previous.active {
   border-color: #6099FB !important;
-  background-color: #6099FB;
-  color: #fff;
+  background-color: rgba(96, 153, 251, 0.15);
 }
 
 .pagination.blue-4 .pagination-item.active, .pagination.blue-4 .pagination-next.active, .pagination.blue-4 .pagination-previous.active {
   border-color: #387FFA !important;
-  background-color: #387FFA;
-  color: #fff;
+  background-color: rgba(56, 127, 250, 0.15);
 }
 
 .pagination.blue-5 .pagination-item.active, .pagination.blue-5 .pagination-next.active, .pagination.blue-5 .pagination-previous.active {
   border-color: #065BEF !important;
-  background-color: #065BEF;
-  color: #fff;
+  background-color: rgba(6, 91, 239, 0.15);
 }
 
 .pagination.blue-6 .pagination-item.active, .pagination.blue-6 .pagination-next.active, .pagination.blue-6 .pagination-previous.active {
   border-color: #0545B3 !important;
-  background-color: #0545B3;
-  color: #fff;
+  background-color: rgba(5, 69, 179, 0.15);
 }
 
 .pagination.blue-7 .pagination-item.active, .pagination.blue-7 .pagination-next.active, .pagination.blue-7 .pagination-previous.active {
   border-color: #032E77 !important;
-  background-color: #032E77;
-  color: #fff;
+  background-color: rgba(3, 46, 119, 0.15);
 }
 
 .pagination.blue-8 .pagination-item.active, .pagination.blue-8 .pagination-next.active, .pagination.blue-8 .pagination-previous.active {
   border-color: #021E50 !important;
-  background-color: #021E50;
-  color: #fff;
+  background-color: rgba(2, 30, 80, 0.15);
 }
 
 .pagination.blue-9 .pagination-item.active, .pagination.blue-9 .pagination-next.active, .pagination.blue-9 .pagination-previous.active {
   border-color: #010F28 !important;
-  background-color: #010F28;
-  color: #fff;
+  background-color: rgba(1, 15, 40, 0.15);
 }
 
 .pagination.purple-0 .pagination-item.active, .pagination.purple-0 .pagination-next.active, .pagination.purple-0 .pagination-previous.active {
   border-color: #E4D8FE !important;
-  background-color: #E4D8FE;
-  color: #000;
+  background-color: rgba(228, 216, 254, 0.15);
 }
 
 .pagination.purple-1 .pagination-item.active, .pagination.purple-1 .pagination-next.active, .pagination.purple-1 .pagination-previous.active {
   border-color: #C8AFFD !important;
-  background-color: #C8AFFD;
-  color: #000;
+  background-color: rgba(200, 175, 253, 0.15);
 }
 
 .pagination.purple-2 .pagination-item.active, .pagination.purple-2 .pagination-next.active, .pagination.purple-2 .pagination-previous.active {
   border-color: #AC88FC !important;
-  background-color: #AC88FC;
-  color: #000;
+  background-color: rgba(172, 136, 252, 0.15);
 }
 
 .pagination.purple-3 .pagination-item.active, .pagination.purple-3 .pagination-next.active, .pagination.purple-3 .pagination-previous.active {
   border-color: #9160FB !important;
-  background-color: #9160FB;
-  color: #fff;
+  background-color: rgba(145, 96, 251, 0.15);
 }
 
 .pagination.purple-4 .pagination-item.active, .pagination.purple-4 .pagination-next.active, .pagination.purple-4 .pagination-previous.active {
   border-color: #7538FA !important;
-  background-color: #7538FA;
-  color: #fff;
+  background-color: rgba(117, 56, 250, 0.15);
 }
 
 .pagination.purple-5 .pagination-item.active, .pagination.purple-5 .pagination-next.active, .pagination.purple-5 .pagination-previous.active {
   border-color: #5006EF !important;
-  background-color: #5006EF;
-  color: #fff;
+  background-color: rgba(80, 6, 239, 0.15);
 }
 
 .pagination.purple-6 .pagination-item.active, .pagination.purple-6 .pagination-next.active, .pagination.purple-6 .pagination-previous.active {
   border-color: #3C05B3 !important;
-  background-color: #3C05B3;
-  color: #fff;
+  background-color: rgba(60, 5, 179, 0.15);
 }
 
 .pagination.purple-7 .pagination-item.active, .pagination.purple-7 .pagination-next.active, .pagination.purple-7 .pagination-previous.active {
   border-color: #280377 !important;
-  background-color: #280377;
-  color: #fff;
+  background-color: rgba(40, 3, 119, 0.15);
 }
 
 .pagination.purple-8 .pagination-item.active, .pagination.purple-8 .pagination-next.active, .pagination.purple-8 .pagination-previous.active {
   border-color: #1B0250 !important;
-  background-color: #1B0250;
-  color: #fff;
+  background-color: rgba(27, 2, 80, 0.15);
 }
 
 .pagination.purple-9 .pagination-item.active, .pagination.purple-9 .pagination-next.active, .pagination.purple-9 .pagination-previous.active {
   border-color: #0D0128 !important;
-  background-color: #0D0128;
-  color: #fff;
+  background-color: rgba(13, 1, 40, 0.15);
 }
 
 .pagination.pink-0 .pagination-item.active, .pagination.pink-0 .pagination-next.active, .pagination.pink-0 .pagination-previous.active {
   border-color: #FADBEA !important;
-  background-color: #FADBEA;
-  color: #000;
+  background-color: rgba(250, 219, 234, 0.15);
 }
 
 .pagination.pink-1 .pagination-item.active, .pagination.pink-1 .pagination-next.active, .pagination.pink-1 .pagination-previous.active {
   border-color: #F5B7D5 !important;
-  background-color: #F5B7D5;
-  color: #000;
+  background-color: rgba(245, 183, 213, 0.15);
 }
 
 .pagination.pink-2 .pagination-item.active, .pagination.pink-2 .pagination-next.active, .pagination.pink-2 .pagination-previous.active {
   border-color: #F093C0 !important;
-  background-color: #F093C0;
-  color: #000;
+  background-color: rgba(240, 147, 192, 0.15);
 }
 
 .pagination.pink-3 .pagination-item.active, .pagination.pink-3 .pagination-next.active, .pagination.pink-3 .pagination-previous.active {
   border-color: #EB6FAB !important;
-  background-color: #EB6FAB;
-  color: #fff;
+  background-color: rgba(235, 111, 171, 0.15);
 }
 
 .pagination.pink-4 .pagination-item.active, .pagination.pink-4 .pagination-next.active, .pagination.pink-4 .pagination-previous.active {
   border-color: #E74B96 !important;
-  background-color: #E74B96;
-  color: #fff;
+  background-color: rgba(231, 75, 150, 0.15);
 }
 
 .pagination.pink-5 .pagination-item.active, .pagination.pink-5 .pagination-next.active, .pagination.pink-5 .pagination-previous.active {
   border-color: #D71D77 !important;
-  background-color: #D71D77;
-  color: #fff;
+  background-color: rgba(215, 29, 119, 0.15);
 }
 
 .pagination.pink-6 .pagination-item.active, .pagination.pink-6 .pagination-next.active, .pagination.pink-6 .pagination-previous.active {
   border-color: #A21659 !important;
-  background-color: #A21659;
-  color: #fff;
+  background-color: rgba(162, 22, 89, 0.15);
 }
 
 .pagination.pink-7 .pagination-item.active, .pagination.pink-7 .pagination-next.active, .pagination.pink-7 .pagination-previous.active {
   border-color: #6C0F3C !important;
-  background-color: #6C0F3C;
-  color: #fff;
+  background-color: rgba(108, 15, 60, 0.15);
 }
 
 .pagination.pink-8 .pagination-item.active, .pagination.pink-8 .pagination-next.active, .pagination.pink-8 .pagination-previous.active {
   border-color: #480A28 !important;
-  background-color: #480A28;
-  color: #fff;
+  background-color: rgba(72, 10, 40, 0.15);
 }
 
 .pagination.pink-9 .pagination-item.active, .pagination.pink-9 .pagination-next.active, .pagination.pink-9 .pagination-previous.active {
   border-color: #240514 !important;
-  background-color: #240514;
-  color: #fff;
+  background-color: rgba(36, 5, 20, 0.15);
 }
 
 .pagination.primary .pagination-item.active, .pagination.primary .pagination-next.active, .pagination.primary .pagination-previous.active {
   border-color: #3DCBFA !important;
-  background-color: #3DCBFA;
-  color: #fff;
+  background-color: rgba(61, 203, 250, 0.15);
 }
 
 .pagination.secondary .pagination-item.active, .pagination.secondary .pagination-next.active, .pagination.secondary .pagination-previous.active {
   border-color: #2ca6f8 !important;
-  background-color: #2ca6f8;
-  color: #fff;
+  background-color: rgba(44, 166, 248, 0.15);
 }
 
 .pagination.tertiary .pagination-item.active, .pagination.tertiary .pagination-next.active, .pagination.tertiary .pagination-previous.active {
   border-color: #1B81F5 !important;
-  background-color: #1B81F5;
-  color: #fff;
+  background-color: rgba(27, 129, 245, 0.15);
 }
 
 .pagination.info .pagination-item.active, .pagination.info .pagination-next.active, .pagination.info .pagination-previous.active {
   border-color: #03d1b2 !important;
-  background-color: #03d1b2;
-  color: #fff;
+  background-color: rgba(3, 209, 178, 0.15);
 }
 
 .pagination.success .pagination-item.active, .pagination.success .pagination-next.active, .pagination.success .pagination-previous.active {
   border-color: #49c674 !important;
-  background-color: #49c674;
-  color: #fff;
+  background-color: rgba(73, 198, 116, 0.15);
 }
 
 .pagination.warning .pagination-item.active, .pagination.warning .pagination-next.active, .pagination.warning .pagination-previous.active {
   border-color: #fedd57 !important;
-  background-color: #fedd57;
-  color: #fff;
+  background-color: rgba(254, 221, 87, 0.15);
 }
 
 .pagination.danger .pagination-item.active, .pagination.danger .pagination-next.active, .pagination.danger .pagination-previous.active {
   border-color: #ff3860 !important;
-  background-color: #ff3860;
-  color: #fff;
+  background-color: rgba(255, 56, 96, 0.15);
 }
 
 .pagination.primary-light .pagination-item.active, .pagination.primary-light .pagination-next.active, .pagination.primary-light .pagination-previous.active {
   border-color: #EBFAFE !important;
-  background-color: #EBFAFE;
-  color: #3DCBFA;
+  background-color: rgba(235, 250, 254, 0.15);
 }
 
 .pagination.secondary-light .pagination-item.active, .pagination.secondary-light .pagination-next.active, .pagination.secondary-light .pagination-previous.active {
   border-color: #D7EEFE !important;
-  background-color: #D7EEFE;
-  color: #2ca6f8;
+  background-color: rgba(215, 238, 254, 0.15);
 }
 
 .pagination.tertiary-light .pagination-item.active, .pagination.tertiary-light .pagination-next.active, .pagination.tertiary-light .pagination-previous.active {
   border-color: #C4DFFD !important;
-  background-color: #C4DFFD;
-  color: #1B81F5;
+  background-color: rgba(196, 223, 253, 0.15);
 }
 
 .pagination.info-light .pagination-item.active, .pagination.info-light .pagination-next.active, .pagination.info-light .pagination-previous.active {
   border-color: #EBFFFC !important;
-  background-color: #EBFFFC;
-  color: #03d1b2;
+  background-color: rgba(235, 255, 252, 0.15);
 }
 
 .pagination.success-light .pagination-item.active, .pagination.success-light .pagination-next.active, .pagination.success-light .pagination-previous.active {
   border-color: #EFFAF3 !important;
-  background-color: #EFFAF3;
-  color: #49c674;
+  background-color: rgba(239, 250, 243, 0.15);
 }
 
 .pagination.warning-light .pagination-item.active, .pagination.warning-light .pagination-next.active, .pagination.warning-light .pagination-previous.active {
   border-color: #FFFBEB !important;
-  background-color: #FFFBEB;
-  color: #fedd57;
+  background-color: rgba(255, 251, 235, 0.15);
 }
 
 .pagination.danger-light .pagination-item.active, .pagination.danger-light .pagination-next.active, .pagination.danger-light .pagination-previous.active {
   border-color: #FFEBEF !important;
-  background-color: #FFEBEF;
-  color: #ff3860;
+  background-color: rgba(255, 235, 239, 0.15);
 }
 
 .breadcrumb {
@@ -28653,18 +28656,18 @@ a.navbar-item {
 }
 .card.card-shadow {
   border: unset;
-  box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
 }
 .card.hovered-shadow:hover {
   border-color: transparent;
-  box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
 }
 .card.hovered:hover {
   border: 1px solid #adb5bd;
 }
 .card.hovered:hover.card-shadow {
   border: unset;
-  box-shadow: 0 15px 20px -1px rgba(0, 0, 0, 0.11), 0 8px 10px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 .card .card-header {
   line-height: 1.25;

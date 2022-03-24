@@ -40,7 +40,7 @@
     .font-weight-#{$weight} {
         font-weight: $weight !important;
 
-        p, b, u, div, h1, h2, h3, h4, h5, h6 {
+        p, b, u, a, div, h1, h2, h3, h4, h5, h6 {
             font-weight: $weight !important;
         }
     }
@@ -50,7 +50,7 @@
     .font-#{$sname} {
         font-size: $size !important;
 
-        p, b, u, div, h1, h2, h3, h4, h5, h6 {
+        p, b, u, a, div, h1, h2, h3, h4, h5, h6 {
             font-size: $size !important;
         }
     }

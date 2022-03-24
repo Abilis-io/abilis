@@ -43,13 +43,14 @@
 
 .button-outline-type {
   border: $btn-border-width solid $btn-type-border-color;
+  color: $btn-type-border-color;
 
   &:hover,
   &:focus,
   &:active,
   &.active {
-    border-color: $color-primary;
-    color: $color-primary;
+    border-color: $btn-type-hover-border-color;
+    color: $btn-type-hover-border-color;
   }
 }
 /* button-type */

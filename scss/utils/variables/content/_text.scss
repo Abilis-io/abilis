@@ -1,4 +1,5 @@
 // FONT SIZE
+$font-size-xxxl:            clamp(3.2rem, -0.875rem + 8.333333vw, 3.5rem) !default;
 $font-size-xxl:             clamp(2.8rem, -0.875rem + 8.333333vw, 3.2rem) !default;
 $font-size-xl:              clamp(2.5rem, -0.875rem + 8.333333vw, 2.8rem) !default;
 $font-size-l:               clamp(2.2rem, -0.875rem + 8.333333vw, 2.5rem) !default;
@@ -12,10 +13,16 @@ $font-size-xxxs:            clamp(0.7rem, -0.875rem + 8.333333vw, 0.85rem) !defa
 
 // FONT SIZES
 $font-sizes:
-                            'xl' $font-size-s,
-                            'md' $font-size-xs,
-                            'sm' $font-size-xxs,
-                            'xs' $font-size-xxxs
+                            'xxxl'      $font-size-xxxl,
+                            'xxl'       $font-size-xxl,
+                            'xl'        $font-size-xl,
+                            'l'         $font-size-l,
+                            'md'        $font-size-md,
+                            'sm'        $font-size-sm,
+                            's'         $font-size-s,
+                            'xs'        $font-size-xs,
+                            'xxs'       $font-size-xxs,
+                            'xxxs'      $font-size-xxxs
                             !default;
 // FONT SIZES
 
@@ -34,7 +41,7 @@ $line-height-base:          1.5 !default;
     // FONT WEIGHT
 
     // FONT FAMILY
-    $font-family-base:         Inter var,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji !default;
+    $font-family-base:      Inter var,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji !default;
     // FONT FAMILY
 // FONT
 

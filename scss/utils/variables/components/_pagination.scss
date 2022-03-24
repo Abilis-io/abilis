@@ -6,17 +6,22 @@ $pagination-margin:                         0.25rem !default;
 $pagination-padding-vertical:               0.75rem !default;
 $pagination-padding-horizontal:             0.5rem !default;
 $pagination-border-width:                   1px !default;
-$pagination-border-color:                   $color-gray-3 !default;
-$pagination-border-color-hover:             $color-gray-5 !default;
+$pagination-border-color:                   $color-gray-2 !default;
+$pagination-border-color-hover:             $color-gray-8 !default;
 $pagination-border-radius:                  $border-radius !default;
 
+    // ICON
+    $pagination-icon-previous:              rotate(-90deg) !default;
+    $pagination-icon-next:                  rotate(90deg) !default;
+    // ICON
+
     // ELLIPSIS
-    $pagination-ellipsis-color:                 $color-gray-5 !default;
+    $pagination-ellipsis-color:             $color-gray-6 !default;
     // ELLIPSIS
 
     // ACTIVE
-    $pagination-active-bg:                      $color-primary !default;
-    $pagination-active-color:                   $color-white !default;
+    $pagination-active-border:              $color-primary !default;
+    $pagination-active-bg:                  rgba($pagination-active-border, 15%) !default;
     // ACTIVE
 
     // SMALL

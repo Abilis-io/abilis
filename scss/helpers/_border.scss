@@ -17,19 +17,19 @@
         }
     } @else {
         .b-#{$bname} {
-            border: $border solid $color-gray-3 !important;
+            border: $border solid $color-gray-2 !important;
         }
         .b-l-#{$bname} {
-            border-left: $border solid $color-gray-3 !important;
+            border-left: $border solid $color-gray-2 !important;
         }
         .b-r-#{$bname} {
-            border-right: $border solid $color-gray-3 !important;
+            border-right: $border solid $color-gray-2 !important;
         }
         .b-t-#{$bname} {
-            border-top: $border solid $color-gray-3 !important;
+            border-top: $border solid $color-gray-2 !important;
         }
         .b-b-#{$bname} {
-            border-bottom: $border solid $color-gray-3 !important;
+            border-bottom: $border solid $color-gray-2 !important;
         }
     }
 }
