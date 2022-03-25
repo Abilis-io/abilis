@@ -1,6 +1,8 @@
 $accordion-font-size:                               $font-size-xs !default;
 $accordion-padding:                                 15px !default;
-$accordion-border-color:                            $color-gray-3 !default;
+$accordion-color:                                   $color-gray-9 !default;
+$accordion-color-active:                            $color-black !default;
+$accordion-border-color:                            $color-gray-2 !default;
 $accordion-border-width:                            1px !default;
 $accordion-border-radius:                           $border-radius !default;
 $accordion-background-color:                        $color-white !default;
@@ -8,14 +10,13 @@ $accordion-background-color:                        $color-white !default;
 $accordion-content-transition:                      height 0.4s ease-in-out !default;
 
 $accordion-toggle-background-color:                 $accordion-background-color !default;
-$accordion-toggle-background-color-active:          $color-gray-1 !default;
 $accordion-toggle-transition:                       all 0.2s ease-in-out !default;
 $accordion-toggle-transition-last:                  all 0.6s ease-in-out !default;
 
 $accordion-icon-width:                              1.25rem !default;
 $accordion-icon-height:                             0.75rem !default;
-$accordion-icon-color:                              $color-gray-9 !default;
-$accordion-icon-active-color:                       $color-primary !default;
+$accordion-icon-color:                              $accordion-color !default;
+$accordion-icon-active-color:                       $accordion-color-active !default;
 $accordion-icon-transition:                         transform .2s ease-in-out !default;
 $accordion-icon-transform:                          rotate(-180deg) !default;
 

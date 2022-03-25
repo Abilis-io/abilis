@@ -14,8 +14,8 @@
 
         &.active {
             .accordion-toggle {
-                background-color: $accordion-toggle-background-color-active;
-        
+                color: $accordion-color-active;
+
                 &::after {
                     background-image: url(svg-encode($accordion-button-active-icon));
                     transform: $accordion-icon-transform;
@@ -32,12 +32,14 @@
             padding: $accordion-padding;
             font-size: $accordion-font-size;
             text-align: left;
+            color: $accordion-color;
             background-color: $accordion-toggle-background-color;
             border: 0;
             border-radius: 0;
             overflow-anchor: none;
             transition: $accordion-toggle-transition;
             cursor: pointer;
+            border-bottom: $accordion-border-width solid $accordion-border-color;
         
             // Accordion icon
             &::after {
@@ -66,6 +68,7 @@
             overflow: hidden;
             height: 0;
             transition: $accordion-content-transition;
+            margin-top: -1px;
 
             .accordion-body {
                 padding: $accordion-padding;
@@ -103,8 +106,13 @@
     &.borderless {
         .accordion-item {
             border: unset;
+            border-radius: unset;
+
+            .accordion-toggle {
+                border-radius: unset;
+            }
         }
-        .accordion-item:not(:last-child) {
+        .accordion-item {
             border-bottom: $accordion-border-width solid $accordion-border-color;
         }
     }

@@ -25397,7 +25397,7 @@ a.navbar-item {
 
 .accordion .accordion-item {
   background-color: #fff;
-  border: 1px solid #dee2e6;
+  border: 1px solid #eaeaea;
 }
 .accordion .accordion-item:last-of-type.active .accordion-toggle {
   border-bottom-left-radius: 0;
@@ -25405,10 +25405,10 @@ a.navbar-item {
   transition: all 0.2s ease-in-out;
 }
 .accordion .accordion-item.active .accordion-toggle {
-  background-color: #F6F6F6;
+  color: #000;
 }
 .accordion .accordion-item.active .accordion-toggle::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%233DCBFA' stroke='%233DCBFA' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
   transform: rotate(-180deg);
 }
 .accordion .accordion-item .accordion-toggle {
@@ -25420,12 +25420,14 @@ a.navbar-item {
   padding: 15px;
   font-size: clamp(0.9rem, -0.875rem + 8.333333vw, 1.1rem);
   text-align: left;
+  color: #202428;
   background-color: #fff;
   border: 0;
   border-radius: 0;
   overflow-anchor: none;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+  border-bottom: 1px solid #eaeaea;
 }
 .accordion .accordion-item .accordion-toggle::after {
   content: "";
@@ -25442,13 +25444,14 @@ a.navbar-item {
 }
 .accordion .accordion-item .accordion-toggle:focus {
   z-index: 3;
-  border-color: #dee2e6;
+  border-color: #eaeaea;
   outline: 0;
 }
 .accordion .accordion-item .accordion-content {
   overflow: hidden;
   height: 0;
   transition: height 0.4s ease-in-out;
+  margin-top: -1px;
 }
 .accordion .accordion-item .accordion-content .accordion-body {
   padding: 15px;
@@ -25479,9 +25482,13 @@ a.navbar-item {
 }
 .accordion.borderless .accordion-item {
   border: unset;
+  border-radius: unset;
 }
-.accordion.borderless .accordion-item:not(:last-child) {
-  border-bottom: 1px solid #dee2e6;
+.accordion.borderless .accordion-item .accordion-toggle {
+  border-radius: unset;
+}
+.accordion.borderless .accordion-item {
+  border-bottom: 1px solid #eaeaea;
 }
 
 .panel {
