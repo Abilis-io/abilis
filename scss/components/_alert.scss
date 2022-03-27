@@ -1,7 +1,7 @@
 .alert {
-    background-color: $alert-bg;
     border-radius: $alert-border-radius;
     font-size: $alert-font-size;
+    border: $alert-border-width solid $alert-border-color;
 
     &.alert-top {
         border-radius: 0;
@@ -11,6 +11,7 @@
         width: 100%;
         left: 0;
         right: 0;
+        background-color: $alert-bg;
     }
 
     &.alert-bottom {
@@ -21,13 +22,13 @@
         width: 100%;
         left: 0;
         right: 0;
+        background-color: $alert-bg;
     }
 
     .alert-header {
         align-items: center;
         background-color: $alert-header-bg;
         border-radius: $alert-border-radius $alert-border-radius 0 0;
-        color: $alert-header-color;
         display: flex;
         font-weight: $alert-header-font-weight;
         justify-content: space-between;
@@ -43,7 +44,6 @@
     }
 
     .alert-body {
-        border-color: $alert-bg;
         padding: $alert-body-padding;
         border-radius: 0 0 $alert-border-radius $alert-border-radius;
 
@@ -51,6 +51,22 @@
             position: absolute;
             top: 10px;
             right: 10px;
+        }
+    }
+}
+
+@each $cname, $color1, $color2 in $colors {
+    .alert.#{$cname} {
+        border-color: $color1;
+
+        .alert-header:first-child {
+            background-color: $color1;
+            color: $color2;
+        }
+
+        .alert-body:first-child {
+            background-color: rgba($color1, 10%);
+            color: $color1;
         }
     }
 }
