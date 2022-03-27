@@ -10230,7 +10230,7 @@ hr {
 }
 
 a {
-  color: #3DCBFA;
+  color: #2ca6f8;
   text-decoration: none;
   cursor: pointer;
 }
@@ -10260,7 +10260,7 @@ a:hover {
   position: absolute;
   width: 100%;
   height: 2px;
-  background: #3DCBFA;
+  background: #2ca6f8;
   transform: scale(0);
   transition: transform 0.3s ease-in-out;
 }
@@ -10278,7 +10278,7 @@ a:hover {
   position: absolute;
   width: 0%;
   height: 2px;
-  background: #3DCBFA;
+  background: #2ca6f8;
   transition: width 0.3s ease-in-out;
 }
 .link-style-2:hover::after {
@@ -10305,7 +10305,7 @@ a:hover {
   -webkit-transform-origin: 100% 50%;
   -ms-transform-origin: 100% 50%;
   transform-origin: 100% 50%;
-  background: #3DCBFA;
+  background: #2ca6f8;
 }
 .link-style-3:hover::after {
   -webkit-transform: scale3d(1, 1, 1);
@@ -16353,20 +16353,28 @@ body.loaded > div.loader {
 }
 .dropdown:hover .drop, .dropdown.drop.hovered,
 .dropdown .dropdown-menu.active {
+  border-width: 1px;
   max-height: 1400px;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
-  transition: all 0.8s;
+  transition: padding 0.8s, max-height 0.8s, overflow 0.8s;
 }
 .dropdown .drop,
 .dropdown .dropdown-menu {
+  border: 1px solid transparent;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
   max-height: 0;
   min-width: 160px;
   position: absolute;
   overflow: hidden;
   margin-top: 10px;
   border-radius: 8px;
-  transition: all 0.8s;
+  transition: padding 0.8s, max-height 0.8s, overflow 0.8s, border-width 0s 0.63s;
+}
+.dropdown .drop a,
+.dropdown .dropdown-menu a {
+  color: #343a40;
 }
 .dropdown .button {
   text-align: start;
@@ -16397,6 +16405,1111 @@ body.loaded > div.loader {
   border: none;
   height: 2px;
   margin: 0.5rem 0;
+}
+
+.dropdown .button.button-white::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-white::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-white:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.white::after, .dropdown .button.button-outline-type.white::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-gray-1::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-gray-1::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23F6F6F6' stroke='%23F6F6F6' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-gray-1:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.gray-1::after, .dropdown .button.button-outline-type.gray-1::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23F6F6F6' stroke='%23F6F6F6' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-gray-2::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-gray-2::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23eaeaea' stroke='%23eaeaea' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-gray-2:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.gray-2::after, .dropdown .button.button-outline-type.gray-2::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23eaeaea' stroke='%23eaeaea' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-gray-3::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-gray-3::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23dee2e6' stroke='%23dee2e6' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-gray-3:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.gray-3::after, .dropdown .button.button-outline-type.gray-3::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23dee2e6' stroke='%23dee2e6' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-gray-4::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-gray-4::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23ced4da' stroke='%23ced4da' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-gray-4:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.gray-4::after, .dropdown .button.button-outline-type.gray-4::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23ced4da' stroke='%23ced4da' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-gray-5::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-gray-5::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23adb5bd' stroke='%23adb5bd' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-gray-5:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.gray-5::after, .dropdown .button.button-outline-type.gray-5::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23adb5bd' stroke='%23adb5bd' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-gray-6::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-gray-6::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%236c757d' stroke='%236c757d' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-gray-6:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.gray-6::after, .dropdown .button.button-outline-type.gray-6::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%236c757d' stroke='%236c757d' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-gray-7::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-gray-7::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23495057' stroke='%23495057' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-gray-7:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.gray-7::after, .dropdown .button.button-outline-type.gray-7::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23495057' stroke='%23495057' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-gray-8::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-gray-8::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23343a40' stroke='%23343a40' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-gray-8:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.gray-8::after, .dropdown .button.button-outline-type.gray-8::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23343a40' stroke='%23343a40' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-gray-9::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-gray-9::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23202428' stroke='%23202428' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-gray-9:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.gray-9::after, .dropdown .button.button-outline-type.gray-9::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23202428' stroke='%23202428' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-black::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-black::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-black:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.black::after, .dropdown .button.button-outline-type.black::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-red-0::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-red-0::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23FADBDB' stroke='%23FADBDB' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-red-0:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.red-0::after, .dropdown .button.button-outline-type.red-0::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23FADBDB' stroke='%23FADBDB' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-red-1::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-red-1::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23F5B7B7' stroke='%23F5B7B7' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-red-1:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.red-1::after, .dropdown .button.button-outline-type.red-1::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23F5B7B7' stroke='%23F5B7B7' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-red-2::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-red-2::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23F09393' stroke='%23F09393' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-red-2:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.red-2::after, .dropdown .button.button-outline-type.red-2::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23F09393' stroke='%23F09393' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-red-3::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-red-3::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23EB6F6F' stroke='%23EB6F6F' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-red-3:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.red-3::after, .dropdown .button.button-outline-type.red-3::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23EB6F6F' stroke='%23EB6F6F' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-red-4::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-red-4::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23E74B4B' stroke='%23E74B4B' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-red-4:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.red-4::after, .dropdown .button.button-outline-type.red-4::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23E74B4B' stroke='%23E74B4B' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-red-5::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-red-5::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23D71D1D' stroke='%23D71D1D' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-red-5:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.red-5::after, .dropdown .button.button-outline-type.red-5::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23D71D1D' stroke='%23D71D1D' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-red-6::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-red-6::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23A21616' stroke='%23A21616' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-red-6:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.red-6::after, .dropdown .button.button-outline-type.red-6::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23A21616' stroke='%23A21616' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-red-7::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-red-7::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%236C0F0F' stroke='%236C0F0F' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-red-7:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.red-7::after, .dropdown .button.button-outline-type.red-7::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%236C0F0F' stroke='%236C0F0F' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-red-8::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-red-8::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23480A0A' stroke='%23480A0A' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-red-8:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.red-8::after, .dropdown .button.button-outline-type.red-8::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23480A0A' stroke='%23480A0A' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-red-9::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-red-9::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23240505' stroke='%23240505' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-red-9:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.red-9::after, .dropdown .button.button-outline-type.red-9::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23240505' stroke='%23240505' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-yellow-0::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-yellow-0::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23FDF9D8' stroke='%23FDF9D8' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-yellow-0:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.yellow-0::after, .dropdown .button.button-outline-type.yellow-0::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23FDF9D8' stroke='%23FDF9D8' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-yellow-1::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-yellow-1::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23FBF4B1' stroke='%23FBF4B1' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-yellow-1:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.yellow-1::after, .dropdown .button.button-outline-type.yellow-1::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23FBF4B1' stroke='%23FBF4B1' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-yellow-2::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-yellow-2::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23F9EE8B' stroke='%23F9EE8B' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-yellow-2:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.yellow-2::after, .dropdown .button.button-outline-type.yellow-2::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23F9EE8B' stroke='%23F9EE8B' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-yellow-3::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-yellow-3::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23F7E864' stroke='%23F7E864' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-yellow-3:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.yellow-3::after, .dropdown .button.button-outline-type.yellow-3::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23F7E864' stroke='%23F7E864' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-yellow-4::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-yellow-4::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23F5E23D' stroke='%23F5E23D' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-yellow-4:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.yellow-4::after, .dropdown .button.button-outline-type.yellow-4::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23F5E23D' stroke='%23F5E23D' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-yellow-5::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-yellow-5::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23E9D30C' stroke='%23E9D30C' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-yellow-5:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.yellow-5::after, .dropdown .button.button-outline-type.yellow-5::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23E9D30C' stroke='%23E9D30C' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-yellow-6::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-yellow-6::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23AE9E09' stroke='%23AE9E09' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-yellow-6:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.yellow-6::after, .dropdown .button.button-outline-type.yellow-6::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23AE9E09' stroke='%23AE9E09' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-yellow-7::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-yellow-7::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23746906' stroke='%23746906' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-yellow-7:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.yellow-7::after, .dropdown .button.button-outline-type.yellow-7::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23746906' stroke='%23746906' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-yellow-8::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-yellow-8::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%234E4A04' stroke='%234E4A04' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-yellow-8:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.yellow-8::after, .dropdown .button.button-outline-type.yellow-8::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%234E4A04' stroke='%234E4A04' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-yellow-9::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-yellow-9::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23272502' stroke='%23272502' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-yellow-9:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.yellow-9::after, .dropdown .button.button-outline-type.yellow-9::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23272502' stroke='%23272502' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-green-0::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-green-0::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23D9FCF0' stroke='%23D9FCF0' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-green-0:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.green-0::after, .dropdown .button.button-outline-type.green-0::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23D9FCF0' stroke='%23D9FCF0' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-green-1::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-green-1::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23B4F9E1' stroke='%23B4F9E1' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-green-1:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.green-1::after, .dropdown .button.button-outline-type.green-1::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23B4F9E1' stroke='%23B4F9E1' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-green-2::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-green-2::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%238EF6D1' stroke='%238EF6D1' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-green-2:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.green-2::after, .dropdown .button.button-outline-type.green-2::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%238EF6D1' stroke='%238EF6D1' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-green-3::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-green-3::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%2368F3C2' stroke='%2368F3C2' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-green-3:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.green-3::after, .dropdown .button.button-outline-type.green-3::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%2368F3C2' stroke='%2368F3C2' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-green-4::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-green-4::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%2342F0B3' stroke='%2342F0B3' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-green-4:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.green-4::after, .dropdown .button.button-outline-type.green-4::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%2342F0B3' stroke='%2342F0B3' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-green-5::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-green-5::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%2312E29A' stroke='%2312E29A' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-green-5:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.green-5::after, .dropdown .button.button-outline-type.green-5::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%2312E29A' stroke='%2312E29A' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-green-6::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-green-6::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%230EAA73' stroke='%230EAA73' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-green-6:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.green-6::after, .dropdown .button.button-outline-type.green-6::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%230EAA73' stroke='%230EAA73' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-green-7::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-green-7::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%2309714D' stroke='%2309714D' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-green-7:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.green-7::after, .dropdown .button.button-outline-type.green-7::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%2309714D' stroke='%2309714D' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-green-8::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-green-8::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23064B33' stroke='%23064B33' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-green-8:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.green-8::after, .dropdown .button.button-outline-type.green-8::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23064B33' stroke='%23064B33' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-green-9::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-green-9::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%2303261A' stroke='%2303261A' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-green-9:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.green-9::after, .dropdown .button.button-outline-type.green-9::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%2303261A' stroke='%2303261A' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-blue-0::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-blue-0::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23D8E6FE' stroke='%23D8E6FE' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-blue-0:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.blue-0::after, .dropdown .button.button-outline-type.blue-0::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23D8E6FE' stroke='%23D8E6FE' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-blue-1::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-blue-1::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23AFCCFD' stroke='%23AFCCFD' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-blue-1:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.blue-1::after, .dropdown .button.button-outline-type.blue-1::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23AFCCFD' stroke='%23AFCCFD' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-blue-2::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-blue-2::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%2388B2FC' stroke='%2388B2FC' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-blue-2:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.blue-2::after, .dropdown .button.button-outline-type.blue-2::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%2388B2FC' stroke='%2388B2FC' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-blue-3::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-blue-3::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%236099FB' stroke='%236099FB' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-blue-3:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.blue-3::after, .dropdown .button.button-outline-type.blue-3::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%236099FB' stroke='%236099FB' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-blue-4::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-blue-4::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23387FFA' stroke='%23387FFA' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-blue-4:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.blue-4::after, .dropdown .button.button-outline-type.blue-4::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23387FFA' stroke='%23387FFA' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-blue-5::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-blue-5::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23065BEF' stroke='%23065BEF' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-blue-5:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.blue-5::after, .dropdown .button.button-outline-type.blue-5::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23065BEF' stroke='%23065BEF' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-blue-6::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-blue-6::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%230545B3' stroke='%230545B3' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-blue-6:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.blue-6::after, .dropdown .button.button-outline-type.blue-6::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%230545B3' stroke='%230545B3' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-blue-7::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-blue-7::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23032E77' stroke='%23032E77' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-blue-7:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.blue-7::after, .dropdown .button.button-outline-type.blue-7::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23032E77' stroke='%23032E77' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-blue-8::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-blue-8::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23021E50' stroke='%23021E50' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-blue-8:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.blue-8::after, .dropdown .button.button-outline-type.blue-8::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23021E50' stroke='%23021E50' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-blue-9::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-blue-9::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23010F28' stroke='%23010F28' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-blue-9:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.blue-9::after, .dropdown .button.button-outline-type.blue-9::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23010F28' stroke='%23010F28' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-purple-0::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-purple-0::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23E4D8FE' stroke='%23E4D8FE' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-purple-0:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.purple-0::after, .dropdown .button.button-outline-type.purple-0::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23E4D8FE' stroke='%23E4D8FE' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-purple-1::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-purple-1::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23C8AFFD' stroke='%23C8AFFD' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-purple-1:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.purple-1::after, .dropdown .button.button-outline-type.purple-1::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23C8AFFD' stroke='%23C8AFFD' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-purple-2::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-purple-2::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23AC88FC' stroke='%23AC88FC' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-purple-2:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.purple-2::after, .dropdown .button.button-outline-type.purple-2::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23AC88FC' stroke='%23AC88FC' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-purple-3::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-purple-3::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%239160FB' stroke='%239160FB' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-purple-3:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.purple-3::after, .dropdown .button.button-outline-type.purple-3::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%239160FB' stroke='%239160FB' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-purple-4::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-purple-4::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%237538FA' stroke='%237538FA' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-purple-4:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.purple-4::after, .dropdown .button.button-outline-type.purple-4::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%237538FA' stroke='%237538FA' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-purple-5::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-purple-5::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%235006EF' stroke='%235006EF' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-purple-5:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.purple-5::after, .dropdown .button.button-outline-type.purple-5::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%235006EF' stroke='%235006EF' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-purple-6::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-purple-6::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%233C05B3' stroke='%233C05B3' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-purple-6:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.purple-6::after, .dropdown .button.button-outline-type.purple-6::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%233C05B3' stroke='%233C05B3' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-purple-7::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-purple-7::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23280377' stroke='%23280377' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-purple-7:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.purple-7::after, .dropdown .button.button-outline-type.purple-7::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23280377' stroke='%23280377' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-purple-8::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-purple-8::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%231B0250' stroke='%231B0250' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-purple-8:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.purple-8::after, .dropdown .button.button-outline-type.purple-8::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%231B0250' stroke='%231B0250' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-purple-9::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-purple-9::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%230D0128' stroke='%230D0128' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-purple-9:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.purple-9::after, .dropdown .button.button-outline-type.purple-9::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%230D0128' stroke='%230D0128' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-pink-0::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-pink-0::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23FADBEA' stroke='%23FADBEA' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-pink-0:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.pink-0::after, .dropdown .button.button-outline-type.pink-0::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23FADBEA' stroke='%23FADBEA' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-pink-1::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-pink-1::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23F5B7D5' stroke='%23F5B7D5' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-pink-1:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.pink-1::after, .dropdown .button.button-outline-type.pink-1::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23F5B7D5' stroke='%23F5B7D5' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-pink-2::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-pink-2::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23F093C0' stroke='%23F093C0' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-pink-2:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23000' stroke='%23000' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.pink-2::after, .dropdown .button.button-outline-type.pink-2::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23F093C0' stroke='%23F093C0' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-pink-3::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-pink-3::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23EB6FAB' stroke='%23EB6FAB' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-pink-3:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.pink-3::after, .dropdown .button.button-outline-type.pink-3::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23EB6FAB' stroke='%23EB6FAB' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-pink-4::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-pink-4::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23E74B96' stroke='%23E74B96' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-pink-4:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.pink-4::after, .dropdown .button.button-outline-type.pink-4::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23E74B96' stroke='%23E74B96' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-pink-5::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-pink-5::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23D71D77' stroke='%23D71D77' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-pink-5:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.pink-5::after, .dropdown .button.button-outline-type.pink-5::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23D71D77' stroke='%23D71D77' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-pink-6::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-pink-6::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23A21659' stroke='%23A21659' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-pink-6:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.pink-6::after, .dropdown .button.button-outline-type.pink-6::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23A21659' stroke='%23A21659' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-pink-7::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-pink-7::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%236C0F3C' stroke='%236C0F3C' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-pink-7:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.pink-7::after, .dropdown .button.button-outline-type.pink-7::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%236C0F3C' stroke='%236C0F3C' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-pink-8::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-pink-8::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23480A28' stroke='%23480A28' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-pink-8:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.pink-8::after, .dropdown .button.button-outline-type.pink-8::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23480A28' stroke='%23480A28' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-pink-9::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-pink-9::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23240514' stroke='%23240514' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-pink-9:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.pink-9::after, .dropdown .button.button-outline-type.pink-9::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23240514' stroke='%23240514' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-primary::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-primary::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%233DCBFA' stroke='%233DCBFA' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-primary:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.primary::after, .dropdown .button.button-outline-type.primary::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%233DCBFA' stroke='%233DCBFA' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-secondary::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-secondary::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%232ca6f8' stroke='%232ca6f8' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-secondary:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.secondary::after, .dropdown .button.button-outline-type.secondary::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%232ca6f8' stroke='%232ca6f8' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-tertiary::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-tertiary::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%231B81F5' stroke='%231B81F5' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-tertiary:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.tertiary::after, .dropdown .button.button-outline-type.tertiary::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%231B81F5' stroke='%231B81F5' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-info::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-info::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%2303d1b2' stroke='%2303d1b2' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-info:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.info::after, .dropdown .button.button-outline-type.info::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%2303d1b2' stroke='%2303d1b2' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-success::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-success::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%2349c674' stroke='%2349c674' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-success:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.success::after, .dropdown .button.button-outline-type.success::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%2349c674' stroke='%2349c674' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-warning::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-warning::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fedd57' stroke='%23fedd57' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-warning:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.warning::after, .dropdown .button.button-outline-type.warning::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fedd57' stroke='%23fedd57' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-danger::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-danger::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23ff3860' stroke='%23ff3860' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-danger:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fff' stroke='%23fff' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.danger::after, .dropdown .button.button-outline-type.danger::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23ff3860' stroke='%23ff3860' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-primary-light::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%233DCBFA' stroke='%233DCBFA' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-primary-light::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23EBFAFE' stroke='%23EBFAFE' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-primary-light:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%233DCBFA' stroke='%233DCBFA' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.primary-light::after, .dropdown .button.button-outline-type.primary-light::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23EBFAFE' stroke='%23EBFAFE' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-secondary-light::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%232ca6f8' stroke='%232ca6f8' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-secondary-light::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23D7EEFE' stroke='%23D7EEFE' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-secondary-light:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%232ca6f8' stroke='%232ca6f8' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.secondary-light::after, .dropdown .button.button-outline-type.secondary-light::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23D7EEFE' stroke='%23D7EEFE' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-tertiary-light::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%231B81F5' stroke='%231B81F5' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-tertiary-light::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23C4DFFD' stroke='%23C4DFFD' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-tertiary-light:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%231B81F5' stroke='%231B81F5' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.tertiary-light::after, .dropdown .button.button-outline-type.tertiary-light::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23C4DFFD' stroke='%23C4DFFD' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-info-light::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%2303d1b2' stroke='%2303d1b2' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-info-light::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23EBFFFC' stroke='%23EBFFFC' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-info-light:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%2303d1b2' stroke='%2303d1b2' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.info-light::after, .dropdown .button.button-outline-type.info-light::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23EBFFFC' stroke='%23EBFFFC' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-success-light::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%2349c674' stroke='%2349c674' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-success-light::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23EFFAF3' stroke='%23EFFAF3' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-success-light:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%2349c674' stroke='%2349c674' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.success-light::after, .dropdown .button.button-outline-type.success-light::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23EFFAF3' stroke='%23EFFAF3' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-warning-light::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fedd57' stroke='%23fedd57' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-warning-light::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23FFFBEB' stroke='%23FFFBEB' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-warning-light:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23fedd57' stroke='%23fedd57' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.warning-light::after, .dropdown .button.button-outline-type.warning-light::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23FFFBEB' stroke='%23FFFBEB' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+.dropdown .button.button-danger-light::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23ff3860' stroke='%23ff3860' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-danger-light::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23FFEBEF' stroke='%23FFEBEF' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-outline-danger-light:hover::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23ff3860' stroke='%23ff3860' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
+}
+.dropdown .button.button-type.danger-light::after, .dropdown .button.button-outline-type.danger-light::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%23FFEBEF' stroke='%23FFEBEF' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
 .button {

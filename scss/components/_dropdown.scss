@@ -10,21 +10,29 @@
     &:hover .drop,
     &.drop.hovered,
     .dropdown-menu.active {
+        border-width: 1px;
         max-height: $drop-max-height;
         padding-bottom: $drop-padding;
         padding-top: $drop-padding;
-        transition: all $drop-transition-duration;
+        transition: padding $drop-transition-duration, max-height $drop-transition-duration, overflow $drop-transition-duration;
     }
 
     .drop,
     .dropdown-menu {
+        border: 1px solid transparent;
+        border-top-width: 0px;
+        border-bottom-width: 0px;
         max-height: 0;
         min-width: $drop-min-width;
         position: absolute;
         overflow: hidden;
         margin-top: $drop-margin-top;
         border-radius: $drop-border-radius;
-        transition: all $drop-transition-duration;
+        transition: padding $drop-transition-duration, max-height $drop-transition-duration, overflow $drop-transition-duration, border-width 0s calc($drop-transition-duration - 0.17s);
+
+        a {
+            color: $color-gray-8;
+        }
     }
 
     .button {
@@ -60,5 +68,32 @@
         border: none;
         height: $drop-divider-height;
         margin: $drop-divider-margin;
+    }
+}
+
+@each $cname, $color1, $color2 in $colors {
+    .dropdown {
+        .button {
+            &.button-#{$cname}::after {
+                @include arrowIcon($color2);
+            }
+            &.button-outline-#{$cname} {
+            
+                &::after {
+                    @include arrowIcon($color1);
+                }
+
+                &:hover::after {
+                    @include arrowIcon($color2);
+                }
+            }
+
+            &.button-type,
+            &.button-outline-type {
+                &.#{$cname}::after {
+                    @include arrowIcon($color1);
+                }
+            }
+        }
     }
 }
