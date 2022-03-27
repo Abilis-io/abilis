@@ -3,6 +3,11 @@
   position: relative;
   z-index: 1000;
 
+  .navbar-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
   ul {
     padding-left: 0;
   }
@@ -35,7 +40,7 @@
   }
 }
 
-.navbar,
+.navbar-container,
 .navbar-end,
 .navbar-menu,
 .navbar-start,

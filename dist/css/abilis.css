@@ -20271,6 +20271,10 @@ body.loaded > div.loader {
   position: relative;
   z-index: 1000;
 }
+.navbar .navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
 .navbar ul {
   padding-left: 0;
 }
@@ -20295,7 +20299,7 @@ body.loaded > div.loader {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.9 7.993' xmlns:v='https://vecta.io/nano'%3e%3cpath d='M13.25 6.643l-6-6a.49.49 0 0 0-.3-.14.49.49 0 0 0-.3.14l-6 6c-.19.194-.188.505.004.696s.503.193.696.004l5.6-5.6 5.6 5.6c.194.19.505.188.696-.004s.193-.503.004-.696z' fill='%236c757d' stroke='%236c757d' stroke-miterlimit='10' fill-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-.navbar,
+.navbar-container,
 .navbar-end,
 .navbar-menu,
 .navbar-start,
@@ -20303,7 +20307,7 @@ body.loaded > div.loader {
   align-items: stretch;
   display: flex;
 }
-.navbar .field,
+.navbar-container .field,
 .navbar-end .field,
 .navbar-menu .field,
 .navbar-start .field,
