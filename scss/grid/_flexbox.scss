@@ -1,12 +1,12 @@
 .columns {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -#{$grid-gap};
-    margin-right: -#{$grid-gap};
-    margin-top: -#{$grid-gap};
+    // margin-left: -#{$grid-gap};
+    // margin-right: -#{$grid-gap};
+    // margin-top: -#{$grid-gap};
 
     &:not(:last-child) {
-        margin-bottom: calc(1.5rem - $grid-gap);
+        // margin-bottom: calc(1.5rem - $grid-gap);
     }
 
     > * {

@@ -1,17 +1,17 @@
 @mixin btnStyle($color1, $color2) {
   background-color: $color1 !important;
   border-color: $color1 !important;
-  color: $color2 !important;
+  color: $color2;
 }
 
 @mixin btnOutlineStyle($color) {
   border-color: $color !important;
-  color: $color !important;
+  color: $color;
 }
 
 @mixin btnOutlineHover($bg, $color) {
   background-color: $bg !important;
-  color: $color !important;
+  color: $color;
 }
 
 @mixin btnSize($p1, $p2, $f, $br) {
