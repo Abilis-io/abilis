@@ -7,7 +7,7 @@ $file-padding:                                                          1rem !de
 $file-border-radius:                                                    $border-radius !default;
 $file-background-color:                                                 $color-gray-1 !default;
 $file-background-color-opacity:                                         70% !default;
-$file-color:                                                            $color-gray-9 !default;
+$file-color:                                                            $global-font-color !default;
 
     // ICON
     $file-icon-size:                                                    1rem !default;

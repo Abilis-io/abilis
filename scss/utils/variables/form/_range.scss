@@ -1,8 +1,8 @@
 // RANGE
-$range-height:                                                          1.5rem !default;
-$range-width:                                                           100% !default;
+$range-height:                                                         1.5rem !default;
+$range-width:                                                          100% !default;
 
-$range-track-color:                                                    $color-gray-2 !default;
+$range-track-color:                                                    $global-border-color !default;
 $range-track-height:                                                   0.5rem !default;
 $range-track-border-radius:                                            $border-radius-round !default;
 
@@ -10,7 +10,7 @@ $range-thumb-border-width:                                             1px !defa
 $range-thumb-size:                                                     1.15rem !default;
 $range-thumb-border-color:                                             $color-white !default;
 $range-thumb-border-radius:                                            $border-radius-round !default;
-$range-thumb-color:                                                    $color-primary !default;
+$range-thumb-color:                                                    $global-link-color !default;
 $range-thumb-margin-top:                                               -0.37rem !default;
 $range-thumb-disabled-color:                                           $color-gray-4 !default;
 

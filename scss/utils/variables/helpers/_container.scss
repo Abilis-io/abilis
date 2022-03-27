@@ -1,7 +1,7 @@
 $container-width:           75% !default;
 $container-width-sm:        85% !default;
 $container-width-xs:        95% !default;
-$container-max-width:       1400px !default;
+$container-max-width:       $global-max-height !default;
 $container-padding:         100px !default;
 $container-padding-sm:      80px !default;
 $container-padding-xs:      60px !default;

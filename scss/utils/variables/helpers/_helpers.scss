@@ -1,12 +1,20 @@
 // PREFIX
-$prefix: ab-;
+$prefix:              ab-;
 // PREFIX
 
 // TRANSITION
-$transition: all 0.2s linear !default;
+$transition:          all 0.2s linear !default;
 // TRANSITION
 
 @import 'color.scss';
+
+// GLOBAL
+$global-font-color:   $color-gray-8;
+$global-link-color:   $color-secondary;
+$global-border-color: $color-gray-2;
+$global-max-height:   1400px;
+// GLOBAL
+
 @import 'animation.scss';
 @import 'breakpoint.scss';
 @import 'body.scss';

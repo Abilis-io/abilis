@@ -10,14 +10,14 @@ $input-line-height:                                                     1.5 !def
 $input-border-width:                                                    $field-group-horizontal-control-border-width !default;
 $input-border-color:                                                    $field-group-horizontal-control-border-color !default;
 $input-hover-border-color:                                              $color-gray-4 !default;
-$input-active-border-color:                                             $color-primary !default;
+$input-active-border-color:                                             $global-link-color !default;
 $input-border-radius:                                                   $border-radius !default;
 $input-box-shadow:                                                      0 0 0 0.125rem !default;
 $input-box-shadow-opacity:                                              25% !default;
 $input-background-color:                                                $color-white !default;
-$input-color:                                                           $color-gray-8 !default;
+$input-color:                                                           $global-font-color !default;
 $input-small-font-size:                                                 $font-size-xxs !default;
-$input-font-size:                                                       $font-size-xs !default;
+$input-font-size:                                                       $font-size-base !default;
 $input-big-font-size:                                                   $font-size-s !default;
 $input-disabled-background-color:                                       $color-gray-1 !default;
 $input-disabled-border-color:                                           $input-border-color !default;

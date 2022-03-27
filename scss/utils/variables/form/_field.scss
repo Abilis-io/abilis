@@ -1,8 +1,8 @@
 // FIELD
-$field-right-left:      0.625rem !default;
-$field-margin:          0.25rem !default;
-$field-group-margin:    0.35rem !default;
-$field-margin-bottom:   0.75rem !default;
+$field-right-left:                                                      0.625rem !default;
+$field-margin:                                                          0.25rem !default;
+$field-group-margin:                                                    0.35rem !default;
+$field-margin-bottom:                                                   0.75rem !default;
 // FIELD
 
 // CONTROL
@@ -27,13 +27,13 @@ $control-icon-big-multiple:                                             3.5 !def
     $field-group-horizontal-control-height:                             100% !default;
 
         // CONTROL
-        $field-group-horizontal-control-border-color:                   $color-gray-2 !default;
+        $field-group-horizontal-control-border-color:                   $global-border-color !default;
         $field-group-horizontal-control-border-width:                   1px !default;
         
             // CONTROL TEXT
             $field-group-horizontal-control-text-background-color:      $color-gray-1 !default;
             $field-group-horizontal-control-text-size-small:            $font-size-xxs !default;
-            $field-group-horizontal-control-text-size:                  $font-size-xs !default;
+            $field-group-horizontal-control-text-size:                  $font-size-base !default;
             $field-group-horizontal-control-text-size-big:              $font-size-s !default;
             // CONTROL TEXT
         // CONTROL

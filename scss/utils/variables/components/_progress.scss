@@ -1,4 +1,4 @@
 $progress-border-radius:            $border-radius-round !default;
 $progress-height:                   0.8rem !default;
-$progress-bar-color:                $color-gray-3 !default;
-$progress-value-color:                $color-primary !default;
+$progress-bar-color:                $global-border-color !default;
+$progress-value-color:              $color-secondary !default;

@@ -1,8 +1,8 @@
-$accordion-font-size:                               $font-size-xs !default;
+$accordion-font-size:                               $font-size-base !default;
 $accordion-padding:                                 15px !default;
-$accordion-color:                                   $color-gray-9 !default;
-$accordion-color-active:                            $color-black !default;
-$accordion-border-color:                            $color-gray-2 !default;
+$accordion-color:                                   $global-font-color !default;
+$accordion-color-active:                            $global-link-color !default;
+$accordion-border-color:                            $global-border-color !default;
 $accordion-border-width:                            1px !default;
 $accordion-border-radius:                           $border-radius !default;
 $accordion-background-color:                        $color-white !default;

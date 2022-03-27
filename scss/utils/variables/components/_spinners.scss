@@ -1,122 +1,122 @@
 // SPINNERS
   // LOADER
-  $spinner-loader-border-radius:                  $border-radius-round !default;
-  $spinner-loader-animation-duration:             1s !default;
-  $spinner-loader-color:                          $color-gray-2 !default;
-  $spinner-loader-size:                           40px !default;
-  $spinner-loader-width:                          4px !default;
+  $spinner-loader-border-radius:                        $border-radius-round !default;
+  $spinner-loader-animation-duration:                   1s !default;
+  $spinner-loader-color:                                $global-border-color !default;
+  $spinner-loader-size:                                 40px !default;
+  $spinner-loader-width:                                4px !default;
 
   // SMALL
-  $spinner-loader-small-size:                     25px !default;
-  $spinner-loader-small-width:                    2.5px !default;
+  $spinner-loader-small-size:                           25px !default;
+  $spinner-loader-small-width:                          2.5px !default;
   // SMALL
 
   // BIG
-  $spinner-loader-big-size:                       60px !default;
-  $spinner-loader-big-width:                      6px !default;
+  $spinner-loader-big-size:                             60px !default;
+  $spinner-loader-big-width:                            6px !default;
   // BIG
 
-  $spinner-loader-form-size:                      1rem !default;
-  $spinner-loader-form-width:                     2px !default;
+  $spinner-loader-form-size:                            1rem !default;
+  $spinner-loader-form-width:                           2px !default;
   // LOADER
 
   // LOADER CIRCLE
-  $spinner-loader-bg:                             $color-gray-9 !default;
-  $spinner-loader-circle-size:                    35px !default;
-  $spinner-loader-circle-width:                   6px !default;
-  $spinner-loader-circle-animation-duration:      5s !default;
+  $spinner-loader-bg:                                   $global-font-color !default;
+  $spinner-loader-circle-size:                          35px !default;
+  $spinner-loader-circle-width:                         6px !default;
+  $spinner-loader-circle-animation-duration:            5s !default;
 
     // SMALL
-    $spinner-loader-circle-small-size:            20px !default;
-    $spinner-loader-circle-small-width:           4px !default;
+    $spinner-loader-circle-small-size:                  20px !default;
+    $spinner-loader-circle-small-width:                 4px !default;
     // SMALL
 
     // BIG
-    $spinner-loader-circle-big-size:              50px !default;
-    $spinner-loader-circle-big-width:             8px !default;
+    $spinner-loader-circle-big-size:                    50px !default;
+    $spinner-loader-circle-big-width:                   8px !default;
     // BIG
   // LOADER CIRCLE
 
   // ELLIPSIS
-  $spinner-ellipsis-bg:                           $color-gray-9 !default;
-  $spinner-ellipsis-size:                         12px !default;
-  $spinner-ellipsis-duraton:                      0.5s !default;
+  $spinner-ellipsis-bg:                                 $global-font-color !default;
+  $spinner-ellipsis-size:                               12px !default;
+  $spinner-ellipsis-duraton:                            0.5s !default;
 
     // SMALL
-    $spinner-ellipsis-small-size:                 8px !default;
+    $spinner-ellipsis-small-size:                       8px !default;
     // SMALL
 
     // BIG
-    $spinner-ellipsis-big-size:                   15px !default;
+    $spinner-ellipsis-big-size:                         15px !default;
     // BIG
   // ELLIPSIS
 
   // STYLE CIRCLE
-  $spinner-circle-duration:                       2s !default;
-  $spinner-circle-size:                           12rem !default;
-  $spinner-circle-loader-size:                    20px !default;
-  $spinner-circle-loader-color:                   $color-gray-9 !default;
+  $spinner-circle-duration:                             2s !default;
+  $spinner-circle-size:                                 12rem !default;
+  $spinner-circle-loader-size:                          20px !default;
+  $spinner-circle-loader-color:                         $global-font-color !default;
   // STYLE CIRCLE
 
   // FLIP
-  $spinner-flip-color:                            $color-gray-9 !default;
-  $spinner-flip-animation-duration:               1s !default;
-  $spinner-flip-size:                             40px !default;
+  $spinner-flip-color:                                  $global-font-color !default;
+  $spinner-flip-animation-duration:                     1s !default;
+  $spinner-flip-size:                                   40px !default;
     // SMALL
-    $spinner-flip-small-size:                     25px !default;
+    $spinner-flip-small-size:                           25px !default;
     // SMALL
 
     // BIG
-    $spinner-flip-big-size:                       60px !default;
+    $spinner-flip-big-size:                             60px !default;
     // BIG
   // FLIP
 
   // PULSE
-  $spinner-pulse-size:                            60px !default;
-  $spinner-pulse-color:                           $color-gray-9 !default;
-  $spinner-pulse-animation-duration:              1s !default;
+  $spinner-pulse-size:                                  60px !default;
+  $spinner-pulse-color:                                 $global-font-color !default;
+  $spinner-pulse-animation-duration:                    1s !default;
 
     // SMALL
-    $spinner-pulse-small-size:                    40px !default;
+    $spinner-pulse-small-size:                          40px !default;
     // SMALL
 
     // BIG
-    $spinner-pulse-big-size:                      80px !default;
+    $spinner-pulse-big-size:                            80px !default;
     // BIG
   // PULSE
 
   // CIRCLE BORDER
-  $spinner-circle-border-size:                    60px !default;
-  $spinner-circle-border-width:                   7px !default;
-  $spinner-circle-border-color:                   $color-gray-9 !default;
-  $spinner-circle-border-animation-duration:      2s !default;
+  $spinner-circle-border-size:                          60px !default;
+  $spinner-circle-border-width:                         7px !default;
+  $spinner-circle-border-color:                         $global-font-color !default;
+  $spinner-circle-border-animation-duration:            2s !default;
 
     // SMALL
-    $spinner-circle-border-small-size:            40px !default;
-    $spinner-circle-border-small-width:           5px !default;
+    $spinner-circle-border-small-size:                  40px !default;
+    $spinner-circle-border-small-width:                 5px !default;
     // SMALL
 
     // BIG
-    $spinner-circle-border-big-size:              80px !default;
-    $spinner-circle-border-big-width:             9px !default;
+    $spinner-circle-border-big-size:                    80px !default;
+    $spinner-circle-border-big-width:                   9px !default;
     // BIG
   // CIRCLE BORDER
 
   // ELLIPSIS SCALE
-  $spinner-ellipsis-scale-size:                   15px !default;
-  $spinner-ellipsis-scale-bg:                     $color-gray-9 !default;
-  $spinner-ellipsis-scale-margin:                 0.1rem !default;
-  $spinner-ellipsis-scale-duration:               0.5s !default;
-  $spinner-ellipsis-scale-one-delay:              0s !default;
-  $spinner-ellipsis-scale-two-delay:              0.2s !default;
-  $spinner-ellipsis-scale-three-delay:            0.4s !default;
+  $spinner-ellipsis-scale-size:                         15px !default;
+  $spinner-ellipsis-scale-bg:                           $global-font-color !default;
+  $spinner-ellipsis-scale-margin:                       0.1rem !default;
+  $spinner-ellipsis-scale-duration:                     0.5s !default;
+  $spinner-ellipsis-scale-one-delay:                    0s !default;
+  $spinner-ellipsis-scale-two-delay:                    0.2s !default;
+  $spinner-ellipsis-scale-three-delay:                  0.4s !default;
 
     // SMALL
-    $spinner-ellipsis-scale-small-size:           10px !default;
+    $spinner-ellipsis-scale-small-size:                 10px !default;
     // SMALL
 
     // BIG
-    $spinner-ellipsis-scale-big-size:             20px !default;
+    $spinner-ellipsis-scale-big-size:                   20px !default;
     // BIG
   // ELLIPSIS SCALE
 

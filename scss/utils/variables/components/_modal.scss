@@ -1,4 +1,4 @@
-$modal-overlay-bg:                          rgba($color-gray-9, 50%) !default;
+$modal-overlay-bg:                          rgba($global-font-color, 50%) !default;
 $modal-transition-duration:                 0.4s !default;
 $modal-transition-delay:                    0.1s !default;
 $modal-transition-timing:                   ease-out !default;
@@ -6,10 +6,10 @@ $modal-margin:                              20px;
 $modal-content-margin-vertical:             80px;
 $modal-header-footer-padding:               20px;
 $modal-header-footer-bg:                    $color-gray-1;
-$modal-header-footer-border:                1px solid $color-gray-3;
+$modal-header-footer-border:                1px solid $global-border-color;
 $modal-header-footer-border-radius:         $border-radius;
 $modal-header-title-size:                   $font-size-s;
-$modal-header-title-color:                  $color-gray-9;
+$modal-header-title-color:                  $global-font-color;
 $modal-container-width:                     95%;
 $modal-container-max-width:                 640px;
 $modal-content-img-height:                  70vh;

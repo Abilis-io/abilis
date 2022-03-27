@@ -1,11 +1,11 @@
 // CARD
-$card-bg:                         $color-white !default;
-$card-transition:                 0.3s !default;
-$card-shadow:                     $box-shadow !default;
+$card-bg:                           $color-white !default;
+$card-transition:                   0.3s !default;
+$card-shadow:                       $box-shadow !default;
 
   // BORDER
   $card-border-width:               1px !default;
-  $card-border-color:               $color-gray-3 !default;
+  $card-border-color:               $global-border-color !default;
   $card-border-radius:              $border-radius !default;
   // BORDER
 

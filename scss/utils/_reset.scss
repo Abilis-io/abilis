@@ -399,9 +399,9 @@ span {
 }
 
 hr {
-    background-color: $color-gray-1;
+    background-color: $global-border-color;
     border: none;
     display: block;
-    height: 2px;
+    height: 1px;
     margin: 1.5rem 0;
 }

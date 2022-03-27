@@ -1,32 +1,32 @@
 // SIDEBAR
-$sidebar-font-size:                             $font-size-base !default;
-$sidebar-padding:                               20px !default;
-$sidebar-width:                                 350px !default;
-$sidebar-close-right:                           15px !default;
-$sidebar-above-z-index:                         2000 !default;
-$sidebar-padding-top:                           100px !default;
-$sidebar-full-breakpoint:                       $breakpoints-value-xs !default;
+$sidebar-font-size:                                 $font-size-base !default;
+$sidebar-padding:                                   20px !default;
+$sidebar-width:                                     350px !default;
+$sidebar-close-right:                               15px !default;
+$sidebar-above-z-index:                             2000 !default;
+$sidebar-padding-top:                               100px !default;
+$sidebar-full-breakpoint:                           $breakpoints-value-xs !default;
 
   // TITLE
-  $sidebar-title-color:                           $color-gray-6 !default;
-  $sidebar-title-font-size:                       $font-size-xxs !default;
-  $sidebar-title-letter-spacing:                  .1rem !default;
-  $sidebar-title-margin-bottom:                   5px !default;
+  $sidebar-title-color:                             $color-gray-6 !default;
+  $sidebar-title-font-size:                         $font-size-xxs !default;
+  $sidebar-title-letter-spacing:                    .1rem !default;
+  $sidebar-title-margin-bottom:                     5px !default;
   // TITLE
 
   // ITEMS
-  $sidebar-items-line-height:                     1.25 !default;
-  $sidebar-items-padding-left:                    20px !default;
+  $sidebar-items-line-height:                       1.25 !default;
+  $sidebar-items-padding-left:                      20px !default;
   // ITEMS
 
   // DROP
     // ACTIVE
-    $sidebar-drop-active-bg:                        $color-primary !default;
+    $sidebar-drop-active-bg:                        $global-link-color !default;
     $sidebar-drop-active-color:                     $color-white !default;
     $sidebar-drop-active-body-max-height:           1400px !default;
     $sidebar-drop-active-body-margin:               0.75rem !default;
     $sidebar-drop-active-body-border-left-width:    1px !default;
-    $sidebar-drop-active-body-border-left-color:    $color-gray-3 !default;
+    $sidebar-drop-active-body-border-left-color:    $global-border-color !default;
     // ACTIVE
 
     // AFTER
@@ -37,7 +37,7 @@ $sidebar-full-breakpoint:                       $breakpoints-value-xs !default;
     // LINK
     $sidebar-drop-link-padding-vertical:            0.5rem !default;
     $sidebar-drop-link-margin:                      0.3rem !default;
-    $sidebar-drop-link-color:                       $color-gray-9 !default;
+    $sidebar-drop-link-color:                       $global-font-color !default;
     $sidebar-drop-link-border-radius:               $border-radius !default;
     $sidebar-drop-link-active-bg:                   $sidebar-drop-active-bg !default;
     $sidebar-drop-link-active-color:                $sidebar-drop-active-color !default;
@@ -46,19 +46,19 @@ $sidebar-full-breakpoint:                       $breakpoints-value-xs !default;
   // DROP
 
   // MOBILE
-  $sidebar-mobile-menu-transition:                transform 0.6s ease-in-out !default;
-  $sidebar-mobile-menu-breakpoint:                $breakpoints-value-md !default;
+  $sidebar-mobile-menu-transition:                  transform 0.6s ease-in-out !default;
+  $sidebar-mobile-menu-breakpoint:                  $breakpoints-value-md !default;
   // MOBILE
 
   // SMALL
-  $sidebar-small-width:                         250px !default;
-  $sidebar-small-padding:                       15px !default;
-  $sidebar-small-padding-left:                  10px !default;
+  $sidebar-small-width:                             250px !default;
+  $sidebar-small-padding:                           15px !default;
+  $sidebar-small-padding-left:                      10px !default;
   // SMALL
 
   // BIG
-  $sidebar-big-width:                           450px !default;
-  $sidebar-big-padding:                         25px !default;
-  $sidebar-big-padding-left:                    20px !default;
+  $sidebar-big-width:                               450px !default;
+  $sidebar-big-padding:                             25px !default;
+  $sidebar-big-padding-left:                        20px !default;
   // BIG
 // SIDEBAR

@@ -1,12 +1,12 @@
 // PAGINATION
 $pagination-font-size:                      $font-size-base !default;
-$pagination-color:                          $color-gray-9 !default;
+$pagination-color:                          $global-font-color !default;
 $pagination-size:                           3rem !default;
 $pagination-margin:                         0.25rem !default;
 $pagination-padding-vertical:               0.75rem !default;
 $pagination-padding-horizontal:             0.5rem !default;
 $pagination-border-width:                   1px !default;
-$pagination-border-color:                   $color-gray-2 !default;
+$pagination-border-color:                   $global-border-color !default;
 $pagination-border-color-hover:             $color-gray-8 !default;
 $pagination-border-radius:                  $border-radius !default;
 

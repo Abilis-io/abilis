@@ -2,11 +2,11 @@
 $checkbox-size:                         1.1rem !default;
 $checkbox-margin-top:                   0.1em !default;
 $checkbox-border-width:                 1px !default;
-$checkbox-border-color:                 $color-primary !default;
+$checkbox-border-color:                 $global-link-color !default;
 $checkbox-border-radius:                5px !default;
-$checkbox-checked-background-color:     $color-primary !default;
+$checkbox-checked-background-color:     $global-link-color !default;
 $checkbox-box-shadow:                   $input-box-shadow !default;
-$checkbox-box-shadow-color:             $color-primary !default;
+$checkbox-box-shadow-color:             $global-link-color !default;
 $checkbox-box-shadow-opacity:           $input-box-shadow-opacity !default;
 $checkbox-disabled-border-color:        $color-gray-6 !default;
 $checkbox-disabled-color:               $color-gray-5 !default;
