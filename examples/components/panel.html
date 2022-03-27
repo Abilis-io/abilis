@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel - Abilis</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../dist/css/abilis.css" />
+</head>
+<body>
+  <section class="container">
+    
+    <div class="w-50 mx-auto">
+      <div class="panel tabs">
+
+        <p class="panel-header">Panel</p>
+
+        <div class="panel-item">
+          <div class="control icons-right">
+            <input class="input" type="text" placeholder="Normal">
+            <span class="icon right">
+              <i class="fa fa-search"></i>
+            </span>
+          </div>
+        </div>
+
+        <p class="panel-tab tab">
+          <a class="tab-title active" data-target="#tabContent1">All</a>
+          <a class="tab-title" data-target="#tabContent2">CSS</a>
+          <a class="tab-title" data-target="#tabContent3">JS</a>
+        </p>
+
+        <div class="tab-content">
+
+          <div class="tab-item" id="tabContent1">
+            <a class="panel-item active">
+              <span class="panel-icon">
+                <i class="fa fa-code"></i>
+              </span>
+              abilis.css
+            </a>
+            <a class="panel-item">
+              <span class="panel-icon">
+                <i class="fa fa-code"></i>
+              </span>
+              purge.css
+            </a>
+            <a class="panel-item">
+              <span class="panel-icon">
+                <i class="fa fa-code"></i>
+              </span>
+              abilis.js
+            </a>
+            <a class="panel-item">
+              <span class="panel-icon">
+                <i class="fa fa-code"></i>
+              </span>
+              hilighted.js
+            </a>
+            <div class="panel-item">
+              <button class="button button-outline-gray-8 full">
+                Reset
+              </button>
+            </div>
+          </div>
+
+          <div class="tab-item" id="tabContent2">
+            <a class="panel-item active">
+              <span class="panel-icon">
+                <i class="fa fa-code"></i>
+              </span>
+              abilis.css
+            </a>
+            <a class="panel-item">
+              <span class="panel-icon">
+                <i class="fa fa-code"></i>
+              </span>
+              purge.css
+            </a>
+            <div class="panel-item">
+              <button class="button button-outline-type full">
+                Reset
+              </button>
+            </div>
+          </div>
+
+          <div class="tab-item" id="tabContent3">
+            <a class="panel-item active">
+              <span class="panel-icon">
+                <i class="fa fa-code"></i>
+              </span>
+              abilis.js
+            </a>
+            <a class="panel-item">
+              <span class="panel-icon">
+                <i class="fa fa-code"></i>
+              </span>
+              hilighted.js
+            </a>
+            <div class="panel-item">
+              <button class="button button-outline-type full">
+                Reset
+              </button>
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+
+      <br><br>
+
+      <div class="panel">
+        <p class="panel-header">Panel header</p>
+        <div class="panel-item">Pannel item</div>
+      </div>
+
+      <br><br>
+
+      <div class="panel tertiary">
+        <p class="panel-header">Panel header</p>
+        <div class="panel-item">Pannel item</div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <script type="module" src="../../dist/js/abilis.js"></script>
+</body>
+</html>

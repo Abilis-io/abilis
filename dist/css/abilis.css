@@ -26604,11 +26604,11 @@ a.navbar-item {
 
 .panel {
   border-radius: 8px;
-  border: 1px solid #dee2e6;
+  border: 1px solid #eaeaea;
   font-size: clamp(0.9rem, -0.875rem + 8.333333vw, 1.1rem);
 }
 .panel .panel-header {
-  background-color: #dee2e6;
+  background-color: #eaeaea;
   border-radius: 7px 7px 0 0;
   font-size: clamp(1.2rem, -0.875rem + 8.333333vw, 1.5rem);
   font-weight: 600;
@@ -26623,7 +26623,7 @@ a.navbar-item {
   align-items: center;
   display: flex;
   justify-content: flex-start;
-  color: #202428;
+  color: #343a40;
   padding: 0.5rem 0.75rem;
 }
 .panel .panel-item > .control {
@@ -26632,11 +26632,11 @@ a.navbar-item {
   width: 100%;
 }
 .panel .panel-item.active {
-  border-left-color: #3DCBFA;
-  color: #3DCBFA;
+  border-left-color: #2ca6f8;
+  color: #2ca6f8;
 }
 .panel .panel-item.active .panel-icon {
-  color: #3DCBFA;
+  color: #2ca6f8;
 }
 .panel .panel-item:last-child {
   border-bottom-left-radius: 8px;
@@ -26659,17 +26659,17 @@ a.navbar-item {
   justify-content: center;
 }
 .panel .panel-tab a {
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #eaeaea;
   margin-bottom: -1px;
   padding: 0.5rem;
 }
 .panel .panel-tab a.active {
-  border-bottom-color: #202428;
-  color: #202428;
+  border-bottom-color: #343a40;
+  color: #343a40;
 }
 .panel .panel-item:not(:last-child),
 .panel .panel-tab:not(:last-child) {
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #eaeaea;
 }
 .panel.white .panel-header {
   background-color: #fff;
