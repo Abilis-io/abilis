@@ -89,7 +89,7 @@
   --ab-font-weight: 400;
   --ab-font-size: clamp(0.9rem, -0.875rem + 8.333333vw, 1.1rem);
   --ab-body-line-height: 1.5;
-  --ab-body-color: #202428;
+  --ab-body-color: #343a40;
   --ab-body-bg: #fff;
 }
 
@@ -2243,12 +2243,6 @@ hr {
 .columns {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -0.25rem;
-  margin-right: -0.25rem;
-  margin-top: -0.25rem;
-}
-.columns:not(:last-child) {
-  margin-bottom: 1.25rem;
 }
 .columns > * {
   padding: 0.25rem;

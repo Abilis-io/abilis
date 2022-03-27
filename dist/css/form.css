@@ -90,7 +90,7 @@
   --ab-font-weight: 400;
   --ab-font-size: clamp(0.9rem, -0.875rem + 8.333333vw, 1.1rem);
   --ab-body-line-height: 1.5;
-  --ab-body-color: #202428;
+  --ab-body-color: #343a40;
   --ab-body-bg: #fff;
 }
 
@@ -1175,6 +1175,18 @@ hr {
 }
 .bg-danger-light a:not(.button) {
   color: #ff3860;
+}
+
+.bg-square {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb%2815 23 42 / 0.04%29'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+  mask-image: linear-gradient(to bottom, transparent, black);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black);
+  background-position: bottom 1px center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
 }
 
 .bg-transparent {
@@ -3884,203 +3896,203 @@ hr {
 
 /* height */
 .b-1 {
-  border: 1px solid #dee2e6 !important;
+  border: 1px solid #eaeaea !important;
 }
 
 .b-l-1 {
-  border-left: 1px solid #dee2e6 !important;
+  border-left: 1px solid #eaeaea !important;
 }
 
 .b-r-1 {
-  border-right: 1px solid #dee2e6 !important;
+  border-right: 1px solid #eaeaea !important;
 }
 
 .b-t-1 {
-  border-top: 1px solid #dee2e6 !important;
+  border-top: 1px solid #eaeaea !important;
 }
 
 .b-b-1 {
-  border-bottom: 1px solid #dee2e6 !important;
+  border-bottom: 1px solid #eaeaea !important;
 }
 
 .b-2 {
-  border: 2px solid #dee2e6 !important;
+  border: 2px solid #eaeaea !important;
 }
 
 .b-l-2 {
-  border-left: 2px solid #dee2e6 !important;
+  border-left: 2px solid #eaeaea !important;
 }
 
 .b-r-2 {
-  border-right: 2px solid #dee2e6 !important;
+  border-right: 2px solid #eaeaea !important;
 }
 
 .b-t-2 {
-  border-top: 2px solid #dee2e6 !important;
+  border-top: 2px solid #eaeaea !important;
 }
 
 .b-b-2 {
-  border-bottom: 2px solid #dee2e6 !important;
+  border-bottom: 2px solid #eaeaea !important;
 }
 
 .b-3 {
-  border: 3px solid #dee2e6 !important;
+  border: 3px solid #eaeaea !important;
 }
 
 .b-l-3 {
-  border-left: 3px solid #dee2e6 !important;
+  border-left: 3px solid #eaeaea !important;
 }
 
 .b-r-3 {
-  border-right: 3px solid #dee2e6 !important;
+  border-right: 3px solid #eaeaea !important;
 }
 
 .b-t-3 {
-  border-top: 3px solid #dee2e6 !important;
+  border-top: 3px solid #eaeaea !important;
 }
 
 .b-b-3 {
-  border-bottom: 3px solid #dee2e6 !important;
+  border-bottom: 3px solid #eaeaea !important;
 }
 
 .b-4 {
-  border: 4px solid #dee2e6 !important;
+  border: 4px solid #eaeaea !important;
 }
 
 .b-l-4 {
-  border-left: 4px solid #dee2e6 !important;
+  border-left: 4px solid #eaeaea !important;
 }
 
 .b-r-4 {
-  border-right: 4px solid #dee2e6 !important;
+  border-right: 4px solid #eaeaea !important;
 }
 
 .b-t-4 {
-  border-top: 4px solid #dee2e6 !important;
+  border-top: 4px solid #eaeaea !important;
 }
 
 .b-b-4 {
-  border-bottom: 4px solid #dee2e6 !important;
+  border-bottom: 4px solid #eaeaea !important;
 }
 
 .b-5 {
-  border: 5px solid #dee2e6 !important;
+  border: 5px solid #eaeaea !important;
 }
 
 .b-l-5 {
-  border-left: 5px solid #dee2e6 !important;
+  border-left: 5px solid #eaeaea !important;
 }
 
 .b-r-5 {
-  border-right: 5px solid #dee2e6 !important;
+  border-right: 5px solid #eaeaea !important;
 }
 
 .b-t-5 {
-  border-top: 5px solid #dee2e6 !important;
+  border-top: 5px solid #eaeaea !important;
 }
 
 .b-b-5 {
-  border-bottom: 5px solid #dee2e6 !important;
+  border-bottom: 5px solid #eaeaea !important;
 }
 
 .b-6 {
-  border: 6px solid #dee2e6 !important;
+  border: 6px solid #eaeaea !important;
 }
 
 .b-l-6 {
-  border-left: 6px solid #dee2e6 !important;
+  border-left: 6px solid #eaeaea !important;
 }
 
 .b-r-6 {
-  border-right: 6px solid #dee2e6 !important;
+  border-right: 6px solid #eaeaea !important;
 }
 
 .b-t-6 {
-  border-top: 6px solid #dee2e6 !important;
+  border-top: 6px solid #eaeaea !important;
 }
 
 .b-b-6 {
-  border-bottom: 6px solid #dee2e6 !important;
+  border-bottom: 6px solid #eaeaea !important;
 }
 
 .b-7 {
-  border: 7px solid #dee2e6 !important;
+  border: 7px solid #eaeaea !important;
 }
 
 .b-l-7 {
-  border-left: 7px solid #dee2e6 !important;
+  border-left: 7px solid #eaeaea !important;
 }
 
 .b-r-7 {
-  border-right: 7px solid #dee2e6 !important;
+  border-right: 7px solid #eaeaea !important;
 }
 
 .b-t-7 {
-  border-top: 7px solid #dee2e6 !important;
+  border-top: 7px solid #eaeaea !important;
 }
 
 .b-b-7 {
-  border-bottom: 7px solid #dee2e6 !important;
+  border-bottom: 7px solid #eaeaea !important;
 }
 
 .b-8 {
-  border: 8px solid #dee2e6 !important;
+  border: 8px solid #eaeaea !important;
 }
 
 .b-l-8 {
-  border-left: 8px solid #dee2e6 !important;
+  border-left: 8px solid #eaeaea !important;
 }
 
 .b-r-8 {
-  border-right: 8px solid #dee2e6 !important;
+  border-right: 8px solid #eaeaea !important;
 }
 
 .b-t-8 {
-  border-top: 8px solid #dee2e6 !important;
+  border-top: 8px solid #eaeaea !important;
 }
 
 .b-b-8 {
-  border-bottom: 8px solid #dee2e6 !important;
+  border-bottom: 8px solid #eaeaea !important;
 }
 
 .b-9 {
-  border: 9px solid #dee2e6 !important;
+  border: 9px solid #eaeaea !important;
 }
 
 .b-l-9 {
-  border-left: 9px solid #dee2e6 !important;
+  border-left: 9px solid #eaeaea !important;
 }
 
 .b-r-9 {
-  border-right: 9px solid #dee2e6 !important;
+  border-right: 9px solid #eaeaea !important;
 }
 
 .b-t-9 {
-  border-top: 9px solid #dee2e6 !important;
+  border-top: 9px solid #eaeaea !important;
 }
 
 .b-b-9 {
-  border-bottom: 9px solid #dee2e6 !important;
+  border-bottom: 9px solid #eaeaea !important;
 }
 
 .b-10 {
-  border: 10px solid #dee2e6 !important;
+  border: 10px solid #eaeaea !important;
 }
 
 .b-l-10 {
-  border-left: 10px solid #dee2e6 !important;
+  border-left: 10px solid #eaeaea !important;
 }
 
 .b-r-10 {
-  border-right: 10px solid #dee2e6 !important;
+  border-right: 10px solid #eaeaea !important;
 }
 
 .b-t-10 {
-  border-top: 10px solid #dee2e6 !important;
+  border-top: 10px solid #eaeaea !important;
 }
 
 .b-b-10 {
-  border-bottom: 10px solid #dee2e6 !important;
+  border-bottom: 10px solid #eaeaea !important;
 }
 
 .b-none {
@@ -8612,91 +8624,133 @@ hr {
 .font-weight-100 {
   font-weight: 100 !important;
 }
-.font-weight-100 p, .font-weight-100 b, .font-weight-100 u, .font-weight-100 div, .font-weight-100 h1, .font-weight-100 h2, .font-weight-100 h3, .font-weight-100 h4, .font-weight-100 h5, .font-weight-100 h6 {
+.font-weight-100 p, .font-weight-100 b, .font-weight-100 u, .font-weight-100 a, .font-weight-100 div, .font-weight-100 h1, .font-weight-100 h2, .font-weight-100 h3, .font-weight-100 h4, .font-weight-100 h5, .font-weight-100 h6 {
   font-weight: 100 !important;
 }
 
 .font-weight-200 {
   font-weight: 200 !important;
 }
-.font-weight-200 p, .font-weight-200 b, .font-weight-200 u, .font-weight-200 div, .font-weight-200 h1, .font-weight-200 h2, .font-weight-200 h3, .font-weight-200 h4, .font-weight-200 h5, .font-weight-200 h6 {
+.font-weight-200 p, .font-weight-200 b, .font-weight-200 u, .font-weight-200 a, .font-weight-200 div, .font-weight-200 h1, .font-weight-200 h2, .font-weight-200 h3, .font-weight-200 h4, .font-weight-200 h5, .font-weight-200 h6 {
   font-weight: 200 !important;
 }
 
 .font-weight-300 {
   font-weight: 300 !important;
 }
-.font-weight-300 p, .font-weight-300 b, .font-weight-300 u, .font-weight-300 div, .font-weight-300 h1, .font-weight-300 h2, .font-weight-300 h3, .font-weight-300 h4, .font-weight-300 h5, .font-weight-300 h6 {
+.font-weight-300 p, .font-weight-300 b, .font-weight-300 u, .font-weight-300 a, .font-weight-300 div, .font-weight-300 h1, .font-weight-300 h2, .font-weight-300 h3, .font-weight-300 h4, .font-weight-300 h5, .font-weight-300 h6 {
   font-weight: 300 !important;
 }
 
 .font-weight-400 {
   font-weight: 400 !important;
 }
-.font-weight-400 p, .font-weight-400 b, .font-weight-400 u, .font-weight-400 div, .font-weight-400 h1, .font-weight-400 h2, .font-weight-400 h3, .font-weight-400 h4, .font-weight-400 h5, .font-weight-400 h6 {
+.font-weight-400 p, .font-weight-400 b, .font-weight-400 u, .font-weight-400 a, .font-weight-400 div, .font-weight-400 h1, .font-weight-400 h2, .font-weight-400 h3, .font-weight-400 h4, .font-weight-400 h5, .font-weight-400 h6 {
   font-weight: 400 !important;
 }
 
 .font-weight-500 {
   font-weight: 500 !important;
 }
-.font-weight-500 p, .font-weight-500 b, .font-weight-500 u, .font-weight-500 div, .font-weight-500 h1, .font-weight-500 h2, .font-weight-500 h3, .font-weight-500 h4, .font-weight-500 h5, .font-weight-500 h6 {
+.font-weight-500 p, .font-weight-500 b, .font-weight-500 u, .font-weight-500 a, .font-weight-500 div, .font-weight-500 h1, .font-weight-500 h2, .font-weight-500 h3, .font-weight-500 h4, .font-weight-500 h5, .font-weight-500 h6 {
   font-weight: 500 !important;
 }
 
 .font-weight-600 {
   font-weight: 600 !important;
 }
-.font-weight-600 p, .font-weight-600 b, .font-weight-600 u, .font-weight-600 div, .font-weight-600 h1, .font-weight-600 h2, .font-weight-600 h3, .font-weight-600 h4, .font-weight-600 h5, .font-weight-600 h6 {
+.font-weight-600 p, .font-weight-600 b, .font-weight-600 u, .font-weight-600 a, .font-weight-600 div, .font-weight-600 h1, .font-weight-600 h2, .font-weight-600 h3, .font-weight-600 h4, .font-weight-600 h5, .font-weight-600 h6 {
   font-weight: 600 !important;
 }
 
 .font-weight-700 {
   font-weight: 700 !important;
 }
-.font-weight-700 p, .font-weight-700 b, .font-weight-700 u, .font-weight-700 div, .font-weight-700 h1, .font-weight-700 h2, .font-weight-700 h3, .font-weight-700 h4, .font-weight-700 h5, .font-weight-700 h6 {
+.font-weight-700 p, .font-weight-700 b, .font-weight-700 u, .font-weight-700 a, .font-weight-700 div, .font-weight-700 h1, .font-weight-700 h2, .font-weight-700 h3, .font-weight-700 h4, .font-weight-700 h5, .font-weight-700 h6 {
   font-weight: 700 !important;
 }
 
 .font-weight-800 {
   font-weight: 800 !important;
 }
-.font-weight-800 p, .font-weight-800 b, .font-weight-800 u, .font-weight-800 div, .font-weight-800 h1, .font-weight-800 h2, .font-weight-800 h3, .font-weight-800 h4, .font-weight-800 h5, .font-weight-800 h6 {
+.font-weight-800 p, .font-weight-800 b, .font-weight-800 u, .font-weight-800 a, .font-weight-800 div, .font-weight-800 h1, .font-weight-800 h2, .font-weight-800 h3, .font-weight-800 h4, .font-weight-800 h5, .font-weight-800 h6 {
   font-weight: 800 !important;
 }
 
 .font-weight-900 {
   font-weight: 900 !important;
 }
-.font-weight-900 p, .font-weight-900 b, .font-weight-900 u, .font-weight-900 div, .font-weight-900 h1, .font-weight-900 h2, .font-weight-900 h3, .font-weight-900 h4, .font-weight-900 h5, .font-weight-900 h6 {
+.font-weight-900 p, .font-weight-900 b, .font-weight-900 u, .font-weight-900 a, .font-weight-900 div, .font-weight-900 h1, .font-weight-900 h2, .font-weight-900 h3, .font-weight-900 h4, .font-weight-900 h5, .font-weight-900 h6 {
   font-weight: 900 !important;
 }
 
-.font-xl {
-  font-size: clamp(1.2rem, -0.875rem + 8.333333vw, 1.5rem) !important;
+.font-xxxl {
+  font-size: clamp(3.2rem, -0.875rem + 8.333333vw, 3.5rem) !important;
 }
-.font-xl p, .font-xl b, .font-xl u, .font-xl div, .font-xl h1, .font-xl h2, .font-xl h3, .font-xl h4, .font-xl h5, .font-xl h6 {
-  font-size: clamp(1.2rem, -0.875rem + 8.333333vw, 1.5rem) !important;
+.font-xxxl p, .font-xxxl b, .font-xxxl u, .font-xxxl a, .font-xxxl div, .font-xxxl h1, .font-xxxl h2, .font-xxxl h3, .font-xxxl h4, .font-xxxl h5, .font-xxxl h6 {
+  font-size: clamp(3.2rem, -0.875rem + 8.333333vw, 3.5rem) !important;
+}
+
+.font-xxl {
+  font-size: clamp(2.8rem, -0.875rem + 8.333333vw, 3.2rem) !important;
+}
+.font-xxl p, .font-xxl b, .font-xxl u, .font-xxl a, .font-xxl div, .font-xxl h1, .font-xxl h2, .font-xxl h3, .font-xxl h4, .font-xxl h5, .font-xxl h6 {
+  font-size: clamp(2.8rem, -0.875rem + 8.333333vw, 3.2rem) !important;
+}
+
+.font-xl {
+  font-size: clamp(2.5rem, -0.875rem + 8.333333vw, 2.8rem) !important;
+}
+.font-xl p, .font-xl b, .font-xl u, .font-xl a, .font-xl div, .font-xl h1, .font-xl h2, .font-xl h3, .font-xl h4, .font-xl h5, .font-xl h6 {
+  font-size: clamp(2.5rem, -0.875rem + 8.333333vw, 2.8rem) !important;
+}
+
+.font-l {
+  font-size: clamp(2.2rem, -0.875rem + 8.333333vw, 2.5rem) !important;
+}
+.font-l p, .font-l b, .font-l u, .font-l a, .font-l div, .font-l h1, .font-l h2, .font-l h3, .font-l h4, .font-l h5, .font-l h6 {
+  font-size: clamp(2.2rem, -0.875rem + 8.333333vw, 2.5rem) !important;
 }
 
 .font-md {
-  font-size: clamp(0.9rem, -0.875rem + 8.333333vw, 1.1rem) !important;
+  font-size: clamp(1.8rem, -0.875rem + 8.333333vw, 2.2rem) !important;
 }
-.font-md p, .font-md b, .font-md u, .font-md div, .font-md h1, .font-md h2, .font-md h3, .font-md h4, .font-md h5, .font-md h6 {
-  font-size: clamp(0.9rem, -0.875rem + 8.333333vw, 1.1rem) !important;
+.font-md p, .font-md b, .font-md u, .font-md a, .font-md div, .font-md h1, .font-md h2, .font-md h3, .font-md h4, .font-md h5, .font-md h6 {
+  font-size: clamp(1.8rem, -0.875rem + 8.333333vw, 2.2rem) !important;
 }
 
 .font-sm {
-  font-size: clamp(0.87rem, -0.875rem + 8.333333vw, 0.95rem) !important;
+  font-size: clamp(1.5rem, -0.875rem + 8.333333vw, 1.8rem) !important;
 }
-.font-sm p, .font-sm b, .font-sm u, .font-sm div, .font-sm h1, .font-sm h2, .font-sm h3, .font-sm h4, .font-sm h5, .font-sm h6 {
-  font-size: clamp(0.87rem, -0.875rem + 8.333333vw, 0.95rem) !important;
+.font-sm p, .font-sm b, .font-sm u, .font-sm a, .font-sm div, .font-sm h1, .font-sm h2, .font-sm h3, .font-sm h4, .font-sm h5, .font-sm h6 {
+  font-size: clamp(1.5rem, -0.875rem + 8.333333vw, 1.8rem) !important;
+}
+
+.font-s {
+  font-size: clamp(1.2rem, -0.875rem + 8.333333vw, 1.5rem) !important;
+}
+.font-s p, .font-s b, .font-s u, .font-s a, .font-s div, .font-s h1, .font-s h2, .font-s h3, .font-s h4, .font-s h5, .font-s h6 {
+  font-size: clamp(1.2rem, -0.875rem + 8.333333vw, 1.5rem) !important;
 }
 
 .font-xs {
+  font-size: clamp(0.9rem, -0.875rem + 8.333333vw, 1.1rem) !important;
+}
+.font-xs p, .font-xs b, .font-xs u, .font-xs a, .font-xs div, .font-xs h1, .font-xs h2, .font-xs h3, .font-xs h4, .font-xs h5, .font-xs h6 {
+  font-size: clamp(0.9rem, -0.875rem + 8.333333vw, 1.1rem) !important;
+}
+
+.font-xxs {
+  font-size: clamp(0.87rem, -0.875rem + 8.333333vw, 0.95rem) !important;
+}
+.font-xxs p, .font-xxs b, .font-xxs u, .font-xxs a, .font-xxs div, .font-xxs h1, .font-xxs h2, .font-xxs h3, .font-xxs h4, .font-xxs h5, .font-xxs h6 {
+  font-size: clamp(0.87rem, -0.875rem + 8.333333vw, 0.95rem) !important;
+}
+
+.font-xxxs {
   font-size: clamp(0.7rem, -0.875rem + 8.333333vw, 0.85rem) !important;
 }
-.font-xs p, .font-xs b, .font-xs u, .font-xs div, .font-xs h1, .font-xs h2, .font-xs h3, .font-xs h4, .font-xs h5, .font-xs h6 {
+.font-xxxs p, .font-xxxs b, .font-xxxs u, .font-xxxs a, .font-xxxs div, .font-xxxs h1, .font-xxxs h2, .font-xxxs h3, .font-xxxs h4, .font-xxxs h5, .font-xxxs h6 {
   font-size: clamp(0.7rem, -0.875rem + 8.333333vw, 0.85rem) !important;
 }
 
@@ -10176,7 +10230,7 @@ hr {
 }
 
 a {
-  color: #3DCBFA;
+  color: #2ca6f8;
   text-decoration: none;
   cursor: pointer;
 }
@@ -10206,7 +10260,7 @@ a:hover {
   position: absolute;
   width: 100%;
   height: 2px;
-  background: #3DCBFA;
+  background: #2ca6f8;
   transform: scale(0);
   transition: transform 0.3s ease-in-out;
 }
@@ -10224,7 +10278,7 @@ a:hover {
   position: absolute;
   width: 0%;
   height: 2px;
-  background: #3DCBFA;
+  background: #2ca6f8;
   transition: width 0.3s ease-in-out;
 }
 .link-style-2:hover::after {
@@ -10251,7 +10305,7 @@ a:hover {
   -webkit-transform-origin: 100% 50%;
   -ms-transform-origin: 100% 50%;
   transform-origin: 100% 50%;
-  background: #3DCBFA;
+  background: #2ca6f8;
 }
 .link-style-3:hover::after {
   -webkit-transform: scale3d(1, 1, 1);
@@ -11858,7 +11912,7 @@ ol.list-style-2 li:before {
 
 .img-thumb {
   padding: 0.35rem;
-  box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
 

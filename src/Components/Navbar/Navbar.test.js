@@ -16,9 +16,9 @@ describe('Navbar Integration Test', () => {
 
     expect(nav.classList.contains(nav.dataset.stickyClassBefore)).toBe(true);
 
-    global.window.scrollTo(0, 1000);
+    // global.window.scrollTo(0, 1000);
 
-    console.log(global.window.scrollY);
+    // console.log(global.window.scrollY);
     // console.log(document.body.innerHTML);
 
   });
