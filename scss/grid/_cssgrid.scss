@@ -3,6 +3,10 @@
     grid-auto-flow: row;
     grid-gap: $grid-gap;
 
+    &.grid-auto {
+        grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
+    }
+
     &.centered{
         justify-content: center;
         justify-items: center;

@@ -13668,6 +13668,9 @@ table {
   grid-auto-flow: row;
   grid-gap: 0rem;
 }
+.grid.grid-auto {
+  grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
+}
 .grid.centered {
   justify-content: center;
   justify-items: center;
