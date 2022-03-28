@@ -1,16 +1,16 @@
 .columns {
     display: flex;
     flex-wrap: wrap;
-    // margin-left: -#{$grid-gap};
-    // margin-right: -#{$grid-gap};
-    // margin-top: -#{$grid-gap};
+    margin-left: - calc($grid-gap / 2);
+    margin-right: - calc($grid-gap / 2);
+    margin-top: - calc($grid-gap / 2);
 
     &:not(:last-child) {
-        // margin-bottom: calc(1.5rem - $grid-gap);
+        margin-bottom: calc($grid-gap / 2);
     }
 
     > * {
-        padding: $grid-gap;
+        padding: calc($grid-gap / 2);
         flex-shrink: 0;
         width: 100%;
         max-width: 100%;
@@ -40,24 +40,32 @@
 
     @each $num, $size in $gutter {
         &.gutter-#{$num} {
+            margin-left: - calc($size / 2);
+            margin-right: - calc($size / 2);
+            margin-top: - calc($size / 2);
+
             &:not(:last-child) {
-                margin-bottom: calc(1.5rem - $size);
+                margin-bottom: calc($size / 2);
             }
 
             > * {
-                padding: $size;
+                padding: calc($size / 2);
             }
         }
         
         @each $name, $value in $grid-breakpoints {
             @media #{$value} {
                 &.gutter-#{$name}-#{$num} {
+                    margin-left: - calc($size / 2);
+                    margin-right: - calc($size / 2);
+                    margin-top: - calc($size / 2);
+
                     &:not(:last-child) {
-                        margin-bottom: calc(1.5rem - $size);
+                        margin-bottom: calc($size / 2);
                     }
 
                     > * {
-                        padding: $size;
+                        padding: calc($size / 2);
                     }
                 }
             }

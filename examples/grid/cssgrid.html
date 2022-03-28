@@ -10,46 +10,188 @@
 <body>
   <section class="container">
 
-    <div class="grid grid-xs-1 grid-sm-2">
-        <div class="grid grid-3 bg-primary-3">
-            <div class="bg-info">box 1</div>
-            <div class="bg-info">box 2</div>
-            <div class="bg-info">box 3</div>
-            <div class="pos-xs-3 pos-sm-2 pos-xl-1 bg-info">box 4</div>
-        </div>
-        <div class="grid grid-3 bg-primary-3">
-            <div class="bg-info">box 1</div>
-            <div class="bg-info">box 2</div>
-            <div class="bg-info">box 3</div>
-        </div>
+    <h1>Grid</h1>
+
+    <p>Basic 3 columns</p>
+
+    <div class="grid grid-3 text-center gutter-1">
+      <div class="bg-primary p-20">1</div>
+      <div class="bg-primary p-20">2</div>
+      <div class="bg-primary p-20">3</div>
+    </div>
+
+    <br>
+
+    <p>Grids in a grid</p>
+
+    <div class="grid grid-xs-1 grid-sm-2 text-center gutter-3">
+      <div class="grid grid-3 gutter-1">
+        <div class="bg-primary p-20">1</div>
+        <div class="bg-primary p-20">2</div>
+        <div class="bg-primary p-20">3</div>
+        <div class="bg-primary p-20">4</div>
+        <div class="bg-primary p-20">5</div>
+        <div class="bg-primary p-20">6</div>
+      </div>
+      <div class="grid grid-3 gutter-1">
+        <div class="bg-primary p-20">1</div>
+        <div class="bg-primary p-20">2</div>
+        <div class="bg-primary p-20">3</div>
+      </div>
+    </div>
+
+    <br>
+
+    <p>Gutter</p>
+
+    <div class="grid grid-xs-1 grid-sm-2 text-center gutter-3">
+      <div class="grid grid-3 gutter-8">
+        <div class="bg-primary p-20">1</div>
+        <div class="bg-primary p-20">2</div>
+        <div class="bg-primary p-20">3</div>
+        <div class="bg-primary p-20">4</div>
+      </div>
+      <div class="grid grid-3 gutter-5">
+        <div class="bg-primary p-20">1</div>
+        <div class="bg-primary p-20">2</div>
+        <div class="bg-primary p-20">3</div>
+      </div>
+    </div>
+
+    <br>
+
+    <p>Pos</p>
+
+    <div class="grid grid-6 gutter-1 text-center">
+      <div class="bg-primary p-20">1</div>
+      <div class="bg-primary pos-3 p-20">2</div>
+      <div class="bg-primary pos-6 p-20">3</div>
+    </div>
+
+    <br>
+
+    <p>Column</p>
+
+    <div class="grid grid-6 gutter-1 text-center">
+      <div class="bg-primary p-20">1</div>
+      <div class="bg-primary column-3 p-20">2</div>
+      <div class="bg-primary column-2 p-20">3</div>
+    </div>
+
+    <br>
+
+    <p>Row</p>
+
+    <div class="grid grid-3 gutter-1 text-center">
+      <div class="bg-primary p-20">1</div>
+      <div class="bg-primary row-2 p-20">2</div>
+      <div class="bg-primary row-3 p-20">3</div>
+      <div class="bg-primary p-20">4</div>
+      <div class="bg-primary p-20">5</div>
+      <div class="bg-primary p-20">6</div>
+    </div>
+
+    <br>
+
+    <p>Pos-row</p>
+
+    <div class="grid grid-3 text-center gutter-1">
+      <div class="bg-primary p-20">1</div>
+      <div class="bg-primary pos-row-2 p-20">2</div>
+      <div class="bg-primary p-20">3</div>
+      <div class="bg-primary pos-row-2 p-20">4</div>
+      <div class="bg-primary p-20">5</div>
+      <div class="bg-primary p-20">6</div>
+    </div>
+
+    <br>
+
+    <p>Column and row</p>
+
+    <div class="grid grid-4 gutter-1 text-center">
+        <div class="bg-primary p-20">1</div>
+        <div class="column-2 row-2 bg-primary p-20">2</div>
+        <div class="bg-primary row-4 p-20">3</div>
+        <div class="bg-primary p-20">4</div>
+        <div class="column-3 bg-primary p-20">5</div>
+        <div class="column-2 bg-primary p-20">1</div>
+        <div class="column-1 bg-primary p-20">2</div>
+    </div>
+
+    <br>
+
+    <p>12 columns</p>
+
+    <div class="grid grid-12 gutter-1 text-center">
+        <div class="column-4 bg-primary p-20">1</div>
+        <div class="column-8 bg-primary p-20">2</div>
     </div>
 
     <br><br>
 
-    <div class="grid grid-3 bg-primary-3">
-        <div class="bg-info">box 1</div>
-        <div class="bg-info">box 2</div>
-        <div class="bg-info">box 3</div>
-        <div class="bg-info">box 4</div>
+    <h2>Responsive</h2>
+
+    <br>
+
+    <p>Gutter</p>
+
+    <div class="grid grid-xs-1 grid-sm-2 text-center gutter-2 gutter-md-3">
+      <div class="grid grid-3 gutter-1 gutter-md-8">
+        <div class="bg-primary p-20">1</div>
+        <div class="bg-primary p-20">2</div>
+        <div class="bg-primary p-20">3</div>
+        <div class="bg-primary p-20">4</div>
+      </div>
+      <div class="grid grid-3 gutter-1 gutter-md-5">
+        <div class="bg-primary p-20">1</div>
+        <div class="bg-primary p-20">2</div>
+        <div class="bg-primary p-20">3</div>
+      </div>
     </div>
 
-    <br><br>
+    <br>
 
-    <div class="grid grid-4">
-        <div class="bg-primary">box 1</div>
-        <div class="column-3 column-md-2 row-sm-3 row-md-2 bg-primary">box 2</div>
-        <div class="bg-primary row-3">box 3</div>
-        <div class="bg-primary">box 4</div>
-        <div class="column-3 bg-primary">box 5</div>
-        <div class="column-2 bg-primary">box 1</div>
-        <div class="column-2 bg-primary">box 2</div>
+    <p>Pos</p>
+
+    <div class="grid grid-6 gutter-1 text-center">
+      <div class="bg-primary p-20">1</div>
+      <div class="bg-primary pos-3 pos-xl-5 p-20">2</div>
+      <div class="bg-primary pos-5 pos-md-6 pos-xl-6 p-20">3</div>
     </div>
 
-    <br><br>
+    <br>
 
-    <div class="grid grid-12">
-        <div class="column-4 bg-primary">box 1</div>
-        <div class="column-8 bg-primary">box 2</div>
+    <p>Column</p>
+
+    <div class="grid grid-12 gutter-1 text-center">
+      <div class="column-12 column-md-6 column-xl-4 bg-primary p-20">1</div>
+      <div class="column-12 column-md-6 column-xl-8 bg-primary p-20">2</div>
+    </div>
+
+    <br>
+
+    <p>Row</p>
+
+    <div class="grid grid-3 gutter-1 text-center">
+      <div class="bg-primary row-xl-3 p-20">1</div>
+      <div class="bg-primary row-md-2 row-xl-1 p-20">2</div>
+      <div class="bg-primary row-md-3 row-xl-2 p-20">3</div>
+      <div class="bg-primary p-20">4</div>
+      <div class="bg-primary p-20">5</div>
+      <div class="bg-primary p-20">6</div>
+    </div>
+
+    <br>
+
+    <p>Pos-row</p>
+
+    <div class="grid grid-3 text-center gutter-1">
+      <div class="bg-primary p-20">1</div>
+      <div class="bg-primary pos-row-md-2 p-20">2</div>
+      <div class="bg-primary p-20">3</div>
+      <div class="bg-primary pos-row-md-2 p-20">4</div>
+      <div class="bg-primary p-20">5</div>
+      <div class="bg-primary p-20">6</div>
     </div>
 
   </section>
