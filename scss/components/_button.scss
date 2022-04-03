@@ -39,6 +39,10 @@
   &:active {
     @include opacityHover;
   }
+
+  &:focus:not(:active) {
+    @include btnHover($btn-type-background-color);
+  }
 }
 
 .button-outline-type {
@@ -79,6 +83,10 @@
     &:active {
       @include opacityHover;
     }
+
+    &:focus:not(:active) {
+      @include btnHover($color1);
+    }
   }
 
   .button-outline-#{$cname} {
@@ -89,6 +97,10 @@
     &:active,
     &.active {
       @include btnOutlineHover($color1, $color2);
+    }
+
+    &:focus:not(:active) {
+      @include btnHover($color1);
     }
   }
 }

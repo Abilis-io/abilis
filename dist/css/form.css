@@ -490,10 +490,10 @@ span {
 }
 
 hr {
-  background-color: #F6F6F6;
+  background-color: #eaeaea;
   border: none;
   display: block;
-  height: 2px;
+  height: 1px;
   margin: 1.5rem 0;
 }
 
@@ -11938,7 +11938,7 @@ table {
 
 .table {
   background-color: #fff;
-  color: #202428;
+  color: #343a40;
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -11949,7 +11949,7 @@ table {
   border-width: 0 0 2px;
 }
 .table td, .table th {
-  color: #202428;
+  color: #343a40;
 }
 .table td, .table th {
   border: 1px solid #eaeaea;
@@ -12749,8 +12749,8 @@ table {
 
 .blockquote {
   background-color: #F6F6F6;
-  border: 1px solid #ced4da;
-  border-left: 5px solid #ced4da;
+  border: 1px solid #eaeaea;
+  border-left: 5px solid #eaeaea;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
   margin: 1rem;
@@ -12758,7 +12758,7 @@ table {
 
 .blockquote-white {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #fff;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12767,7 +12767,7 @@ table {
 
 .blockquote-gray-1 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #F6F6F6;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12776,7 +12776,7 @@ table {
 
 .blockquote-gray-2 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #eaeaea;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12785,7 +12785,7 @@ table {
 
 .blockquote-gray-3 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #dee2e6;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12794,7 +12794,7 @@ table {
 
 .blockquote-gray-4 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #ced4da;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12803,7 +12803,7 @@ table {
 
 .blockquote-gray-5 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #adb5bd;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12812,7 +12812,7 @@ table {
 
 .blockquote-gray-6 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #6c757d;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12821,7 +12821,7 @@ table {
 
 .blockquote-gray-7 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #495057;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12830,7 +12830,7 @@ table {
 
 .blockquote-gray-8 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #343a40;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12839,7 +12839,7 @@ table {
 
 .blockquote-gray-9 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #202428;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12848,7 +12848,7 @@ table {
 
 .blockquote-black {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #000;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12857,7 +12857,7 @@ table {
 
 .blockquote-red-0 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #FADBDB;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12866,7 +12866,7 @@ table {
 
 .blockquote-red-1 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #F5B7B7;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12875,7 +12875,7 @@ table {
 
 .blockquote-red-2 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #F09393;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12884,7 +12884,7 @@ table {
 
 .blockquote-red-3 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #EB6F6F;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12893,7 +12893,7 @@ table {
 
 .blockquote-red-4 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #E74B4B;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12902,7 +12902,7 @@ table {
 
 .blockquote-red-5 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #D71D1D;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12911,7 +12911,7 @@ table {
 
 .blockquote-red-6 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #A21616;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12920,7 +12920,7 @@ table {
 
 .blockquote-red-7 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #6C0F0F;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12929,7 +12929,7 @@ table {
 
 .blockquote-red-8 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #480A0A;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12938,7 +12938,7 @@ table {
 
 .blockquote-red-9 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #240505;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12947,7 +12947,7 @@ table {
 
 .blockquote-yellow-0 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #FDF9D8;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12956,7 +12956,7 @@ table {
 
 .blockquote-yellow-1 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #FBF4B1;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12965,7 +12965,7 @@ table {
 
 .blockquote-yellow-2 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #F9EE8B;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12974,7 +12974,7 @@ table {
 
 .blockquote-yellow-3 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #F7E864;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12983,7 +12983,7 @@ table {
 
 .blockquote-yellow-4 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #F5E23D;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -12992,7 +12992,7 @@ table {
 
 .blockquote-yellow-5 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #E9D30C;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13001,7 +13001,7 @@ table {
 
 .blockquote-yellow-6 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #AE9E09;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13010,7 +13010,7 @@ table {
 
 .blockquote-yellow-7 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #746906;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13019,7 +13019,7 @@ table {
 
 .blockquote-yellow-8 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #4E4A04;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13028,7 +13028,7 @@ table {
 
 .blockquote-yellow-9 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #272502;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13037,7 +13037,7 @@ table {
 
 .blockquote-green-0 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #D9FCF0;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13046,7 +13046,7 @@ table {
 
 .blockquote-green-1 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #B4F9E1;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13055,7 +13055,7 @@ table {
 
 .blockquote-green-2 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #8EF6D1;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13064,7 +13064,7 @@ table {
 
 .blockquote-green-3 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #68F3C2;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13073,7 +13073,7 @@ table {
 
 .blockquote-green-4 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #42F0B3;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13082,7 +13082,7 @@ table {
 
 .blockquote-green-5 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #12E29A;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13091,7 +13091,7 @@ table {
 
 .blockquote-green-6 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #0EAA73;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13100,7 +13100,7 @@ table {
 
 .blockquote-green-7 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #09714D;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13109,7 +13109,7 @@ table {
 
 .blockquote-green-8 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #064B33;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13118,7 +13118,7 @@ table {
 
 .blockquote-green-9 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #03261A;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13127,7 +13127,7 @@ table {
 
 .blockquote-blue-0 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #D8E6FE;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13136,7 +13136,7 @@ table {
 
 .blockquote-blue-1 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #AFCCFD;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13145,7 +13145,7 @@ table {
 
 .blockquote-blue-2 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #88B2FC;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13154,7 +13154,7 @@ table {
 
 .blockquote-blue-3 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #6099FB;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13163,7 +13163,7 @@ table {
 
 .blockquote-blue-4 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #387FFA;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13172,7 +13172,7 @@ table {
 
 .blockquote-blue-5 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #065BEF;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13181,7 +13181,7 @@ table {
 
 .blockquote-blue-6 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #0545B3;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13190,7 +13190,7 @@ table {
 
 .blockquote-blue-7 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #032E77;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13199,7 +13199,7 @@ table {
 
 .blockquote-blue-8 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #021E50;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13208,7 +13208,7 @@ table {
 
 .blockquote-blue-9 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #010F28;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13217,7 +13217,7 @@ table {
 
 .blockquote-purple-0 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #E4D8FE;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13226,7 +13226,7 @@ table {
 
 .blockquote-purple-1 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #C8AFFD;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13235,7 +13235,7 @@ table {
 
 .blockquote-purple-2 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #AC88FC;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13244,7 +13244,7 @@ table {
 
 .blockquote-purple-3 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #9160FB;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13253,7 +13253,7 @@ table {
 
 .blockquote-purple-4 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #7538FA;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13262,7 +13262,7 @@ table {
 
 .blockquote-purple-5 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #5006EF;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13271,7 +13271,7 @@ table {
 
 .blockquote-purple-6 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #3C05B3;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13280,7 +13280,7 @@ table {
 
 .blockquote-purple-7 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #280377;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13289,7 +13289,7 @@ table {
 
 .blockquote-purple-8 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #1B0250;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13298,7 +13298,7 @@ table {
 
 .blockquote-purple-9 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #0D0128;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13307,7 +13307,7 @@ table {
 
 .blockquote-pink-0 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #FADBEA;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13316,7 +13316,7 @@ table {
 
 .blockquote-pink-1 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #F5B7D5;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13325,7 +13325,7 @@ table {
 
 .blockquote-pink-2 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #F093C0;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13334,7 +13334,7 @@ table {
 
 .blockquote-pink-3 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #EB6FAB;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13343,7 +13343,7 @@ table {
 
 .blockquote-pink-4 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #E74B96;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13352,7 +13352,7 @@ table {
 
 .blockquote-pink-5 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #D71D77;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13361,7 +13361,7 @@ table {
 
 .blockquote-pink-6 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #A21659;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13370,7 +13370,7 @@ table {
 
 .blockquote-pink-7 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #6C0F3C;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13379,7 +13379,7 @@ table {
 
 .blockquote-pink-8 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #480A28;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13388,7 +13388,7 @@ table {
 
 .blockquote-pink-9 {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #240514;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13397,7 +13397,7 @@ table {
 
 .blockquote-primary {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #3DCBFA;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13406,7 +13406,7 @@ table {
 
 .blockquote-secondary {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #2ca6f8;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13415,7 +13415,7 @@ table {
 
 .blockquote-tertiary {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #1B81F5;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13424,7 +13424,7 @@ table {
 
 .blockquote-info {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #03d1b2;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13433,7 +13433,7 @@ table {
 
 .blockquote-success {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #49c674;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13442,7 +13442,7 @@ table {
 
 .blockquote-warning {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #fedd57;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13451,7 +13451,7 @@ table {
 
 .blockquote-danger {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #ff3860;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13460,7 +13460,7 @@ table {
 
 .blockquote-primary-light {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #EBFAFE;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13469,7 +13469,7 @@ table {
 
 .blockquote-secondary-light {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #D7EEFE;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13478,7 +13478,7 @@ table {
 
 .blockquote-tertiary-light {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #C4DFFD;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13487,7 +13487,7 @@ table {
 
 .blockquote-info-light {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #EBFFFC;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13496,7 +13496,7 @@ table {
 
 .blockquote-success-light {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #EFFAF3;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13505,7 +13505,7 @@ table {
 
 .blockquote-warning-light {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #FFFBEB;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13514,7 +13514,7 @@ table {
 
 .blockquote-danger-light {
   background-color: transparent;
-  border: 1px solid #ced4da;
+  border: 1px solid #eaeaea;
   border-left: 5px solid #FFEBEF;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
@@ -13626,8 +13626,8 @@ table {
 }
 .content blockquote {
   background-color: #F6F6F6;
-  border: 1px solid #ced4da;
-  border-left: 5px solid #ced4da;
+  border: 1px solid #eaeaea;
+  border-left: 5px solid #eaeaea;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
   margin: 1rem;
@@ -14256,8 +14256,8 @@ table {
 }
 .input:active, .select select:active, .textarea:active, .input:focus, .select select:focus, .textarea:focus {
   outline: 0;
-  border-color: #3DCBFA;
-  box-shadow: 0 0 0 0.125rem rgba(61, 203, 250, 0.25);
+  border-color: #2ca6f8;
+  box-shadow: 0 0 0 0.125rem rgba(44, 166, 248, 0.25);
 }
 .input.white, .select select.white, .white.textarea, .input.white:hover, .input.white.hovered {
   border-color: #fff;
@@ -14532,8 +14532,8 @@ table {
 }
 .input.focused, .select select.focused, .textarea.focused {
   outline: 0;
-  border-color: #3DCBFA;
-  box-shadow: 0 0 0 0.125rem rgba(61, 203, 250, 0.25);
+  border-color: #2ca6f8;
+  box-shadow: 0 0 0 0.125rem rgba(44, 166, 248, 0.25);
 }
 .input[readonly], .select select[readonly], .textarea[readonly] {
   box-shadow: none;
@@ -16129,8 +16129,8 @@ table {
 }
 .select.focused select {
   outline: 0;
-  border-color: #3DCBFA;
-  box-shadow: 0 0 0 0.125rem rgba(61, 203, 250, 0.25);
+  border-color: #2ca6f8;
+  box-shadow: 0 0 0 0.125rem rgba(44, 166, 248, 0.25);
 }
 .select.loading::after {
   margin-top: 0;
@@ -16154,7 +16154,7 @@ table {
   transform: rotate(-45deg);
   transform-origin: center;
   width: 0.7rem;
-  border-color: #dee2e6;
+  border-color: #eaeaea;
   right: 1rem;
   z-index: 4;
 }
@@ -17082,7 +17082,7 @@ table {
   position: relative;
   vertical-align: top;
   background-color: #F6F6F6;
-  color: #202428;
+  color: #343a40;
 }
 .file .file-icon {
   align-items: center;
@@ -17693,11 +17693,11 @@ table {
   appearance: none;
   -webkit-print-color-adjust: exact;
   color-adjust: exact;
-  border: 1px solid #3DCBFA;
+  border: 1px solid #2ca6f8;
 }
 .checkbox input:checked, .checkbox input:invalid:checked, .radio input:checked, .radio input:invalid:checked {
-  background-color: #3DCBFA;
-  box-shadow: 0 0 0 0.125rem rgba(61, 203, 250, 0.25);
+  background-color: #2ca6f8;
+  box-shadow: 0 0 0 0.125rem rgba(44, 166, 248, 0.25);
 }
 .checkbox[disabled],
 .checkbox input[disabled], .radio[disabled],
@@ -17724,7 +17724,7 @@ table {
 }
 .radio input:checked, .radio input:invalid:checked {
   border: 3px solid #fff;
-  outline: 1px solid #3DCBFA;
+  outline: 1px solid #2ca6f8;
 }
 .radio + .radio {
   margin-left: 0.5rem;
@@ -19587,14 +19587,14 @@ table {
   outline: 0;
 }
 .range:focus::-webkit-slider-thumb {
-  background-color: #3DCBFA;
+  background-color: #2ca6f8;
   border: 1px solid #fff;
-  box-shadow: 0 0 0 0.125rem rgba(61, 203, 250, 0.25);
+  box-shadow: 0 0 0 0.125rem rgba(44, 166, 248, 0.25);
 }
 .range:focus::-moz-range-thumb {
-  background-color: #3DCBFA;
+  background-color: #2ca6f8;
   border: 1px solid #fff;
-  box-shadow: 0 0 0 0.125rem rgba(61, 203, 250, 0.25);
+  box-shadow: 0 0 0 0.125rem rgba(44, 166, 248, 0.25);
 }
 .range::-moz-focus-outer {
   border: 0;
@@ -19603,14 +19603,14 @@ table {
   width: 1.15rem;
   height: 1.15rem;
   margin-top: -0.37rem;
-  background-color: #3DCBFA;
+  background-color: #2ca6f8;
   border-radius: 9999px;
   appearance: none;
 }
 .range::-webkit-slider-thumb:active {
-  background-color: #3DCBFA;
+  background-color: #2ca6f8;
   border: 1px solid #fff;
-  box-shadow: 0 0 0 0.125rem rgba(61, 203, 250, 0.25);
+  box-shadow: 0 0 0 0.125rem rgba(44, 166, 248, 0.25);
 }
 .range::-webkit-slider-runnable-track {
   width: 0.5rem;
@@ -19625,14 +19625,14 @@ table {
   width: 1.15rem;
   height: 1.15rem;
   margin-top: -0.37rem;
-  background-color: #3DCBFA;
+  background-color: #2ca6f8;
   border-radius: 9999px;
   appearance: none;
 }
 .range::-moz-range-thumb:active {
-  background-color: #3DCBFA;
+  background-color: #2ca6f8;
   border: 1px solid #fff;
-  box-shadow: 0 0 0 0.125rem rgba(61, 203, 250, 0.25);
+  box-shadow: 0 0 0 0.125rem rgba(44, 166, 248, 0.25);
 }
 .range::-moz-range-track {
   width: 0.5rem;

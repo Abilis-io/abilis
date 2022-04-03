@@ -489,10 +489,10 @@ span {
 }
 
 hr {
-  background-color: #F6F6F6;
+  background-color: #eaeaea;
   border: none;
   display: block;
-  height: 2px;
+  height: 1px;
   margin: 1.5rem 0;
 }
 

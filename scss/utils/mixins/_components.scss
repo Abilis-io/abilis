@@ -1,3 +1,7 @@
+@mixin btnHover($color) {
+  box-shadow: 0 0 0 0.125em rgba($color, 25%);
+}
+
 @mixin btnStyle($color1, $color2) {
   background-color: $color1 !important;
   border-color: $color1 !important;
