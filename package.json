@@ -1,9 +1,7 @@
 {
   "name": "abilis",
   "version": "1.0.0",
-  "description": "CSS and JS front-end open source library",
-  "main": "dist/js/abilis.umd.js",
-  "module": "dist/js/abilis.esm.js",
+  "description": "CSS open source library",
   "sass": "scss/abilis.scss",
   "style": "dist/css/abilis.css",
   "sideEffects": false,
@@ -25,32 +23,11 @@
     "sass:build:compressed:grid": "sass --style=compressed scss/grid.scss dist/css/grid.min.css",
     "sass:build:grid": "sass scss/grid.scss dist/css/grid.css",
     "sass:build": "npm run sass:build:abilis && npm run sass:build:compressed:abilis && npm run sass:build:components && npm run sass:build:compressed:components && npm run sass:build:content && npm run sass:build:compressed:content && npm run sass:build:helpers && npm run sass:build:compressed:helpers && npm run sass:build:extensions && npm run sass:build:compressed:extensions && npm run sass:build:form && npm run sass:build:compressed:form && npm run sass:build:grid && npm run sass:build:compressed:grid",
-    "js:build": "rimraf dist/js",
-    "prebuild": "npm run js:build && npm run sass:build",
-    "build": "rollup -c",
-    "lint": "eslint '**/*.js'",
-    "lint:fix": "prettier --write $PWD/'src/**/*.js' --single-quote",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "test:staged": "jest --findRelatedTests"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "npm run lint:fix",
-      "npm run test:staged",
-      "git add"
-    ]
+    "build": "npm run sass:build"
   },
   "repository": "git+https://github.com/Skyleen77/abilis.git",
   "keywords": [
     "css",
-    "js",
     "library"
   ],
   "author": "Elliot Sutton a.k.a Skyleen77",
@@ -60,26 +37,6 @@
   },
   "homepage": "https://github.com/Skyleen77/abilis#readme",
   "devDependencies": {
-    "@babel/core": "^7.17.8",
-    "@babel/preset-env": "^7.16.11",
-    "@testing-library/dom": "^8.11.3",
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/user-event": "^13.5.0",
-    "babel-jest": "^27.5.1",
-    "babel-preset-jest": "^27.5.1",
-    "eslint": "^8.11.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-jest": "^26.1.2",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.3.7",
-    "prettier-eslint": "^13.0.0",
-    "prettier-eslint-cli": "^5.0.1",
-    "regenerator-runtime": "^0.13.9",
-    "rimraf": "^3.0.2",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-terser": "^7.0.2",
     "sass": "^1.49.9"
   },
   "engines": {
