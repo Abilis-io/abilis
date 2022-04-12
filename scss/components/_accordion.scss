@@ -66,9 +66,14 @@
 
         .accordion-content {
             overflow: hidden;
-            height: 0;
+            max-height: 0;
             transition: $accordion-content-transition;
             margin-top: -1px;
+
+            &.active {
+                overflow: unset;
+                max-height: unset;
+            }
 
             .accordion-body {
                 padding: $accordion-padding;

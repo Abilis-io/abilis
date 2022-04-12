@@ -89,7 +89,7 @@ a {
 
 @each $cname, $color in $colors {
   a.link-#{$cname} {
-    color: $color;
+    color: $color !important;
   }
 
   .link-#{$cname} {
