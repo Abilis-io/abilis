@@ -1,4 +1,4 @@
-#to-top {
+.to-top {
     display: inline-block;
     background-color: $totop-background-color;
     width: $totop-size;
@@ -13,7 +13,7 @@
     visibility: hidden;
     z-index: $totop-zindex;
 }
-#to-top::after {
+.to-top::after {
     content: "";
     background-image: url(svg-encode($totop-icon));
     flex-shrink: 0;
@@ -27,15 +27,15 @@
     background-repeat: no-repeat;
     background-size: 25px;
 }
-#to-top:hover {
+.to-top:hover {
     cursor: pointer;
     opacity: $totop-hover-opacity;
     transform: translateY($totop-hover-tranform-translate);
 }
-#to-top:active {
+.to-top:active {
     opacity: $totop-active-opacity;
 }
-#to-top.show {
+.to-top.active {
     opacity: $totop-opacity;
     visibility: visible;
 }
